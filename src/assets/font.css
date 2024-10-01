@@ -1,9 +1,49 @@
 @font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('heiti'),
-         url('@/assets/字体/方正楷体-简体.ttf') format('wenkai'),
-         url('@/assets/字体/霞鹜文楷.ttf') format('songti');
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
-  
+     font-family: 'MyFont'; /* 自定义字体名称 */
+     src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
+      url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
+      url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
+ 
+     font-weight: normal; /* 字体权重 */
+     font-style: normal; /* 字体样式 */
+   }
+
+
+   /*
+   font-family: 'MyFont', opentype;
+   */
+   /* 重置所有元素的默认样式 */
+* {
+  margin: 0;          /* 取消默认外边距 */
+  padding: 0;         /* 取消默认内边距 */
+  box-sizing: border-box; /* 设置盒模型为 border-box */
+}
+
+/* 取消文本元素的默认样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit; /* 继承父元素的字体大小 */
+  font-weight: normal; /* 取消默认粗体样式 */
+}
+
+ul, ol {
+  list-style: none; /* 取消列表项目的默认样式 */
+  padding: 0;      /* 取消默认内边距 */
+}
+
+a {
+  text-decoration: none; /* 取消链接的下划线样式 */
+  color: inherit; /* 继承父元素的文本颜色 */
+}
+
+/* 其他常见重置样式 */
+img {
+  max-width: 100%; /* 确保图像在其容器内缩放 */
+  height: auto; /* 保持图像纵横比 */
+}
+
+button {
+  background: none; /* 取消按钮的默认背景 */
+  border: none; /* 取消按钮的默认边框 */
+  padding: 0; /* 取消按钮的内边距 */
+  font: inherit; /* 继承父元素的字体 */
+}

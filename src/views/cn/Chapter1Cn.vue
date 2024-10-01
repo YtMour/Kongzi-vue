@@ -1,53 +1,296 @@
-<template>
-    <div class="chapter-page">
+<script setup>
+import { useRouter } from 'vue-router';  // 导入 useRouter
+import '@/assets/font.css';
+import { onMounted } from 'vue';
 
-      <main class="main-content">
-        <section class="content">
-          <h2>第一章 孔子生平与孔子思想</h2>
-          <p>
-            孔子（BC551-BC479），中国历史上伟大的思想家、教育家、政治家，
-            他的思想对中国乃至世界的影响深远，特别是在伦理道德和社会秩序方面。
-          </p>
-          <p>
-            孔子提出的“仁”“礼”“中庸”等思想，至今仍对我们的生活产生深刻影响。
-          </p>
-        </section>
-        <button class="next-button" @click="goToDetail">下一页: 孔子详情</button>
-      </main>
-      <footer class="footer">
-        <p>© 2024 孔子文化展览. 保留所有权利.</p>
-      </footer>
+
+const router = useRouter();  // 创建路由实例
+
+// 点击事件，跳转到前言页面
+const goToNextPage = () => {
+  router.push('/cn/chapter2');  // 跳转到前言页面
+};
+
+onMounted(() => {
+  const texts = [
+    { className: 'text1', animationClass: 'animation1' },
+    { className: 'text2', animationClass: 'animation1' },
+    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text4', animationClass: 'animation3' },
+  ];
+
+  texts.forEach(({ className, animationClass }) => {
+    const element = document.querySelector(`.${className}`);
+    if (element) {
+      element.classList.add(animationClass);
+      element.addEventListener('animationend', () => {
+        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
+      });
+    }
+  });
+});
+
+
+
+
+</script>
+
+<template>
+  <div id="app" data-v-app>
+    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
+      <div class="background"></div>  <!-- 背景图容器 -->
+      <div class="content">
+        <img src="@/assets/第一章/第一页/竹子.png" alt="" class="logo2" />
+
+        <img src="@/assets/第一章/第一页/孔子.png" alt="" class="logo3" />
+        <img src="@/assets/第一章/第一页/永远.png" alt="" class="logo1" />
+
+
+        <div class="text1">《孔子燕居像》</div>
+        <div class="text2">明·佚名 绘</div>
+        <div class="text3">孔子（BC551-BC479），中国古代伟大的思想家、教育家、哲学家，被后世尊称为“至圣先师”、“圣人”。</div>
+        <img src="@/assets/第一章/第一页/博物馆.png" alt="" class="logo4" />
+        <div class="text4">位于“孔子故里”山东曲阜的孔子博物馆</div>
+
+
+      </div>
     </div>
-  </template>
-  <script>
-  export default {
-    methods: {
-      goToDetail() {
-        this.$router.push('/cn/detail'); // 跳转到详情页
-      },
-    },
-  };
-  </script>
-  <style scoped>
-  .chapter-page {
-    text-align: center;
-    font-family: Arial, sans-serif;
+  </div>
+</template>
+
+<style scoped>
+* {
+  box-sizing: border-box;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
   }
-  .content {
-    padding: 40px 20px;
+  50% {
+    opacity: 1;
   }
-  .next-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+  100% {
+    opacity: 1;
   }
-  .footer {
-    margin-top: 40px;
-    padding: 10px 0;
-    background-color: #f8f9fa;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden; /* 防止水平滚动条 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 垂直居中 */
+  width: 100vw;
+  height: 100vh; /* 充满视口高度 */
+  position: relative; /* 相对定位以适应绝对定位的子元素 */
+  margin: 0; /* 居中 */
+  padding: 0;
+}
+
+.background {
+  position: fixed; /* 背景图固定在视口 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-size: cover; /* 背景图片铺满视口，保持纵横比 */
+  background-repeat: no-repeat; /* 防止重复背景图 */
+  background-position: center; /* 背景图居中显示 */
+  z-index: -1; /* 使背景图位于内容下方 */
+}
+
+.content {
+  max-width: 100vw; /* 最大宽度设置为100% */
+  width: 100vw; /* 使用相对宽度 */
+  max-height: 100%; /* 限制内容最大高度 */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中内容 */
+  padding: 20px; /* 内边距，以防止内容溢出 */
+  box-sizing: border-box; /* 确保内边距不影响总宽度 */
+  margin: 0 auto;
+}
+.logo1, .logo2, .logo3, .logo4, .logo5 {
+  position: absolute;
+ max-width: 100vw;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+
+/* 定义每个logo的绝对位置 */
+.logo1 {
+/* Group 45 */
+
+position: absolute;
+width: 291.53px;
+height: 129.56px;
+right: 180.45px;
+top: 193.44px;
+
+
+
+}
+.logo2 {
+/* Group 45 */
+
+position: absolute;
+width: 167px;
+height: 147px;
+right: 30.45px;
+top: 193.44px;
+
+
+}
+.logo3 {
+/* 1-1 */
+
+position: absolute;
+width: 569.45px;
+height: 686.35px;
+right: 0.5px;
+top: 223px;
+
+
+}
+.logo4 {
+
+position: absolute;
+width: 100%;
+height: 512.58px;
+top: 1085px;
+
+}
+
+
+
+@font-face {
+    font-family: 'MyFont'; /* 自定义字体名称 */
+    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
+     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
+     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
+
+    font-weight: normal; /* 字体权重 */
+    font-style: normal; /* 字体样式 */
   }
-  </style>
+.text1{
+/* 《孔子燕居像》 */
+
+width: 196px;
+height: 40px;
+
+font-family:'MyFont', truetype;
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 40px;
+/* identical to box height, or 143% */
+color: #4B180A;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+position: absolute;
+left: 89px;
+top: 499px;
+
+
+
+}
+.animation1 {
+  animation: fadeInOut 4s ease-in-out 1;
+  animation-fill-mode: forwards; /* 保持动画结束后的状态 */
+}
+
+.animation2 {
+  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
+
+.animation3 {
+  animation: fadeInOut 12s ease-in-out 1; /* 淡入时间为4秒 */
+  animation-fill-mode: forwards;
+}
+
+
+
+
+.text2{
+/* 明·佚名 绘 */
+width: 168px;
+height: 40px;
+font-family: 'MyFont', truetype;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+/* identical to box height, or 200% */
+text-align: right;
+color: #4B180A;
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+position: absolute;
+left: 125px;
+top: 549px;
+}
+.text3{/* 孔子生平 与 孔子思想 */
+/* 孔子（BC551-BC479），中国古代伟大的思想家、教育家、哲学家，被后世尊称为“至圣先师”、“圣人”。 */
+
+position: absolute;
+width: 600px;
+height: 150px;
+left: calc(50% - 600px/2);
+top: 887px;
+
+font-family: 'MyFont', opentype;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 50px;
+/* or 167% */
+text-align: justify;
+letter-spacing: -0.6px;
+color: #010101;
+}
+.text4{/* 位于“孔子故里”山东曲阜的孔子博物馆 */
+
+position: absolute;
+width: 451px;
+height: 40px;
+right: 15px;
+top: 1577px;
+font-family: 'MyFont', truetype;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 40px;
+/* identical to box height, or 167% */
+color: #4B180A;
+
+
+}
+</style>

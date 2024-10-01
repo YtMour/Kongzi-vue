@@ -1,13 +1,30 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-
+import { onMounted } from 'vue';  // 导入 onMounted
 const router = useRouter();  // 创建路由实例
 
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/detail');  // 跳转到前言页面
 };
+onMounted(() => {
+  const texts = [
+    { className: 'text', animationClass: 'animation1' },
+    { className: 'text2', animationClass: 'animation2' },
+  
+  ];
+
+  texts.forEach(({ className, animationClass }) => {
+    const element = document.querySelector(`.${className}`);
+    if (element) {
+      element.classList.add(animationClass);
+      element.addEventListener('animationend', () => {
+        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
+      });
+    }
+  });
+});
 </script>
 
 <template>
@@ -26,7 +43,7 @@ const goToNextPage = () => {
   </div>
 </template>
 
-<style>
+<style scoped>
 html,
 body {
   margin: 0;
@@ -35,14 +52,35 @@ body {
   height: 100%;
   overflow-x: hidden; /* 防止水平滚动条 */
 }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation1 {
+  animation: fadeInOut 4s ease-in-out 1;
+  animation-fill-mode: forwards; /* 保持动画结束后的状态 */
+}
 
+.animation2 {
+  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center; /* 垂直居中 */
-  width: 100%;
+  width: 100vw;
   height: 100vh; /* 充满视口高度 */
   position: relative; /* 相对定位以适应绝对定位的子元素 */
+  margin: 0; /* 居中 */
+  padding: 0;
 }
 
 .background {
@@ -51,7 +89,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../src/assets/前言/书.png'); /* 背景图片路径 */
+  background-image: url('@/assets/前言/书.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -62,7 +100,7 @@ body {
   max-width: 100%; /* 最大宽度设置为100% */
   width: 100%; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  overflow-y: auto; /* 如果内容超出高度则出现滚动条 */
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */

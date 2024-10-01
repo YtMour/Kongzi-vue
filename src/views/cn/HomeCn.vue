@@ -24,7 +24,7 @@ const goToNextPage = () => {
   </div>
 </template>
 
-<style>
+<style scoped>
 html,
 body {
   margin: 0;
@@ -38,9 +38,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; /* 垂直居中 */
-  width: 100%;
+  width: 100vw;
   height: 100vh; /* 充满视口高度 */
   position: relative; /* 相对定位以适应绝对定位的子元素 */
+  margin: 0; /* 居中 */
+  padding: 0;
 }
 
 .background {
@@ -49,7 +51,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../src/assets/首页/kongzi.png'); /* 背景图片路径 */
+  background-image: url('@/assets/首页/kongzi.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -60,7 +62,7 @@ body {
   max-width: 100%; /* 最大宽度设置为100% */
   width: 100%; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  overflow-y: auto; /* 如果内容超出高度则出现滚动条 */
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
