@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/detail');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -48,8 +49,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden; /* 防止水平滚动条 */
 }
 @keyframes fadeInOut {
@@ -64,12 +65,12 @@ body {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .wrapper {
@@ -87,8 +88,8 @@ body {
   position: fixed; /* 背景图固定在视口 */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url('@/assets/前言/书.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
@@ -97,9 +98,9 @@ body {
 }
 
 .content {
-  max-width: 100%; /* 最大宽度设置为100% */
-  width: 100%; /* 使用相对宽度 */
-  max-height: 100%; /* 限制内容最大高度 */
+  max-width: 750px; /* 最大宽度设置为100% */
+  width: 100vw; /* 使用相对宽度 */
+  max-height: 100vh; /* 限制内容最大高度 */
 
   display: flex;
   flex-direction: column;
@@ -107,23 +108,15 @@ body {
   padding: 20px; /* 内边距，以防止内容溢出 */
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
 }
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetype'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
 
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text{
 position: absolute;
 width: 480px;
 height: 696px;
 left: calc(50% - 480px/2 - 17px);
-top: 430px;
+top: 254px;
 
-font-family: 'MyFont', opentype;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -140,9 +133,9 @@ color: #000000;
   width: 480px;
   height: 696px;
   left: calc(50% - 480px / 2 - 17px);
-  top: calc(449px + 400px); /* 使 .text2 在 .text 下方，30px 为间距，可以根据需要调整 */
+  top: calc(254px + 400px); /* 使 .text2 在 .text 下方，30px 为间距，可以根据需要调整 */
 
-  font-family: 'MyFont', opentype;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -166,7 +159,7 @@ position: absolute;
 width: 166px;
 height: 191px;
 left: 544px;
-top: 196px;
+top: 22px;
 
 
 
@@ -178,7 +171,7 @@ position: absolute;
 width: 84px;
 height: 118px;
 left: 622px;
-top: 462px;
+top: 268px;
 
 
 }
@@ -189,7 +182,7 @@ position: absolute;
 width: 101px;
 height: 155px;
 left: calc(50% - 101px/2 + 0.5px);
-top: 1409px;
+top: 1235px;
 
 }
 

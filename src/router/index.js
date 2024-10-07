@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeCN from '@/views/cn/HomeCn.vue'; // 确保这里的文件名与实际文件名一致
-import ForewordCN from '@/views/cn/ForewordCn.vue'; // 确保这里的文件名与实际文件名一致
+import { createRouter, createWebHashHistory } from 'vue-router';
+import HomeCN from '@/views/cn/HomeCn.vue';
+import ForewordCN from '@/views/cn/ForewordCn.vue';
 import Chapter1CN from '@/views/cn/Chapter1Cn.vue';
 import Chapter2CN from '@/views/cn/Chapter2Cn.vue';
 import Chapter3CN from '@/views/cn/Chapter3Cn.vue';
@@ -8,8 +8,7 @@ import Chapter4CN from '@/views/cn/Chapter4Cn.vue';
 import Chapter5CN from '@/views/cn/Chapter5Cn.vue';
 import Chapter6CN from '@/views/cn/Chapter6Cn.vue';
 import Chapter7CN from '@/views/cn/Chapter7Cn.vue';
-import DetailPageCN from '@/views/cn/DetailPageCn.vue'; // 确保这里的文件名与实际文件名一致
-
+import DetailPageCN from '@/views/cn/DetailPageCn.vue';
 
 import Chapter1CN_2 from '@/views/cn/Chapter1Cn_2.vue';
 import Chapter2CN_2 from '@/views/cn/Chapter2Cn_2.vue';
@@ -18,8 +17,7 @@ import Chapter4CN_2 from '@/views/cn/Chapter4Cn_2.vue';
 import Chapter5CN_2 from '@/views/cn/Chapter5Cn_2.vue';
 import Chapter6CN_2 from '@/views/cn/Chapter6Cn_2.vue';
 import Chapter7CN_2 from '@/views/cn/Chapter7Cn_2.vue';
-import DetailPageCN2 from '@/views/cn/DetailPageCn2.vue'; // 确保这里的文件名与实际文件名一致
-
+import DetailPageCN2 from '@/views/cn/DetailPageCn2.vue';
 
 import Chapter1CN_3 from '@/views/cn/Chapter1Cn_3.vue';
 import Chapter2CN_3 from '@/views/cn/Chapter2Cn_3.vue';
@@ -28,7 +26,7 @@ import Chapter4CN_3 from '@/views/cn/Chapter4Cn_3.vue';
 import Chapter5CN_3 from '@/views/cn/Chapter5Cn_3.vue';
 import Chapter6CN_3 from '@/views/cn/Chapter6Cn_3.vue';
 import Chapter7CN_3 from '@/views/cn/Chapter7Cn_3.vue';
-import DetailPageCN3 from '@/views/cn/DetailPageCn3.vue'; // 确保这里的文件名与实际文件名一致
+import DetailPageCN3 from '@/views/cn/DetailPageCn3.vue';
 
 const routes = [
   {
@@ -81,9 +79,6 @@ const routes = [
     name: 'DetailPageCN',
     component: DetailPageCN,
   },
-
-
-
   {
     path: '/cn/chapter1_2',
     name: 'Chapter1CN_2',
@@ -124,10 +119,6 @@ const routes = [
     name: 'DetailPageCN2',
     component: DetailPageCN2,
   },
-
-
-
-
   {
     path: '/cn/chapter1_3',
     name: 'Chapter1CN_3',
@@ -169,15 +160,14 @@ const routes = [
     component: DetailPageCN3,
   },
   {
-    path: '/cn', // 默认路由重定向
+    path: '/', // 默认路由重定向
     redirect: '/cn/home',
   },
 ];
 
-
 // 创建路由实例
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 

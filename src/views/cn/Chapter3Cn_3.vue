@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter4_3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -34,7 +35,7 @@ onMounted(() => {
       <div class="content">
 
         <div class="text1">在当今这个充满挑战与变革的时代，孔子的智慧不仅是历史的回响，更是未来的灯塔，为解决全球性问题提供了独特的视角与方案；它促使我们反思人与自然、人与社会、人与人之间的关系，倡导以和为贵、兼容并蓄的相处之道，为世界和平与发展注入不竭的动力。</div>
-       <img src="@/assets/第三章/第三页/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
         <div class="text2">大成殿门前的海外参观者</div>
 
 
@@ -59,12 +60,12 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -96,7 +97,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -130,29 +131,16 @@ position: absolute;
 width: 620px;
 height: 937.75px;
 left: calc(50% - 620px/2);
-bottom: 110.25px;
-
+top: 402px;
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{/* 在当今这个充满挑战与变革的时代，孔子的智慧不仅是历史的回响，更是未来的灯塔，为解决全球性问题提供了独特的视角与方案；它促使我们反思人与自然、人与社会、人与人之间的关系，倡导以和为贵、兼容并蓄的相处之道，为世界和平与发展注入不竭的动力。 */
 
 position: absolute;
 width: 620px;
 height: 324px;
 left: calc(50% - 620px/2);
-top: 207px;
-
-font-family: 'MyFont', opentype;
+top: 33px;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -170,9 +158,9 @@ position: absolute;
 width: 264px;
 height: 40px;
 left: calc(50% - 264px/2 - 165px);
-top: 1580px;
+top: 1406px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

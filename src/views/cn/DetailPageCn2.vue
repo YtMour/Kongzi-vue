@@ -8,6 +8,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter1_2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -33,10 +34,10 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第二章/编钟.png" alt="" class="logo1" />
-        <img src="@/assets/第二章/永远.png" alt="" class="logo2" />
-        <img src="@/assets/第二章/大圆.png" alt="" class="logo3" />
-        <img src="@/assets/第二章/小圆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter2/编钟.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/永远.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
           <div class="text">第二章</div>
           <div class="xian1"></div>
@@ -53,9 +54,9 @@ onMounted(() => {
         </div>
 
 
-        <img src="@/assets/第二章/礼乐.png" alt="" class="logo5" />
-        <img src="@/assets/第二章/圆装饰.png" alt="" class="logo6" />
-        <img src="@/assets/第二章/舞蹈.png" alt="" class="logo7" />
+        <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
+        <img src="@/assets/Chapter2/圆装饰.png" alt="" class="logo6" />
+        <img src="@/assets/Chapter2/舞蹈.png" alt="" class="logo7" />
 
       </div>
     </div>
@@ -75,17 +76,17 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
 .animation3 {
-  animation: fadeInOut 12s ease-in-out 1; /* 淡入时间为4秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为4秒 */
   animation-fill-mode: forwards;
 }
 
@@ -115,7 +116,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -147,7 +148,7 @@ position: absolute;
 width: 284px;
 height: 169px;
 left: 14px;
-top: 271px;
+top: 97px;
 
 
 }
@@ -158,7 +159,7 @@ position: absolute;
 width: 239px;
 height: 275px;
 left: 471px;
-top: 196px;
+top: 22px;
 }
 .logo3 {
 /* Ellipse 12 */
@@ -167,7 +168,7 @@ position: absolute;
 width: 619px;
 height: 619px;
 left: calc(50% - 619px/2 + 0.5px);
-top: 389px;
+top: 215px;
 
 
 }
@@ -178,7 +179,7 @@ position: absolute;
 width: 149px;
 height: 149px;
 left: calc(50% - 149px/2 + 274.5px);
-top: 500px;
+top: 326px;
 opacity: 0.7;
 
 
@@ -190,7 +191,7 @@ position: absolute;
 width: 338px;
 height: 304px;
 left: 40px;
-top: 1300px;
+top: 1126px;
 }
 .logo6{/* Frame */
 
@@ -198,7 +199,7 @@ position: absolute;
 width: 132px;
 height: 135px;
 
-top: 1228px;
+top: 1054px;
 
 }
 .logo7{
@@ -208,27 +209,19 @@ position: absolute;
 width: 279px;
 height: 291px;
 left: 471px;
-top: 1350px;
+top: 1126px;
 
 
 }
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
 
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text{
 position: absolute;
 width: 180px;
 height: 100px;
 left: calc(50% - 158px/2 + 1px);
-top: 477px;
+top: 303px;
 
-font-family: 'MyFont', opentype;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 50px;
@@ -239,15 +232,16 @@ letter-spacing: 4px;
 color: #00538F;
 
 }
-.xian1{/* Vector 1 */
-
-position: absolute;
-width: 200px;
-height: 0px;
-left: calc(50% - 200px/2 + 8px);
-top: 569.5px;
-border: 0.5px solid #00538F;
+.xian1 {
+  border: none; /* 不使用实际边框 */
+  box-shadow: 0 0 0 0.5px #00538F; /* 模拟细线 */
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    left: calc(50% - 200px/2 + 8px);
+    top: 395.5px;
 }
+
 
 .text2{/* 孔子生平 与 孔子思想 */
 
@@ -255,9 +249,9 @@ position: absolute;
 width: 350px;
 height: 300px;
 left: calc(50% - 332px/2 + 1px);
-top: 604px;
+top: 430px;
 
-font-family: 'MyFont', opentype;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 80px;
@@ -275,9 +269,9 @@ position: absolute;
 width: 332px;
 height: 300px;
 left: calc(50% - 332px/2 + 1px);
-top: 714px;
+top: 540px;
 
-font-family: 'MyFont', opentype;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 80px;
@@ -295,9 +289,9 @@ position: absolute;
 width: 350px;
 height: 300px;
 left: calc(50% - 332px/2 + 1px);
-top: 824px;
+top: 650px;
 
-font-family: 'MyFont', opentype;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 80px;
@@ -315,9 +309,9 @@ position: absolute;
 width: 600px;
 height: 80px;
 left: calc(50% - 600px/2);
-top: 1046px;
+top: 872px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 28px;
@@ -333,9 +327,9 @@ position: absolute;
 width: 441px;
 height: 40px;
 left: 234px;
-top: 1152px;
+top: 978px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;

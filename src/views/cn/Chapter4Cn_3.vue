@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter5_3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -38,18 +39,18 @@ onMounted(() => {
        
         <div class="content1">
           <div class="content2">
-            <img src="@/assets/第三章/第四页/图画1.png" alt="" class="logo1" />
+            <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
             <div class="text2">曲阜国际孔子文化节，正在表演的祭孔乐舞</div>
           </div>
 
           <div class="content3">
-            <img src="@/assets/第三章/第四页/图画2.png" alt="" class="logo2" />
+            <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
             <div class="text3">济宁 尼山，跨越千年的金声玉振再次被奏响</div>
             
           </div>
 
           <div class="content4">
-            <img src="@/assets/第三章/第四页/图画3.png" alt="" class="logo3" />
+            <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
           <div class="text4">泰安 中华泰山，封禅大典的现场</div>
           
           </div>
@@ -76,20 +77,20 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 10s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation4 {
-  animation: fadeInOut 12s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 9s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -129,7 +130,7 @@ position: absolute;
 width: 620px;
 height: 1313.59px;
 left: 65px;
-top: 284px;
+top: 120px;
 
 
 }
@@ -186,7 +187,7 @@ flex-grow: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -245,17 +246,6 @@ order: 0;
 align-self: stretch;
 flex-grow: 0;
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 
 /* 孔子故里的孔乐表演，吸引了众多海外游客。 */
@@ -264,9 +254,8 @@ position: absolute;
 width: 620px;
 height: 54px;
 left: calc(50% - 620px/2 + 3px);
-top: 207px;
-
-font-family: 'MyFont', opentype;
+top: 33px;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -284,8 +273,7 @@ color: #010101;
   position: absolute;
   width: 620px; /* 文字的宽度 */
   height: auto; /* 适应内容高度，去掉固定高度 */
-  
-  font-family: 'MyFont', truetype;
+  font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400; /* 字体权重 */
   font-size: 24px; /* 字体大小 */
@@ -303,8 +291,7 @@ width: 465px;
 height: 40px;
 left: calc(50% - 465px/2 - 72.5px);
 top: 807.24px;
-
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -321,8 +308,7 @@ width: 465px;
 height: 40px;
 left: calc(50% - 465px/2 - 72.5px);
 top: 1280.24px;
-
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

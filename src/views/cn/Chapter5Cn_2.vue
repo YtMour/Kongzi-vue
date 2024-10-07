@@ -7,12 +7,15 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter6_2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
     { className: 'text3', animationClass: 'animation2' },
+    { className: 'text4', animationClass: 'animation3' },
+
 
   ];
 
@@ -34,13 +37,13 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         
-        <img src="@/assets/第二章/第五页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
         <div class="text1">行</div>
         <div class="text2">宋《祖庭广记》孔子乘辂图</div>
 
         <div class="text3">孔子一生周游列国，传播自己的思想。他的出行不仅是为了求学问道，更是为了实践自己的政治理想。在行路中，他始终保持着君子的风度，尊重他人，谦逊有礼。</div>
-          <img src="@/assets/第二章/第五页/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/第二章/第五页/图画3.png" alt="" class="logo3" />
+          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
         <div class="text4">圣迹遍布的山东泰山</div>
 
 
@@ -65,12 +68,16 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
+.animation3 {
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -102,7 +109,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -131,30 +138,20 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 5-1 */
-
-/* 组 7887 1 */
-
-/* 组 7887 1 */
-
 position: absolute;
 width: 600px;
 height: 393.68px;
 left: calc(50% - 600px/2);
-top: 201px;
-mix-blend-mode: darken;
+top: 36px;
+background-color: transparent;
 }
-.logo2 {
-/* 5-2 */
-
-/* 组 7881 1 */
+.logo2 {/* 组 7881 1 */
 
 position: absolute;
 width: 632px;
 height: 322px;
-left: 120px;
-top: 891px;
-
+left: 65px;
+top: 717px;
 
 }
 .logo3{
@@ -164,22 +161,11 @@ position: absolute;
 width: 632px;
 height: 332px;
 left: 65px;
-top: 1220px;
+top: 1046px;
 
 
 
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 行 */
 
@@ -187,9 +173,8 @@ position: absolute;
 width: 160px;
 height: 160px;
 left: 113px;
-top: 201px;
-
-font-family: 'MyFont', opentype;
+top: 27px;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 160px;
@@ -211,9 +196,8 @@ position: absolute;
 width: 289px;
 height: 40px;
 left: calc(50% - 289px/2 + 155.5px);
-top: 607px;
-
-font-family: 'MyFont', truetype;
+top: 433px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -233,9 +217,8 @@ position: absolute;
 width: 620px;
 height: 216px;
 left: calc(50% - 620px/2);
-top: 663px;
-
-font-family: 'MyFont', opentype;
+top: 489px;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -250,16 +233,15 @@ color: #010101;
 
 
 }
-.text4{
-  /* 圣迹遍布的山东泰山 */
+.text4{/* 圣迹遍布的山东泰山 */
 
 position: absolute;
 width: 216px;
 height: 40px;
 left: calc(50% - 216px/2 + 202px);
-bottom: 23px;
+top: 1387px;
 
-font-family: 'MyFont', truetype;
+font-family: 'LXGW WenKai';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -267,7 +249,6 @@ line-height: 40px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-
 
 }
 

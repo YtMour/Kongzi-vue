@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter4');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -32,9 +33,9 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第一章/第三页/文章.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
         <div class="text1">《孔子行教像》相传<br />为唐代石刻，现保存<br />在曲阜孔庙圣迹殿内</div>
-       <img src="@/assets/第一章/第三页/图画.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
         <div class="text2">宋代 《曾子问孝于孔子》</div>
 
 
@@ -59,12 +60,12 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -96,7 +97,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -131,10 +132,7 @@ position: absolute;
 width: 606px;
 height: 822px;
 left: 69px;
-top: 176px;
-
-background: url(3-1.png);
-
+top: 2px;
 
 }
 .logo2 {
@@ -144,22 +142,9 @@ position: absolute;
 width: 100%;
 height: 544.68px;
 left: 0px;
-top: 1023px;
-
-background: url(3-2.png);
+top: 849px;
 
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
 
@@ -167,9 +152,9 @@ position: absolute;
 width: 224px;
 height: 120px;
 left: 96px;
-top: 233px;
+top: 59px;
 
-font-family:"MyFont" truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -187,9 +172,9 @@ position: absolute;
 width: 273px;
 height: 40px;
 left: 82px;
-top: 1577px;
+top: 1403px;
 
-font-family:"MyFont" truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

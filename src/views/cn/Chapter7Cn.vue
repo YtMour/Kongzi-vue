@@ -24,6 +24,7 @@ onMounted(() => {
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/detail2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 </script>
 
@@ -32,9 +33,9 @@ const goToNextPage = () => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第一章/第七页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page7/图画1.png" alt="" class="logo1" />
         <div class="text1">尼山圣境 大学之道</div>
-       <img src="@/assets/第一章/第七页/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
 
 
       </div>
@@ -58,12 +59,12 @@ const goToNextPage = () => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 html,
@@ -94,7 +95,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -129,28 +130,17 @@ position: absolute;
 width: 100%;
 height: 807.15px;
 left: 0px;
-top: 176px;
+top: 2px;
 }
-.logo2 {
-/* 7-2 */
+.logo2 {/* 7-2 */
 
 position: absolute;
-width: 100%;
+width: 750px;
 height: 672.04px;
 left: 0px;
-bottom: 17.96px;
+top: 760px;
 }
 
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 尼山圣境 大学之道 */
 
@@ -158,9 +148,9 @@ position: absolute;
 width: 201px;
 height: 40px;
 left: calc(50% - 201px/2 + 204.5px);
-top: 1004px;
+top: 830px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

@@ -6,6 +6,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/foreword');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 </script>
 
@@ -29,8 +30,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vw;
   overflow-x: hidden; /* 防止水平滚动条 */
 }
 
@@ -49,8 +50,8 @@ body {
   position: fixed; /* 背景图固定在视口 */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url('@/assets/首页/kongzi.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
@@ -59,9 +60,9 @@ body {
 }
 
 .content {
-  max-width: 100%; /* 最大宽度设置为100% */
-  width: 100%; /* 使用相对宽度 */
-  max-height: 100%; /* 限制内容最大高度 */
+  max-width: 100vw; /* 最大宽度设置为100% */
+  width: 100vw; /* 使用相对宽度 */
+  max-height: 100vh; /* 限制内容最大高度 */
 
   display: flex;
   flex-direction: column;
@@ -81,30 +82,33 @@ body {
   width: 230px;
   height: 143px;
   left: 486px;
-  top: 102px;
+  top: 16px;
 }
 .logo2 {
   width: 183px;
   height: 496px;
   left: 533px;
-  top: 271px;
+  top: 183px;
 }
 .logo3 {
   width: 159px;
   height: 236px;
   left: 48px;
-  top: 980px;
+  top: 892px;
 }
 .logo4 {
-  width: 503px;
-  height: 75px;
-  left: 50px;
-  top: 1245px;
+/* 资源 4@3x */
+
+position: absolute;
+width: 503px;
+height: 75px;
+left: 50px;
+top: 1177px;
 }
 .logo5 {
   width: 655px;
   height: 68px;
   left: calc(50% - 655px/2 + 0.5px);
-  top: 1406px;
+  top: 1308px;
 }
 </style>

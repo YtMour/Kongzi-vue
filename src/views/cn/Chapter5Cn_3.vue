@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter6_3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -35,11 +36,12 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。</div>
-        <img src="@/assets/第三章/第五页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
         <div class="text2">在孔庙前参加成人礼仪式的年轻人们</div>
-       <img src="@/assets/第三章/第五页/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+
         <div class="text3">留在山东周村感受年俗的海外摄影家</div>
-        <img src="@/assets/第三章/第五页/图画3.png" alt="" class="logo3" />
         <div class="text4">曲阜孔庙
           万仞宫墙</div>
 
@@ -65,20 +67,20 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 9s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation4 {
-  animation: fadeInOut 12s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 9s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -110,7 +112,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -147,7 +149,7 @@ position: absolute;
 width: 580px;
 height: 365px;
 
-top: 417px;
+top: 243px;
 
 
 
@@ -159,33 +161,19 @@ position: absolute;
 width: 580px;
 height: 367.67px;
 z-index: 1;
-top: 865px;
+top: 691px;
 
 
 
 }
-.logo3{
-  /* 图层 11 350 */
+.logo3{/* 图层 11 350 */
 
 position: absolute;
-width: 100%;
+width: 750px;
 height: 498.12px;
 right: 0px;
-bottom: -0.12px;
-
-
-
+top: 952px;
 }
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。 */
 
@@ -193,9 +181,9 @@ position: absolute;
 width: 580px;
 height: 216px;
 left: calc(50% - 580px/2);
-top: 187px;
+top: 13px;
+font-family: 'SourceHanSansCN', sans-serif;
 
-font-family: 'MyFont', opentype;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -217,9 +205,8 @@ position: absolute;
 width: 384px;
 height: 40px;
 left: 85px;
-top: 791px;
-
-font-family: 'MyFont', truetype;
+top: 617px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -239,9 +226,9 @@ position: absolute;
 width: 384px;
 height: 40px;
 left: 85px;
-top: 1244px;
+top: 1070px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -260,9 +247,8 @@ position: absolute;
 width: 96px;
 height: 80px;
 left: 583px;
-top: 1364px;
-
-font-family: 'MyFont', truetype;
+top: 1190px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

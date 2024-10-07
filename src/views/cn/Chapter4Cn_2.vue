@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter5_2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -33,9 +34,9 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第二章/第四页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
         <div class="text1">住</div>
-        <img src="@/assets/第二章/第四页/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
         <div class="text2">孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。</div>
 
         <div class="text3">大成殿的藻井</div>
@@ -62,16 +63,16 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 10s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -103,7 +104,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -140,7 +141,7 @@ position: absolute;
 width: 644px;
 height: 441px;
 left: 68px;
-top: 215px;
+top: 41px;
 
 
 }
@@ -153,21 +154,10 @@ position: absolute;
 width: 100%;
 height: 546.1px;
 
-top: 1000px;
+top: 826px;
 
 
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 
 
@@ -175,9 +165,8 @@ position: absolute;
 width: 160px;
 height: 160px;
 left: 365px;
-top: 215px;
-
-font-family: "MyFont" truetype;
+top: 41px;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 160px;
@@ -198,9 +187,8 @@ position: absolute;
 width: 620px;
 height: 216px;
 left: calc(50% - 620px/2);
-top: 722px;
-
-font-family:"MyFont" opentype;
+top: 548px;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -221,9 +209,8 @@ position: absolute;
 width: 144px;
 height: 40px;
 left: calc(50% - 144px/2 - 239px);
-top: 1561px;
-
-font-family:"MyFont" truetype;
+top: 1387px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

@@ -8,6 +8,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter3_3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 
 onMounted(() => {
@@ -35,12 +36,12 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第三章/第二页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page2/图画1.png" alt="" class="logo1" />
         <div class="text1">孔子造像在海外</div>
-       <img src="@/assets/第三章/第二页/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
         <div class="text2">世界儒学大会</div>
         <div class="text3">意大利版《论语》</div>
-       <img src="@/assets/第三章/第二页/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
 
 
 
@@ -65,16 +66,16 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 10s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -110,7 +111,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -144,7 +145,7 @@ position: absolute;
 width: 680px;
 height: 751.89px;
 
-top: 196px;
+top: 22px;
 
 }
 .logo2 {/* 组 24 1 */
@@ -153,7 +154,7 @@ position: absolute;
 width: 100%;
 height: 450.14px;
 
-top: 1030px;
+top: 856px;
 }
 .logo3{/* 图层 29 79 */
 
@@ -161,29 +162,17 @@ position: absolute;
 width: 202px;
 height: 296px;
 left: 483px;
-bottom: 0px;
-
+top: 1154px;
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{/* 孔子造像在海外 */
 
 position: absolute;
 width: 175px;
 height: 40px;
 left: calc(50% - 175px/2 - 213.5px);
-top: 954px;
+top: 780px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -199,9 +188,8 @@ position: absolute;
 width: 144px;
 height: 40px;
 left: calc(50% - 144px/2 - 229px);
-top: 1486px;
-
-font-family: 'MyFont', truetype;
+top: 1312px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -217,9 +205,8 @@ position: absolute;
 width: 192px;
 height: 40px;
 left: calc(50% - 192px/2 - 6px);
-top: 1544px;
-
-font-family: 'MyFont', truetype;
+top: 1370px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter5');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -34,9 +35,9 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。</div>
-        <img src="@/assets/第一章/第四页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
         <div class="text2">山东东平汉墓壁画  孔子见老子</div>
-       <img src="@/assets/第一章/第四页/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
         <div class="text3">《圣庙祀典图考·孔子学琴于师襄》  台北故宫博物馆藏</div>
 
 
@@ -61,12 +62,12 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -98,7 +99,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -133,7 +134,7 @@ position: absolute;
 width: 683px;
 height: 348px;
 left: 0px;
-top: 386px;
+top: 212px;
 }
 .logo2 {
 /* 4-2 */
@@ -142,19 +143,8 @@ position: absolute;
 width: 504px;
 height: 761px;
 left: calc(50% - 504px/2);
-top: 814px;
+top: 640px;
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
 
@@ -162,9 +152,9 @@ position: absolute;
 width: 600px;
 height: 162px;
 left: calc(50% - 600px/2);
-top: 196px;
+top: 22px;
 
-font-family: 'MyFont', opentype;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -183,9 +173,9 @@ position: absolute;
 width: 329px;
 height: 40px;
 left: 82px;
-top: 754px;
+top: 580px;
 
-font-family:'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -197,12 +187,11 @@ color: #4B180A
 .text3{
   /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
 position: absolute;
-width: 567px;
+width: 570px;
 height: 40px;
 left: calc(50% - 567px/2 + 0.5px);
-top: 1572px;
-
-font-family: 'MyFont', truetype;
+top: 1398px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

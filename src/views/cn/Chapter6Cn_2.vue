@@ -24,6 +24,7 @@ onMounted(() => {
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter7_2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 </script>
 
@@ -32,12 +33,12 @@ const goToNextPage = () => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第二章/第六页/图画1.png" alt="" class="logo1" />
-        <img src="@/assets/第二章/第六页/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page6/图画2.png" alt="" class="logo2" />
         <div class="text1">乐</div>
         
         <div class="text2">孔子酷爱音乐，认为音乐能够陶冶性情，净化心灵。他提倡“雅乐”，认为音乐应该具有教育意义和社会价值。</div>
-       <img src="@/assets/第二章/第六页/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
 
 
 
@@ -62,16 +63,16 @@ const goToNextPage = () => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 12s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -104,7 +105,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -133,19 +134,11 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* hellorf_hi2242279625 1 */
-
-/* 620x0_1_q87_20150809163916351 1 */
-
 position: absolute;
 width: 364px;
 height: 183px;
 left: 40px;
-top: 198px;
-
-
-
-
+top: 24px;
 }
 .logo2 {
 /* 6-2 */
@@ -155,7 +148,7 @@ position: absolute;
 width: 583px;
 height: 541px;
 left: 167px;
-top: 336px;
+top: 162px;
 
 
 }
@@ -167,20 +160,11 @@ position: absolute;
 width: 100%;
 height: 532px;
 
-top:1158px
+top:984px
 
 
 }
 
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。 */
 
@@ -190,9 +174,9 @@ position: absolute;
 width: 160px;
 height: 160px;
 left: 68px;
-top: 600px;
+top: 426px;
 
-font-family: 'MyFont', opentype;
+font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 160px;
@@ -216,9 +200,8 @@ position: absolute;
 width: 620px;
 height: 162px;
 left: calc(50% - 620px/2);
-top: 899px;
-
-font-family: 'MyFont', opentype;
+top: 725px;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;

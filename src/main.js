@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-import App from './App.vue'
+import app from './app.vue'
 import router from './router'
 
-const app = createApp(App)
+const vueApp = createApp(app)  // 将常量重命名为 vueApp
 
-app.use(createPinia())
-app.use(router)
+vueApp.use(createPinia())
+vueApp.use(router)
 
-app.mount('#app')
+vueApp.mount('#app')

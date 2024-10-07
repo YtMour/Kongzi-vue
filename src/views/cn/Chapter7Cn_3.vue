@@ -23,7 +23,8 @@ onMounted(() => {
 });
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
-  router.push('/cn');  // 跳转到前言页面
+  router.push('/cn/home');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 </script>
 
@@ -34,7 +35,7 @@ const goToNextPage = () => {
       <div class="content">
         <div class="text1">让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。</div>
         <div class="logo1">
-          <img src="@/assets/第三章/第七页/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
           <div class="text2">孔庙里的古柏树</div>
         </div>
 
@@ -60,12 +61,12 @@ const goToNextPage = () => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 html,
@@ -96,7 +97,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -124,32 +125,16 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {
-/* 组 25 1 */
-
-/* 组 25 1 */
+.logo1 {/* 组 25 1 */
 
 position: absolute;
-width: 100%;
+width: 750px;
 height: 1325.38px;
-
-bottom: -0.38px;
-
-
-
+left: calc(50% - 750px/2);
+top: 125px;
 
 }
 
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。 */
 
@@ -157,9 +142,9 @@ position: absolute;
 width: 620px;
 height: 216px;
 left: calc(50% - 620px/2);
-top: 208px;
+top: 34px;
+font-family: 'SourceHanSansCN', sans-serif;
 
-font-family: 'MyFont', opentype;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -181,9 +166,8 @@ position: absolute;
 width: 168px;
 height: 40px;
 left: 85px;
-top: 400px;
-
-font-family: 'MyFont', truetype;
+top: 226px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

@@ -8,6 +8,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter3_2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 
 onMounted(() => {
@@ -37,11 +38,11 @@ onMounted(() => {
       <div class="content">
 
         <div class="text1">孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。</div>
-       <img src="@/assets/第二章/第二页/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
         <div class="text2">孔子后代收藏的中国明代
           传统服饰</div>
           <div class="text3">《孔子為魯司寇像》
- 明·佚名 绘
+  明·佚名 绘
 </div>
 
 
@@ -66,23 +67,18 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 10s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
-
-
-
-
 html,
 body {
   margin: 0;
@@ -111,7 +107,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -145,29 +141,17 @@ position: absolute;
 width: 100%;
 height: 1243.71px;
 
-top: 457px;
+top: 283px;
 
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{/* 孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。 */
 
 position: absolute;
 width: 600px;
 height: 216px;
 left: calc(50% - 600px/2);
-top: 206px;
-
-font-family: 'MyFont', opentype;
+top: 32px;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -185,9 +169,9 @@ position: absolute;
 width: 272px;
 height: 80px;
 left: calc(50% - 272px/2 + 220px);
-top: 877px;
+top: 703px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -200,12 +184,11 @@ color: #4B180A;
   /* 《孔子為魯司寇像》 明·佚名 绘 */
 
 position: absolute;
-width: 272px;
+width: 220px;
 height: 80px;
 left: calc(50% - 272px/2 + 220px);
-top: 1404px;
-
-font-family: 'MyFont', truetype;
+top: 1230px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

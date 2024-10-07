@@ -24,6 +24,7 @@ onMounted(() => {
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter7_3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 </script>
 
@@ -33,10 +34,10 @@ const goToNextPage = () => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="logo1">
-        <img src="@/assets/第三章/第六页/图画1.png" alt="" class="img1" />
+        <img src="@/assets/Chapter3/page6/图画1.png" alt="" class="img1" />
       </div>
       <div class="logo2">
-       <img src="@/assets/第三章/第六页/图画2.png" alt="" class="img2" />
+       <img src="@/assets/Chapter3/page6/图画2.png" alt="" class="img2" />
       </div>
       </div>
     </div>
@@ -59,16 +60,16 @@ const goToNextPage = () => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 .animation3 {
-  animation: fadeInOut 12s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -101,7 +102,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -138,7 +139,7 @@ position: absolute;
 width: 750px;
 height: 1075.96px;
 left: calc(50% - 750px/2);
-top: 176px;
+top: 2px;
 
 z-index: 1;
 
@@ -150,21 +151,9 @@ position: absolute;
 width: 750px;
 height: 523.87px;
 left: calc(50% - 750px/2);
-top: 1162px;
+top: 988px;
 
 
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
-
 
 </style>

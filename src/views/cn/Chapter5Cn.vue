@@ -7,6 +7,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter6');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 onMounted(() => {
   const texts = [
@@ -34,10 +35,10 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。</div>
-        <img src="@/assets/第一章/第五页/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
         <div class="text2">大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于
           唐代（618 - 907），清代雍正时（1722 - 1735）重建</div>
-       <img src="@/assets/第一章/第五页/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
         <div class="text3">大成殿龙柱</div>
 
 
@@ -62,12 +63,12 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -98,7 +99,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -132,7 +133,7 @@ body {
 position: absolute;
 width: 100%;
 height: 518.58px;
-top: 506px;
+top: 332px;
 }
 .logo2 {
 /* 5-2 */
@@ -141,19 +142,8 @@ position: absolute;
 width: 348px;
 height: 477px;
 left: 326px;
-top: 1125px;
+top: 951px;
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
 
@@ -161,9 +151,9 @@ position: absolute;
 width: 640px;
 height: 270px;
 left: calc(50% - 640px/2);
-top: 196px;
+top: 22px;
 
-font-family: 'MyFont', opentype;
+font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -183,9 +173,9 @@ position: absolute;
 width: 588px;
 height: 80px;
 left: calc(50% - 588px/2);
-top: 1035px;
+top: 861px;
 
-font-family:'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -203,9 +193,8 @@ position: absolute;
 width: 120px;
 height: 40px;
 left: calc(50% - 120px/2 - 155px);
-top: 1562px;
-
-font-family:'MyFont', truetype;
+top: 1388px;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;

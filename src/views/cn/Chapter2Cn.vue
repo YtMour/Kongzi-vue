@@ -8,6 +8,7 @@ const router = useRouter();  // 创建路由实例
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('/cn/chapter3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
 };
 
 onMounted(() => {
@@ -34,9 +35,9 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/第一章/第二页/夫子洞.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
         <div class="text1">位于尼山脚下的夫子洞，相传是孔子的出生地</div>
-       <img src="@/assets/第一章/第二页/夫子像.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
         <div class="text2">72米高的尼山孔子像</div>
 
 
@@ -61,19 +62,14 @@ onMounted(() => {
   }
 }
 .animation1 {
-  animation: fadeInOut 4s ease-in-out 1;
+  animation: fadeInOut 3s ease-in-out 1;
   animation-fill-mode: forwards; /* 保持动画结束后的状态 */
 }
 
 .animation2 {
-  animation: fadeInOut 8s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
-
-
-
-
 html,
 body {
   margin: 0;
@@ -102,7 +98,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/第一章/文章背景.png'); /* 背景图片路径 */
+  background-image: url('@/assets/Chapter1/ArticleBG.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */
@@ -137,26 +133,15 @@ position: absolute;
 width: 584px;
 height: 473px;
 left: calc(50% - 584px/2);
-top: 196px;
+top: 22px;
 
 }
 .logo2 {
 position: absolute;
 width: 100%;
 height: 858.65px;
-top: 750px;
+top: 576px;
 }
-
-
-@font-face {
-    font-family: 'MyFont'; /* 自定义字体名称 */
-    src: url('@/assets/字体/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('opentype'),
-     url('@/assets/字体/方正楷体-简体.ttf') format('truetypekai'),
-     url('@/assets/字体/霞鹜文楷.ttf') format('truetype');
-
-    font-weight: normal; /* 字体权重 */
-    font-style: normal; /* 字体样式 */
-  }
 .text1{
 /* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
 
@@ -164,9 +149,9 @@ position: absolute;
 width: 480px;
 height: 40px;
 left: 92px;
-top: 681px;
+top: 507px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -184,9 +169,9 @@ position: absolute;
 width: 221px;
 height: 40px;
 left: 82px;
-top: 1612px;
+top: 1438px;
 
-font-family: 'MyFont', truetype;
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
