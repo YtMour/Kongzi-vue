@@ -1,31 +1,37 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover,width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"
+    />
     <title>永远的孔子</title>
+    <!-- <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" /> -->
+
     <style>
-        /* 可以在这里添加全局样式 */
+      /* 可以在这里添加全局样式 */
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
     <script>
-        const updateFontSize = () => {
-            let width = Math.min(document.body.clientWidth, 750);
-            let fontsize = (width / 750) * 100;
-            document.documentElement.style.fontSize = fontsize + 'px';
-        };
+      const updateFontSize = () => {
+        let width = Math.min(document.body.clientWidth, 750)
+        let fontsize = (width / 750) * 100
+        document.documentElement.style.fontSize = fontsize + 'px'
+      }
 
-        // 在 DOMContentLoaded 事件中调用函数以确保页面加载完成
-        document.addEventListener('DOMContentLoaded', () => {
-            updateFontSize();
-        });
+      // 在 DOMContentLoaded 事件中调用函数以确保页面加载完成
+      document.addEventListener('DOMContentLoaded', () => {
+        updateFontSize()
+      })
 
-        // 监听窗口 resize 事件
-        window.onresize = updateFontSize;
+      // 监听窗口 resize 事件
+      window.onresize = updateFontSize
     </script>
-</body>
+  </body>
 </html>

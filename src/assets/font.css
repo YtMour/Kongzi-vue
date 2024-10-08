@@ -24,25 +24,32 @@
 'Xiahuwenkai', sans-serif;
 */
 
-   /*
+/*
    font-family: 'MyFont', opentype;
    */
-   /* 重置所有元素的默认样式 */
+/* 重置所有元素的默认样式 */
+
 * {
-  margin: 0;          /* 取消默认外边距 */
-  padding: 0;         /* 取消默认内边距 */
+  margin: 0; /* 取消默认外边距 */
+  padding: 0; /* 取消默认内边距 */
   box-sizing: border-box; /* 设置盒模型为 border-box */
 }
 
 /* 取消文本元素的默认样式 */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit; /* 继承父元素的字体大小 */
   font-weight: normal; /* 取消默认粗体样式 */
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none; /* 取消列表项目的默认样式 */
-  padding: 0;      /* 取消默认内边距 */
+  padding: 0; /* 取消默认内边距 */
 }
 
 a {
