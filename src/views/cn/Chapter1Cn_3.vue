@@ -149,18 +149,21 @@ top: 39.44px;
 .logo2 {/* 组 23 1 */
 
 position: absolute;
-width: 100%;
-height: 644.17px;
+width: 620px;
+height: 532.51px;
+left: calc(50% - 620px/2);
 top: 104px;
 
 }
 .logo3 {/* 组 22 1 */
 
 position: absolute;
-width: 100%;
-height: 566.56px;
+width: 620px;
+height: 468.35px;
+left: calc(50% - 620px/2);
+top: 843px;
 
-top: 883px;
+
 
 }
 .text1{/* 国际友人在为小朋友行开笔礼 */
@@ -168,8 +171,8 @@ top: 883px;
 position: absolute;
 width: 312px;
 height: 40px;
-left: calc(50% - 312px/2 - 159px);
-top: 693px;
+left: calc(50% - 312px/2);
+top: 653px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -189,8 +192,8 @@ color: #4B180A;
 position: absolute;
 width: 360px;
 height: 40px;
-left: calc(50% - 360px/2 + 135px);
-top: 823px;
+left: calc(50% - 360px/2);
+top: 783px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -200,6 +203,5 @@ line-height: 40px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-
 }
 </style>

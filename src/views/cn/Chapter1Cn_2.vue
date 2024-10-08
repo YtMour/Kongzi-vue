@@ -150,6 +150,8 @@ height: 162.13px;
 left: calc(50% - 364.8px/2 - 0.24px);
 top: 19.44px;
 
+
+
 }
 .logo2 {
 /* Group 45 */
@@ -170,13 +172,18 @@ height: 656px;
 left: 19px;
 top: 67px;
 
+
+
 }
 .logo4 {/* 组 7885 1 */
 position: absolute;
-width: 460px;
-height: 497px;
-left: 290px;
+width: 347px;
+height: 375px;
+left: 403px;
 top: 926px;
+
+
+
 }
 .text1{/* 孔子不仅是一位深邃的思想家，他的生活哲学也体现在日常生活的方方面面。在“衣食住行乐”中，孔子均依礼而行，展现了儒家的高尚风范。 */
 

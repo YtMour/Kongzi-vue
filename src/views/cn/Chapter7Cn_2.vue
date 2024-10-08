@@ -123,25 +123,24 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 7-1 */
-
-/* 组 7888 1 */
-
 /* 组 7888 1 */
 
 position: absolute;
-width: 750px;
-height: 869.94px;
-left: calc(50% - 750px/2);
+width: 620px;
+height: 719.15px;
+left: calc(50% - 620px/2);
 top: 2px;
+
 }
 .logo2{/* 组 7884 1 */
+/* 组 7884 1 */
 
 position: absolute;
-width: 750px;
-height: 541.16px;
-left: calc(50% - 750px/2);
-top: 909px;
+width: 620px;
+height: 447.36px;
+left: calc(50% - 620px/2);
+top: 828px;
+
 }
 .text1{
 
@@ -149,7 +148,7 @@ position: absolute;
 width: 300px;
 height: 40px;
 left: calc(50% - 257px/2 + 201.5px);
-top: 889px;
+top: 760px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;

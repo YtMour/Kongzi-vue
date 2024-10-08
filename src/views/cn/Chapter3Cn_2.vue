@@ -42,7 +42,7 @@ onMounted(() => {
        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
         <div class="text3">战国 牺尊 收藏于齐文化博物院</div>
        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-       <div class="text4">商周十供,收藏于孔子博物馆</div>
+       <div class="text4">商周十供<br>收藏于孔子博物馆</div>
 
 
 
@@ -144,30 +144,30 @@ body {
 .logo1 {/* 组 9 1 */
 
 position: absolute;
-width: 486px;
-height: 328px;
-left: calc(50% - 486px/2 - 67px);
+width: 428px;
+height: 289px;
+left: calc(50% - 428px/2 - 87px);
 top: 27px;
 
 background-blend-mode: darken;
+
 }
 .logo2 {
 /* 牺尊  战国 齐文化博物院藏 国家一级文物 1 */
 
 position: absolute;
-width: 606px;
-height: 410px;
-left: calc(50% - 606px/2 - 8px);
-top: 525px;
-
+width: 600px;
+height: 406px;
+left: calc(50% - 600px/2);
+top: 468px;
 }
 .logo3 {/* 图层 15 1 */
 
 position: absolute;
-width: 582px;
-height: 365px;
-left: calc(50% - 582px/2 - 20px);
-top: 1015px;
+width: 328px;
+height: 362px;
+left: 334px;
+top: 944px;
 }
 .text1{/* 食 */
 
@@ -198,7 +198,7 @@ position: absolute;
 width: 600px;
 height: 162px;
 left: calc(50% - 600px/2);
-top: 339px;
+top: 299px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -210,6 +210,8 @@ letter-spacing: -0.6px;
 
 color: #010101;
 
+
+
 }
 .text3{/* 战国 牺尊 收藏于齐文化博物院 */
 
@@ -217,7 +219,7 @@ position: absolute;
 width: 329px;
 height: 40px;
 left: calc(50% - 329px/2 - 146.5px);
-top: 943px;
+top: 880px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -226,23 +228,31 @@ line-height: 40px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
+
+
+
+
 
 }
 .text4{/* 商周十供,收藏于孔子博物馆 */
+/* 商周十供 收藏于孔子博物馆 */
 
 position: absolute;
-width: 297px;
-height: 40px;
-left: calc(50% - 297px/2 - 162.5px);
-top: 1386px;
-font-family: 'Xiahuwenkai', sans-serif;
+width: 192px;
+height: 80px;
+left: calc(50% - 192px/2 - 205px);
+top: 1158px;
+
+font-family: 'LXGW WenKai';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 40px;
-/* identical to box height, or 167% */
+/* or 167% */
 
 color: #4B180A;
+
+
 
 }
 </style>

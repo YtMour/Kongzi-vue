@@ -139,6 +139,8 @@ width: 364px;
 height: 183px;
 left: 40px;
 top: 24px;
+
+
 }
 .logo2 {
 /* 6-2 */
@@ -157,10 +159,10 @@ top: 162px;
 /* 图层 12 1 */
 
 position: absolute;
-width: 100%;
-height: 532px;
-
-top:984px
+width: 620px;
+height: 386.21px;
+left: calc(50% - 620px/2);
+top: 883.79px;
 
 
 }

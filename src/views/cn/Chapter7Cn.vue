@@ -127,18 +127,19 @@ body {
 /* 7-1 */
 
 position: absolute;
-width: 100%;
-height: 807.15px;
-left: 0px;
+width: 620px;
+height: 667.24px;
+left: calc(50% - 620px/2);
 top: 2px;
 }
 .logo2 {/* 7-2 */
 
 position: absolute;
-width: 750px;
-height: 672.04px;
-left: 0px;
-top: 760px;
+width: 620px;
+height: 555.55px;
+left: calc(50% - 620px/2);
+top: 723px;
+
 }
 
 .text1{
@@ -148,7 +149,7 @@ position: absolute;
 width: 201px;
 height: 40px;
 left: calc(50% - 201px/2 + 204.5px);
-top: 830px;
+top: 767px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -158,6 +159,8 @@ line-height: 40px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
+
+
 
 
 }

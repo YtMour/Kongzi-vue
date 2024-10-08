@@ -140,29 +140,35 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {/* 组 21 1 */
+/* 组 21 1 */
 
 position: absolute;
-width: 680px;
-height: 751.89px;
+width: 620px;
+height: 685.54px;
+left: calc(50% - 620px/2 - 12px);
+top: 10px;
 
-top: 22px;
 
 }
 .logo2 {/* 组 24 1 */
+/* 组 24 1 */
 
 position: absolute;
-width: 100%;
-height: 450.14px;
+width: 620px;
+height: 372.12px;
+left: calc(50% - 620px/2);
+top: 806px;
 
-top: 856px;
 }
 .logo3{/* 图层 29 79 */
 
 position: absolute;
-width: 202px;
-height: 296px;
-left: 483px;
-top: 1154px;
+width: 208px;
+height: 306px;
+left: 477px;
+top: 1000px;
+
+
 }
 .text1{/* 孔子造像在海外 */
 
@@ -170,7 +176,7 @@ position: absolute;
 width: 175px;
 height: 40px;
 left: calc(50% - 175px/2 - 213.5px);
-top: 780px;
+top: 731px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -180,6 +186,9 @@ line-height: 40px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
+
+
+
 
 }
 .text2{/* 世界儒学大会 */
@@ -188,7 +197,7 @@ position: absolute;
 width: 144px;
 height: 40px;
 left: calc(50% - 144px/2 - 229px);
-top: 1312px;
+top: 1178px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -198,6 +207,10 @@ line-height: 40px;
 
 color: #4B180A;
 
+
+
+
+
 }
 .text3{/* 意大利版《论语》 */
 
@@ -205,7 +218,7 @@ position: absolute;
 width: 192px;
 height: 40px;
 left: calc(50% - 192px/2 - 6px);
-top: 1370px;
+top: 1241px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -215,6 +228,8 @@ line-height: 40px;
 text-align: right;
 
 color: #4B180A;
+
+
 
 }
 

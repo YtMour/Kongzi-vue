@@ -135,12 +135,14 @@ height: 473px;
 left: calc(50% - 584px/2);
 top: 22px;
 
+
 }
 .logo2 {
 position: absolute;
-width: 100%;
-height: 858.65px;
-top: 576px;
+width: 620px;
+height: 709.82px;
+left: calc(50% - 620px/2);
+top: 535px;
 }
 .text1{
 /* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
@@ -149,7 +151,7 @@ position: absolute;
 width: 480px;
 height: 40px;
 left: 92px;
-top: 507px;
+top: 500px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -169,7 +171,7 @@ position: absolute;
 width: 221px;
 height: 40px;
 left: 82px;
-top: 1438px;
+top: 1257px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -185,6 +187,10 @@ flex-direction: column;
 align-items: flex-end;
 padding: 0px;
 gap: 30px;
+
+
+
+
 }
 
 </style>

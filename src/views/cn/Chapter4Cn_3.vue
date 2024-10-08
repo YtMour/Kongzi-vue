@@ -128,9 +128,9 @@ gap: 30px;
 
 position: absolute;
 width: 620px;
-height: 1313.59px;
+height: 1113.59px;
 left: 65px;
-top: 120px;
+top: 75px;
 
 
 }
@@ -216,8 +216,8 @@ flex-grow: 0;
 /* 定义每个logo的绝对位置 */
 .logo1 {/* 3曲阜国际孔子文化节祭孔乐舞 1 */
 
-width: 620px;
-height: 394.12px;
+  width: 600;
+  height: 381.12px;
 
 flex: none;
 order: 0;
@@ -228,22 +228,23 @@ flex-grow: 0;
 .logo2 {/* 济宁-尼山金声玉振演出 1 */
 
 position: absolute;
-width: 620px;
-height: 335.13px;
+width: 600px;
+height: 324.13px;
 left: 0px;
-top: 468.12px;
+top: 428.12px;
 
 }
 .logo3{/* 泰安-中华泰山封禅大典 1 */
 
-width: 620px;
-height: 392.35px;
+width: 600px;
+height: 379.35px;
 
 
 /* Inside auto layout */
 flex: none;
 order: 0;
-align-self: stretch;
+/* align-self: stretch; */
+top: 800.12px;
 flex-grow: 0;
 }
 .text1{
@@ -254,7 +255,7 @@ position: absolute;
 width: 620px;
 height: 54px;
 left: calc(50% - 620px/2 + 3px);
-top: 33px;
+top: 13px;
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -279,7 +280,7 @@ color: #010101;
   font-size: 24px; /* 字体大小 */
   line-height: 40px; /* 行高 */
   color: #4B180A; /* 字体颜色 */
-  top: 400px;
+  top: 380px;
 
   
 }
@@ -290,7 +291,7 @@ position: absolute;
 width: 465px;
 height: 40px;
 left: calc(50% - 465px/2 - 72.5px);
-top: 807.24px;
+top: 750.24px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -307,7 +308,7 @@ color: #4B180A;
 width: 465px;
 height: 40px;
 left: calc(50% - 465px/2 - 72.5px);
-top: 1280.24px;
+top: 1180.24px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;

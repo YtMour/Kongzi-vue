@@ -138,30 +138,34 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
+/* 组 7887 1 */
+
 position: absolute;
-width: 600px;
-height: 393.68px;
-left: calc(50% - 600px/2);
-top: 36px;
-background-color: transparent;
+width: 532px;
+height: 349px;
+left: calc(50% - 532px/2);
+top: 7px;
+
+mix-blend-mode: darken;
+
 }
 .logo2 {/* 组 7881 1 */
+/* 组 7881 1 */
 
 position: absolute;
-width: 632px;
-height: 322px;
-left: 65px;
-top: 717px;
-
+width: 580px;
+height: 295.51px;
+left: 85px;
+top: 647px;
 }
 .logo3{
-  /* 组 7882 1 */
+/* 组 7882 1 */
 
 position: absolute;
-width: 632px;
-height: 332px;
-left: 65px;
-top: 1046px;
+width: 580px;
+height: 304.68px;
+left: 85px;
+top: 956px;
 
 
 
@@ -196,7 +200,7 @@ position: absolute;
 width: 289px;
 height: 40px;
 left: calc(50% - 289px/2 + 155.5px);
-top: 433px;
+top: 366px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -217,7 +221,7 @@ position: absolute;
 width: 620px;
 height: 216px;
 left: calc(50% - 620px/2);
-top: 489px;
+top: 419px;
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -238,8 +242,8 @@ color: #010101;
 position: absolute;
 width: 216px;
 height: 40px;
-left: calc(50% - 216px/2 + 202px);
-top: 1387px;
+left: calc(50% - 216px/2 + 182px);
+top: 1265px;
 
 font-family: 'LXGW WenKai';
 font-style: normal;

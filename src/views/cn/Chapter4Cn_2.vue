@@ -151,11 +151,11 @@ top: 41px;
 /* 图层 28 1 */
 
 position: absolute;
-width: 100%;
-height: 546.1px;
+width: 620px;
+height: 451.44px;
+left: calc(50% - 620px/2);
 
-top: 826px;
-
+top: 769px;
 
 }
 .text1{
@@ -179,6 +179,7 @@ color: #DFA887;
 
 
 
+
 }
 .text2{
 /* 孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。 */
@@ -187,7 +188,7 @@ position: absolute;
 width: 620px;
 height: 216px;
 left: calc(50% - 620px/2);
-top: 548px;
+top: 510px;
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -209,7 +210,7 @@ position: absolute;
 width: 144px;
 height: 40px;
 left: calc(50% - 144px/2 - 239px);
-top: 1387px;
+top: 1220px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;

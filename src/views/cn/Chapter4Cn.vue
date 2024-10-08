@@ -131,19 +131,20 @@ body {
 /* 4-1 */
 
 position: absolute;
-width: 683px;
-height: 348px;
-left: 0px;
-top: 212px;
+width: 620px;
+height: 315.69px;
+left: calc(50% - 620px/2);
+top: 204px;
 }
 .logo2 {
 /* 4-2 */
 
 position: absolute;
-width: 504px;
-height: 761px;
-left: calc(50% - 504px/2);
-top: 640px;
+width: 440px;
+height: 664.37px;
+left: calc(50% - 440px/2);
+top: 602px;
+
 }
 .text1{
 /* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
@@ -166,6 +167,9 @@ letter-spacing: -0.6px;
 color: #010101;
 
 
+
+
+
 }
 .text2{
 /* 山东东平汉墓壁画 孔子见老子 */
@@ -173,7 +177,7 @@ position: absolute;
 width: 329px;
 height: 40px;
 left: 82px;
-top: 580px;
+top: 536px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -190,7 +194,7 @@ position: absolute;
 width: 570px;
 height: 40px;
 left: calc(50% - 567px/2 + 0.5px);
-top: 1398px;
+top: 1258px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -198,6 +202,10 @@ font-size: 24px;
 line-height: 40px;
 /* identical to box height, or 167% */
 color: #4B180A;
+
+
+
+
 }
 
 </style>

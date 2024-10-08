@@ -131,18 +131,20 @@ body {
 /* 5-1 */
 
 position: absolute;
-width: 100%;
-height: 518.58px;
-top: 332px;
+width: 620px;
+height: 428.69px;
+left: calc(50% - 620px/2);
+top: 312px;
+
 }
 .logo2 {
 /* 5-2 */
 
 position: absolute;
-width: 348px;
-height: 477px;
+width: 332px;
+height: 455px;
 left: 326px;
-top: 951px;
+top: 840px;
 }
 .text1{
 /* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
@@ -173,7 +175,7 @@ position: absolute;
 width: 588px;
 height: 80px;
 left: calc(50% - 588px/2);
-top: 861px;
+top: 741px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -193,7 +195,7 @@ position: absolute;
 width: 120px;
 height: 40px;
 left: calc(50% - 120px/2 - 155px);
-top: 1388px;
+top: 1258px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;

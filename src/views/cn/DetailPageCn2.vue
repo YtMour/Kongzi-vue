@@ -191,7 +191,11 @@ position: absolute;
 width: 338px;
 height: 304px;
 left: 40px;
-top: 1126px;
+top: 986px;
+
+
+
+
 }
 .logo6{/* Frame */
 
@@ -209,7 +213,7 @@ position: absolute;
 width: 279px;
 height: 291px;
 left: 471px;
-top: 1126px;
+top: 1029px;
 
 
 }

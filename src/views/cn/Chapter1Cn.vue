@@ -172,19 +172,24 @@ top: 19.44px;
 /* 1-1 */
 
 position: absolute;
-width: 569.45px;
-height: 686.35px;
+width: 489px;
+height: 589px;
 right: 0.5px;
 top: 49px;
+
+
+
+
 
 
 }
 .logo4 {
 
 position: absolute;
-width: 100%;
-height: 512.58px;
-top: 911px;
+width: 620px;
+height: 423.73px;
+left: calc(50% - 620px/2);
+top: 826px;
 
 }
 .text1{
@@ -239,14 +244,12 @@ position: absolute;
 left: 125px;
 top: 375px;
 }
-.text3{/* 孔子生平 与 孔子思想 */
-/* 孔子（BC551-BC479），中国古代伟大的思想家、教育家、哲学家，被后世尊称为“至圣先师”、“圣人”。 */
-
+.text3{
 position: absolute;
 width: 600px;
 height: 150px;
 left: calc(50% - 600px/2);
-top: 713px;
+top: 635px;
 
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
@@ -257,6 +260,10 @@ line-height: 50px;
 text-align: justify;
 letter-spacing: -0.6px;
 color: #010101;
+
+
+
+
 }
 .text4{/* 位于“孔子故里”山东曲阜的孔子博物馆 */
 
@@ -264,7 +271,7 @@ position: absolute;
 width: 451px;
 height: 40px;
 right: 15px;
-top: 1403px;
+top: 1250px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -272,6 +279,7 @@ font-size: 24px;
 line-height: 40px;
 /* identical to box height, or 167% */
 color: #4B180A;
+
 
 
 }

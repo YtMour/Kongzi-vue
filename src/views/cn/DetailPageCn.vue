@@ -93,13 +93,13 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 .wrapper {
   width: 100vw;
-  max-height: 1448px;
+  height: 100vh;
   height: auto;
   position: relative;
   overflow: hidden;
@@ -123,7 +123,7 @@ html, body {
 
 .content {
   width: 750px;
-  min-height: 1448px;
+  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -175,7 +175,9 @@ position: absolute;
 width: 338px;
 height: 304px;
 left: 40px;
-top: 1104px;
+top: 986px;
+
+
 
 }
 .logo5 {/* Frame */
@@ -184,7 +186,8 @@ position: absolute;
 width: 347px;
 height: 368px;
 right: -17px;
-top: 1116px;
+top: 1014px;
+
 
 }
 .logo6 {/* Frame */

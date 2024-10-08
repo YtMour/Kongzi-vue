@@ -143,15 +143,19 @@ left: 67px;
 top: 351px;
 mix-blend-mode: darken;
 
+
+
+
 }
 .logo2 {
 /* 6-2 */
 
 position: absolute;
-width: 439px;
-height: 655px;
-right: 0px;
-top: 765px;
+width: 342px;
+height: 511px;
+right: 87px;
+top: 775px;
+
 }
 
 

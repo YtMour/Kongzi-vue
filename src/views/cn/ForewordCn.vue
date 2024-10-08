@@ -182,7 +182,8 @@ position: absolute;
 width: 101px;
 height: 155px;
 left: calc(50% - 101px/2 + 0.5px);
-top: 1235px;
+
+top: 1129px;
 
 }
 

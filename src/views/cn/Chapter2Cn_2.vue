@@ -138,8 +138,9 @@ body {
 .logo1 {/* 组 7886 1 */
 
 position: absolute;
-width: 100%;
-height: 1243.71px;
+width: 620px;
+height: 1022.14px;
+left: 65px;
 
 top: 283px;
 

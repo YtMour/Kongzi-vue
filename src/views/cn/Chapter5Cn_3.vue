@@ -141,29 +141,22 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 5-1 */
-
 /* 232323 1 */
 
 position: absolute;
 width: 580px;
-height: 365px;
-
-top: 243px;
-
-
-
+height: 347px;
+left: calc(50% - 580px/2);
+top: 250px;
 }
 .logo2{
-  /* 图层 16 1 */
+ /* 图层 16 1 */
 
 position: absolute;
 width: 580px;
-height: 367.67px;
-z-index: 1;
-top: 691px;
-
-
+height: 320px;
+left: calc(50% - 580px/2);
+top: 665px;
 
 }
 .logo3{/* 图层 11 350 */
