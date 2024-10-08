@@ -131,28 +131,22 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* hellorf_hi2242279625 1 */
-
 /* 组 11 1 */
 
 position: absolute;
-width: 750px;
-height: 1075.96px;
-left: calc(50% - 750px/2);
+width: 620px;
+height: 889.46px;
+left: calc(50% - 620px/2);
 top: 2px;
 
-z-index: 1;
-
 }
-.logo2 {
-/* 2428657005_vector [转换] 1 */
+.logo2 {/* 2428657005_vector [转换] 1 */
 
 position: absolute;
 width: 750px;
 height: 523.87px;
 left: calc(50% - 750px/2);
-top: 988px;
-
+top: 863px;
 
 }
 

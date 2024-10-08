@@ -148,24 +148,25 @@ width: 580px;
 height: 347px;
 left: calc(50% - 580px/2);
 top: 250px;
+
 }
-.logo2{
- /* 图层 16 1 */
+.logo2{/* 图层 16 1 */
 
 position: absolute;
 width: 580px;
 height: 320px;
 left: calc(50% - 580px/2);
 top: 665px;
-
 }
 .logo3{/* 图层 11 350 */
 
 position: absolute;
-width: 750px;
-height: 498.12px;
-right: 0px;
+width: 580px;
+height: 385.21px;
+left: calc(50% - 580px/2);
 top: 952px;
+
+
 }
 .text1{
 /* 通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。 */
@@ -198,7 +199,7 @@ position: absolute;
 width: 384px;
 height: 40px;
 left: 85px;
-top: 617px;
+top: 598px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -219,7 +220,7 @@ position: absolute;
 width: 384px;
 height: 40px;
 left: 85px;
-top: 1070px;
+top: 986px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -239,8 +240,8 @@ color: #4B180A;
 position: absolute;
 width: 96px;
 height: 80px;
-left: 583px;
-top: 1190px;
+left: 544px;
+top: 1111px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -250,6 +251,7 @@ line-height: 40px;
 text-align: right;
 
 color: #4B180A;
+
 
 
 }

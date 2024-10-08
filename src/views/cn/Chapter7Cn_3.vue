@@ -36,8 +36,9 @@ const goToNextPage = () => {
         <div class="text1">让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。</div>
         <div class="logo1">
           <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
-          <div class="text2">孔庙里的古柏树</div>
+          
         </div>
+        <div class="text2">孔庙里的古柏树</div>
 
 
       </div>
@@ -126,12 +127,22 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {/* 组 25 1 */
+/* 组 25 1 */
 
 position: absolute;
-width: 750px;
-height: 1325.38px;
-left: calc(50% - 750px/2);
-top: 125px;
+width: 620px;
+height: 1095.64px;
+left: calc(50% - 620px/2);
+top: 205px;
+
+
+
+
+}
+.logo2{
+  /* 组 25 1 */
+width: 620px;
+height: 1095.64px;
 
 }
 
@@ -165,8 +176,8 @@ z-index: 1;
 position: absolute;
 width: 168px;
 height: 40px;
-left: 85px;
-top: 226px;
+left: 105px;
+top: 521px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -176,6 +187,8 @@ line-height: 40px;
 
 color: #4B180A;
 z-index: 2;
+
+
 
 }
 
