@@ -94,7 +94,9 @@ body {
   width: 159px;
   height: 236px;
   left: 48px;
-  top: 892px;
+  top: 826px;
+
+
 }
 .logo4 {
 /* 资源 4@3x */
@@ -103,12 +105,18 @@ position: absolute;
 width: 503px;
 height: 75px;
 left: 50px;
-top: 1177px;
+top: 1091px;
+
+
+
 }
 .logo5 {
   width: 655px;
   height: 68px;
   left: calc(50% - 655px/2 + 0.5px);
-  top: 1308px;
+  top: 1214px;
+
+
+  
 }
 </style>
