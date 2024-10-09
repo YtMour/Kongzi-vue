@@ -9,9 +9,10 @@ const router = useRouter();  // 创建路由实例
 //   window.scrollTo(0, 0);
 // };
 const handleRightClick = () => {
-  router.push('/cn/foreword');  // 跳转到前言页面
+  router.push({ path: '/fr/foreword' });  // 跳转到前言页面
   window.scrollTo(0, 0);
 };
+
 </script>
 
 <template>

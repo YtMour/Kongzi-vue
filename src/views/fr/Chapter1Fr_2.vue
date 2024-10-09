@@ -3,18 +3,19 @@ import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';
 
+
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter1_3';
-let nextR = '/cn/chapter3_3';
+let nextLeft = '/fr/detail2';
+let nextR = '/fr/chapter2_2';
 // 点击事件，跳转到前言页面
 
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
-
+    { className: 'text2', animationClass: 'animation1' },
+    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text4', animationClass: 'animation3' },
   ];
 
   texts.forEach(({ className, animationClass }) => {
@@ -27,6 +28,10 @@ onMounted(() => {
     }
   });
 });
+
+
+
+
 </script>
 
 <template>
@@ -34,12 +39,14 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/page2/图画1.png" alt="" class="logo1" />
-        <div class="text1">孔子造像在海外</div>
-       <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
-        <div class="text2">世界儒学大会</div>
-        <div class="text3">意大利版《论语》</div>
-       <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page1/图画1.png" alt="" class="logo3" />
+
+        <img src="@/assets/Chapter2/page1/竹子.png" alt="" class="logo2" />
+        <div class="text1">Confucius n'était pas seulement un penseur profond, sa philosophie de la vie se reflétait également dans tous les aspects de la vie quotidienne. En ce qui concerne « l'habillement, la nourriture, le logement, les déplacements et la musique », Confucius agissait conformément à l'étiquette, démontrant ainsi le style noble du confucianisme.
+        </div>
+        <div class="text2">Habillement</div>
+        <img src="@/assets/Chapter2/page1/图画2.png" alt="" class="logo4" />
 
 
 
@@ -76,14 +83,11 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
+
 .animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为4秒 */
   animation-fill-mode: forwards;
 }
-
-
-
-
 
 html,
 body {
@@ -141,46 +145,98 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 组 21 1 */
-/* 组 21 1 */
+.logo1 {/* Group 45 */
 
 position: absolute;
-width: 620px;
-height: 685.54px;
-left: calc(50% - 620px/2 - 12px);
-top: 10px;
+width: 364.8px;
+height: 162.13px;
+left: calc(50% - 364.8px/2 - 0.24px);
+top: 19.44px;
+
 
 
 }
-.logo2 {/* 组 24 1 */
-/* 组 24 1 */
+.logo2 {
+/* Group 45 */
 
 position: absolute;
-width: 620px;
-height: 372.12px;
-left: calc(50% - 620px/2);
-top: 806px;
-
-}
-.logo3{/* 图层 29 79 */
-
-position: absolute;
-width: 208px;
-height: 306px;
-left: 477px;
-top: 1000px;
+width: 167px;
+height: 147px;
+right: 30.45px;
+top: 19.44px;
 
 
 }
-.text1{/* 孔子造像在海外 */
+.logo3 {/* 组 6 */
 
 position: absolute;
-width: 175px;
+width: 731px;
+height: 656px;
+left: 19px;
+top: 67px;
+
+
+
+}
+.logo4 {/* 组 7885 1 */
+position: absolute;
+width: 347px;
+height: 375px;
+left: 403px;
+top: 926px;
+
+
+
+}
+.text1{/* 孔子不仅是一位深邃的思想家，他的生活哲学也体现在日常生活的方方面面。在“衣食住行乐”中，孔子均依礼而行，展现了儒家的高尚风范。 */
+
+position: absolute;
+width: 700px;
+height: 162px;
+left: calc(50% - 700px/2);
+top: 744px;
+
+font-family: 'SourceHanSansCN', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+/* or 180% */
+text-align: justify;
+letter-spacing: -0.6px;
+
+color: #010101;
+
+}
+.text2{/* 衣 */
+
+position: absolute;
+width: 180px;
+height: 160px;
+left: 34px;
+top: 1044px;
+
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 50px;
+line-height: 30px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: 4px;
+
+color: #DFA887;
+
+}
+.text3{/* 战国 牺尊 收藏于齐文化博物院 */
+
+position: absolute;
+width: 329px;
 height: 40px;
-left: calc(50% - 175px/2 - 213.5px);
-top: 731px;
+left: calc(50% - 329px/2 - 146.5px);
+top: 943px;
 
-font-family: 'Xiahuwenkai', sans-serif;
+font-family: 'MyFont', truetype;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -189,18 +245,16 @@ line-height: 40px;
 
 color: #4B180A;
 
-
-
-
 }
-.text2{/* 世界儒学大会 */
+.text4{/* 商周十供,收藏于孔子博物馆 */
 
 position: absolute;
-width: 144px;
+width: 297px;
 height: 40px;
-left: calc(50% - 144px/2 - 229px);
-top: 1178px;
-font-family: 'Xiahuwenkai', sans-serif;
+left: calc(50% - 297px/2 - 162.5px);
+top: 1386px;
+
+font-family: 'MyFont', truetype;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -208,30 +262,6 @@ line-height: 40px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-
-
-
-
-
-}
-.text3{/* 意大利版《论语》 */
-
-position: absolute;
-width: 192px;
-height: 40px;
-left: calc(50% - 192px/2 - 6px);
-top: 1241px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
-text-align: right;
-
-color: #4B180A;
-
-
 
 }
 

@@ -1,23 +1,17 @@
 <script setup>
 import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
-import { onMounted } from 'vue'
-
+import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/detail';
-let nextR = '/cn/chapter2';
+let nextLeft = '/fr/chapter3_2';
+let nextR = '/fr/chapter5_2';
 // 点击事件，跳转到前言页面
-// const goToNextPage = () => {
-//   router.push('/cn/chapter2') // 跳转到前言页面
-//   window.scrollTo(0, 0)
-// }
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation1' },
-    { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation3' }
+    { className: 'text2', animationClass: 'animation2' },
+    { className: 'text3', animationClass: 'animation3' }
   ]
 
   texts.forEach(({ className, animationClass }) => {
@@ -39,18 +33,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
-
-        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
-
-        <div class="text1">《孔子燕居像》</div>
-        <div class="text2">明·佚名 绘</div>
-        <div class="text3">
-          孔子（BC551-BC479），中国古代伟大的思想家、教育家、哲学家，被后世尊称为“至圣先师”、“圣人”。
+        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <div class="text1">Logement</div>
+        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <div class="text2">
+          Confucius accordait de l'importance à la propreté et à la tranquillité du cadre de vie, estimant qu'un bon cadre de vie contribuait à cultiver le caractère de chacun. Il a avancé l'idée « ne pas dormir sur le dos comme un cadavre et ne pas se soucier de votre apparence à la maison », mais il faut toujours maintenir un certain degré d'étiquette et d'ordre.
         </div>
-        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
-        <div class="text4">位于“孔子故里”山东曲阜的孔子博物馆</div>
+
+        <div class="text3">Le caisson de la salle Dacheng
+        </div>
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -84,9 +75,8 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
 .animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为4秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -106,11 +96,10 @@ body {
   justify-content: center;
   align-items: center; /* 垂直居中 */
   width: 100vw;
-  min-height: 100vh; /* 充满视口高度 */
+  height: 100vh; /* 充满视口高度 */
   position: relative; /* 相对定位以适应绝对定位的子元素 */
   margin: 0; /* 居中 */
   padding: 0;
-  overflow: hidden; /* 隐藏多余的内容溢出 */
 }
 
 .background {
@@ -129,12 +118,12 @@ body {
 .content {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
-  min-height: 100%; /* 限制内容最大高度 */
+  max-height: 100%; /* 限制内容最大高度 */
 
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
-  padding: 0px; /* 内边距，以防止内容溢出 */
+  padding: 20px; /* 内边距，以防止内容溢出 */
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
@@ -151,122 +140,80 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  /* Group 45 */
+  /* 4-1 */
+
+  /* 图层 27 9 */
 
   position: absolute;
-  width: 291.53px;
-  height: 129.56px;
-  right: 180.45px;
-  top: 19.44px;
+  width: 644px;
+  height: 441px;
+  left: 68px;
+  top: 41px;
 }
 .logo2 {
-  /* Group 45 */
+  /* 4-2 */
 
-  position: absolute;
-  width: 167px;
-  height: 147px;
-  right: 30.45px;
-  top: 19.44px;
-}
-.logo3 {
-  /* 1-1 */
+  /* 图层 28 1 */
 
-  position: absolute;
-  width: 489px;
-  height: 589px;
-  right: 0.5px;
-  top: 49px;
-}
-.logo4 {
   position: absolute;
   width: 620px;
-  height: 423.73px;
+  height: 451.44px;
   left: calc(50% - 620px / 2);
-  top: 826px;
+
+  top: 769px;
 }
 .text1 {
-  /* 《孔子燕居像》 */
-
-  width: 196px;
-  height: 40px;
-
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
-  /* identical to box height, or 143% */
-  color: #4b180a;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0px;
   position: absolute;
-  left: 89px;
-  top: 325px;
+  width: 200px;
+  height: 160px;
+  left: 345px;
+  top: 41px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 50px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: 4px;
+
+  color: #dfa887;
 }
 .text2 {
-  /* 明·佚名 绘 */
-  width: 168px;
-  height: 40px;
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
-  /* identical to box height, or 200% */
-  text-align: right;
-  color: #4b180a;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0px;
-  position: absolute;
-  left: 125px;
-  top: 375px;
-}
-.text3 {
-  position: absolute;
-  width: 600px;
-  height: 150px;
-  left: calc(50% - 600px / 2);
-  top: 635px;
+  /* 孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。 */
 
+  position: absolute;
+  width: 660px;
+  height: 216px;
+  left: calc(50% - 660px / 2);
+  top: 510px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 50px;
-  /* or 167% */
+  font-size: 26px;
+  line-height: 36px;
+  /* or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
+
   color: #010101;
 }
-.text4 {
-  /* 位于“孔子故里”山东曲阜的孔子博物馆 */
+.text3 {
+  /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
+  /* 大成殿的藻井 */
 
   position: absolute;
-  width: 451px;
+  width: 360px;
   height: 40px;
-  right: 15px;
-  top: 1250px;
+  left: calc(50% - 144px / 2 - 239px);
+  top: 1220px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 30px;
   /* identical to box height, or 167% */
+
   color: #4b180a;
 }
 </style>

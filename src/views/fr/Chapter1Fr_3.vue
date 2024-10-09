@@ -1,17 +1,20 @@
 <script setup>
 import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
-import { onMounted } from 'vue' // 导入 onMounted
+import { onMounted } from 'vue'
+
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/chapter3_2';
-let nextR = '/cn/chapter5_2';
+let nextLeft = '/fr/detail3';
+let nextR = '/fr/chapter2_3';
 // 点击事件，跳转到前言页面
+// 
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' }
+    { className: 'text2', animationClass: 'animation1' },
+    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text4', animationClass: 'animation3' }
   ]
 
   texts.forEach(({ className, animationClass }) => {
@@ -33,14 +36,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
-        <div class="text1">住</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
-        <div class="text2">
-          孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。
-        </div>
+        <img src="@/assets/Chapter3/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text3">大成殿的藻井</div>
+        <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
+
+        <div class="text1">Un ami international procède à la cérémonie d'ouverture de pinceau pour un enfant
+        </div>
+        <div class="text2">Scène du lancement du livre « Les Entretiens » en maltais
+        </div>
+        <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -72,10 +76,6 @@ onMounted(() => {
 
 .animation2 {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
-  animation-fill-mode: forwards;
-}
-.animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
 
@@ -139,78 +139,64 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  /* 4-1 */
-
-  /* 图层 27 9 */
+  /* Group 45 */
 
   position: absolute;
-  width: 644px;
-  height: 441px;
-  left: 68px;
-  top: 41px;
+  width: 364.8px;
+  height: 162.13px;
+
+  top: 39.44px;
 }
 .logo2 {
-  /* 4-2 */
-
-  /* 图层 28 1 */
+  /* 组 23 1 */
 
   position: absolute;
   width: 620px;
-  height: 451.44px;
+  height: 532.51px;
   left: calc(50% - 620px / 2);
+  top: 104px;
+}
+.logo3 {
+  /* 组 22 1 */
 
-  top: 769px;
+  position: absolute;
+  width: 620px;
+  height: 468.35px;
+  left: calc(50% - 620px / 2);
+  top: 843px;
 }
 .text1 {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  left: 365px;
-  top: 41px;
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 160px;
-  line-height: 160px;
-  /* identical to box height, or 100% */
-  text-align: center;
-  letter-spacing: 4px;
-
-  color: #dfa887;
-}
-.text2 {
-  /* 孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。 */
+  /* 国际友人在为小朋友行开笔礼 */
 
   position: absolute;
-  width: 620px;
-  height: 216px;
-  left: calc(50% - 620px / 2);
-  top: 510px;
-  font-family: 'SourceHanSansCN', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 54px;
-  /* or 180% */
-  text-align: justify;
-  letter-spacing: -0.6px;
-
-  color: #010101;
-}
-.text3 {
-  /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
-  /* 大成殿的藻井 */
-
-  position: absolute;
-  width: 144px;
+  width: 450px;
   height: 40px;
-  left: calc(50% - 144px / 2 - 239px);
-  top: 1220px;
+  left: calc(50% - 450px / 2);
+  top: 653px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  color: #4b180a;
+}
+
+.text2 {
+  /* 马耳他语《论语》新书发布会现场 */
+
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  left: calc(50% - 600px / 2);
+  top: 783px;
+
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
   /* identical to box height, or 167% */
 
   color: #4b180a;

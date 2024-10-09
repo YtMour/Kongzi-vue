@@ -5,11 +5,11 @@ import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
 const handleLeftClick = () => {
-  router.push('/cn/chapter7_2');  // 跳转到前言页面
+  router.push('/fr/chapter7_2');  // 跳转到前言页面
   window.scrollTo(0, 0);
 };
 const handleRightClick = () => {
-  router.push('/cn/chapter1_3');  // 跳转到前言页面
+  router.push('/fr/chapter1_3');  // 跳转到前言页面
   window.scrollTo(0, 0);
 };
 onMounted(() => {
@@ -43,20 +43,21 @@ onMounted(() => {
         <img src="@/assets/Chapter3/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter3/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
-          <div class="text">第三章</div>
+          <div class="text">Le chapitre iii</div>
           <div class="xian1"></div>
         </div>
-        <div class="textbox2">
-          <div class="text2">孔子文化</div>
-          <div class="text3">的</div>
-          <div class="text4">世界影响</div>
+        <div class="textbox2">  
+
+          <div class="text2">L’impact mondial</div>
+          <div class="text3">de la culture</div>
+          <div class="text4">de Confucius</div>
         </div>
 
         <div class="textbox3">
           <div class="text5">
-            孔子思想具有极其博大的内涵，是中国文化，也是东方文化的象征，孔子不仅属于中国，而且属于全世界
+            La pensée de confucius a une connotation extrêmement large. C’est la culture chinoise et un symbole de la culture orientale. Confucius appartient non seulement à la Chine, mais aussi au monde entier.
           </div>
-          <div class="text6">-- 学者，毛来夫（德国）</div>
+          <div class="text6">- savant, mauviens (allemagne)</div>
         </div>
 
         <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
@@ -240,20 +241,20 @@ bottom: 40px;
 
 .text {
   position: absolute;
-  width: 180px;
-  height: 100px;
-  left: calc(50% - 158px / 2 + 1px);
-  top: 303px;
+width: 250px;
+height: 100px;
+left: calc(50% - 158px/2 - 30px);
+top: 313px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 100px;
-  text-align: center;
-  letter-spacing: 4px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 50px;
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .xian1 {
   /* Vector 1 */
@@ -268,78 +269,70 @@ bottom: 40px;
 }
 
 .text2 {
-  /* 孔子生平 与 孔子思想 */
-
   position: absolute;
-  width: 350px;
-  height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
-  top: 430px;
+width: 500px;
+height: 300px;
+left: calc(50% - 500px/2 + 1px);
+top: 430px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 100px;
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 4px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 30px;
+/* or 125% */
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .text3 {
-  /* 孔子生平 与 孔子思想 */
-
   position: absolute;
-  width: 332px;
-  height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
-  top: 540px;
+width: 400px;
+height: 300px;
+left: calc(50% - 400px/2 + 1px);
+top: 540px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 100px;
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 4px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .text4 {
-  /* 孔子生平 与 孔子思想 */
-
   position: absolute;
-  width: 350px;
-  height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
-  top: 650px;
+width: 500px;
+height: 300px;
+left: calc(50% - 500px/2 + 1px);
+top: 650px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 30px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 100px;
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 4px;
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .text5 {
-  /* 孔子思想具有极其博大的内涵，是中国文化，也是东方文化的象征，孔子不仅属于中国，而且属于全世界 */
+  /* 孔子思想具有极其博大的内涵，是s中国文化，也是东方文化的象征，孔子不仅属于中国，而且属于全世界 */
 
-  width: 600px;
+  width: 640px;
   height: 120px;
   position: absolute;
-  left: calc(50% - 600px / 2);
+  left: calc(50% - 630px / 2);
   top: 872px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 30px;
   /* or 143% */
 
   color: #4b180a;
@@ -357,12 +350,12 @@ bottom: 40px;
   height: 40px;
   position: absolute;
   left: calc(50% - 600px / 2);
-  top: 1028px;
+  top: 999px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   /* identical to box height, or 200% */
   text-align: right;
 

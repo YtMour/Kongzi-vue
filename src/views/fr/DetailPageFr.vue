@@ -4,8 +4,8 @@ import '@/assets/font.css';
 import { onMounted } from 'vue';  
 
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/foreword';
-let nextR = '/cn/chapter1';
+let nextLeft = '/fr/foreword';
+let nextR = '/fr/chapter1';
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
   router.push('');  // 跳转到前言页面
@@ -40,18 +40,19 @@ onMounted(() => {
         <img src="@/assets/Chapter1/kz.png" alt="" class="logo2" />
         <img src="@/assets/Chapter1/circleBG.png" alt="" class="logo3" />
         <div class="textbox1">
-          <div class="text">第一章</div>
+          <div class="text">Le premier chapitre</div>
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">孔子生平</div>
-          <div class="text3">与</div>
-          <div class="text4">孔子思想</div>
+          <div class="text2">La vie et
+          </div>
+          <div class="text3">les pensées</div>
+          <div class="text4">de Confucius</div>
         </div>
 
         <div class="textbox3">
-          <div class="text5">天不生仲尼，万古如长夜</div>
-          <div class="text6">——朱熹《朱子语类》</div>
+          <div class="text5">Si le ciel ne donne pas naissance à un sonny, tous les temps sont comme une longue nuit</div>
+          <div class="text6">- zhu xi, classes de langues zhu zi</div>
         </div>
 
 
@@ -207,16 +208,16 @@ top: 857px;
 
 .text{
 position: absolute;
-width: 180px;
+width: 200px;
 height: 100px;
-left: calc(50% - 158px/2 + 1px);
-top: 303px;
+left: calc(50% - 158px/2 - 6px);
+top: 313px;
 
 font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 50px;
-line-height: 100px;
+font-size: 28px;
+line-height: 30px;
 text-align: center;
 letter-spacing: 4px;
 
@@ -245,8 +246,8 @@ top: 430px;
 font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 80px;
-line-height: 100px;
+font-size: 48px;
+line-height: 30px;
 /* or 125% */
 text-align: center;
 letter-spacing: 4px;
@@ -265,8 +266,8 @@ top: 540px;
 font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 80px;
-line-height: 100px;
+font-size: 48px;
+line-height: 30px;
 text-align: center;
 letter-spacing: 4px;
 
@@ -276,15 +277,15 @@ color: #00538F;
 .text4{/* 孔子生平 与 孔子思想 */
 
 position: absolute;
-width: 350px;
+width: 380px;
 height: 300px;
 left: calc(50% - 332px/2 + 1px);
 top: 650px;
 font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 80px;
-line-height: 100px;
+font-size: 48px;
+line-height: 30px;
 
 text-align: center;
 letter-spacing: 4px;
@@ -293,13 +294,13 @@ color: #00538F;
 
 }
 .text5{
-width: 330px;
+width: 450px;
 height: 40px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 28px;
+font-size: 23px;
 line-height: 40px;
 
 color: #4B180A;
@@ -307,7 +308,7 @@ color: #4B180A;
 
 position: absolute;
 
-left: calc(50% - 330px/2);
+left: calc(50% - 400px/2);
 top: 910px;
 
 
@@ -339,8 +340,8 @@ gap: 30px;
 position: absolute;
 width: 330px;
 height: 110px;
-left: calc(50% - 330px/2);
-top: 980px;
+left: calc(50% - 260px/2);
+top: 1030px;
 
 }
 </style>

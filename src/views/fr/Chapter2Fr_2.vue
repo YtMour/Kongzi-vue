@@ -1,19 +1,19 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
+import { onMounted } from 'vue';
+
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter4_2';
-let nextR = '/cn/chapter6_2';
+let nextLeft = '/fr/chapter1_2';
+let nextR = '/fr/chapter3_2';
 // 点击事件，跳转到前言页面
+
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation3' },
-
+    { className: 'text3', animationClass: 'animation3' },
 
   ];
 
@@ -34,15 +34,15 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
-        <div class="text1">行</div>
-        <div class="text2">宋《祖庭广记》孔子乘辂图</div>
 
-        <div class="text3">孔子一生周游列国，传播自己的思想。他的出行不仅是为了求学问道，更是为了实践自己的政治理想。在行路中，他始终保持着君子的风度，尊重他人，谦逊有礼。</div>
-          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
-        <div class="text4">圣迹遍布的山东泰山</div>
+        <div class="text1"> Confucius était attentif à la propreté des vêtements et des couronnes, estimant qu'« un homme vertueux doit être bien habillé, avoir un regard direct et être solennel et intimidant », ce qui n'est pas seulement un signe de respect pour les autres, mais aussi une manifestation de la culture de soi. Il se couronnait selon l'étiquette et portait différentes couronnes cérémonielles pour différentes occasions, montrant ainsi la beauté de l'étiquette confucéenne.
+        </div>
+       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+        <div class="text2">Costumes traditionnels chinois de la dynastie Ming collectionnés par les descendants de Confucius
+        </div>
+          <div class="text3">Statue de Confucius en charge de la justice de Lu, dynastie Ming, peintre inconnu
+
+</div>
 
 
       </div>
@@ -82,7 +82,6 @@ onMounted(() => {
   animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
 html,
 body {
   margin: 0;
@@ -139,122 +138,69 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {
-/* 组 7887 1 */
-
-position: absolute;
-width: 532px;
-height: 349px;
-left: calc(50% - 532px/2);
-top: 7px;
-
-mix-blend-mode: darken;
-
-}
-.logo2 {/* 组 7881 1 */
-/* 组 7881 1 */
-
-position: absolute;
-width: 580px;
-height: 295.51px;
-left: 85px;
-top: 647px;
-}
-.logo3{
-/* 组 7882 1 */
-
-position: absolute;
-width: 580px;
-height: 304.68px;
-left: 85px;
-top: 956px;
-
-
-
-}
-.text1{
-/* 行 */
-
-position: absolute;
-width: 160px;
-height: 160px;
-left: 113px;
-top: 27px;
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 160px;
-line-height: 160px;
-/* identical to box height, or 100% */
-text-align: center;
-letter-spacing: 4px;
-
-color: #DFA887;
-
-
-
-
-}
-.text2{
-/* 宋《祖庭广记》孔子乘辂图 */
-
-position: absolute;
-width: 289px;
-height: 40px;
-left: calc(50% - 289px/2 + 155.5px);
-top: 366px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
-
-color: #4B180A;
-
-
-
-
-}
-.text3{
-/* 孔子一生周游列国，传播自己的思想。他的出行不仅是为了求学问道，更是为了实践自己的政治理想。在行路中，他始终保持着君子的风度，尊重他人，谦逊有礼。 */
+.logo1 {/* 组 7886 1 */
 
 position: absolute;
 width: 620px;
+height: 1022.14px;
+left: 65px;
+
+top: 283px;
+
+}
+.text1{/* 孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。 */
+
+position: absolute;
+width: 650px;
 height: 216px;
-left: calc(50% - 620px/2);
-top: 419px;
+left: calc(50% - 650px/2);
+top: 32px;
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
-line-height: 54px;
+font-size: 23px;
+line-height: 30px;
 /* or 180% */
 text-align: justify;
 letter-spacing: -0.6px;
 
 color: #010101;
 
-
-
-
 }
-.text4{/* 圣迹遍布的山东泰山 */
+.text2{/* 孔子后代收藏的中国明代 传统服饰 */
 
 position: absolute;
-width: 216px;
-height: 40px;
-left: calc(50% - 216px/2 + 182px);
-top: 1265px;
+width: 300px;
+height: 80px;
+left: calc(50% - 300px/2 + 220px);
+top: 703px;
 
-font-family: 'LXGW WenKai';
+font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+font-size: 21px;
+line-height: 30px;
+/* or 167% */
 
 color: #4B180A;
+}
+.text3{
+  /* 《孔子為魯司寇像》 明·佚名 绘 */
+
+position: absolute;
+width: 260px;
+height: 80px;
+left: calc(50% - 260px/2 + 220px);
+top: 1180px;
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 30px;
+/* or 167% */
+
+color: #4B180A;
+
 
 }
 

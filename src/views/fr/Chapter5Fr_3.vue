@@ -2,17 +2,17 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter(); 
-const handleLeftClick = () => {
-  router.push('/cn/chapter6_3');  // 跳转到前言页面
- 
-};
- // 创建路由实例
+const router = useRouter();  // 创建路由实例
+let nextLeft = '/fr/chapter4_3';
+let nextR = '/fr/chapter6_3';
+// 点击事件，跳转到前言页面
+
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text3', animationClass: 'animation3' },
+    { className: 'text4', animationClass: 'animation4' },
 
   ];
 
@@ -26,11 +26,6 @@ onMounted(() => {
     }
   });
 });
-// 点击事件，跳转到前言页面
-// const goToNextPage = () => {
-//   router.push('/cn/home');  // 跳转到前言页面
-//   window.scrollTo(0, 0);
-// };
 </script>
 
 <template>
@@ -38,19 +33,25 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。</div>
-        <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
-          
+        <div class="text1">L'organisation d'une série d'activités telles que le Forum international du confucianisme et le Festival culturel de Confucius a permis d'améliorer la compréhension et la reconnaissance de la culture de Confucius parmi les peuples de tous les pays, et dans le cadre de sa préservation, de son héritage et de son développement, ces activités ont pu promouvoir un dialogue et des échanges égaux ainsi qu'une inspiration mutuelle entre les différentes civilisations.
         </div>
-        <div class="text2">孔庙里的古柏树</div>
+        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <div class="text2">Des jeunes participant à la cérémonie de la passage à la majorité devant le temple de Confucius.
+        </div>
+       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+
+        <div class="text3">Un photographe étranger séjournant au village de Zhou, dans la province du Shandong, pour découvrir les coutumes du Nouvel An
+        </div>
+        <div class="text4">Wanren Gongqiang, dans le temple de Confucius à Qufu
+        </div>
 
 
       </div>
-      <div class="btnbox">
-          <!-- <img src="@/assets/Buttonleft.png" class="btnleft"> -->
-          <img @click="handleLeftClick" src="@/assets/ButtonLeft.png" class="btnleft">
-        </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>
@@ -79,6 +80,15 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
+.animation3 {
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
+.animation4 {
+  animation: fadeInOut 9s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
+
 html,
 body {
   margin: 0;
@@ -88,31 +98,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btnbox {
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  padding: 0px;
-  gap: 80px;
-
-  position: absolute;
-  width: 100%; /* 让容器充满父容器的宽度 */
-  bottom: 40px;
-}
-
-.btnleft{
-  /* Group 17 */
-
-width: 88px;
-height: 88px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
 }
 
 .wrapper {
@@ -160,67 +145,117 @@ flex-grow: 0;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 组 25 1 */
-/* 组 25 1 */
+.logo1 {
+/* 232323 1 */
 
 position: absolute;
-width: 620px;
-height: 1095.64px;
-left: calc(50% - 620px/2);
-top: 205px;
+width: 580px;
+height: 347px;
+left: calc(50% - 580px/2);
+top: 250px;
 
+}
+.logo2{/* 图层 16 1 */
 
+position: absolute;
+width: 580px;
+height: 320px;
+left: calc(50% - 580px/2);
+top: 665px;
+}
+.logo3{/* 图层 11 350 */
+
+position: absolute;
+width: 580px;
+height: 385.21px;
+left: calc(50% - 580px/2);
+top: 1022px;
 
 
 }
-.logo2{
-  /* 组 25 1 */
-width: 620px;
-height: 1095.64px;
-
-}
-
 .text1{
-/* 让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。 */
+/* 通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。 */
 
 position: absolute;
-width: 620px;
+width: 660px;
 height: 216px;
-left: calc(50% - 620px/2);
-top: 34px;
+left: calc(50% - 660px/2);
+top: 13px;
 font-family: 'SourceHanSansCN', sans-serif;
 
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
-line-height: 54px;
+font-size: 24px;
+line-height: 28px;
 /* or 180% */
 text-align: justify;
 letter-spacing: -0.6px;
 
 color: #010101;
 
-z-index: 1;
+
 
 
 }
 .text2{
-  /* 孔庙里的古柏树 */
+/* 在孔庙前参加成人礼仪式的年轻人们 */
 
 position: absolute;
-width: 168px;
+width: 600px;
 height: 40px;
-left: 105px;
-top: 521px;
+left: 85px;
+top: 598px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-z-index: 2;
+
+
+
+
+}
+.text3{
+/* 留在山东周村感受年俗的海外摄影家 */
+
+position: absolute;
+width: 590px;
+height: 40px;
+left: 85px;
+top: 986px;
+
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 30px;
+/* identical to box height, or 167% */
+
+color: #4B180A;
+
+
+
+}
+.text4{
+  /* 曲阜孔庙 万仞宫墙 */
+
+position: absolute;
+width: 300px;
+height: 80px;
+left: 360px;
+top: 1111px;
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 30px;
+/* or 167% */
+text-align: right;
+
+color: #4B180A;
 
 
 

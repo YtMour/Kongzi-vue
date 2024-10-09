@@ -1,19 +1,17 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import { onMounted } from 'vue';
-
+import { onMounted } from 'vue';  // 导入 onMounted
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter1_2';
-let nextR = '/cn/chapter3_2';
+let nextLeft = '/fr/chapter3';
+let nextR = '/fr/chapter5';
 // 点击事件，跳转到前言页面
-
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
+    { className: 'text3', animationClass: 'animation2' },
 
   ];
 
@@ -34,14 +32,13 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-
-        <div class="text1">孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。</div>
-       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
-        <div class="text2">孔子后代收藏的中国明代
-          传统服饰</div>
-          <div class="text3">《孔子為魯司寇像》
-  明·佚名 绘
-</div>
+        <div class="text1">Dans son enfance, Confucius aspirait à étudier et à devenir compétent dans les six arts; dans sa jeunesse, il a voyagé dans Zhou et s'est rendu à Qi, et s'est instruit auprès de Laozi sur les rites; à l'âge mûr, il a cherché à exercer des fonctions politiques et a voyagé dans divers pays ; dans sa vieillesse, il est retourné à Lu pour fonder une école et compiler les Six Classiques.</div>
+        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <div class="text2">Confucius rencontre Laozi, peinture murale d'une tombe Han à Dongping, province du Shandong
+        </div>
+       <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <div class="text3">Cérémonie du temple sacré : Confucius apprenant le Qin auprès de Shixiang, collection du Musée national du Palais de Taipei
+        </div>
 
 
       </div>
@@ -77,10 +74,7 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-.animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
-  animation-fill-mode: forwards;
-}
+
 html,
 body {
   margin: 0;
@@ -120,7 +114,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -137,68 +131,83 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 组 7886 1 */
+.logo1 {
+/* 4-1 */
 
 position: absolute;
 width: 620px;
-height: 1022.14px;
-left: 65px;
-
-top: 283px;
-
+height: 315.69px;
+left: calc(50% - 620px/2);
+top: 204px;
 }
-.text1{/* 孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。 */
+.logo2 {
+/* 4-2 */
 
 position: absolute;
-width: 600px;
-height: 216px;
-left: calc(50% - 600px/2);
-top: 32px;
+width: 440px;
+height: 664.37px;
+left: calc(50% - 440px/2);
+top: 602px;
+
+}
+.text1{
+/* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
+
+position: absolute;
+width: 620px;
+height: 162px;
+left: calc(50% - 620px/2);
+top: 22px;
+
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
-line-height: 54px;
+font-size: 23px;
+line-height: 25px;
 /* or 180% */
 text-align: justify;
 letter-spacing: -0.6px;
 
 color: #010101;
 
-}
-.text2{/* 孔子后代收藏的中国明代 传统服饰 */
 
+
+
+
+}
+.text2{
+/* 山东东平汉墓壁画 孔子见老子 */
 position: absolute;
-width: 272px;
-height: 80px;
-left: calc(50% - 272px/2 + 220px);
-top: 703px;
+width: 500px;
+height: 40px;
+left: 82px;
+top: 536px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* or 167% */
+font-size: 21px;
+line-height: 20px;
+/* identical to box height, or 167% */
 
-color: #4B180A;
+color: #4B180A
 }
 .text3{
-  /* 《孔子為魯司寇像》 明·佚名 绘 */
-
+  /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
 position: absolute;
-width: 220px;
-height: 80px;
-left: calc(50% - 272px/2 + 220px);
-top: 1230px;
+width: 650px;
+height: 40px;
+left: calc(50% - 567px/2 - 25.5px);
+top: 1258px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
-line-height: 40px;
-/* or 167% */
-
+line-height: 25px;
+/* identical to box height, or 167% */
 color: #4B180A;
+
+
 
 
 }

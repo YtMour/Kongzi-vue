@@ -1,14 +1,12 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import { onMounted } from 'vue';
-
+import { onMounted } from 'vue';  // 导入 onMounted
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter1';
-let nextR = '/cn/chapter3';
+let nextLeft = '/fr/chapter2';
+let nextR = '/fr/chapter4';
 // 点击事件，跳转到前言页面
-
-
+// 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
@@ -33,10 +31,11 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
-        <div class="text1">位于尼山脚下的夫子洞，相传是孔子的出生地</div>
-       <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
-        <div class="text2">72米高的尼山孔子像</div>
+        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
+        <div class="text1">Image de confucius pratiquant l’église selon la légende <br /> gravée pour la dynastie des tang, maintenant préservée <br /> dans le temple des monuments de confucius à qufu</div>
+       <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
+        <div class="text2">Zeng Zi interroge Confucius sur la piété filiale, dynastie Song
+        </div>
 
 
       </div>
@@ -72,6 +71,7 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
+
 html,
 body {
   margin: 0;
@@ -129,48 +129,53 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 2-1 */
+/* 3-1 */
 
 position: absolute;
-width: 584px;
-height: 473px;
-left: calc(50% - 584px/2);
-top: 22px;
+width: 544px;
+height: 739px;
+left: 100px;
+top: 2px;
+
+
 
 
 }
 .logo2 {
-position: absolute;
-width: 620px;
-height: 709.82px;
-left: calc(50% - 620px/2);
-top: 535px;
-}
-.text1{
-/* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
+/* 3-2 */
 
 position: absolute;
-width: 480px;
-height: 40px;
-left: 92px;
-top: 500px;
+width: 620px;
+height: 450.27px;
+left: calc(50% - 620px/2);
+top: 795px;
+
+}
+.text1{
+/* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
+
+position: absolute;
+width: 350px;
+height: 120px;
+left: 30px;
+top: 59px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+font-size: 25px;
+line-height: 30px;
+/* or 167% */
 
 color: #4B180A;
 
 
 }
 .text2{
-/* 72米高的尼山孔子像 */
+/* 宋代 《曾子问孝于孔子》 */
 
 position: absolute;
-width: 221px;
+width: 350px;
 height: 40px;
 left: 82px;
 top: 1257px;
@@ -178,17 +183,11 @@ top: 1257px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-padding: 0px;
-gap: 30px;
 
 
 

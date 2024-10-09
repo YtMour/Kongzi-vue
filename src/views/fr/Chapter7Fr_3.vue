@@ -1,15 +1,18 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import{ onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();
-let nextLeft = '/cn/chapter5_2';
-let nextR = '/cn/chapter7_2'; // 创建路由实例
+import { onMounted } from 'vue';  // 导入 onMounted
+const router = useRouter(); 
+const handleLeftClick = () => {
+  router.push('/fr/chapter6_3');  // 跳转到前言页面
+ 
+};
+ // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
+    { className: 'text3', animationClass: 'animation2' },
 
   ];
 
@@ -24,7 +27,10 @@ onMounted(() => {
   });
 });
 // 点击事件，跳转到前言页面
-
+// const goToNextPage = () => {
+//   router.push('/cn/home');  // 跳转到前言页面
+//   window.scrollTo(0, 0);
+// };
 </script>
 
 <template>
@@ -32,20 +38,21 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page6/图画1.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page6/图画2.png" alt="" class="logo2" />
-        <div class="text1">乐</div>
-        
-        <div class="text2">孔子酷爱音乐，认为音乐能够陶冶性情，净化心灵。他提倡“雅乐”，认为音乐应该具有教育意义和社会价值。</div>
-       <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
-
+        <div class="text1">Unissons nos efforts pour construire un monde plus harmonieux, plus inclusif et plus durable en nous inspirant de la pensée de Confucius. Faisons en sorte que cette sagesse, qui a traversé des milliers d'années, s'épanouisse en une lumière d'harmonie dans les vagues de la nouvelle ère et conduise l'humanité vers un avenir meilleur.
+        </div>
+        <div class="logo1">
+          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          
+        </div>
+        <div class="text2">Ancien cyprès dans le temple de Confucius
+        </div>
 
 
       </div>
-      <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+      <div class="btnbox">
+          <!-- <img src="@/assets/Buttonleft.png" class="btnleft"> -->
+          <img @click="handleLeftClick" src="@/assets/ButtonLeft.png" class="btnleft">
+        </div>
     </div>
   </div>
 </template>
@@ -74,12 +81,6 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-.animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
-  animation-fill-mode: forwards;
-}
-
-
 html,
 body {
   margin: 0;
@@ -89,6 +90,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btnbox {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 0px;
+  gap: 80px;
+
+  position: absolute;
+  width: 100%; /* 让容器充满父容器的宽度 */
+  bottom: 40px;
+}
+
+.btnleft{
+  /* Group 17 */
+
+width: 88px;
+height: 88px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 
 .wrapper {
@@ -136,89 +162,70 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {
-position: absolute;
-width: 364px;
-height: 183px;
-left: 40px;
-top: 24px;
-
-
-}
-.logo2 {
-/* 6-2 */
-/* 图层 25 1 */
-
-position: absolute;
-width: 583px;
-height: 541px;
-left: 167px;
-top: 162px;
-
-
-}
-
-.logo3{
-/* 图层 12 1 */
+.logo1 {/* 组 25 1 */
+/* 组 25 1 */
 
 position: absolute;
 width: 620px;
-height: 386.21px;
+height: 1095.64px;
 left: calc(50% - 620px/2);
-top: 883.79px;
+top: 205px;
 
+
+
+
+}
+.logo2{
+  /* 组 25 1 */
+width: 620px;
+height: 1095.64px;
 
 }
 
 .text1{
-/* 孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。 */
-
-/* 乐 */
+/* 让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。 */
 
 position: absolute;
-width: 160px;
-height: 160px;
-left: 68px;
-top: 426px;
-
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 160px;
-line-height: 160px;
-/* identical to box height, or 100% */
-text-align: center;
-letter-spacing: 4px;
-
-color: #A43C21;
-
-
-
-
-}
-.text2{
-
-
-/* 孔子酷爱音乐，认为音乐能够陶冶性情，净化心灵。他提倡“雅乐”，认为音乐应该具有教育意义和社会价值。 */
-
-position: absolute;
-width: 620px;
-height: 162px;
-left: calc(50% - 620px/2);
-top: 725px;
+width: 660px;
+height: 216px;
+left: calc(50% - 660px/2);
+top: 34px;
 font-family: 'SourceHanSansCN', sans-serif;
+
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
-line-height: 54px;
+font-size: 24px;
+line-height: 44px;
 /* or 180% */
 text-align: justify;
 letter-spacing: -0.6px;
 
 color: #010101;
 
+z-index: 1;
+
 
 }
+.text2{
+  /* 孔庙里的古柏树 */
 
+position: absolute;
+width: 250px;
+height: 40px;
+left: 85px;
+top: 521px;
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 30px;
+/* identical to box height, or 167% */
+
+color: #4B180A;
+z-index: 2;
+
+
+
+}
 
 </style>

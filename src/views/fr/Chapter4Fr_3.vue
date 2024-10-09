@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/chapter3_3';
-let nextR = '/cn/chapter5_3';
+let nextLeft = '/fr/chapter3_3';
+let nextR = '/fr/chapter5_3';
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,22 +34,26 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">孔子故里的孔乐表演，吸引了众多海外游客。</div>
+        <div class="text1">Le spectacle de musique de Confucius dans sa ville natale attire de nombreux touristes étrangers.
+        </div>
 
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
-            <div class="text2">曲阜国际孔子文化节，正在表演的祭孔乐舞</div>
+            <div class="text2">La musique et la danse en l'honneur de Confucius lors du Festival international de la culture de Confucius de Qufu.
+            </div>
           </div>
 
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
-            <div class="text3">济宁 尼山，跨越千年的金声玉振再次被奏响</div>
+            <div class="text3">Au mont Ni, à Jining, la musique millénaire est rejouée.
+            </div>
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-            <div class="text4">泰安 中华泰山，封禅大典的现场</div>
+            <div class="text4">Le site de la cérémonie de sacrifices Feng et Shan au mont chinois Tai à Tai'an
+            </div>
           </div>
         </div>
       </div>
@@ -246,15 +250,15 @@ body {
   /* 孔子故里的孔乐表演，吸引了众多海外游客。 */
 
   position: absolute;
-  width: 620px;
+  width: 660px;
   height: 54px;
   left: calc(50% - 620px / 2 + 3px);
-  top: 13px;
+  top: 8px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 54px;
+  font-size: 22px;
+  line-height: 34px;
   /* identical to box height, or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
@@ -263,30 +267,30 @@ body {
 }
 .text2 {
   position: absolute;
-  width: 620px; /* 文字的宽度 */
+  width: 600px; /* 文字的宽度 */
   height: auto; /* 适应内容高度，去掉固定高度 */
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400; /* 字体权重 */
-  font-size: 24px; /* 字体大小 */
-  line-height: 40px; /* 行高 */
+  font-size: 20px; /* 字体大小 */
+  line-height: 20px; /* 行高 */
   color: #4b180a; /* 字体颜色 */
-  top: 380px;
+  top: 375px;
 }
 
 .text3 {
   /* 济宁 尼山，跨越千年的金声玉振再次被奏响 */
 
   position: absolute;
-  width: 465px;
+  width: 600px;
   height: 40px;
   left: calc(50% - 465px / 2 - 72.5px);
-  top: 750.24px;
+  top: 755.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 20px;
   /* identical to box height, or 167% */
 
   color: #4b180a;
@@ -295,15 +299,15 @@ body {
   /* 泰安 中华泰山，封禅大典的现场 */
 
   position: absolute;
-  width: 465px;
+  width: 600px;
   height: 40px;
   left: calc(50% - 465px / 2 - 72.5px);
   top: 1175.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 20px;
   /* identical to box height, or 167% */
 
   color: #4b180a;

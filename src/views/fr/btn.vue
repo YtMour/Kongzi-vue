@@ -16,7 +16,6 @@ defineProps({
 </script>
 
 <template>
-    
   <div class="btnbox">
           <img @click="onLeftClick" src="@/assets/Buttonleft.png" class="btnleft">
           <img @click="onRightClick" src="@/assets/ButtonRight.png" class="btnleft">

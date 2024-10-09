@@ -1,18 +1,19 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
+import { onMounted } from 'vue';
+
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter4_3';
-let nextR = '/cn/chapter6_3';
+let nextLeft = '/fr/chapter1_3';
+let nextR = '/fr/chapter3_3';
 // 点击事件，跳转到前言页面
+
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
     { className: 'text3', animationClass: 'animation3' },
-    { className: 'text4', animationClass: 'animation4' },
 
   ];
 
@@ -33,15 +34,16 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。</div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
-        <div class="text2">在孔庙前参加成人礼仪式的年轻人们</div>
-       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/page2/图画1.png" alt="" class="logo1" />
+        <div class="text1">Statues de Confucius à l'étranger
+        </div>
+       <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
+        <div class="text2">Conférence mondiale sur le confucianisme
+        </div>
+        <div class="text3">« Les Entretiens »<br>italien
+        </div>
+       <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
 
-        <div class="text3">留在山东周村感受年俗的海外摄影家</div>
-        <div class="text4">曲阜孔庙
-          万仞宫墙</div>
 
 
       </div>
@@ -81,10 +83,10 @@ onMounted(() => {
   animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-.animation4 {
-  animation: fadeInOut 9s ease-in-out 1; /* 淡入时间为3秒 */
-  animation-fill-mode: forwards;
-}
+
+
+
+
 
 html,
 body {
@@ -142,71 +144,50 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {
-/* 232323 1 */
+.logo1 {/* 组 21 1 */
+/* 组 21 1 */
 
 position: absolute;
-width: 580px;
-height: 347px;
-left: calc(50% - 580px/2);
-top: 250px;
-
-}
-.logo2{/* 图层 16 1 */
-
-position: absolute;
-width: 580px;
-height: 320px;
-left: calc(50% - 580px/2);
-top: 665px;
-}
-.logo3{/* 图层 11 350 */
-
-position: absolute;
-width: 580px;
-height: 385.21px;
-left: calc(50% - 580px/2);
-top: 952px;
+width: 620px;
+height: 685.54px;
+left: calc(50% - 620px/2 - 12px);
+top: 10px;
 
 
 }
-.text1{
-/* 通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。 */
+.logo2 {/* 组 24 1 */
+/* 组 24 1 */
 
 position: absolute;
-width: 580px;
-height: 216px;
-left: calc(50% - 580px/2);
-top: 13px;
-font-family: 'SourceHanSansCN', sans-serif;
+width: 620px;
+height: 372.12px;
+left: calc(50% - 620px/2);
+top: 806px;
 
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+}
+.logo3{/* 图层 29 79 */
 
-color: #010101;
-
-
+position: absolute;
+width: 208px;
+height: 306px;
+left: 477px;
+top: 1000px;
 
 
 }
-.text2{
-/* 在孔庙前参加成人礼仪式的年轻人们 */
+.text1{/* 孔子造像在海外 */
 
 position: absolute;
-width: 384px;
+width: 350px;
 height: 40px;
-left: 85px;
-top: 598px;
+left: calc(50% - 175px/2 - 213.5px);
+top: 731px;
+
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
@@ -215,42 +196,41 @@ color: #4B180A;
 
 
 }
-.text3{
-/* 留在山东周村感受年俗的海外摄影家 */
+.text2{/* 世界儒学大会 */
 
 position: absolute;
-width: 384px;
+width: 300px;
 height: 40px;
-left: 85px;
-top: 986px;
-
+left: calc(50% - 144px/2 - 229px);
+top: 1178px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
 
 
 
+
+
 }
-.text4{
-  /* 曲阜孔庙 万仞宫墙 */
+.text3{/* 意大利版《论语》 */
 
 position: absolute;
-width: 96px;
-height: 80px;
-left: 544px;
-top: 1111px;
+width: 230px;
+height: 60px;
+left: calc(50% - 200px/2 - 6px);
+top: 1241px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* or 167% */
-text-align: right;
+font-size: 21px;
+line-height: 30px;
+/* identical to box height, or 167% */
+text-align: left;
 
 color: #4B180A;
 

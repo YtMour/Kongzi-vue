@@ -1,15 +1,14 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import{ onMounted } from 'vue';  // 导入 onMounted
+import { onMounted } from 'vue';  // 导入 onMounted
 const router = useRouter(); 
-let nextLeft = '/cn/chapter5';
-let nextR = '/cn/chapter7'; // 创建路由实例
+let nextLeft = '/fr/chapter6_2';
+let nextR = '/fr/detail3'; // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
+    
 
   ];
 
@@ -32,13 +31,10 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。</div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
-        <div class="text2">杏坛：孔子讲学处</div>
-       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
-        <div class="text3">宋《东家杂记》
-孔子杏坛讲学图
-</div>
+        <img src="@/assets/Chapter2/page7/图画1.png" alt="" class="logo1" />
+        <div class="text1">Portrait de Confucius, pierre picturale « Jouer le qing », dynastie Han
+        </div>
+       <img src="@/assets/Chapter2/page7/图画2.png" alt="" class="logo2" />
 
 
       </div>
@@ -74,12 +70,6 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-.animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
-  animation-fill-mode: forwards;
-}
-
-
 html,
 body {
   margin: 0;
@@ -119,7 +109,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-
+  
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -137,83 +127,44 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* hellorf_hi2242279625 1 */
+/* 组 7888 1 */
 
 position: absolute;
-width: 616px;
-height: 431px;
-left: 67px;
-top: 351px;
-mix-blend-mode: darken;
-
-
-
+width: 620px;
+height: 719.15px;
+left: calc(50% - 620px/2);
+top: 2px;
 
 }
-.logo2 {
-/* 6-2 */
+.logo2{/* 组 7884 1 */
+/* 组 7884 1 */
 
 position: absolute;
-width: 342px;
-height: 511px;
-right: 87px;
-top: 775px;
+width: 620px;
+height: 447.36px;
+left: calc(50% - 620px/2);
+top: 828px;
 
 }
-
-
 .text1{
-/* 孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。 */
 
 position: absolute;
-width: 650px;
-height: 270px;
-left: calc(50% - 650px/2);
-top: 22px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
-
-color: #010101;
-
-
-}
-.text2{
-/* 杏坛：孔子讲学处 */
-
-position: absolute;
-width: 588px;
+width: 450px;
 height: 40px;
-left: calc(50% - 588px/2 - 31px);
-top: 346px;
+left: calc(50% - 550px/2 + 201.5px);
+top: 760px;
+
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-}
-.text3{
-position: absolute;
-width: 181px;
-height: 80px;
-left: calc(50% - 181px/2 - 234.5px);
-top: 941px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* or 167% */
 
-color: #4B180A;
-}
 
+
+
+}
 </style>

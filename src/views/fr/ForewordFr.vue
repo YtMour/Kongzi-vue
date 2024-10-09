@@ -7,8 +7,8 @@ import { onMounted } from 'vue';  // 导入 onMounted
 
 // import btn from "./btn.vue"
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/home';
-let nextR = '/cn/detail';
+let nextLeft = '/fr/home';
+let nextR = '/fr/detail';
 
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
@@ -41,8 +41,10 @@ onMounted(() => {
       <div class="content">
         <img src="@/assets/前言/永远.png" alt="" class="logo1" />
         <img src="@/assets/前言/前言.png" alt="" class="logo2" />
-        <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;在跨越千年的智慧画卷中，孔子，以“仁”为核心，以“礼乐”为规范，倡“和而不同”，启“有教无类”，其思想深邃而广远，不仅塑造了华夏文明的脊梁，亦跨越山海，成为全人类共有的精神财富。</p>
-        <p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;本次展览将以图叙事，通过三个篇章带领大家穿越古今，共同感受孔子思想的永恒魅力，搭建心灵沟通的桥梁，共鉴智慧之光，启迪未来之路。</p>
+        <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;Dans la fresque de sagesse qui s'étend sur des milliers d'années, Confucius, avec « la bonté » comme noyau et « les rites et la musique » comme normes, prône « l'harmonie respectueuse de la diversité » et initie « l'enseignement sans distinction ». Ses pensées profondes et étendues ont non seulement façonné l'épine dorsale de la civilisation chinoise, mais ont également transcendé les montagnes et les océans pour devenir la richesse spirituelle partagée par l'ensemble de l'humanité.
+        </p>
+        <p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;This exhibition will narrate through images, divided into three chapters, guiding everyone through ancient and modern times to collectively experience the eternal charm of Confucius' thoughts. It aims to build a bridge of spiritual communication, jointly witness the light of wisdom, and inspire the path to the future.
+        </p>
         <img src="@/assets/前言/天下.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
          <ButtonBox
@@ -122,16 +124,16 @@ body {
 
 .text{
 position: absolute;
-width: 480px;
-height: 696px;
-left: calc(50% - 480px/2 - 17px);
+width: 500px;
+height: 750px;
+left: calc(50% - 480px/2 - 40px);
 top: 254px;
 
 font-family: 'SourceHanSansCN', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
-line-height: 58px;
+font-size: 25px;
+line-height: 30px;
 /* or 193% */
 text-align: justify;
 letter-spacing: -0.6px;
@@ -141,16 +143,16 @@ color: #000000;
 }
 .text2 {
   position: absolute;
-  width: 480px;
+  width: 500px;
   height: 696px;
-  left: calc(50% - 480px / 2 - 17px);
+  left: calc(50% - 480px/2 - 40px);
   top: calc(254px + 400px); /* 使 .text2 在 .text 下方，30px 为间距，可以根据需要调整 */
 
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 58px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: justify;
   letter-spacing: -0.6px;
   color: #000000;

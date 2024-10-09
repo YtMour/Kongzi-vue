@@ -2,15 +2,14 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter2_3';
-let nextR = '/cn/chapter4_3';
-// 点击事件，跳转到前言页面
-
+const router = useRouter();
+let nextLeft = '/fr/chapter6';
+let nextR = '/fr/detail2'; // 创建路由实例  // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
+    { className: 'text3', animationClass: 'animation2' },
 
   ];
 
@@ -24,6 +23,8 @@ onMounted(() => {
     }
   });
 });
+// 点击事件，跳转到前言页面
+
 </script>
 
 <template>
@@ -31,11 +32,10 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-
-        <div class="text1">在当今这个充满挑战与变革的时代，孔子的智慧不仅是历史的回响，更是未来的灯塔，为解决全球性问题提供了独特的视角与方案；它促使我们反思人与自然、人与社会、人与人之间的关系，倡导以和为贵、兼容并蓄的相处之道，为世界和平与发展注入不竭的动力。</div>
-       <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
-        <div class="text2">大成殿门前的海外参观者</div>
-
+        <img src="@/assets/Chapter1/page7/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
+       <div class="text1">La terre sacrée du mont Ni, la voie du grand apprentissage
+      </div>
 
       </div>
       <ButtonBox
@@ -70,7 +70,6 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
 html,
 body {
   margin: 0;
@@ -110,7 +109,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -127,58 +126,45 @@ body {
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 4孔庙大成殿的魅力 1 */
-
-/* 4孔庙大成殿的魅力 1 */
-
-position: absolute;
-width: 600px;
-height: 907.5px;
-left: calc(50% - 600px/2);
-top: 347px;
-
-}
-.text1{/* 在当今这个充满挑战与变革的时代，孔子的智慧不仅是历史的回响，更是未来的灯塔，为解决全球性问题提供了独特的视角与方案；它促使我们反思人与自然、人与社会、人与人之间的关系，倡导以和为贵、兼容并蓄的相处之道，为世界和平与发展注入不竭的动力。 */
+.logo1 {
+/* 7-1 */
 
 position: absolute;
 width: 620px;
-height: 324px;
+height: 667.24px;
 left: calc(50% - 620px/2);
-top: 21px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
-
-color: #010101;
-
+top: 2px;
 }
-.text2{/* 大成殿门前的海外参观者 */
+.logo2 {/* 7-2 */
 
 position: absolute;
-width: 264px;
+width: 620px;
+height: 555.55px;
+left: calc(50% - 620px/2);
+top: 723px;
+
+}
+
+.text1{
+/* 尼山圣境 大学之道 */
+
+position: absolute;
+width: 250px;
 height: 40px;
-left: calc(50% - 264px/2 - 165px);
-top: 1255px;
+left: calc(50% - 250px/2 + 204.5px);
+top: 767px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
-text-align: right;
 
 color: #4B180A;
 
 
 
 
-
 }
-
 </style>

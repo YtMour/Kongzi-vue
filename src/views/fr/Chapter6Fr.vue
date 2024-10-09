@@ -1,15 +1,15 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();
-let nextLeft = '/cn/chapter6';
-let nextR = '/cn/detail2'; // 创建路由实例  // 创建路由实例
+import{ onMounted } from 'vue';  // 导入 onMounted
+const router = useRouter(); 
+let nextLeft = '/fr/chapter5';
+let nextR = '/fr/chapter7'; // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text3', animationClass: 'animation3' },
 
   ];
 
@@ -32,9 +32,14 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page7/图画1.png" alt="" class="logo1" />
-        <div class="text1">尼山圣境 大学之道</div>
-       <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
+        <div class="text1">À l'âge de trente ans, Confucius a créé la première école privée afin de promouvoir l'éducation du grand public. Confucius a adopté la politique éducative de « l'enseignement selon les aptitudes de chaque individu », et ses élèves se sont répandus parmi des feudataires, et l'on dit qu'il a eu 3 000 disciples dont 72 étaient qualifiés sages. En tant que précieux héritage éducatif, les idées de Confucius ont non seulement jeté une base théorique pour l'éducation dans la Chine ancienne, mais se sont également répandues au-delà des montagnes et des océans, influençant le monde jusqu'à aujourd'hui.
+        </div>
+        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <div class="text2">Xingtan : Lieu de conférence de Confucius
+        </div>
+       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+        <div class="text3">Confucius donnant un cours à Xingtan, Hisoitres divers de Dongjia, dynastie Song
+</div>
 
 
       </div>
@@ -70,6 +75,12 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
+.animation3 {
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
+
+
 html,
 body {
   margin: 0;
@@ -127,44 +138,83 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 7-1 */
+/* hellorf_hi2242279625 1 */
 
 position: absolute;
-width: 620px;
-height: 667.24px;
-left: calc(50% - 620px/2);
-top: 2px;
+width: 616px;
+height: 431px;
+left: 67px;
+top: 351px;
+mix-blend-mode: darken;
+
+
+
+
 }
-.logo2 {/* 7-2 */
+.logo2 {
+/* 6-2 */
 
 position: absolute;
-width: 620px;
-height: 555.55px;
-left: calc(50% - 620px/2);
-top: 723px;
+width: 342px;
+height: 511px;
+right: 87px;
+top: 775px;
 
 }
+
 
 .text1{
-/* 尼山圣境 大学之道 */
+/* 孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。 */
 
 position: absolute;
-width: 201px;
-height: 40px;
-left: calc(50% - 201px/2 + 204.5px);
-top: 767px;
+width: 700px;
+height: 270px;
+left: calc(50% - 700px/2);
+top: 22px;
+font-family: 'SourceHanSansCN', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 35px;
+/* or 180% */
+text-align: justify;
+letter-spacing: -0.6px;
 
+color: #010101;
+
+
+}
+.text2{
+/* 杏坛：孔子讲学处 */
+
+position: absolute;
+width: 588px;
+height: 40px;
+left: calc(50% - 588px/2 - 31px);
+top: 346px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 30px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-
-
-
-
 }
+.text3{
+position: absolute;
+width: 230px;
+height: 80px;
+left: calc(50% - 230px/2 - 234.5px);
+top: 941px;
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 24px;
+/* or 167% */
+
+color: #4B180A;
+}
+
 </style>

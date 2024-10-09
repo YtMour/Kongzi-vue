@@ -31,7 +31,7 @@ import DetailPageCN3 from '@/views/cn/DetailPageCn3.vue';
 
 
 // 英文
-import HomeEN from '@/views/cn/HomeCn.vue';
+import HomeEN from '@/views/en/HomeCn.vue';
 import ForewordEN from '@/views/en/ForewordCn.vue';
 import Chapter1EN from '@/views/en/Chapter1Cn.vue';
 import Chapter2EN from '@/views/en/Chapter2Cn.vue';
@@ -63,34 +63,34 @@ import DetailPageEN3 from '@/views/en/DetailPageCn3.vue';
 
 
 // 法文
-import HomeFR from '@/views/cn/HomeCn.vue';
-import ForewordFR from '@/views/fr/ForewordCn.vue';
-import Chapter1FR from '@/views/fr/Chapter1Cn.vue';
-import Chapter2FR from '@/views/fr/Chapter2Cn.vue';
-import Chapter3FR from '@/views/fr/Chapter3Cn.vue';
-import Chapter4FR from '@/views/fr/Chapter4Cn.vue';
-import Chapter5FR from '@/views/fr/Chapter5Cn.vue';
-import Chapter6FR from '@/views/fr/Chapter6Cn.vue';
-import Chapter7FR from '@/views/fr/Chapter7Cn.vue';
-import DetailPageFR from '@/views/fr/DetailPageCn.vue';
+import HomeFR from '@/views/fr/HomeFr.vue';
+import ForewordFR from '@/views/fr/ForewordFr.vue';
+import Chapter1FR from '@/views/fr/Chapter1Fr.vue';
+import Chapter2FR from '@/views/fr/Chapter2Fr.vue';
+import Chapter3FR from '@/views/fr/Chapter3Fr.vue';
+import Chapter4FR from '@/views/fr/Chapter4Fr.vue';
+import Chapter5FR from '@/views/fr/Chapter5Fr.vue';
+import Chapter6FR from '@/views/fr/Chapter6Fr.vue';
+import Chapter7FR from '@/views/fr/Chapter7Fr.vue';
+import DetailPageFR from '@/views/fr/DetailPageFr.vue';
 
-import Chapter1FR_2 from '@/views/fr/Chapter1Cn_2.vue';
-import Chapter2FR_2 from '@/views/fr/Chapter2Cn_2.vue';
-import Chapter3FR_2 from '@/views/fr/Chapter3Cn_2.vue';
-import Chapter4FR_2 from '@/views/fr/Chapter4Cn_2.vue';
-import Chapter5FR_2 from '@/views/fr/Chapter5Cn_2.vue';
-import Chapter6FR_2 from '@/views/fr/Chapter6Cn_2.vue';
-import Chapter7FR_2 from '@/views/fr/Chapter7Cn_2.vue';
-import DetailPageFR2 from '@/views/fr/DetailPageCn2.vue';
+import Chapter1FR_2 from '@/views/fr/Chapter1Fr_2.vue';
+import Chapter2FR_2 from '@/views/fr/Chapter2Fr_2.vue';
+import Chapter3FR_2 from '@/views/fr/Chapter3Fr_2.vue';
+import Chapter4FR_2 from '@/views/fr/Chapter4Fr_2.vue';
+import Chapter5FR_2 from '@/views/fr/Chapter5Fr_2.vue';
+import Chapter6FR_2 from '@/views/fr/Chapter6Fr_2.vue';
+import Chapter7FR_2 from '@/views/fr/Chapter7Fr_2.vue';
+import DetailPageFR2 from '@/views/fr/DetailPageFr2.vue';
 
-import Chapter1FR_3 from '@/views/fr/Chapter1Cn_3.vue';
-import Chapter2FR_3 from '@/views/fr/Chapter2Cn_3.vue';
-import Chapter3FR_3 from '@/views/fr/Chapter3Cn_3.vue';
-import Chapter4FR_3 from '@/views/fr/Chapter4Cn_3.vue';
-import Chapter5FR_3 from '@/views/fr/Chapter5Cn_3.vue';
-import Chapter6FR_3 from '@/views/fr/Chapter6Cn_3.vue';
-import Chapter7FR_3 from '@/views/fr/Chapter7Cn_3.vue';
-import DetailPageFR3 from '@/views/fr/DetailPageCn3.vue';
+import Chapter1FR_3 from '@/views/fr/Chapter1Fr_3.vue';
+import Chapter2FR_3 from '@/views/fr/Chapter2Fr_3.vue';
+import Chapter3FR_3 from '@/views/fr/Chapter3Fr_3.vue';
+import Chapter4FR_3 from '@/views/fr/Chapter4Fr_3.vue';
+import Chapter5FR_3 from '@/views/fr/Chapter5Fr_3.vue';
+import Chapter6FR_3 from '@/views/fr/Chapter6Fr_3.vue';
+import Chapter7FR_3 from '@/views/fr/Chapter7Fr_3.vue';
+import DetailPageFR3 from '@/views/fr/DetailPageFr3.vue';
 
 const routes = [
   {
@@ -370,133 +370,133 @@ const routes = [
   {
     path: '/fr/home',
     name: 'HomeFR',
-    componfrt: HomeFR,
+    component: HomeFR,
   },
   {
     path: '/fr/foreword',
     name: 'ForewordFR',
-    componfrt: ForewordFR,
+    component: ForewordFR,
   },
   {
     path: '/fr/detail',
     name: 'DetailPageFR',
-    componfrt: DetailPageFR,
+    component: DetailPageFR,
   },
   {
     path: '/fr/detail2',
     name: 'DetailPageFR2',
-    componfrt: DetailPageFR2,
+    component: DetailPageFR2,
   },
   {
     path: '/fr/detail3',
     name: 'DetailPageFR3',
-    componfrt: DetailPageFR3,
+    component: DetailPageFR3,
   },
   {
     path: '/fr/chapter1',
     name: 'Chapter1FR',
-    componfrt: Chapter1FR,
+    component: Chapter1FR,
   },
   {
     path: '/fr/chapter2',
     name: 'Chapter2FR',
-    componfrt: Chapter2FR,
+    component: Chapter2FR,
   },
   {
     path: '/fr/chapter3',
     name: 'Chapter3FR',
-    componfrt: Chapter3FR,
+    component: Chapter3FR,
   },
   {
     path: '/fr/chapter4',
     name: 'Chapter4FR',
-    componfrt: Chapter4FR,
+    component: Chapter4FR,
   },
   {
     path: '/fr/chapter5',
     name: 'Chapter5FR',
-    componfrt: Chapter5FR,
+    component: Chapter5FR,
   },
   {
     path: '/fr/chapter6',
     name: 'Chapter6FR',
-    componfrt: Chapter6FR,
+    component: Chapter6FR,
   },
   {
     path: '/fr/chapter7',
     name: 'Chapter7FR',
-    componfrt: Chapter7FR,
+    component: Chapter7FR,
   },
   {
     path: '/fr/chapter1_2',
     name: 'Chapter1FR_2',
-    componfrt: Chapter1FR_2,
+    component: Chapter1FR_2,
   },
   {
     path: '/fr/chapter2_2',
     name: 'Chapter2FR_2',
-    componfrt: Chapter2FR_2,
+    component: Chapter2FR_2,
   },
   {
     path: '/fr/chapter3_2',
     name: 'Chapter3FR_2',
-    componfrt: Chapter3FR_2,
+    component: Chapter3FR_2,
   },
   {
     path: '/fr/chapter4_2',
     name: 'Chapter4FR_2',
-    componfrt: Chapter4FR_2,
+    component: Chapter4FR_2,
   },
   {
     path: '/fr/chapter5_2',
     name: 'Chapter5FR_2',
-    componfrt: Chapter5FR_2,
+    component: Chapter5FR_2,
   },
   {
     path: '/fr/chapter6_2',
     name: 'Chapter6FR_2',
-    componfrt: Chapter6FR_2,
+    component: Chapter6FR_2,
   },
   {
     path: '/fr/chapter7_2',
     name: 'Chapter7FR_2',
-    componfrt: Chapter7FR_2,
+    component: Chapter7FR_2,
   },
 
   {
     path: '/fr/chapter1_3',
     name: 'Chapter1FR_3',
-    componfrt: Chapter1FR_3,
+    component: Chapter1FR_3,
   },
   {
     path: '/fr/chapter2_3',
     name: 'Chapter2FR_3',
-    componfrt: Chapter2FR_3,
+    component: Chapter2FR_3,
   },
   {
     path: '/fr/chapter3_3',
     name: 'Chapter3FR_3',
-    componfrt: Chapter3FR_3,
+    component: Chapter3FR_3,
   },
   {
     path: '/fr/chapter4_3',
     name: 'Chapter4FR_3',
-    componfrt: Chapter4FR_3,
+    component: Chapter4FR_3,
   },
   {
     path: '/fr/chapter5_3',
     name: 'Chapter5FR_3',
-    componfrt: Chapter5FR_3,
+    component: Chapter5FR_3,
   },
   {
     path: '/fr/chapter6_3',
     name: 'Chapter6FR_3',
-    componfrt: Chapter6FR_3,
+    component: Chapter6FR_3,
   },
   {
     path: '/fr/chapter7_3',
     name: 'Chapter7FR_3',
-    componfrt: Chapter7FR_3,
+    component: Chapter7FR_3,
   },
 
 ];

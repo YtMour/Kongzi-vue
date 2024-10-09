@@ -3,14 +3,15 @@ import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
 const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter2';
-let nextR = '/cn/chapter4';
+let nextLeft = '/fr/chapter4';
+let nextR = '/fr/chapter6';
 // 点击事件，跳转到前言页面
-// 
+
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
+    { className: 'text3', animationClass: 'animation2' },
 
   ];
 
@@ -31,12 +32,16 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
-        <div class="text1">《孔子行教像》相传<br />为唐代石刻，现保存<br />在曲阜孔庙圣迹殿内</div>
-       <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
-        <div class="text2">宋代 《曾子问孝于孔子》</div>
+        <div class="text1">De la philosophie de la vie à la gouvernance du pays, la sagesse de Confucius a eu un impact profond, et ses pensées sont extrêmement étendues. Avec la bonté comme noyau, les rites et la musique comme normes, et le juste milieu comme méthode, il a guidé les gens pour construire un monde beau de concorde. Le système de pensée confucéen fondé par Confucius est la cristallisation de l'histoire et de la culture chinoises, et constitue l'axe principal de la culture traditionnelle chinoise.
+        </div>
+        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <div class="text2">La salle Dacheng, salle principale du temple de Confucius à Qufu, porte le sens de « rassembler le tout » de Confucius. Elle a été construite sous la dynastie Tang (618-907) et reconstruite pendant la période Yongzheng de la dynastie Qing (1722-1735).
+        </div>
+       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <div class="text3">Pilier du dragon de la salle Dacheng
+        </div>
 
-
+          
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -75,7 +80,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-
   overflow-x: hidden; /* 防止水平滚动条 */
   display: flex;
   justify-content: center;
@@ -128,67 +132,82 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 3-1 */
-
-position: absolute;
-width: 544px;
-height: 739px;
-left: 100px;
-top: 2px;
-
-
-
-
-}
-.logo2 {
-/* 3-2 */
+/* 5-1 */
 
 position: absolute;
 width: 620px;
-height: 450.27px;
+height: 428.69px;
 left: calc(50% - 620px/2);
-top: 795px;
+top: 312px;
 
 }
-.text1{
-/* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
+.logo2 {
+/* 5-2 */
 
 position: absolute;
-width: 224px;
-height: 120px;
-left: 96px;
-top: 59px;
+width: 332px;
+height: 455px;
+left: 326px;
+top: 840px;
+}
+.text1{
+/* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
+
+position: absolute;
+width: 670px;
+height: 270px;
+left: calc(50% - 670px/2);
+top: 20px;
+
+font-family: 'SourceHanSansCN', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+/* or 180% */
+text-align: justify;
+letter-spacing: -0.6px;
+
+color: #010101;
+
+
+}
+.text2{
+/* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
+
+position: absolute;
+width: 650px;
+height: 80px;
+left: calc(50% - 650px/2);
+top: 741px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 20px;
 /* or 167% */
 
 color: #4B180A;
 
 
 }
-.text2{
-/* 宋代 《曾子问孝于孔子》 */
+.text3{
+/* 大成殿龙柱 */
 
 position: absolute;
-width: 273px;
+width: 200px;
 height: 40px;
-left: 82px;
-top: 1257px;
-
+left: calc(50% - 200px/2 - 155px);
+top: 1258px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
-line-height: 40px;
+font-size: 21px;
+line-height: 20px;
 /* identical to box height, or 167% */
 
 color: #4B180A;
-
-
 
 
 }

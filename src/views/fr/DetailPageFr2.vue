@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/chapter7';
-let nextR = '/cn/chapter1_2'; // 创建路由实例  // 创建路由实例
+let nextLeft = '/fr/chapter7';
+let nextR = '/fr/chapter1_2'; // 创建路由实例  // 创建路由实例
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter1_2') // 跳转到前言页面
@@ -42,20 +42,21 @@ onMounted(() => {
         <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
-          <div class="text">第二章</div>
+          <div class="text">Le chapitre 2</div>
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">孔子文化</div>
-          <div class="text3">与</div>
-          <div class="text4">日常生活</div>
+
+          <div class="text2">La culture de</div>
+          <div class="text3">Confucius et</div>
+          <div class="text4">la vie quotidienne</div>
         </div>
 
         <div class="textbox3">
           <div class="text5">
-            人类要在21世纪生存下去，就必须回到25个世纪以前，去涉取孔子的智慧。
+            Pour survivre au xxie siècle, l’humanité devra remonter vingt-cinq siècles en arrière et s’adonner à la sagesse de confucius.
           </div>
-          <div class="text6">--诺贝尔物理学奖获得者，汉内斯·阿尔文（瑞典）</div>
+          <div class="text6">- hannes alvin, prix nobel de physique (Suède)</div>
         </div>
 
         <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
@@ -218,20 +219,20 @@ body {
 
 .text {
   position: absolute;
-  width: 180px;
-  height: 100px;
-  left: calc(50% - 158px / 2 + 1px);
-  top: 303px;
+width: 240px;
+height: 100px;
+left: calc(50% - 158px/2 - 20px);
+top: 313px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 100px;
-  text-align: center;
-  letter-spacing: 4px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 50px;
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .xian1 {
   border: none; /* 不使用实际边框 */
@@ -244,79 +245,73 @@ body {
 }
 
 .text2 {
-  /* 孔子生平 与 孔子思想 */
-
   position: absolute;
-  width: 350px;
-  height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
-  top: 430px;
+width: 400px;
+height: 300px;
+left: calc(50% - 400px/2 + 1px);
+top: 430px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 100px;
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 4px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 30px;
+/* or 125% */
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .text3 {
-  /* 孔子生平 与 孔子思想 */
-
   position: absolute;
-  width: 332px;
-  height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
-  top: 540px;
+width: 400px;
+height: 300px;
+left: calc(50% - 400px/2 + 1px);
+top: 540px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 100px;
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 4px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .text4 {
   /* 孔子生平 与 孔子思想 */
 
   position: absolute;
-  width: 350px;
-  height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
-  top: 650px;
+width: 500px;
+height: 300px;
+left: calc(50% - 500px/2 + 1px);
+top: 650px;
+font-family: 'FangzhengKaiti', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 46px;
+line-height: 30px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 100px;
-  /* or 125% */
-  text-align: center;
-  letter-spacing: 4px;
+text-align: center;
+letter-spacing: 4px;
 
-  color: #00538f;
+color: #00538F;
 }
 .text5 {
   /* 人类要在21世纪生存下去，就必须回到25个世纪以前，去涉取孔子的智慧。 */
 
   position: absolute;
-  width: 600px;
+  width: 650px;
   height: 80px;
-  left: calc(50% - 600px / 2);
+  left: calc(50% - 650px / 2);
   top: 872px;
 
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 35px;
   /* or 143% */
 
   color: #4b180a;
@@ -325,9 +320,9 @@ body {
   /* --诺贝尔物理学奖获得者，汉内斯·阿尔文（瑞典） */
 
   position: absolute;
-  width: 441px;
+  width: 500px;
   height: 40px;
-  left: 234px;
+  left: 184px;
   top: 978px;
 
   font-family: 'Xiahuwenkai', sans-serif;

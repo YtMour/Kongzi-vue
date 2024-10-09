@@ -1,18 +1,23 @@
 <script setup>
 import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
-import { onMounted } from 'vue' // 导入 onMounted
+import { onMounted } from 'vue'
+
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/chapter2_2';
-let nextR = '/cn/chapter4_2';
+let nextLeft = '/fr/detail';
+let nextR = '/fr/chapter2';
 // 点击事件，跳转到前言页面
+// const goToNextPage = () => {
+//   router.push('/cn/chapter2') // 跳转到前言页面
+//   window.scrollTo(0, 0)
+// }
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
-    { className: 'text4', animationClass: 'animation4' }
+    { className: 'text2', animationClass: 'animation1' },
+    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text4', animationClass: 'animation3' }
   ]
 
   texts.forEach(({ className, animationClass }) => {
@@ -34,15 +39,20 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
-        <div class="text1">食</div>
-        <div class="text2">
-          孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。
+        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
+
+        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
+
+        <div class="text1">"Confucius in Leisure"
         </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
-        <div class="text3">战国 牺尊 收藏于齐文化博物院</div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-        <div class="text4">商周十供<br />收藏于孔子博物馆</div>
+        <div class="text2">Ming Dynasty, painter unknown</div>
+        <div class="text3">
+          Confucius (551 BC - 479 BC), a great thinker, educator, and philosopher of ancient China, honored by later generations as the "Supreme Sage and Foremost Teacher" and "Sage."
+        </div>
+        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
+        <div class="text4">Confucius Museum located in Qufu, Shandong, the hometown of Confucius
+        </div>
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -76,12 +86,9 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
+
 .animation3 {
-  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
-  animation-fill-mode: forwards;
-}
-.animation4 {
-  animation: fadeInOut 9s ease-in-out 1; /* 淡入时间为3秒 */
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为4秒 */
   animation-fill-mode: forwards;
 }
 
@@ -101,10 +108,11 @@ body {
   justify-content: center;
   align-items: center; /* 垂直居中 */
   width: 100vw;
-  height: 100vh; /* 充满视口高度 */
+  min-height: 100vh; /* 充满视口高度 */
   position: relative; /* 相对定位以适应绝对定位的子元素 */
   margin: 0; /* 居中 */
   padding: 0;
+  overflow: hidden; /* 隐藏多余的内容溢出 */
 }
 
 .background {
@@ -123,12 +131,12 @@ body {
 .content {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
-  max-height: 100%; /* 限制内容最大高度 */
+  min-height: 100%; /* 限制内容最大高度 */
 
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
-  padding: 20px; /* 内边距，以防止内容溢出 */
+  padding: 0px; /* 内边距，以防止内容溢出 */
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
@@ -145,108 +153,122 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  /* 组 9 1 */
+  /* Group 45 */
 
   position: absolute;
-  width: 428px;
-  height: 289px;
-  left: calc(50% - 428px / 2 - 87px);
-  top: 27px;
-
-  background-blend-mode: darken;
+  width: 291.53px;
+  height: 129.56px;
+  right: 180.45px;
+  top: 19.44px;
 }
 .logo2 {
-  /* 牺尊  战国 齐文化博物院藏 国家一级文物 1 */
+  /* Group 45 */
 
   position: absolute;
-  width: 600px;
-  height: 406px;
-  left: calc(50% - 600px / 2);
-  top: 468px;
+  width: 167px;
+  height: 147px;
+  right: 30.45px;
+  top: 19.44px;
 }
 .logo3 {
-  /* 图层 15 1 */
+  /* 1-1 */
 
   position: absolute;
-  width: 328px;
-  height: 362px;
-  left: 334px;
-  top: 944px;
+  width: 489px;
+  height: 589px;
+  right: 0.5px;
+  top: 49px;
+}
+.logo4 {
+  position: absolute;
+  width: 620px;
+  height: 423.73px;
+  left: calc(50% - 620px / 2);
+  top: 826px;
 }
 .text1 {
-  /* 食 */
+  /* 《孔子燕居像》 */
 
-  /* 食 */
+  width: 260px;
+  height: 40px;
 
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  left: 526px;
-  top: 37px;
-  font-family: 'FangzhengKaiti', sans-serif;
+  font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 160px;
-  line-height: 160px;
-  /* identical to box height, or 100% */
-  text-align: center;
-  letter-spacing: 4px;
-
-  color: #dfa887;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  /* identical to box height, or 143% */
+  color: #4b180a;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  position: absolute;
+  left: 40px;
+  top: 325px;
 }
 .text2 {
-  /* 孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。 */
-
+  /* 明·佚名 绘 */
+  width: 230;
+  height: 40px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+  text-align: right;
+  color: #4b180a;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  position: absolute;
+  left: 125px;
+  top: 375px;
+}
+.text3 {
   position: absolute;
   width: 600px;
-  height: 162px;
+  height: 150px;
   left: calc(50% - 600px / 2);
-  top: 299px;
+  top: 635px;
+
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 54px;
-  /* or 180% */
+  font-size: 25px;
+  line-height: 38px;
+  /* or 167% */
   text-align: justify;
   letter-spacing: -0.6px;
-
   color: #010101;
 }
-.text3 {
-  /* 战国 牺尊 收藏于齐文化博物院 */
-
-  position: absolute;
-  width: 329px;
-  height: 40px;
-  left: calc(50% - 329px / 2 - 146.5px);
-  top: 880px;
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  /* identical to box height, or 167% */
-
-  color: #4b180a;
-}
 .text4 {
-  /* 商周十供,收藏于孔子博物馆 */
-  /* 商周十供 收藏于孔子博物馆 */
+  /* 位于“孔子故里”山东曲阜的孔子博物馆 */
 
   position: absolute;
-  width: 192px;
-  height: 80px;
-  left: calc(50% - 192px / 2 - 205px);
-  top: 1158px;
-
+  width: 560px;
+  height: 40px;
+  right: 15px;
+  top: 1250px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  /* or 167% */
-
+  font-size: 20px;
+  line-height: 15px;
+  /* identical to box height, or 167% */
   color: #4b180a;
 }
 </style>

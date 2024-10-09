@@ -1,17 +1,15 @@
 <script setup>
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/chapter3';
-let nextR = '/cn/chapter5';
-// 点击事件，跳转到前言页面
-
+import{ onMounted } from 'vue';  // 导入 onMounted
+const router = useRouter();
+let nextLeft = '/fr/chapter5_3';
+let nextR = '/fr/chapter7_3';  // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
+    { className: 'text3', animationClass: 'animation3' },
 
   ];
 
@@ -25,6 +23,7 @@ onMounted(() => {
     }
   });
 });
+
 </script>
 
 <template>
@@ -32,13 +31,12 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。</div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
-        <div class="text2">山东东平汉墓壁画  孔子见老子</div>
-       <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">《圣庙祀典图考·孔子学琴于师襄》  台北故宫博物馆藏</div>
-
-
+        <div class="logo1">
+        <img src="@/assets/Chapter3/page6/图画1.png" alt="" class="img1" />
+      </div>
+      <div class="logo2">
+       <img src="@/assets/Chapter3/page6/图画2.png" alt="" class="img2" />
+      </div>
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -72,6 +70,11 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
+.animation3 {
+  animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
+  animation-fill-mode: forwards;
+}
+
 
 html,
 body {
@@ -112,7 +115,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-
+  
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -130,83 +133,22 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 4-1 */
+/* 组 11 1 */
 
 position: absolute;
 width: 620px;
-height: 315.69px;
+height: 889.46px;
 left: calc(50% - 620px/2);
-top: 204px;
-}
-.logo2 {
-/* 4-2 */
-
-position: absolute;
-width: 440px;
-height: 664.37px;
-left: calc(50% - 440px/2);
-top: 602px;
+top: 2px;
 
 }
-.text1{
-/* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
+.logo2 {/* 2428657005_vector [转换] 1 */
 
 position: absolute;
-width: 600px;
-height: 162px;
-left: calc(50% - 600px/2);
-top: 22px;
-
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
-
-color: #010101;
-
-
-
-
-
-}
-.text2{
-/* 山东东平汉墓壁画 孔子见老子 */
-position: absolute;
-width: 329px;
-height: 40px;
-left: 82px;
-top: 536px;
-
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
-
-color: #4B180A
-}
-.text3{
-  /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
-position: absolute;
-width: 570px;
-height: 40px;
-left: calc(50% - 567px/2 + 0.5px);
-top: 1258px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
-color: #4B180A;
-
-
-
+width: 750px;
+height: 523.87px;
+left: calc(50% - 750px/2);
+top: 863px;
 
 }
 

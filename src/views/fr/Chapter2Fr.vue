@@ -1,48 +1,46 @@
 <script setup>
-import { useRouter } from 'vue-router' // 导入 useRouter
-import '@/assets/font.css'
-import { onMounted } from 'vue'
+import { useRouter } from 'vue-router';  // 导入 useRouter
+import '@/assets/font.css';
+import { onMounted } from 'vue';
 
-const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/detail3';
-let nextR = '/cn/chapter2_3';
+const router = useRouter();  // 创建路由实例
+let nextLeft = '/fr/chapter1';
+let nextR = '/fr/chapter3';
 // 点击事件，跳转到前言页面
-// 
+
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation1' },
-    { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation3' }
-  ]
+    { className: 'text2', animationClass: 'animation2' },
+
+  ];
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`)
+    const element = document.querySelector(`.${className}`);
     if (element) {
-      element.classList.add(animationClass)
+      element.classList.add(animationClass);
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
-      })
+        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
+      });
     }
-  })
-})
+  });
+});
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">
-      <!-- 点击整个页面 -->
-      <div class="background"></div>
-      <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
+      <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
+        <div class="text1">La grotte Fuzi, au pied du mont Ni, qui est censée être le lieu de naissance de Confucius.
+        </div>
+       <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
+        <div class="text2">La statue de Confucius, haute de 72 mètres, sur le mont Ni.
+        </div>
 
-        <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
 
-        <div class="text1">国际友人在为小朋友行开笔礼</div>
-        <div class="text2">马耳他语《论语》新书发布会现场</div>
-        <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -76,7 +74,6 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
 html,
 body {
   margin: 0;
@@ -124,79 +121,76 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1,
-.logo2,
-.logo3,
-.logo4,
-.logo5 {
+.logo1, .logo2, .logo3, .logo4, .logo5 {
   position: absolute;
-  max-width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+ max-width: 100vw;
+ margin-left: auto;
+ margin-right: auto;
+
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  /* Group 45 */
+/* 2-1 */
 
-  position: absolute;
-  width: 364.8px;
-  height: 162.13px;
+position: absolute;
+width: 584px;
+height: 473px;
+left: calc(50% - 584px/2);
+top: 22px;
 
-  top: 39.44px;
+
 }
 .logo2 {
-  /* 组 23 1 */
-
-  position: absolute;
-  width: 620px;
-  height: 532.51px;
-  left: calc(50% - 620px / 2);
-  top: 104px;
+position: absolute;
+width: 620px;
+height: 709.82px;
+left: calc(50% - 620px/2);
+top: 535px;
 }
-.logo3 {
-  /* 组 22 1 */
+.text1{
+/* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
 
-  position: absolute;
-  width: 620px;
-  height: 468.35px;
-  left: calc(50% - 620px / 2);
-  top: 843px;
+position: absolute;
+width: 550px;
+height: 40px;
+left: 92px;
+top: 500px;
+
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+color: #4B180A;
+
+
 }
-.text1 {
-  /* 国际友人在为小朋友行开笔礼 */
+.text2{
+/* 72米高的尼山孔子像 */
 
-  position: absolute;
-  width: 312px;
-  height: 40px;
-  left: calc(50% - 312px / 2);
-  top: 653px;
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  /* identical to box height, or 167% */
+position: absolute;
+width: 650px;
+height: 40px;
+left: 30px;
+top: 1257px;
 
-  color: #4b180a;
+font-family: 'Xiahuwenkai', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+color: #4B180A;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 30px;
 }
 
-.text2 {
-  /* 马耳他语《论语》新书发布会现场 */
-
-  position: absolute;
-  width: 360px;
-  height: 40px;
-  left: calc(50% - 360px / 2);
-  top: 783px;
-
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  /* identical to box height, or 167% */
-
-  color: #4b180a;
-}
 </style>
