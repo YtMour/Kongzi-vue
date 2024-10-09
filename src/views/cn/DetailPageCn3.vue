@@ -4,14 +4,9 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-const handleLeftClick = () => {
-  router.push('/cn/chapter7_2');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
-const handleRightClick = () => {
-  router.push('/cn/chapter1_3');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+let nextLeft = '/cn/chapter7_2';
+let nextR = '/cn/chapter1_3';
+
 onMounted(() => {
   const texts = [
     { className: 'textbox1', animationClass: 'animation1' },
@@ -63,10 +58,10 @@ onMounted(() => {
         <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
       </div>
       
-      <div class="btnbox">
-          <img @click="handleLeftClick" src="@/assets/Buttonleft.png" class="btnleft">
-          <img @click="handleRightClick" src="@/assets/ButtonRight.png" class="btnleft">
-      </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

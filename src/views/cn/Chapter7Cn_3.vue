@@ -2,10 +2,9 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter(); 
+const router = useRouter();
 const handleLeftClick = () => {
   router.push('/cn/chapter6_3');  // 跳转到前言页面
- 
 };
  // 创建路由实例
 onMounted(() => {

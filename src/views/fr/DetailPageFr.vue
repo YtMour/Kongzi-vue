@@ -6,11 +6,7 @@ import { onMounted } from 'vue';
 const router = useRouter();  // 创建路由实例
 let nextLeft = '/fr/foreword';
 let nextR = '/fr/chapter1';
-// 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+
 
 onMounted(() => {
   const texts = [
@@ -33,7 +29,7 @@ onMounted(() => {
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage" >  <!-- 点击整个页面 -->
+    <div class="wrapper" >  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/sun.png" alt="" class="logo1" />

@@ -2,19 +2,13 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
-// import ButtonBox from '@/views/cn/btn.vue';
+import ButtonBox from '@/views/cn/btn.vue';
 //导入btn 组件
 
 // import btn from "./btn.vue"
 const router = useRouter();  // 创建路由实例
 let nextLeft = '/cn/home';
 let nextR = '/cn/detail';
-
-// 点击事件，跳转到前言页面
-// const goToNextPage = () => {
-//   router.push('/cn/detail');  // 跳转到前言页面
-//   window.scrollTo(0, 0);
-// };
 onMounted(() => {
   const texts = [
     { className: 'text', animationClass: 'animation1' },
@@ -36,7 +30,7 @@ onMounted(() => {
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
+    <div class="wrapper">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/前言/永远.png" alt="" class="logo1" />

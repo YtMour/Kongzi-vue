@@ -169,7 +169,7 @@ position: absolute;
 width: 580px;
 height: 385.21px;
 left: calc(50% - 580px/2);
-top: 1022px;
+top: 1002px;
 
 
 }
@@ -243,15 +243,15 @@ color: #4B180A;
   /* 曲阜孔庙 万仞宫墙 */
 
 position: absolute;
-width: 300px;
+width: 200px;
 height: 80px;
-left: 360px;
-top: 1111px;
+left: 460px;
+top: 1075px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 21px;
-line-height: 30px;
+line-height: 20px;
 /* or 167% */
 text-align: right;
 

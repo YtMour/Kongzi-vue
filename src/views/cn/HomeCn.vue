@@ -3,11 +3,6 @@ import { useRouter } from 'vue-router';  // 导入 useRouter
 
 const router = useRouter();  // 创建路由实例
 
-// 点击事件，跳转到前言页面
-// const goToNextPage = () => {
-//   router.push('/cn/foreword');  // 跳转到前言页面
-//   window.scrollTo(0, 0);
-// };
 const handleRightClick = () => {
   router.push('/cn/foreword');  // 跳转到前言页面
   window.scrollTo(0, 0);
@@ -16,7 +11,7 @@ const handleRightClick = () => {
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
+    <div class="wrapper">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/首页/confucius.png" alt="" class="logo1" />

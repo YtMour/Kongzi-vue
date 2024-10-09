@@ -44,14 +44,16 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">"Confucius in Leisure"
+        <div class="text1">Portrait de Confucius à loisir
         </div>
-        <div class="text2">Ming Dynasty, painter unknown</div>
+        <div class="text2">dynastie Ming, peintre inconnu
+        </div>
         <div class="text3">
-          Confucius (551 BC - 479 BC), a great thinker, educator, and philosopher of ancient China, honored by later generations as the "Supreme Sage and Foremost Teacher" and "Sage."
+          Confucius (551 - 479 av. J.-C.), grand penseur, éducateur et philosophe de la Chine ancienne, a été honoré par les générations suivantes comme « le maître souverain » et « le grand sage ».
         </div>
         <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
-        <div class="text4">Confucius Museum located in Qufu, Shandong, the hometown of Confucius
+        <div class="text4">Le musée de Confucius à Qufu, la ville natale de Confucius, dans la province du Shandong
+
         </div>
       </div>
       <ButtonBox
