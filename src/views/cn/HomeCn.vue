@@ -4,7 +4,11 @@ import { useRouter } from 'vue-router';  // 导入 useRouter
 const router = useRouter();  // 创建路由实例
 
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
+// const goToNextPage = () => {
+//   router.push('/cn/foreword');  // 跳转到前言页面
+//   window.scrollTo(0, 0);
+// };
+const handleRightClick = () => {
   router.push('/cn/foreword');  // 跳转到前言页面
   window.scrollTo(0, 0);
 };
@@ -20,6 +24,10 @@ const goToNextPage = () => {
         <img src="@/assets/首页/天下礼乐.png" alt="" class="logo3" />
         <img src="@/assets/首页/international.png" alt="" class="logo4" />
         <img src="@/assets/首页/文旅.png" alt="" class="logo5" />
+        <div class="btnbox">
+          <!-- <img src="@/assets/Buttonleft.png" class="btnleft"> -->
+          <img @click="handleRightClick" src="@/assets/ButtonRight.png" class="btnleft">
+        </div>
       </div>
     </div>
   </div>
@@ -115,8 +123,32 @@ top: 1091px;
   height: 68px;
   left: calc(50% - 655px/2 + 0.5px);
   top: 1214px;
-
-
-  
 }
+.btnbox {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 0px;
+  gap: 80px;
+
+  position: absolute;
+  width: 100%; /* 让容器充满父容器的宽度 */
+  bottom: 40px;
+}
+
+.btnleft{
+  /* Group 17 */
+
+width: 88px;
+height: 88px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
 </style>

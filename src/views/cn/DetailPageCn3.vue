@@ -4,12 +4,14 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-
-// 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/chapter1_3') // 跳转到前言页面
-  window.scrollTo(0, 0)
-}
+const handleLeftClick = () => {
+  router.push('/cn/chapter7_2');  // 跳转到前言页面
+  window.scrollTo(0, 0);
+};
+const handleRightClick = () => {
+  router.push('/cn/chapter1_3');  // 跳转到前言页面
+  window.scrollTo(0, 0);
+};
 onMounted(() => {
   const texts = [
     { className: 'textbox1', animationClass: 'animation1' },
@@ -31,7 +33,7 @@ onMounted(() => {
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">
+    <div class="wrapper">
       <!-- 点击整个页面 -->
       <div class="background"></div>
       <!-- 背景图容器 -->
@@ -59,6 +61,11 @@ onMounted(() => {
 
         <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
         <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
+      </div>
+      
+      <div class="btnbox">
+          <img @click="handleLeftClick" src="@/assets/Buttonleft.png" class="btnleft">
+          <img @click="handleRightClick" src="@/assets/ButtonRight.png" class="btnleft">
       </div>
     </div>
   </div>
@@ -98,6 +105,35 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden; /* 防止水平滚动条 */
+}
+
+.btnbox{
+    /* Frame 499 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 80px;
+
+position: absolute;
+width: 256px;
+height: 88px;
+/* left: calc(50% - 256px/2); */
+bottom: 40px;
+
+
+}
+.btnleft{
+    width: 88px;
+    height: 88px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .wrapper {

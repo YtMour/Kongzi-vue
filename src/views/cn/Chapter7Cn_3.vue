@@ -2,7 +2,12 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
+const router = useRouter(); 
+const handleLeftClick = () => {
+  router.push('/cn/chapter6_3');  // 跳转到前言页面
+ 
+};
+ // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
@@ -22,10 +27,10 @@ onMounted(() => {
   });
 });
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/home');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+// const goToNextPage = () => {
+//   router.push('/cn/home');  // 跳转到前言页面
+//   window.scrollTo(0, 0);
+// };
 </script>
 
 <template>
@@ -42,6 +47,10 @@ const goToNextPage = () => {
 
 
       </div>
+      <div class="btnbox">
+          <!-- <img src="@/assets/Buttonleft.png" class="btnleft"> -->
+          <img @click="handleLeftClick" src="@/assets/ButtonLeft.png" class="btnleft">
+        </div>
     </div>
   </div>
 </template>
@@ -79,6 +88,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btnbox {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  padding: 0px;
+  gap: 80px;
+
+  position: absolute;
+  width: 100%; /* 让容器充满父容器的宽度 */
+  bottom: 40px;
+}
+
+.btnleft{
+  /* Group 17 */
+
+width: 88px;
+height: 88px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 
 .wrapper {

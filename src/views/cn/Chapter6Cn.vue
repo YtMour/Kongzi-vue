@@ -2,7 +2,9 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import{ onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
+const router = useRouter(); 
+let nextLeft = '/cn/chapter5';
+let nextR = '/cn/chapter7'; // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
@@ -22,10 +24,7 @@ onMounted(() => {
   });
 });
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/chapter7');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+
 </script>
 
 <template>
@@ -43,6 +42,10 @@ const goToNextPage = () => {
 
 
       </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

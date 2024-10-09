@@ -4,10 +4,11 @@ import '@/assets/font.css';
 import { onMounted } from 'vue';  
 
 const router = useRouter();  // 创建路由实例
-
+let nextLeft = '/cn/foreword';
+let nextR = '/cn/chapter1';
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
-  router.push('/cn/chapter1');  // 跳转到前言页面
+  router.push('');  // 跳转到前言页面
   window.scrollTo(0, 0);
 };
 
@@ -59,6 +60,10 @@ onMounted(() => {
         <img src="@/assets/Chapter1/bamboo.png" alt="" class="logo6" />
 
       </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

@@ -4,12 +4,13 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-
+let nextLeft = '/cn/detail';
+let nextR = '/cn/chapter2';
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/chapter2') // 跳转到前言页面
-  window.scrollTo(0, 0)
-}
+// const goToNextPage = () => {
+//   router.push('/cn/chapter2') // 跳转到前言页面
+//   window.scrollTo(0, 0)
+// }
 
 onMounted(() => {
   const texts = [
@@ -51,6 +52,10 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
         <div class="text4">位于“孔子故里”山东曲阜的孔子博物馆</div>
       </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

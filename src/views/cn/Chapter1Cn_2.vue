@@ -5,12 +5,10 @@ import { onMounted } from 'vue';
 
 
 const router = useRouter();  // 创建路由实例
-
+let nextLeft = '/cn/detail2';
+let nextR = '/cn/chapter2_2';
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/chapter2_2');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+
 
 onMounted(() => {
   const texts = [
@@ -52,6 +50,10 @@ onMounted(() => {
 
 
       </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

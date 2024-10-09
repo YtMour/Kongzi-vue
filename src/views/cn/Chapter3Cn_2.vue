@@ -3,12 +3,10 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-
+let nextLeft = '/cn/chapter2_2';
+let nextR = '/cn/chapter4_2';
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/chapter4_2') // 跳转到前言页面
-  window.scrollTo(0, 0)
-}
+
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
@@ -46,6 +44,10 @@ onMounted(() => {
         <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
         <div class="text4">商周十供<br />收藏于孔子博物馆</div>
       </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

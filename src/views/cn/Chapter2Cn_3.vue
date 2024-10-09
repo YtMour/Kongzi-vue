@@ -4,12 +4,10 @@ import '@/assets/font.css';
 import { onMounted } from 'vue';
 
 const router = useRouter();  // 创建路由实例
-
+let nextLeft = '/cn/chapter1_3';
+let nextR = '/cn/chapter3_3';
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/chapter3_3');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+
 
 onMounted(() => {
   const texts = [
@@ -46,6 +44,10 @@ onMounted(() => {
 
 
       </div>
+      <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
     </div>
   </div>
 </template>

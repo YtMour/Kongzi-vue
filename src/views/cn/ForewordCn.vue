@@ -2,13 +2,19 @@
 import { useRouter } from 'vue-router';  // 导入 useRouter
 import '@/assets/font.css';
 import { onMounted } from 'vue';  // 导入 onMounted
+// import ButtonBox from '@/views/cn/btn.vue';
+//导入btn 组件
+
+// import btn from "./btn.vue"
 const router = useRouter();  // 创建路由实例
+let nextLeft = '/cn/home';
+let nextR = '/cn/detail';
 
 // 点击事件，跳转到前言页面
-const goToNextPage = () => {
-  router.push('/cn/detail');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+// const goToNextPage = () => {
+//   router.push('/cn/detail');  // 跳转到前言页面
+//   window.scrollTo(0, 0);
+// };
 onMounted(() => {
   const texts = [
     { className: 'text', animationClass: 'animation1' },
@@ -38,13 +44,18 @@ onMounted(() => {
         <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;在跨越千年的智慧画卷中，孔子，以“仁”为核心，以“礼乐”为规范，倡“和而不同”，启“有教无类”，其思想深邃而广远，不仅塑造了华夏文明的脊梁，亦跨越山海，成为全人类共有的精神财富。</p>
         <p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;本次展览将以图叙事，通过三个篇章带领大家穿越古今，共同感受孔子思想的永恒魅力，搭建心灵沟通的桥梁，共鉴智慧之光，启迪未来之路。</p>
         <img src="@/assets/前言/天下.png" alt="" class="logo3" />
-
+        <!-- <btn></btn> -->
+         <ButtonBox
+          :onLeftClick="() => router.push(nextLeft)"
+          :onRightClick="() => router.push(nextR)"
+         ></ButtonBox>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
 html,
 body {
   margin: 0;
