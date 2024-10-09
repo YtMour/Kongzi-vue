@@ -1,45 +1,42 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue'
 
-
-const router = useRouter();  // 创建路由实例
+const router = useRouter() // 创建路由实例
 
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
-  router.push('/cn/chapter2_3');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+  router.push('/cn/chapter2_3') // 跳转到前言页面
+  window.scrollTo(0, 0)
+}
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation1' },
     { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation3' },
-  ];
+    { className: 'text4', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
-
-
-
-
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter3/page1/永远.png" alt="" class="logo1" />
 
@@ -48,8 +45,6 @@ onMounted(() => {
         <div class="text1">国际友人在为小朋友行开笔礼</div>
         <div class="text2">马耳他语《论语》新书发布会现场</div>
         <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
-
-
       </div>
     </div>
   </div>
@@ -79,7 +74,6 @@ onMounted(() => {
   animation: fadeInOut 5s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
 
 html,
 body {
@@ -120,7 +114,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -128,80 +122,79 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* Group 45 */
+.logo1 {
+  /* Group 45 */
 
-position: absolute;
-width: 364.8px;
-height: 162.13px;
+  position: absolute;
+  width: 364.8px;
+  height: 162.13px;
 
-top: 39.44px;
-
+  top: 39.44px;
 }
-.logo2 {/* 组 23 1 */
+.logo2 {
+  /* 组 23 1 */
 
-position: absolute;
-width: 620px;
-height: 532.51px;
-left: calc(50% - 620px/2);
-top: 104px;
-
+  position: absolute;
+  width: 620px;
+  height: 532.51px;
+  left: calc(50% - 620px / 2);
+  top: 104px;
 }
-.logo3 {/* 组 22 1 */
+.logo3 {
+  /* 组 22 1 */
 
-position: absolute;
-width: 620px;
-height: 468.35px;
-left: calc(50% - 620px/2);
-top: 843px;
-
-
-
+  position: absolute;
+  width: 620px;
+  height: 468.35px;
+  left: calc(50% - 620px / 2);
+  top: 843px;
 }
-.text1{/* 国际友人在为小朋友行开笔礼 */
+.text1 {
+  /* 国际友人在为小朋友行开笔礼 */
 
-position: absolute;
-width: 312px;
-height: 40px;
-left: calc(50% - 312px/2);
-top: 653px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 312px;
+  height: 40px;
+  left: calc(50% - 312px / 2);
+  top: 653px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
+  color: #4b180a;
 }
 
+.text2 {
+  /* 马耳他语《论语》新书发布会现场 */
 
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: calc(50% - 360px / 2);
+  top: 783px;
 
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-.text2{/* 马耳他语《论语》新书发布会现场 */
-
-position: absolute;
-width: 360px;
-height: 40px;
-left: calc(50% - 360px/2);
-top: 783px;
-
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
-
-color: #4B180A;
+  color: #4b180a;
 }
 </style>

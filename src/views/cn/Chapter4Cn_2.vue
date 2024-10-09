@@ -1,47 +1,48 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
 
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
-  router.push('/cn/chapter5_2');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+  router.push('/cn/chapter5_2') // 跳转到前言页面
+  window.scrollTo(0, 0)
+}
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
-
-  ];
+    { className: 'text3', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
         <div class="text1">住</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
-        <div class="text2">孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。</div>
+        <div class="text2">
+          孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。
+        </div>
 
         <div class="text3">大成殿的藻井</div>
-
-
       </div>
     </div>
   </div>
@@ -115,7 +116,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -123,103 +124,93 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 4-1 */
+  /* 4-1 */
 
-/* 图层 27 9 */
+  /* 图层 27 9 */
 
-position: absolute;
-width: 644px;
-height: 441px;
-left: 68px;
-top: 41px;
-
-
+  position: absolute;
+  width: 644px;
+  height: 441px;
+  left: 68px;
+  top: 41px;
 }
 .logo2 {
-/* 4-2 */
+  /* 4-2 */
 
-/* 图层 28 1 */
+  /* 图层 28 1 */
 
-position: absolute;
-width: 620px;
-height: 451.44px;
-left: calc(50% - 620px/2);
+  position: absolute;
+  width: 620px;
+  height: 451.44px;
+  left: calc(50% - 620px / 2);
 
-top: 769px;
-
+  top: 769px;
 }
-.text1{
+.text1 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 365px;
+  top: 41px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 160px;
+  line-height: 160px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: 4px;
 
-
-position: absolute;
-width: 160px;
-height: 160px;
-left: 365px;
-top: 41px;
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 160px;
-line-height: 160px;
-/* identical to box height, or 100% */
-text-align: center;
-letter-spacing: 4px;
-
-color: #DFA887;
-
-
-
-
+  color: #dfa887;
 }
-.text2{
-/* 孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。 */
+.text2 {
+  /* 孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。 */
 
-position: absolute;
-width: 620px;
-height: 216px;
-left: calc(50% - 620px/2);
-top: 510px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  position: absolute;
+  width: 620px;
+  height: 216px;
+  left: calc(50% - 620px / 2);
+  top: 510px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 54px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
+  color: #010101;
 }
-.text3{
+.text3 {
   /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
-/* 大成殿的藻井 */
+  /* 大成殿的藻井 */
 
-position: absolute;
-width: 144px;
-height: 40px;
-left: calc(50% - 144px/2 - 239px);
-top: 1220px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 144px;
+  height: 40px;
+  left: calc(50% - 144px / 2 - 239px);
+  top: 1220px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
+  color: #4b180a;
 }
-
 </style>

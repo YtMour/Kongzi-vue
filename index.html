@@ -7,9 +7,33 @@
       name="viewport"
       content="viewport-fit=cover,width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"
     />
+
     <title>永远的孔子</title>
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
+
+    <!-- 预加载字体 -->
+    <link
+      rel="preload"
+      href="@/assets/fonts/SourceHanSansCN-Normal.woff"
+      as="font"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="@/assets/fonts/SourceHanSerifCN-Light-5.woff"
+      as="font"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="@/assets/fonts/oO.woff"
+      as="font"
+      type="font/woff"
+      crossorigin="anonymous"
+    />
 
     <style>
       /* 可以在这里添加全局样式 */
@@ -20,18 +44,32 @@
     <script type="module" src="/src/main.js"></script>
     <script>
       const updateFontSize = () => {
-        let width = Math.min(document.body.clientWidth, 750)
-        let fontsize = (width / 750) * 100
+        // let width = Math.min(document.body.clientWidth, 750)
+        // let fontsize = (width / 750) * 100
+        // document.documentElement.style.fontSize = fontsize + 'px'
+
+        let width = Math.min(document.body.clientWidth, 750) // 限制最大宽度为750
+        let height = Math.min(window.innerHeight, 1318) // 限制最大高度为1334
+
+        // 分别计算基于宽度和高度的字体大小
+        let fontsizeWidth = (width / 750) * 100
+        let fontsizeHeight = (height / 1318) * 100
+
+        // 选择较小的字体大小，以适配宽高
+        let fontsize = Math.min(fontsizeWidth, fontsizeHeight)
+
+        // 设置字体大小
         document.documentElement.style.fontSize = fontsize + 'px'
       }
 
       // 在 DOMContentLoaded 事件中调用函数以确保页面加载完成
       document.addEventListener('DOMContentLoaded', () => {
         updateFontSize()
+        window.addEventListener('resize', updateFontSize)
       })
 
       // 监听窗口 resize 事件
-      window.onresize = updateFontSize
+      //   window.onresize = updateFontSize
     </script>
   </body>
 </html>

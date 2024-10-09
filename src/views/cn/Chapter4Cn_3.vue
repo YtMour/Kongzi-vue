@@ -1,42 +1,43 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
 
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
-  router.push('/cn/chapter5_3');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+  router.push('/cn/chapter5_3') // 跳转到前言页面
+  window.scrollTo(0, 0)
+}
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
     { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation2' },
-
-  ];
+    { className: 'text4', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">孔子故里的孔乐表演，吸引了众多海外游客。</div>
-       
+
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
@@ -46,18 +47,15 @@ onMounted(() => {
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
             <div class="text3">济宁 尼山，跨越千年的金声玉振再次被奏响</div>
-            
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-          <div class="text4">泰安 中华泰山，封禅大典的现场</div>
-          
+            <div class="text4">泰安 中华泰山，封禅大典的现场</div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
-  
   </div>
 </template>
 
@@ -116,70 +114,62 @@ body {
   padding: 0;
 }
 
-.content1{
+.content1 {
   /* Frame 522 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 30px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
 
-position: absolute;
-width: 620px;
-height: 1113.59px;
-left: 65px;
-top: 75px;
-
-
+  position: absolute;
+  width: 620px;
+  height: 1113.59px;
+  left: 65px;
+  top: 75px;
 }
-.content2{
+.content2 {
   /* Frame 520 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 4px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
 
-width: 620px;
-height: 438.12px;
+  width: 620px;
+  height: 438.12px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
-.content3{
+.content3 {
   /* Group 49 */
 
-width: 620px;
-height: 379.13px;
+  width: 620px;
+  height: 379.13px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
-.content4{
+.content4 {
   /* Group 50 */
 
-width: 620px;
-height: 436.35px;
+  width: 620px;
+  height: 536.35px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 .background {
   position: fixed; /* 背景图固定在视口 */
@@ -205,70 +195,69 @@ flex-grow: 0;
   margin: 0 auto; /* 居中内容 */
 }
 
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 3曲阜国际孔子文化节祭孔乐舞 1 */
+.logo1 {
+  /* 3曲阜国际孔子文化节祭孔乐舞 1 */
 
   width: 600;
   height: 381.12px;
 
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
-.logo2 {/* 济宁-尼山金声玉振演出 1 */
+.logo2 {
+  /* 济宁-尼山金声玉振演出 1 */
 
-position: absolute;
-width: 600px;
-height: 324.13px;
-left: 0px;
-top: 428.12px;
-
+  position: absolute;
+  width: 600px;
+  height: 324.13px;
+  left: 0px;
+  top: 428.12px;
 }
-.logo3{/* 泰安-中华泰山封禅大典 1 */
+.logo3 {
+  /* 泰安-中华泰山封禅大典 1 */
 
-width: 600px;
-height: 379.35px;
+  width: 600px;
+  height: 379.35px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-/* align-self: stretch; */
-top: 800.12px;
-flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  /* align-self: stretch; */
+  top: 800.12px;
+  flex-grow: 0;
 }
-.text1{
+.text1 {
+  /* 孔子故里的孔乐表演，吸引了众多海外游客。 */
 
-/* 孔子故里的孔乐表演，吸引了众多海外游客。 */
+  position: absolute;
+  width: 620px;
+  height: 54px;
+  left: calc(50% - 620px / 2 + 3px);
+  top: 13px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 54px;
+  /* identical to box height, or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-position: absolute;
-width: 620px;
-height: 54px;
-left: calc(50% - 620px/2 + 3px);
-top: 13px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* identical to box height, or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
-
-color: #010101;
-
-
-
+  color: #010101;
 }
 .text2 {
   position: absolute;
@@ -279,44 +268,42 @@ color: #010101;
   font-weight: 400; /* 字体权重 */
   font-size: 24px; /* 字体大小 */
   line-height: 40px; /* 行高 */
-  color: #4B180A; /* 字体颜色 */
+  color: #4b180a; /* 字体颜色 */
   top: 380px;
-
-  
 }
 
-.text3{/* 济宁 尼山，跨越千年的金声玉振再次被奏响 */
-
-position: absolute;
-width: 465px;
-height: 40px;
-left: calc(50% - 465px/2 - 72.5px);
-top: 750.24px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
-
-color: #4B180A;
-
-}
-.text4{/* 泰安 中华泰山，封禅大典的现场 */
+.text3 {
+  /* 济宁 尼山，跨越千年的金声玉振再次被奏响 */
 
   position: absolute;
-width: 465px;
-height: 40px;
-left: calc(50% - 465px/2 - 72.5px);
-top: 1180.24px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  width: 465px;
+  height: 40px;
+  left: calc(50% - 465px / 2 - 72.5px);
+  top: 750.24px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
+  color: #4b180a;
 }
+.text4 {
+  /* 泰安 中华泰山，封禅大典的现场 */
 
+  position: absolute;
+  width: 465px;
+  height: 40px;
+  left: calc(50% - 465px / 2 - 72.5px);
+  top: 1175.24px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
+
+  color: #4b180a;
+}
 </style>

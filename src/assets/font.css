@@ -1,22 +1,25 @@
 @font-face {
   font-family: 'SourceHanSansCN'; /* 自定义字体名称 */
-  src: url('@/assets/fonts/SourceHanSansCN-Normal.otf') format('opentype');
+  src: url('@/assets/fonts/SourceHanSansCN-Normal.woff') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* 新增此行 */
 }
 
 @font-face {
   font-family: 'FangzhengKaiti'; /* 自定义字体名称 */
-  src: url('@/assets/fonts/方正楷体-简体.ttf') format('truetype');
+  src: url('@/assets/fonts/SourceHanSerifCN-Light-5.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* 新增此行 */
 }
 
 @font-face {
   font-family: 'Xiahuwenkai'; /* 自定义字体名称 */
-  src: url('@/assets/fonts/霞鹜文楷.ttf') format('truetype');
+  src: url('@/assets/fonts/oO.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* 新增此行 */
 }
 /*
 'SourceHanSansCN', sans-serif;
@@ -32,6 +35,7 @@
 * {
   margin: 0; /* 取消默认外边距 */
   padding: 0; /* 取消默认内边距 */
+
   box-sizing: border-box; /* 设置盒模型为 border-box */
 }
 
