@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'SourceHanSansCN'; /* 自定义字体名称 */
-  src: url('@/assets/fonts/SourceHanSansCN-Normal.woff') format('opentype');
+  src: url('@/assets/fonts/SourceHanSansCN-Normal.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* 新增此行 */
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'FangzhengKaiti'; /* 自定义字体名称 */
-  src: url('@/assets/fonts/SourceHanSerifCN-Light-5.woff') format('truetype');
+  src: url('@/assets/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* 新增此行 */
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Xiahuwenkai'; /* 自定义字体名称 */
-  src: url('@/assets/fonts/oO.woff') format('truetype');
+  src: url('@/assets/fonts/oO.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* 新增此行 */

@@ -1,52 +1,50 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
 
 // 点击事件，跳转到前言页面
 const goToNextPage = () => {
-  router.push('/cn/chapter4_2');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+  router.push('/cn/chapter4_2') // 跳转到前言页面
+  window.scrollTo(0, 0)
+}
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
     { className: 'text3', animationClass: 'animation3' },
-    { className: 'text4', animationClass: 'animation4' },
-
-  ];
+    { className: 'text4', animationClass: 'animation4' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-
         <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
         <div class="text1">食</div>
-        <div class="text2">孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。</div>
-       <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <div class="text2">
+          孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。
+        </div>
+        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
         <div class="text3">战国 牺尊 收藏于齐文化博物院</div>
-       <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-       <div class="text4">商周十供<br>收藏于孔子博物馆</div>
-
-
-
-
+        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <div class="text4">商周十供<br />收藏于孔子博物馆</div>
       </div>
     </div>
   </div>
@@ -124,7 +122,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -132,127 +130,121 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 组 9 1 */
+.logo1 {
+  /* 组 9 1 */
 
-position: absolute;
-width: 428px;
-height: 289px;
-left: calc(50% - 428px/2 - 87px);
-top: 27px;
+  position: absolute;
+  width: 428px;
+  height: 289px;
+  left: calc(50% - 428px / 2 - 87px);
+  top: 27px;
 
-background-blend-mode: darken;
-
+  background-blend-mode: darken;
 }
 .logo2 {
-/* 牺尊  战国 齐文化博物院藏 国家一级文物 1 */
+  /* 牺尊  战国 齐文化博物院藏 国家一级文物 1 */
 
-position: absolute;
-width: 600px;
-height: 406px;
-left: calc(50% - 600px/2);
-top: 468px;
+  position: absolute;
+  width: 600px;
+  height: 406px;
+  left: calc(50% - 600px / 2);
+  top: 468px;
 }
-.logo3 {/* 图层 15 1 */
+.logo3 {
+  /* 图层 15 1 */
 
-position: absolute;
-width: 328px;
-height: 362px;
-left: 334px;
-top: 944px;
+  position: absolute;
+  width: 328px;
+  height: 362px;
+  left: 334px;
+  top: 944px;
 }
-.text1{/* 食 */
+.text1 {
+  /* 食 */
 
-/* 食 */
+  /* 食 */
 
-position: absolute;
-width: 160px;
-height: 160px;
-left: 526px;
-top: 37px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 160px;
-line-height: 160px;
-/* identical to box height, or 100% */
-text-align: center;
-letter-spacing: 4px;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 526px;
+  top: 37px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 160px;
+  line-height: 160px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #DFA887;
-
-
-
+  color: #dfa887;
 }
-.text2{/* 孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。 */
+.text2 {
+  /* 孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。 */
 
-position: absolute;
-width: 600px;
-height: 162px;
-left: calc(50% - 600px/2);
-top: 299px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 54px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  position: absolute;
+  width: 600px;
+  height: 162px;
+  left: calc(50% - 600px / 2);
+  top: 299px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 54px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
-
+  color: #010101;
 }
-.text3{/* 战国 牺尊 收藏于齐文化博物院 */
+.text3 {
+  /* 战国 牺尊 收藏于齐文化博物院 */
 
-position: absolute;
-width: 329px;
-height: 40px;
-left: calc(50% - 329px/2 - 146.5px);
-top: 880px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 329px;
+  height: 40px;
+  left: calc(50% - 329px / 2 - 146.5px);
+  top: 880px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
-
-
-
+  color: #4b180a;
 }
-.text4{/* 商周十供,收藏于孔子博物馆 */
-/* 商周十供 收藏于孔子博物馆 */
+.text4 {
+  /* 商周十供,收藏于孔子博物馆 */
+  /* 商周十供 收藏于孔子博物馆 */
 
-position: absolute;
-width: 192px;
-height: 80px;
-left: calc(50% - 192px/2 - 205px);
-top: 1158px;
+  position: absolute;
+  width: 192px;
+  height: 80px;
+  left: calc(50% - 192px / 2 - 205px);
+  top: 1158px;
 
-font-family: 'LXGW WenKai';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
 
-color: #4B180A;
-
-
-
+  color: #4b180a;
 }
 </style>
