@@ -4,10 +4,10 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/jp/detail3';
-let nextR = '/jp/chapter2_3';
+let nextLeft = '/jp/detail3'
+let nextR = '/jp/chapter2_3'
 // 点击事件，跳转到前言页面
-// 
+//
 
 onMounted(() => {
   const texts = [
@@ -40,16 +40,14 @@ onMounted(() => {
 
         <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
 
-        <div class="text1">子供たちに開筆礼を行う外国人
-        </div>
-        <div class="text2">マルタ語版『論語』新書発表会の現場
-        </div>
+        <div class="text1">子供たちに開筆礼を行う外国人</div>
+        <div class="text2">マルタ語版『論語』新書発表会の現場</div>
         <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>

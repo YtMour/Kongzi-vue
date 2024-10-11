@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/kr/chapter3_2';
-let nextR = '/kr/chapter5_2';
+let nextLeft = '/kr/chapter3_2'
+let nextR = '/kr/chapter5_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -37,17 +37,18 @@ onMounted(() => {
         <div class="text1">주거</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
         <div class="text2">
-          공자는 주거환경의 정갈함과 조용함을 중시했고, 좋은 주거환경이 몸과 마음을 다스리는 데 도움이 된다고 여겼다. 그는 "침불시,거불용(寢不屍，居不容)"을 주장하는데, 즉 취침 시 시체처럼 눕지 않고 거처할 때 꾸미지 않아야 하지만 일정한 예의와 질서도 유지하여야 한다는 것이다.
-
+          공자는 주거환경의 정갈함과 조용함을 중시했고, 좋은 주거환경이 몸과 마음을 다스리는 데
+          도움이 된다고 여겼다. 그는 "침불시, 거불용(寢不屍，居不容)"을 주장하는데, 즉 취침 시
+          시체처럼 눕지 않고 거처할 때 꾸미지 않아야 하지만 일정한 예의와 질서도 유지하여야 한다는
+          것이다.
         </div>
 
-        <div class="text3">대성전의 천정(藻井)
-        </div>
+        <div class="text3">대성전의 천정(藻井)</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>

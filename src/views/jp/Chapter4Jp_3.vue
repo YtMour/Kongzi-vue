@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/jp/chapter3_3';
-let nextR = '/jp/chapter5_3';
+let nextLeft = '/jp/chapter3_3'
+let nextR = '/jp/chapter5_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,33 +34,29 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">孔子の故郷での孔子楽舞は、大勢の海外からの観光客を魅了しました。
-        </div>
+        <div class="text1">孔子の故郷での孔子楽舞は、大勢の海外からの観光客を魅了しました。</div>
 
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
-            <div class="text2">曲阜国際孔子文化節、孔子楽舞のパフォーマンス
-            </div>
+            <div class="text2">曲阜国際孔子文化節、孔子楽舞のパフォーマンス</div>
           </div>
 
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
-            <div class="text3">済寧 尼山、数千年を経て美しい音色が再び鳴り響きます
-            </div>
+            <div class="text3">済寧 尼山、数千年を経て美しい音色が再び鳴り響きます</div>
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-            <div class="text4">泰安 中国泰山、封禅大典の現場
-            </div>
+            <div class="text4">泰安 中国泰山、封禅大典の現場</div>
           </div>
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -254,7 +250,7 @@ body {
   height: 54px;
   left: calc(50% - 660px / 2 + 3px);
   top: 13px;
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

@@ -21,6 +21,13 @@
   font-style: normal;
   font-display: swap; /* 新增此行 */
 }
+@font-face {
+  font-family: 'SourceHanSansJP'; /* 自定义字体名称 */
+  src: url('@/assets/fonts/MSMINCHO.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* 新增此行 */
+}
 /*
 'SourceHanSansCN', sans-serif;
 'FangzhengKaiti', sans-serif;

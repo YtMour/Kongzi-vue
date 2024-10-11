@@ -199,7 +199,7 @@ body {
   height: 162px;
   left: calc(50% - 620px / 2);
   top: 725px;
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;

@@ -1,60 +1,54 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue'
 
-
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/jp/detail2';
-let nextR = '/jp/chapter2_2';
+const router = useRouter() // 创建路由实例
+let nextLeft = '/jp/detail2'
+let nextR = '/jp/chapter2_2'
 // 点击事件，跳转到前言页面
-
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation1' },
     { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation3' },
-  ];
+    { className: 'text4', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
-
-
-
-
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/page1/永远.png" alt="" class="logo1" />
         <img src="@/assets/Chapter2/page1/图画1.png" alt="" class="logo3" />
 
         <img src="@/assets/Chapter2/page1/竹子.png" alt="" class="logo2" />
-        <div class="text1">孔子は深遠な思想家であるだけでなく、彼の生活哲学は日常生活のさまざまな面を体現しています。「衣食住行楽」の中で、孔子はいずれも礼儀に従い行動し、儒家の高尚な風格を示しました。
+        <div class="text1">
+          孔子は深遠な思想家であるだけでなく、彼の生活哲学は日常生活のさまざまな面を体現しています。「衣食住行楽」の中で、孔子はいずれも礼儀に従い行動し、儒家の高尚な風格を示しました。
         </div>
         <div class="text2">衣</div>
         <img src="@/assets/Chapter2/page1/图画2.png" alt="" class="logo4" />
-
-
-
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -128,7 +122,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -136,133 +130,127 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* Group 45 */
+.logo1 {
+  /* Group 45 */
 
-position: absolute;
-width: 364.8px;
-height: 162.13px;
-left: calc(50% - 364.8px/2 - 0.24px);
-top: 19.44px;
-
-
-
+  position: absolute;
+  width: 364.8px;
+  height: 162.13px;
+  left: calc(50% - 364.8px / 2 - 0.24px);
+  top: 19.44px;
 }
 .logo2 {
-/* Group 45 */
+  /* Group 45 */
 
-position: absolute;
-width: 167px;
-height: 147px;
-right: 30.45px;
-top: 19.44px;
-
-
+  position: absolute;
+  width: 167px;
+  height: 147px;
+  right: 30.45px;
+  top: 19.44px;
 }
-.logo3 {/* 组 6 */
+.logo3 {
+  /* 组 6 */
 
-position: absolute;
-width: 731px;
-height: 656px;
-left: 19px;
-top: 67px;
-
-
-
+  position: absolute;
+  width: 731px;
+  height: 656px;
+  left: 19px;
+  top: 67px;
 }
-.logo4 {/* 组 7885 1 */
-position: absolute;
-width: 347px;
-height: 375px;
-left: 403px;
-top: 926px;
-
-
-
+.logo4 {
+  /* 组 7885 1 */
+  position: absolute;
+  width: 347px;
+  height: 375px;
+  left: 403px;
+  top: 926px;
 }
-.text1{/* 孔子不仅是一位深邃的思想家，他的生活哲学也体现在日常生活的方方面面。在“衣食住行乐”中，孔子均依礼而行，展现了儒家的高尚风范。 */
+.text1 {
+  /* 孔子不仅是一位深邃的思想家，他的生活哲学也体现在日常生活的方方面面。在“衣食住行乐”中，孔子均依礼而行，展现了儒家的高尚风范。 */
 
-position: absolute;
-width: 650px;
-height: 162px;
-left: calc(50% - 650px/2);
-top: 764px;
+  position: absolute;
+  width: 650px;
+  height: 162px;
+  left: calc(50% - 650px / 2);
+  top: 764px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 44px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansJP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 44px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
+  color: #010101;
 }
-.text2{/* 衣 */
+.text2 {
+  /* 衣 */
 
-position: absolute;
-width: 160px;
-height: 160px;
-left: 94px;
-top: 1044px;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 94px;
+  top: 1044px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 160px;
-line-height: 160px;
-/* identical to box height, or 100% */
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 160px;
+  line-height: 160px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #DFA887;
-
+  color: #dfa887;
 }
-.text3{/* 战国 牺尊 收藏于齐文化博物院 */
+.text3 {
+  /* 战国 牺尊 收藏于齐文化博物院 */
 
-position: absolute;
-width: 329px;
-height: 40px;
-left: calc(50% - 329px/2 - 146.5px);
-top: 943px;
+  position: absolute;
+  width: 329px;
+  height: 40px;
+  left: calc(50% - 329px / 2 - 146.5px);
+  top: 943px;
 
-font-family: 'MyFont', truetype;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  font-family: 'MyFont', truetype;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
+  color: #4b180a;
 }
-.text4{/* 商周十供,收藏于孔子博物馆 */
+.text4 {
+  /* 商周十供,收藏于孔子博物馆 */
 
-position: absolute;
-width: 297px;
-height: 40px;
-left: calc(50% - 297px/2 - 162.5px);
-top: 1386px;
+  position: absolute;
+  width: 297px;
+  height: 40px;
+  left: calc(50% - 297px / 2 - 162.5px);
+  top: 1386px;
 
-font-family: 'MyFont', truetype;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  font-family: 'MyFont', truetype;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
+  color: #4b180a;
 }
-
 </style>

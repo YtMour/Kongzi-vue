@@ -131,7 +131,7 @@ body {
   left: calc(50% - 480px / 2 - 17px);
   top: 254px;
 
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -149,7 +149,7 @@ body {
   left: calc(50% - 480px / 2 - 17px);
   top: calc(254px + 400px); /* 使 .text2 在 .text 下方，30px 为间距，可以根据需要调整 */
 
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;

@@ -1,10 +1,10 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/jp/chapter4_2';
-let nextR = '/jp/chapter6_2';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/jp/chapter4_2'
+let nextR = '/jp/chapter6_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -12,47 +12,43 @@ onMounted(() => {
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
     { className: 'text3', animationClass: 'animation2' },
-    { className: 'text4', animationClass: 'animation3' },
-
-
-  ];
+    { className: 'text4', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        
         <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
         <div class="text1">行</div>
-        <div class="text2">宋『祖庭広記』馬車に乗る孔子
-        </div>
+        <div class="text2">宋『祖庭広記』馬車に乗る孔子</div>
 
-        <div class="text3"> 孔子は一生列国を周遊し、自分の思想を広めました。旅は知識の追求のためだけではなく、自分の政治の理想の実践のためでもありました。旅の間、彼は常に君子の態度を保ち、他人を尊重し、謙虚で礼儀正しく振る舞いました。
+        <div class="text3">
+          孔子は一生列国を周遊し、自分の思想を広めました。旅は知識の追求のためだけではなく、自分の政治の理想の実践のためでもありました。旅の間、彼は常に君子の態度を保ち、他人を尊重し、謙虚で礼儀正しく振る舞いました。
         </div>
-          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
-        <div class="text4">聖人の遺跡が至る所にある山東省泰山
-        </div>
-
-
+        <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+        <div class="text4">聖人の遺跡が至る所にある山東省泰山</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -125,7 +121,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -133,132 +129,119 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 组 7887 1 */
+  /* 组 7887 1 */
 
-position: absolute;
-width: 532px;
-height: 349px;
-left: calc(50% - 532px/2);
-top: 7px;
+  position: absolute;
+  width: 532px;
+  height: 349px;
+  left: calc(50% - 532px / 2);
+  top: 7px;
 
-mix-blend-mode: darken;
-
+  mix-blend-mode: darken;
 }
-.logo2 {/* 组 7881 1 */
-/* 组 7881 1 */
+.logo2 {
+  /* 组 7881 1 */
+  /* 组 7881 1 */
 
-position: absolute;
-width: 580px;
-height: 295.51px;
-left: 85px;
-top: 647px;
+  position: absolute;
+  width: 580px;
+  height: 295.51px;
+  left: 85px;
+  top: 647px;
 }
-.logo3{
-/* 组 7882 1 */
+.logo3 {
+  /* 组 7882 1 */
 
-position: absolute;
-width: 580px;
-height: 304.68px;
-left: 85px;
-top: 956px;
-
-
-
+  position: absolute;
+  width: 580px;
+  height: 304.68px;
+  left: 85px;
+  top: 956px;
 }
-.text1{
-/* 行 */
+.text1 {
+  /* 行 */
 
-position: absolute;
-width: 160px;
-height: 160px;
-left: 113px;
-top: 27px;
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 160px;
-line-height: 160px;
-/* identical to box height, or 100% */
-text-align: center;
-letter-spacing: 4px;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 113px;
+  top: 27px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 160px;
+  line-height: 160px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #DFA887;
-
-
-
-
+  color: #dfa887;
 }
-.text2{
-/* 宋《祖庭广记》孔子乘辂图 */
+.text2 {
+  /* 宋《祖庭广记》孔子乘辂图 */
 
-position: absolute;
-width: 350px;
-height: 40px;
-left: calc(50% - 350px/2 + 155.5px);
-top: 366px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 350px;
+  height: 40px;
+  left: calc(50% - 350px / 2 + 155.5px);
+  top: 366px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
-
-
+  color: #4b180a;
 }
-.text3{
-/* 孔子一生周游列国，传播自己的思想。他的出行不仅是为了求学问道，更是为了实践自己的政治理想。在行路中，他始终保持着君子的风度，尊重他人，谦逊有礼。 */
+.text3 {
+  /* 孔子一生周游列国，传播自己的思想。他的出行不仅是为了求学问道，更是为了实践自己的政治理想。在行路中，他始终保持着君子的风度，尊重他人，谦逊有礼。 */
 
-position: absolute;
-width: 620px;
-height: 216px;
-left: calc(50% - 620px/2);
-top: 419px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 44px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  position: absolute;
+  width: 620px;
+  height: 216px;
+  left: calc(50% - 620px / 2);
+  top: 419px;
+  font-family: 'SourceHanSansJP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 44px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
-
-
+  color: #010101;
 }
-.text4{/* 圣迹遍布的山东泰山 */
+.text4 {
+  /* 圣迹遍布的山东泰山 */
 
-position: absolute;
-width: 420px;
-height: 40px;
-left: calc(50% - 520px/2 + 182px);
-top: 1265px;
+  position: absolute;
+  width: 420px;
+  height: 40px;
+  left: calc(50% - 520px / 2 + 182px);
+  top: 1265px;
 
-font-family: 'LXGW WenKai';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  font-family: 'LXGW WenKai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
+  color: #4b180a;
 }
-
 </style>

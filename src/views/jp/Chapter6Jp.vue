@@ -1,52 +1,49 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import{ onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter(); 
-let nextLeft = '/jp/chapter5';
-let nextR = '/jp/chapter7'; // 创建路由实例
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter()
+let nextLeft = '/jp/chapter5'
+let nextR = '/jp/chapter7' // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
-
-  ];
+    { className: 'text3', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 // 点击事件，跳转到前言页面
-
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">孔子は30歳の時に初めて私学の学問所を設立し、大衆の教育を促しました。孔子は学生に対して「人に応じて教える」という教育方針をとり、学生は諸侯に広がり、3千名の弟子、72名の賢者がいたと伝えられています。貴重な教育遺産である孔子の思想は、古代中国の教育理論の基礎を打ち立てただけでなく、さらに山や海を越えて海外へ伝わり、今でも影響を与えています。
+        <div class="text1">
+          孔子は30歳の時に初めて私学の学問所を設立し、大衆の教育を促しました。孔子は学生に対して「人に応じて教える」という教育方針をとり、学生は諸侯に広がり、3千名の弟子、72名の賢者がいたと伝えられています。貴重な教育遺産である孔子の思想は、古代中国の教育理論の基礎を打ち立てただけでなく、さらに山や海を越えて海外へ伝わり、今でも影響を与えています。
         </div>
         <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
-        <div class="text2">杏壇：孔子の学問所
-        </div>
-       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
-        <div class="text3">宋《東家雑記》孔子杏壇講学図
-        </div>
-
-
+        <div class="text2">杏壇：孔子の学問所</div>
+        <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+        <div class="text3">宋《東家雑記》孔子杏壇講学図</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -79,7 +76,6 @@ onMounted(() => {
   animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
 
 html,
 body {
@@ -128,93 +124,87 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* hellorf_hi2242279625 1 */
+  /* hellorf_hi2242279625 1 */
 
-position: absolute;
-width: 616px;
-height: 431px;
-left: 67px;
-top: 351px;
-mix-blend-mode: darken;
-
-
-
-
+  position: absolute;
+  width: 616px;
+  height: 431px;
+  left: 67px;
+  top: 351px;
+  mix-blend-mode: darken;
 }
 .logo2 {
-/* 6-2 */
+  /* 6-2 */
 
-position: absolute;
-width: 342px;
-height: 511px;
-right: 87px;
-top: 775px;
-
+  position: absolute;
+  width: 342px;
+  height: 511px;
+  right: 87px;
+  top: 775px;
 }
 
+.text1 {
+  /* 孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。 */
 
-.text1{
-/* 孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。 */
+  position: absolute;
+  width: 650px;
+  height: 270px;
+  left: calc(50% - 650px / 2);
+  top: 22px;
+  font-family: 'SourceHanSansJP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 44px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-position: absolute;
-width: 650px;
-height: 270px;
-left: calc(50% - 650px/2);
-top: 22px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 44px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
-
-color: #010101;
-
-
+  color: #010101;
 }
-.text2{
-/* 杏坛：孔子讲学处 */
+.text2 {
+  /* 杏坛：孔子讲学处 */
 
-position: absolute;
-width: 588px;
-height: 40px;
-left: calc(50% - 588px/2 - 31px);
-top: 346px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 588px;
+  height: 40px;
+  left: calc(50% - 588px / 2 - 31px);
+  top: 346px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
+  color: #4b180a;
 }
-.text3{
-position: absolute;
-width: 181px;
-height: 80px;
-left: calc(50% - 181px/2 - 234.5px);
-top: 941px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* or 167% */
+.text3 {
+  position: absolute;
+  width: 181px;
+  height: 80px;
+  left: calc(50% - 181px / 2 - 234.5px);
+  top: 941px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
 
-color: #4B180A;
+  color: #4b180a;
 }
-
 </style>

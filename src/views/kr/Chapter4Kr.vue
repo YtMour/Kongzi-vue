@@ -1,52 +1,54 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/kr/chapter3';
-let nextR = '/kr/chapter5';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/kr/chapter3'
+let nextR = '/kr/chapter5'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
-
-  ];
+    { className: 'text3', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">공자는 소년 시절부터 학문을 지향하고 육예(六藝)를 능통하며 청년 시 주나라를 다녔다가 제(齐)국에 와서 노자에게 예를 여쭈어 봤다.장년으로 되어 관직에 올라 정치를 도모하고 천하를 돌아다녔다가 만년에 노국으로 귀국하고 교육을 펼쳐고 육경을 편찬하였다.
+        <div class="text1">
+          공자는 소년 시절부터 학문을 지향하고 육예(六藝)를 능통하며 청년 시 주나라를 다녔다가
+          제(齐)국에 와서 노자에게 예를 여쭈어 봤다. 장년으로 되어 관직에 올라 정치를 도모하고
+          천하를 돌아다녔다가 만년에 노국으로 귀국하고 교육을 펼쳐고 육경을 편찬하였다.
         </div>
         <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
-        <div class="text2">산둥성 둥핑(東平)의 한 왕조 무덤 벽화: 노자를 만난 공자
+        <div class="text2">산둥성 둥핑(東平)의 한 왕조 무덤 벽화: 노자를 만난 공자</div>
+        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <div class="text3">
+          '성묘사전투고' '공자는 스승 샹(襄)에게 거문고 배움' '타이페이 국립고궁박물원 소장'
         </div>
-       <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">'성묘사전투고' '공자는 스승 샹(襄)에게 거문고 배움' '타이페이 국립고궁박물원 소장'
-        </div>
-
-
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -123,94 +125,86 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 4-1 */
+  /* 4-1 */
 
-position: absolute;
-width: 620px;
-height: 315.69px;
-left: calc(50% - 620px/2);
-top: 204px;
+  position: absolute;
+  width: 620px;
+  height: 315.69px;
+  left: calc(50% - 620px / 2);
+  top: 204px;
 }
 .logo2 {
-/* 4-2 */
+  /* 4-2 */
 
-position: absolute;
-width: 440px;
-height: 664.37px;
-left: calc(50% - 440px/2);
-top: 602px;
-
+  position: absolute;
+  width: 440px;
+  height: 664.37px;
+  left: calc(50% - 440px / 2);
+  top: 602px;
 }
-.text1{
-/* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
+.text1 {
+  /* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
 
-position: absolute;
-width: 600px;
-height: 162px;
-left: calc(50% - 600px/2);
-top: 22px;
+  position: absolute;
+  width: 600px;
+  height: 162px;
+  left: calc(50% - 600px / 2);
+  top: 22px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 36px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
-
-
-
+  color: #010101;
 }
-.text2{
-/* 山东东平汉墓壁画 孔子见老子 */
-position: absolute;
-width: 500px;
-height: 40px;
-left: 82px;
-top: 536px;
+.text2 {
+  /* 山东东平汉墓壁画 孔子见老子 */
+  position: absolute;
+  width: 500px;
+  height: 40px;
+  left: 82px;
+  top: 536px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A
+  color: #4b180a;
 }
-.text3{
+.text3 {
   /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
-position: absolute;
-width: 600px;
-height: 40px;
-left: calc(50% - 600px/2 + 0.5px);
-top: 1258px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
-color: #4B180A;
-
-
-
-
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  left: calc(50% - 600px / 2 + 0.5px);
+  top: 1258px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  color: #4b180a;
 }
-
 </style>

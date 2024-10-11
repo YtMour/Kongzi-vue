@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/kr/chapter3_3';
-let nextR = '/kr/chapter5_3';
+let nextLeft = '/kr/chapter3_3'
+let nextR = '/kr/chapter5_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,33 +34,31 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">공자 고향의 공악(孔樂) 공연은 수많은 해외 관광객들을 끌어들이고 있다.
+        <div class="text1">
+          공자 고향의 공악(孔樂) 공연은 수많은 해외 관광객들을 끌어들이고 있다.
         </div>
 
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
-            <div class="text2">취푸국제공자문화제에서 공자를 기념하는 음악과 무용 공연
-            </div>
+            <div class="text2">취푸국제공자문화제에서 공자를 기념하는 음악과 무용 공연</div>
           </div>
 
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
-            <div class="text3">지닝 니산, 천년을 뛰어넘은 금옥의 소리가 다시 울려 퍼짐
-            </div>
+            <div class="text3">지닝 니산, 천년을 뛰어넘은 금옥의 소리가 다시 울려 퍼짐</div>
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-            <div class="text4">태안 중화 태산, 봉선(封禪)제사의 현장
-            </div>
+            <div class="text4">태안 중화 태산, 봉선(封禪)제사의 현장</div>
           </div>
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -282,14 +280,14 @@ body {
   /* 济宁 尼山，跨越千年的金声玉振再次被奏响 */
 
   position: absolute;
-  width: 465px;
+  width: 650px;
   height: 40px;
   left: calc(50% - 465px / 2 - 72.5px);
   top: 750.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   /* identical to box height, or 167% */
 

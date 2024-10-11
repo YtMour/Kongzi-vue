@@ -42,7 +42,7 @@ onMounted(() => {
         <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
-          <div class="text">第二章です</div>
+          <div class="text">第二章</div>
           <div class="xian1"></div>
         </div>
         <div class="textbox2">

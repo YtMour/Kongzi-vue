@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/jp/chapter3_2';
-let nextR = '/jp/chapter5_2';
+let nextLeft = '/jp/chapter3_2'
+let nextR = '/jp/chapter5_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -40,13 +40,12 @@ onMounted(() => {
           孔子は居住環境の清潔さと静かさを重視し、良好な居住環境が自己修養に役立つと考えました。「寝(い)ぬるに尸(し)せず、居るに容(かたち)づくらず」、すなわち就寝時に死体のように硬直してはならないが、一定の礼儀と秩序を保つ必要があると説きました。
         </div>
 
-        <div class="text3">大成殿の藻井
-        </div>
+        <div class="text3">大成殿の藻井</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -187,7 +186,7 @@ body {
   height: 216px;
   left: calc(50% - 620px / 2);
   top: 510px;
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;

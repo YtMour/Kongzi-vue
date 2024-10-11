@@ -1,52 +1,55 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/kr/chapter4';
-let nextR = '/kr/chapter6';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/kr/chapter4'
+let nextR = '/kr/chapter6'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
-
-  ];
+    { className: 'text3', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">인생철학에서 치국정치에 이르기까지 공자의 지혜는 깊은 영향을 미쳤고, 사상은 넓고 심오하다. 그는 인을 핵심으로, 예악을 규범으로, 중용사상을 방법으로 삼아 사람들에게 아름다운 대동세계를 건설하도록 이끌어 보았다. 공자가 창시한 유가사상체계는 중국 역사와 문화의 정화이며, 중국 전통문화의 당간지주이다.
+        <div class="text1">
+          공자는 소년 시절부터 학문을 지향하고 육예(六藝)를 능통하며 청년 시 주나라를 다녔다가
+          제(齐)국에 와서 노자에게 예를 여쭈어 봤다. 장년으로 되어 관직에 올라 정치를 도모하고
+          천하를 돌아다녔다가 만년에 노국으로 귀국하고 교육을 펼쳐고 육경을 편찬하였다.
         </div>
         <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
-        <div class="text2">대성전(大成殿)은, 취푸 공묘의 대전으로 공자의 '집대성(集大成)'이란 뜻을 담고 있다. 당나라(618-907) 때 처음창건, 청나라 옹정시기(1722-1735)에 중건됨
+        <div class="text2">
+          대성전(大成殿)은, 취푸 공묘의 대전으로 공자의 '집대성(集大成)'이란 뜻을 담고 있다.
+          당나라(618-907) 때 처음창건, 청나라 옹정시기(1722-1735)에 중건됨
         </div>
-       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
-        <div class="text3">대성전 용주
-        </div>
-
-          
+        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <div class="text3">대성전 용주</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -122,94 +125,89 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 5-1 */
+  /* 5-1 */
 
-position: absolute;
-width: 620px;
-height: 428.69px;
-left: calc(50% - 620px/2);
-top: 312px;
-
+  position: absolute;
+  width: 620px;
+  height: 428.69px;
+  left: calc(50% - 620px / 2);
+  top: 312px;
 }
 .logo2 {
-/* 5-2 */
+  /* 5-2 */
 
-position: absolute;
-width: 332px;
-height: 455px;
-left: 326px;
-top: 840px;
+  position: absolute;
+  width: 332px;
+  height: 455px;
+  left: 326px;
+  top: 840px;
 }
-.text1{
-/* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
+.text1 {
+  /* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
 
-position: absolute;
-width: 660px;
-height: 270px;
-left: calc(50% - 660px/2);
-top: 22px;
+  position: absolute;
+  width: 660px;
+  height: 270px;
+  left: calc(50% - 660px / 2);
+  top: 22px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 44px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 44px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
+  color: #010101;
 }
-.text2{
-/* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
+.text2 {
+  /* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
 
-position: absolute;
-width: 600px;
-height: 80px;
-left: calc(50% - 600px/2);
-top: 741px;
+  position: absolute;
+  width: 600px;
+  height: 80px;
+  left: calc(50% - 600px / 2);
+  top: 741px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-.text3{
-/* 大成殿龙柱 */
+.text3 {
+  /* 大成殿龙柱 */
 
-position: absolute;
-width: 150px;
-height: 40px;
-left: calc(50% - 120px/2 - 155px);
-top: 1258px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  left: calc(50% - 120px / 2 - 155px);
+  top: 1258px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-
 </style>

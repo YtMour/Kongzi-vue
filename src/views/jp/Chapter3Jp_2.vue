@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/jp/chapter2_2';
-let nextR = '/jp/chapter4_2';
+let nextLeft = '/jp/chapter2_2'
+let nextR = '/jp/chapter4_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -37,18 +37,17 @@ onMounted(() => {
         <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
         <div class="text1">食</div>
         <div class="text2">
-           孔子は飲食の面で節度を守り、食材の新鮮さと丁寧な調理にこだわりました。「食は精をいとわず、膾は細をいとわず」を提唱し、さらに飲食における礼儀と、食べ物への感謝を強調しました。</div>
+          孔子は飲食の面で節度を守り、食材の新鮮さと丁寧な調理にこだわりました。「食は精をいとわず、膾は細をいとわず」を提唱し、さらに飲食における礼儀と、食べ物への感謝を強調しました。
+        </div>
         <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
-        <div class="text3">戦国 犠尊 齊文化博物館所蔵
-        </div>
+        <div class="text3">戦国 犠尊 齊文化博物館所蔵</div>
         <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-        <div class="text4">商周十供、孔子博物館所蔵
-        </div>
+        <div class="text4">商周十供<br />孔子博物館所蔵</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -203,7 +202,7 @@ body {
   height: 162px;
   left: calc(50% - 600px / 2);
   top: 299px;
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;

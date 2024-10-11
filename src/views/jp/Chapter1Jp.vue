@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/jp/detail';
-let nextR = '/jp/chapter2';
+let nextLeft = '/jp/detail'
+let nextR = '/jp/chapter2'
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter2') // 跳转到前言页面
@@ -46,16 +46,16 @@ onMounted(() => {
 
         <div class="text1">『孔子燕居像』です</div>
         <div class="text2">明・佚名絵</div>
-        <div class="text3">孔子（紀元前551年～紀元前479年）、古代中国の偉大な思想家、教育家、哲学者。後世では「至聖先師」、「聖人」と称えられました。
+        <div class="text3">
+          孔子（紀元前551年～紀元前479年）、古代中国の偉大な思想家、教育家、哲学者。後世では「至聖先師」、「聖人」と称えられました。
         </div>
         <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
-        <div class="text4">「孔子の故郷」山東省曲阜に位置する孔子博物館
-        </div>
+        <div class="text4">「孔子の故郷」山東省曲阜に位置する孔子博物館</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -243,7 +243,7 @@ body {
   left: calc(50% - 600px / 2);
   top: 635px;
 
-  font-family: 'SourceHanSansCN', sans-serif;
+  font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
