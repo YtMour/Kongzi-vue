@@ -39,7 +39,7 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
         <div class="text2">山东东平汉墓壁画 孔子见老子</div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">清·顾沅 编</div>
+        <div class="text3">《圣庙祀典图考·孔子学琴于师襄》清·顾沅 编</div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -193,7 +193,7 @@ body {
   position: absolute;
   width: 570px;
   height: 40px;
-  left: calc(50% - 567px / 2 + 0.5px);
+  left: calc(50% - 470px / 2 + 0.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;

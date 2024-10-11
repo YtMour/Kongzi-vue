@@ -46,7 +46,8 @@ onMounted(() => {
           Shandong
         </div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">Gu Yuan, dynastie Qing</div>
+        <div class="text3">Cérémonie du temple sacré : Confucius apprenant le Qin auprès de Shixiang, Gu Yuan, dynastie Qing
+        </div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -198,9 +199,9 @@ body {
 .text3 {
   /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
   position: absolute;
-  width: 650px;
+  width: 600px;
   height: 40px;
-  left: calc(50% - 380px / 2 - 25.5px);
+  left: calc(50% - 500px / 2 - 25.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;

@@ -190,14 +190,14 @@ body {
   /* 世界儒学大会 */
 
   position: absolute;
-  width: 300px;
+  width: 350px;
   height: 40px;
-  left: calc(50% - 304px / 2 - 229px);
+  left: calc(50% - 284px / 2 - 229px);
   top: 1178px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 30px;
   /* identical to box height, or 167% */
 

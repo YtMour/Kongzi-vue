@@ -203,15 +203,15 @@ body {
   /* 衣 */
 
   position: absolute;
-  width: 160px;
+  width: 300px;
   height: 160px;
-  left: 94px;
+  left: 64px;
   top: 1044px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 160px;
+  font-size: 120px;
   line-height: 160px;
   /* identical to box height, or 100% */
   text-align: center;

@@ -222,7 +222,7 @@ body {
   width: 660px;
   height: 216px;
   left: calc(50% - 660px / 2);
-  top: 419px;
+  top: 439px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -247,7 +247,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   /* identical to box height, or 167% */
 
   color: #4b180a;

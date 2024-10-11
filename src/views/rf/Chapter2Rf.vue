@@ -145,9 +145,9 @@ top: 22px;
 .logo2 {
 position: absolute;
 width: 620px;
-height: 709.82px;
+height: 689.82px;
 left: calc(50% - 620px/2);
-top: 535px;
+top: 555px;
 }
 .text1{
 /* 位于尼山脚下的夫子洞，相传是孔子的出生地 */

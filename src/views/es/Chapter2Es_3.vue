@@ -181,7 +181,7 @@ top: 1000px;
 .text1{/* 孔子造像在海外 */
 
 position: absolute;
-width: 350px;
+width: 400px;
 height: 40px;
 left: calc(50% - 175px/2 - 213.5px);
 top: 731px;

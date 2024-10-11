@@ -154,7 +154,7 @@ body {
   width: 500px;
   height: 696px;
   left: calc(50% - 480px / 2 - 40px);
-  top: calc(254px + 400px); /* 使 .text2 在 .text 下方，30px 为间距，可以根据需要调整 */
+  top: calc(254px + 350px); /* 使 .text2 在 .text 下方，30px 为间距，可以根据需要调整 */
 
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;

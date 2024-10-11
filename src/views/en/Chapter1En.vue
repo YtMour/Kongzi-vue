@@ -44,9 +44,9 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">"Confucius in Leisure" 
+        <div class="text1">"Confucius in Leisure"
         </div>
-        <div class="text2">Ming Dynasty, painter unknown
+        <div class="text2">Ming Dynasty ,  <br>painter unknown
         </div>
         <div class="text3">
           Confucius (551 BC - 479 BC), a great thinker, educator, and philosopher of ancient China, honored by later generations as the "Supreme Sage and Foremost Teacher" and "Sage."
@@ -222,7 +222,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   /* identical to box height, or 200% */
   text-align: right;
   color: #4b180a;

@@ -46,7 +46,8 @@ onMounted(() => {
           <div class="text3">的</div>
           <div class="text4">世界影响</div>
         </div>
-
+        <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
+        <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
         <div class="textbox3">
           <div class="text5">
             孔子思想具有极其博大的内涵，是中国文化，也是东方文化的象征，孔子不仅属于中国，而且属于全世界
@@ -54,8 +55,7 @@ onMounted(() => {
           <div class="text6">-- 学者，毛来夫（德国）</div>
         </div>
 
-        <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
-        <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
+
       </div>
       
       <ButtonBox

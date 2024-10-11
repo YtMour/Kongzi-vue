@@ -37,9 +37,10 @@ onMounted(() => {
           孔子少年は勉学の志を立て、六芸に精通し、青年時代は周辺を旅して斉国で過ごし、老子に礼儀を学びました。壮年には役人となり政治を論じ、世界中を旅して、晩年は魯へ帰り学を興し、六経を編纂しました。
         </div>
         <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
-        <div class="text2">山東省の東平漢墓の壁画<br />孔子と老子の出会い</div>
+        <div class="text2">山東省の東平漢墓の壁画孔子と老子の出会い</div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">清·顧沅 編</div>
+        <div class="text3">日：《聖廟祀典図考 孔子が琴を師襄から学ぶ》 清·顧沅 編
+        </div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -174,7 +175,7 @@ body {
 .text2 {
   /* 山东东平汉墓壁画 孔子见老子 */
   position: absolute;
-  width: 329px;
+  width: 400px;
   height: 40px;
   left: 82px;
   top: 536px;
@@ -182,8 +183,8 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   /* identical to box height, or 167% */
 
   color: #4b180a;
@@ -193,7 +194,7 @@ body {
   position: absolute;
   width: 570px;
   height: 40px;
-  left: calc(50% - 437px / 2 + 0.5px);
+  left: calc(50% - 507px / 2 + 0.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;

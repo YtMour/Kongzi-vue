@@ -152,7 +152,7 @@ top: 535px;
 /* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
 
 position: absolute;
-width: 480px;
+width: 380px;
 height: 40px;
 left: 92px;
 top: 500px;

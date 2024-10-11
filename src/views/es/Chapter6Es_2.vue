@@ -222,8 +222,8 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 40px;
+  font-size: 19px;
+  line-height: 20px;
   /* or 167% */
 
   color: #ffffff;

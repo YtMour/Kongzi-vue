@@ -31,12 +31,13 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
+        <div class="logo2">
+       <img src="@/assets/Chapter3/page6/图画2.png" alt="" class="img2" />
+      </div>
         <div class="logo1">
         <img src="@/assets/Chapter3/page6/图画1.png" alt="" class="img1" />
       </div>
-      <div class="logo2">
-       <img src="@/assets/Chapter3/page6/图画2.png" alt="" class="img2" />
-      </div>
+
       </div>
       <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"

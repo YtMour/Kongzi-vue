@@ -256,7 +256,7 @@ body {
   width: 500px;
   height: 300px;
   left: calc(50% - 500px / 2 + 1px);
-  top: 430px;
+  top: 450px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -291,7 +291,7 @@ body {
   width: 500px;
   height: 300px;
   left: calc(50% - 500px / 2 + 1px);
-  top: 650px;
+  top: 630px;
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;

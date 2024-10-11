@@ -156,9 +156,9 @@ top: 795px;
 /* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
 
 position: absolute;
-width: 224px;
+width: 350px;
 height: 120px;
-left: 96px;
+left: 36px;
 top: 59px;
 
 font-family: 'Xiahuwenkai', sans-serif;
@@ -176,7 +176,7 @@ color: #4B180A;
 /* 宋代 《曾子问孝于孔子》 */
 
 position: absolute;
-width: 273px;
+width: 350px;
 height: 40px;
 left: 82px;
 top: 1257px;

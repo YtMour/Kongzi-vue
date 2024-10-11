@@ -226,7 +226,7 @@ body {
   width: 350px;
   height: 300px;
   left: calc(50% - 332px / 2 + 1px);
-  top: 430px;
+  top: 450px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -265,7 +265,7 @@ body {
   width: 380px;
   height: 300px;
   left: calc(50% - 332px / 2 + 1px);
-  top: 650px;
+  top: 630px;
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -277,50 +277,5 @@ body {
 
   color: #00538f;
 }
-.text5 {
-  width: 450px;
-  height: 40px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 40px;
-
-  color: #4b180a;
-
-  position: absolute;
-
-  left: calc(50% - 400px / 2);
-  top: 910px;
-}
-.text6 {
-  width: 600px;
-  height: 40px;
-
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 40px;
-  text-align: right;
-
-  color: #4b180a;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0px;
-  gap: 30px;
-
-  position: absolute;
-  width: 330px;
-  height: 110px;
-  left: calc(50% - 160px / 2);
-  top: 1030px;
-}
 </style>

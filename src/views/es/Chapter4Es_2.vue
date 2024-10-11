@@ -186,7 +186,7 @@ body {
   width: 660px;
   height: 216px;
   left: calc(50% - 660px / 2);
-  top: 510px;
+  top: 490px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;

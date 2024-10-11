@@ -160,7 +160,7 @@ position: absolute;
 width: 350px;
 height: 120px;
 left: 30px;
-top: 59px;
+top: 33px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
@@ -177,7 +177,7 @@ color: #4B180A;
 /* 宋代 《曾子问孝于孔子》 */
 
 position: absolute;
-width: 350px;
+width: 600px;
 height: 40px;
 left: 82px;
 top: 1257px;

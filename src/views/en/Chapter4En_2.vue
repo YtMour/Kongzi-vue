@@ -206,7 +206,7 @@ body {
   /* 大成殿的藻井 */
 
   position: absolute;
-  width: 360px;
+  width: 600px;
   height: 40px;
   left: calc(50% - 144px / 2 - 239px);
   top: 1220px;

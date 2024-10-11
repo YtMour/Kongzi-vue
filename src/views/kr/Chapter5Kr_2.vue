@@ -181,12 +181,12 @@ top: 956px;
 position: absolute;
 width: 400px;
 height: 160px;
-left: 63px;
+left: 33px;
 top: 27px;
 font-family: 'FangzhengKaiti', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 160px;
+font-size: 120px;
 line-height: 160px;
 /* identical to box height, or 100% */
 text-align: center;
@@ -202,14 +202,14 @@ color: #DFA887;
 /* 宋《祖庭广记》孔子乘辂图 */
 
 position: absolute;
-width: 289px;
+width: 400px;
 height: 40px;
-left: calc(50% - 289px/2 + 155.5px);
+left: calc(50% - 480px/2 + 155.5px);
 top: 366px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 18px;
 line-height: 30px;
 /* identical to box height, or 167% */
 

@@ -46,7 +46,7 @@ onMounted(() => {
 
         <div class="text1">Portrait de Confucius à loisir
         </div>
-        <div class="text2">dynastie Ming, peintre inconnu
+        <div class="text2">dynastie Ming,<br> peintre inconnu
         </div>
         <div class="text3">
           Confucius (551 - 479 av. J.-C.), grand penseur, éducateur et philosophe de la Chine ancienne, a été honoré par les générations suivantes comme « le maître souverain » et « le grand sage ».
@@ -222,7 +222,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 20px;
   /* identical to box height, or 200% */
   text-align: right;
   color: #4b180a;
@@ -238,7 +238,7 @@ body {
   padding: 0px;
   position: absolute;
   left: 125px;
-  top: 375px;
+  top: 400px;
 }
 .text3 {
   position: absolute;

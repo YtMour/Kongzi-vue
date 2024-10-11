@@ -149,15 +149,15 @@ top: 723px;
 /* 尼山圣境 大学之道 */
 
 position: absolute;
-width: 250px;
+width: 350px;
 height: 40px;
-left: calc(50% - 250px/2 + 204.5px);
+left: calc(50% - 500px/2 + 204.5px);
 top: 767px;
 
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 21px;
+font-size: 19px;
 line-height: 30px;
 /* identical to box height, or 167% */
 

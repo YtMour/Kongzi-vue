@@ -42,8 +42,8 @@ onMounted(() => {
         </div>
         <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
         <div class="text3">
-          周 夔龙纹编钟<br />
-          收藏于中国国家博物馆
+          주나라 기룡(夔龍) 무늬 편종, 중국국립박물관에 소장됨
+
         </div>
       </div>
       <ButtonBox
@@ -184,7 +184,7 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 160px;
+  font-size: 120px;
   line-height: 160px;
   /* identical to box height, or 100% */
   text-align: center;
@@ -224,8 +224,8 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 20px;
   /* or 167% */
 
   color: #ffffff;

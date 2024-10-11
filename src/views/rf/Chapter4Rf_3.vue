@@ -223,7 +223,7 @@ body {
   /* 3曲阜国际孔子文化节祭孔乐舞 1 */
 
   width: 600;
-  height: 381.12px;
+  height: 361.12px;
 
   flex: none;
   order: 0;
@@ -235,7 +235,7 @@ body {
 
   position: absolute;
   width: 600px;
-  height: 324.13px;
+  height: 304.13px;
   left: 0px;
   top: 428.12px;
 }
@@ -243,7 +243,7 @@ body {
   /* 泰安-中华泰山封禅大典 1 */
 
   width: 600px;
-  height: 379.35px;
+  height: 359.35px;
 
   /* Inside auto layout */
   flex: none;
@@ -281,7 +281,7 @@ body {
   font-size: 16px; /* 字体大小 */
   line-height: 15px; /* 行高 */
   color: #4b180a; /* 字体颜色 */
-  top: 375px;
+  top: 365px;
 }
 
 .text3 {
@@ -291,7 +291,7 @@ body {
   width: 700px;
   height: 40px;
   left: calc(50% - 500px / 2 - 72.5px);
-  top: 755.24px;
+  top: 745.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -308,7 +308,7 @@ body {
   width: 700px;
   height: 40px;
   left: calc(50% - 465px / 2 - 72.5px);
-  top: 1175.24px;
+  top: 1165.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;

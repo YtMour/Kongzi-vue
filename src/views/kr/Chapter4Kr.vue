@@ -41,7 +41,8 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
         <div class="text2">산둥성 둥핑(東平)의 한 왕조 무덤 벽화: 노자를 만난 공자</div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">청나라 고원(顧沅) 편집</div>
+        <div class="text3">&lt;성묘사전투고&gt;&lt;공자는 스승 샹(襄)에게 거문고 배움&gt; &lt;청나라 고원(顧沅) 편집&gt;
+        </div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -193,14 +194,14 @@ body {
 .text3 {
   /* 《圣庙祀典图考·孔子学琴于师襄》 台北故宫博物馆藏 */
   position: absolute;
-  width: 600px;
+  width: 666px;
   height: 40px;
-  left: calc(50% - 420px / 2 + 0.5px);
+  left: calc(50% - 666px / 2 + 0.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 30px;
   /* identical to box height, or 167% */
   color: #4b180a;

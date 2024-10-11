@@ -173,7 +173,7 @@ body {
   /* 宋代 《曾子问孝于孔子》 */
 
   position: absolute;
-  width: 350px;
+  width: 600px;
   height: 40px;
   left: 82px;
   top: 1257px;
@@ -181,7 +181,7 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 30px;
   /* identical to box height, or 167% */
 

@@ -172,7 +172,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 30px;
   /* or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
@@ -203,7 +203,7 @@ body {
   position: absolute;
   width: 300px;
   height: 40px;
-  left: calc(50% - 300px / 2 - 155px);
+  left: calc(50% - 360px / 2 - 155px);
   top: 1208px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;

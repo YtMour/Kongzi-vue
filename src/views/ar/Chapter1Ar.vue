@@ -194,7 +194,7 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
   /* identical to box height, or 143% */
   color: #4b180a;
@@ -220,7 +220,7 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 40px;
   /* identical to box height, or 200% */
   text-align: right;
@@ -236,7 +236,7 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 125px;
+  left: 26px;
   top: 375px;
   direction: rtl; /* 设置文本方向为右到左 */
   unicode-bidi: bidi-override; /* 确保按预期显示 */

@@ -45,7 +45,7 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
         <div class="text1">"Retrato de Confucio en Reposo"</div>
-        <div class="text2">dinastía Ming (1368 d.C. - 1644 d.C.), autor desconocido</div>
+        <div class="text2">dinastía Ming<br>(1368 d.C. - 1644 d.C.)<br> autor desconocido</div>
         <div class="text3">
           Confucio (551 a.C. - 479 a.C.) fue un distinguido pensador, educador y filósofo de la
           antigua China. A lo largo de las generaciones, ha sido venerado como el "Sabio Maestro
@@ -221,10 +221,10 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 80px;
+  font-size: 19px;
+  line-height: 20px;
   /* identical to box height, or 200% */
-  text-align: right;
+  /* text-align: right; */
   color: #4b180a;
   /* Inside auto layout */
   flex: none;
@@ -237,8 +237,8 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 85px;
-  top: 375px;
+  left: 75px;
+  top: 415px;
 }
 .text3 {
   position: absolute;

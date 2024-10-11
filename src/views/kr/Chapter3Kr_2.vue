@@ -220,14 +220,14 @@ body {
   /* 战国 牺尊 收藏于齐文化博物院 */
 
   position: absolute;
-  width: 329px;
+  width: 420px;
   height: 40px;
   left: calc(50% - 329px / 2 - 146.5px);
   top: 880px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 30px;
   /* identical to box height, or 167% */
 

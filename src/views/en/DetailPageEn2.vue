@@ -241,7 +241,7 @@ body {
   width: 400px;
   height: 300px;
   left: calc(50% - 400px / 2 + 1px);
-  top: 430px;
+  top: 450px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -278,7 +278,7 @@ body {
   width: 500px;
   height: 300px;
   left: calc(50% - 500px / 2 + 1px);
-  top: 650px;
+  top: 630px;
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -290,41 +290,5 @@ body {
 
   color: #00538f;
 }
-.text5 {
-  /* 人类要在21世纪生存下去，就必须回到25个世纪以前，去涉取孔子的智慧。 */
 
-  position: absolute;
-  width: 650px;
-  height: 80px;
-  left: calc(50% - 650px / 2);
-  top: 872px;
-
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35px;
-  /* or 143% */
-
-  color: #4b180a;
-}
-.text6 {
-  /* --诺贝尔物理学奖获得者，汉内斯·阿尔文（瑞典） */
-
-  position: absolute;
-  width: 550px;
-  height: 40px;
-  left: 154px;
-  top: 978px;
-
-  font-family: 'Xiahuwenkai', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 40px;
-  /* identical to box height, or 200% */
-  text-align: right;
-
-  color: #4b180a;
-}
 </style>

@@ -42,7 +42,8 @@ onMounted(() => {
           اجتماعية.
         </div>
         <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
-        <div class="text3">周 夔龙纹编钟 收藏于中国国家博物馆</div>
+        <div class="text3">أجراس برونزية منقوشة بزخارف التنين من عهد أسرة تشو الملكية، محفوظة في المتحف الوطني الصيني
+        </div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -224,7 +225,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 20px;
   /* or 167% */
   direction: rtl; /* 设置文本方向为右到左 */
   unicode-bidi: bidi-override; /* 确保按预期显示 */

@@ -170,9 +170,9 @@ body {
   /* 国际友人在为小朋友行开笔礼 */
 
   position: absolute;
-  width: 450px;
+  width: 500px;
   height: 40px;
-  left: calc(50% - 450px / 2);
+  left: calc(50% - 500px / 2);
   top: 653px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;

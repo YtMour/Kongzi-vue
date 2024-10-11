@@ -44,7 +44,8 @@ onMounted(() => {
           Han Dynasty mural from a tomb in Dongping, Shandong: Confucius meeting Lao Zi
         </div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">compiled by Gu Yuan during the Qing Dynasty</div>
+        <div class="text3">Painting of rituals in the Sacred Temple: Confucius learning qin (a seven-stringed plucked instrument) from Shi Xiang, compiled by Gu Yuan during the Qing Dynasty
+        </div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -203,8 +204,8 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 21px;
   /* identical to box height, or 167% */
   color: #4b180a;
 }

@@ -220,14 +220,14 @@ color: #4B180A;
 .text3{/* 意大利版《论语》 */
 
 position: absolute;
-width: 192px;
+width: 280px;
 height: 40px;
-left: calc(50% - 192px/2 - 6px);
+left: calc(50% - 350px/2 - 6px);
 top: 1241px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
+font-size: 21px;
 line-height: 40px;
 /* identical to box height, or 167% */
 text-align: right;

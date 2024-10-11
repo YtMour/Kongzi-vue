@@ -192,7 +192,7 @@ position: absolute;
 width: 588px;
 height: 40px;
 left: calc(50% - 588px/2 - 31px);
-top: 346px;
+top: 326px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;

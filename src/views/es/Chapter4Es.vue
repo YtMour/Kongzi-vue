@@ -46,7 +46,7 @@ onMounted(() => {
           a.C. - 220 d.C.) en Dongping, Shandong
         </div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">Dinastía Qing, compilado por Gu Yuan</div>
+        <div class="text3">"Estudio sobre los Ritos del Templo Sagrado: Confucio Aprendiendo a Tocar el Qin con Shixiang" Dinastía Qing, compilado por Gu Yuan</div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -154,9 +154,9 @@ body {
 
   position: absolute;
   width: 440px;
-  height: 664.37px;
+  height: 644.37px;
   left: calc(50% - 440px / 2);
-  top: 602px;
+  top: 616px;
 }
 .text1 {
   /* 孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。 */
@@ -200,12 +200,12 @@ body {
   position: absolute;
   width: 650px;
   height: 40px;
-  left: calc(50% - 390px / 2 - 25.5px);
+  left: calc(50% - 580px / 2 - 25.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 25px;
   /* identical to box height, or 167% */
   color: #4b180a;

@@ -149,9 +149,9 @@ top: 828px;
 .text1{
 
 position: absolute;
-width: 300px;
+width: 400px;
 height: 40px;
-left: calc(50% - 257px/2 + 201.5px);
+left: calc(50% - 450px/2 + 201.5px);
 top: 760px;
 
 font-family: 'Xiahuwenkai', sans-serif;

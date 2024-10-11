@@ -187,13 +187,13 @@ body {
 .text1 {
   /* 《孔子燕居像》 */
 
-  width: 196px;
+  width: 250px;
   height: 40px;
 
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 40px;
   /* identical to box height, or 143% */
   color: #4b180a;
@@ -207,7 +207,7 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 89px;
+  left: 39px;
   top: 325px;
 }
 .text2 {
@@ -217,7 +217,7 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 40px;
   /* identical to box height, or 200% */
   text-align: right;
@@ -246,7 +246,7 @@ body {
   font-family: 'SourceHanSansJP', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 50px;
   /* or 167% */
   text-align: justify;
@@ -259,12 +259,12 @@ body {
   position: absolute;
   width: 451px;
   height: 40px;
-  right: 15px;
+  right: 55px;
   top: 1250px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
   /* identical to box height, or 167% */
   color: #4b180a;

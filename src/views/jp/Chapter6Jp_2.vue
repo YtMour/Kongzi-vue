@@ -41,8 +41,8 @@ onMounted(() => {
         </div>
         <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
         <div class="text3">
-          周 夔龙纹编钟<br />
-          收藏于中国国家博物馆
+          周 夔龍紋編鐘<br> 中国国家博物館所蔵
+
         </div>
       </div>
       <ButtonBox
@@ -223,8 +223,8 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 21px;
+  line-height: 20px;
   /* or 167% */
 
   color: #ffffff;

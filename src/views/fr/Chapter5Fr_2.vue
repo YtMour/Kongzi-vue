@@ -235,15 +235,15 @@ body {
   /* 圣迹遍布的山东泰山 */
 
   position: absolute;
-  width: 450px;
+  width: 600px;
   height: 40px;
-  left: calc(50% - 550px / 2 + 182px);
+  left: calc(50% - 920px / 2 + 182px);
   top: 1265px;
 
   font-family: 'LXGW WenKai';
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 30px;
   /* identical to box height, or 167% */
 
