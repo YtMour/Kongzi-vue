@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/ar/detail';
-let nextR = '/ar/chapter2';
+let nextLeft = '/ar/detail'
+let nextR = '/ar/chapter2'
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter2') // 跳转到前言页面
@@ -44,20 +44,19 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">صورة كونفوشيوس في استراحته"
-
-        </div>
+        <div class="text1">صورة كونفوشيوس في استراحته"</div>
         <div class="text2">- رسام مجهول من عهد أسرة مينغ الملكية</div>
-        <div class="text3">كونفوشيوس (٥٥١-٤٧٩ ق.م)، مفكر وتربوي وفيلسوف صيني عظيم من العصور القديمة، لُقب لاحقاً بـ"المعلم الأقدس" و"الحكيم".
+        <div class="text3">
+          كونفوشيوس (٥٥١-٤٧٩ ق.م)، مفكر وتربوي وفيلسوف صيني عظيم من العصور القديمة، لُقب لاحقاً
+          بـ"المعلم الأقدس" و"الحكيم".
         </div>
         <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
-        <div class="text4">متحف كونفوشيوس في تشيوفو، شاندونغ، مسقط رأس كونفوشيوس
-        </div>
+        <div class="text4">متحف كونفوشيوس في تشيوفو، شاندونغ، مسقط رأس كونفوشيوس</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -189,7 +188,7 @@ body {
 .text1 {
   /* 《孔子燕居像》 */
 
-  width: 260px;
+  width: 600px;
   height: 40px;
 
   font-family: 'Xiahuwenkai', sans-serif;
@@ -209,8 +208,10 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 40px;
+  left: 20px;
   top: 325px;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 .text2 {
   /* 明·佚名 绘 */
@@ -237,6 +238,8 @@ body {
   position: absolute;
   left: 125px;
   top: 375px;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 .text3 {
   position: absolute;
@@ -254,6 +257,8 @@ body {
   text-align: justify;
   letter-spacing: -0.6px;
   color: #010101;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 .text4 {
   /* 位于“孔子故里”山东曲阜的孔子博物馆 */
@@ -261,7 +266,7 @@ body {
   position: absolute;
   width: 560px;
   height: 40px;
-  right: 15px;
+  right: 65px;
   top: 1250px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
@@ -270,5 +275,7 @@ body {
   line-height: 15px;
   /* identical to box height, or 167% */
   color: #4b180a;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 </style>

@@ -51,10 +51,10 @@ onMounted(() => {
           pour devenir la richesse spirituelle partagée par l'ensemble de l'humanité.
         </p>
         <p class="text2">
-          &nbsp;&nbsp;&nbsp;&nbsp;This exhibition will narrate through images, divided into three
-          chapters, guiding everyone through ancient and modern times to collectively experience the
-          eternal charm of Confucius' thoughts. It aims to build a bridge of spiritual
-          communication, jointly witness the light of wisdom, and inspire the path to the future.
+          &nbsp;&nbsp;&nbsp;&nbsp;Cette exposition, présentée sous forme d'images, vous fera voyager
+          dans le passé et le présent à travers trois chapitres, pour découvrir le charme éternel de
+          la pensée de Confucius, construire un pont de communication spirituelle, s'inspirer de la
+          lumière de la sagesse et éclairer la voie de l'avenir.
         </p>
         <img src="@/assets/前言/天下.png" alt="" class="logo3" />
         <!-- <btn></btn> -->

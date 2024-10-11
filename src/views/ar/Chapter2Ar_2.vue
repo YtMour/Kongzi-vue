@@ -1,53 +1,56 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue'
 
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/ar/chapter1_2';
-let nextR = '/ar/chapter3_2';
+const router = useRouter() // 创建路由实例
+let nextLeft = '/ar/chapter1_2'
+let nextR = '/ar/chapter3_2'
 // 点击事件，跳转到前言页面
-
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
-
-  ];
+    { className: 'text3', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-
-        <div class="text1">الملبس: اهتم كونفوشيوس بأناقة الملابس والقبعات، حيث كان يرى أن "الرجل النبيل يهتم بهندامه ومظهره". وهذا لا يعبر عن احترام الآخرين فحسب، بل هو أيضاً وسيلة لتهذيب النفس. كان يرتدي القبعات المناسبة حسب المناسبة، مجسداً بذلك جمال الآداب الكونفوشيوسية.
+        <div class="text1">
+          الملبس: اهتم كونفوشيوس بأناقة الملابس والقبعات، حيث كان يرى أن "الرجل النبيل يهتم بهندامه
+          ومظهره". وهذا لا يعبر عن احترام الآخرين فحسب، بل هو أيضاً وسيلة لتهذيب النفس. كان يرتدي
+          القبعات المناسبة حسب المناسبة، مجسداً بذلك جمال الآداب الكونفوشيوسية.
         </div>
-       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
-        <div class="text2">الأزياء التقليدية الصينية من عهد أسرة مينغ الملكية المحفوظة لدى أحفاد كونفوشيوس
+        <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+        <div class="text2">
+          الأزياء التقليدية الصينية من عهد أسرة مينغ الملكية المحفوظة لدى أحفاد كونفوشيوس
         </div>
-          <div class="text3">"كونفوشيوس كوزير عدل في ولاية لو" - رسام مجهول من عهد أسرة مينغ الملكية</div>
-
-
+        <div class="text3">
+          "كونفوشيوس كوزير عدل في ولاية لو" - رسام مجهول من عهد أسرة مينغ الملكية
+        </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -119,7 +122,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -127,79 +130,83 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 组 7886 1 */
+.logo1 {
+  /* 组 7886 1 */
 
-position: absolute;
-width: 620px;
-height: 1022.14px;
-left: 65px;
+  position: absolute;
+  width: 620px;
+  height: 1022.14px;
+  left: 65px;
 
-top: 283px;
-
+  top: 283px;
 }
-.text1{/* 孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。 */
+.text1 {
+  /* 孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。 */
 
-position: absolute;
-width: 650px;
-height: 216px;
-left: calc(50% - 650px/2);
-top: 32px;
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 30px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
-
-color: #010101;
-
+  position: absolute;
+  width: 650px;
+  height: 216px;
+  left: calc(50% - 650px / 2);
+  top: 32px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
+  color: #010101;
 }
-.text2{/* 孔子后代收藏的中国明代 传统服饰 */
+.text2 {
+  /* 孔子后代收藏的中国明代 传统服饰 */
 
-position: absolute;
-width: 300px;
-height: 80px;
-left: calc(50% - 300px/2 + 220px);
-top: 703px;
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  left: calc(50% - 350px / 2 + 220px);
+  top: 703px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* or 167% */
-
-color: #4B180A;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 167% */
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
+  color: #4b180a;
 }
-.text3{
+.text3 {
   /* 《孔子為魯司寇像》 明·佚名 绘 */
 
-position: absolute;
-width: 260px;
-height: 80px;
-left: calc(50% - 260px/2 + 220px);
-top: 1180px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* or 167% */
-
-color: #4B180A;
-
-
+  position: absolute;
+  width: 260px;
+  height: 80px;
+  left: calc(50% - 300px / 2 + 220px);
+  top: 1180px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 167% */
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
+  color: #4b180a;
 }
-
 </style>

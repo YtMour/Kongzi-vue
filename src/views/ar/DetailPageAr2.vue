@@ -46,9 +46,9 @@ onMounted(() => {
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">الثقافة الكونفو</div>
-          <div class="text3">شيوسية وال</div>
-          <div class="text4">حياة اليومية</div>
+          <div class="text2">الثقافة</div>
+          <div class="text3">الكونفوشيوسية</div>
+          <div class="text4">والحياة اليومية</div>
         </div>
 
         <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
@@ -214,7 +214,7 @@ body {
   width: 240px;
   height: 100px;
   left: calc(50% - 158px / 2 - 20px);
-  top: 313px;
+  top: 333px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -223,7 +223,7 @@ body {
   line-height: 50px;
   text-align: center;
   letter-spacing: 4px;
-
+  text-align: center;
   color: #00538f;
 }
 .xian1 {
@@ -251,6 +251,7 @@ body {
   /* or 125% */
   text-align: center;
   letter-spacing: 4px;
+  text-align: center;
 
   color: #00538f;
 }
@@ -268,6 +269,7 @@ body {
   line-height: 30px;
   text-align: center;
   letter-spacing: 4px;
+  text-align: center;
 
   color: #00538f;
 }
@@ -289,6 +291,7 @@ body {
   letter-spacing: 4px;
 
   color: #00538f;
+  text-align: center;
 }
 .text5 {
   /* 人类要在21世纪生存下去，就必须回到25个世纪以前，去涉取孔子的智慧。 */

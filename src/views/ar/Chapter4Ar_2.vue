@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/ar/chapter3_2';
-let nextR = '/ar/chapter5_2';
+let nextLeft = '/ar/chapter3_2'
+let nextR = '/ar/chapter5_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -36,17 +36,18 @@ onMounted(() => {
         <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
         <div class="text1">المنازل</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
-        <div class="text2">السكن: ركز كونفوشيوس على نظافة وهدوء بيئة السكن، إيماناً منه بأن البيئة السكنية المناسبة تسهم في تهذيب النفس. قال: "لا ترقد كالميت، ولا تجلس بتكلف في البيت"، أي ألا يكون المرء جامداً في نومه، ولا متكلفاً في جلسته داخل البيت، مع الحفاظ على قدر ما من الآداب والنظام.
+        <div class="text2">
+          السكن: ركز كونفوشيوس على نظافة وهدوء بيئة السكن، إيماناً منه بأن البيئة السكنية المناسبة
+          تسهم في تهذيب النفس. قال: "لا ترقد كالميت، ولا تجلس بتكلف في البيت"، أي ألا يكون المرء
+          جامداً في نومه، ولا متكلفاً في جلسته داخل البيت، مع الحفاظ على قدر ما من الآداب والنظام.
         </div>
 
-        <div class="text3">السقف المزخرف في قاعة داتشنغ
-
-        </div>
+        <div class="text3">السقف المزخرف في قاعة داتشنغ</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -176,7 +177,8 @@ body {
   /* identical to box height, or 100% */
   text-align: center;
   letter-spacing: 4px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #dfa887;
 }
 .text2 {
@@ -195,7 +197,8 @@ body {
   /* or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #010101;
 }
 .text3 {
@@ -205,7 +208,7 @@ body {
   position: absolute;
   width: 360px;
   height: 40px;
-  left: calc(50% - 144px / 2 - 239px);
+  left: calc(50% + 350px / 2 - 239px);
   top: 1220px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
@@ -213,7 +216,8 @@ body {
   font-size: 21px;
   line-height: 30px;
   /* identical to box height, or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 </style>

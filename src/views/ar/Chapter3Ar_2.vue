@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/ar/chapter2_2';
-let nextR = '/ar/chapter4_2';
+let nextLeft = '/ar/chapter2_2'
+let nextR = '/ar/chapter4_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -36,19 +36,20 @@ onMounted(() => {
       <div class="content">
         <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
         <div class="text1">الطعام</div>
-        <div class="text2">المأكل: كان كونفوشيوس معتدلاً في طعامه، مهتماً بجودة المكونات وإتقان الطهي. وكان يقول: " عدم الملل من الطعام الجيد، وعدم الملل من اللحم المفروم الدقيق"، كما شدد على آداب المائدة وتقدير الطعام.
+        <div class="text2">
+          المأكل: كان كونفوشيوس معتدلاً في طعامه، مهتماً بجودة المكونات وإتقان الطهي. وكان يقول: "
+          عدم الملل من الطعام الجيد، وعدم الملل من اللحم المفروم الدقيق"، كما شدد على آداب المائدة
+          وتقدير الطعام.
         </div>
         <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
-        <div class="text3">إناء التضحية من عصر الممالك المتحاربة - محفوظ في متحف ثقافة تشي
-        </div>
+        <div class="text3">إناء التضحية من عصر الممالك المتحاربة - محفوظ في متحف ثقافة تشي</div>
         <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-        <div class="text4">"عشرة أوانٍ من عهديْ شانغ وتشو" - محفوظة في متحف كونفوشيوس
-        </div>
+        <div class="text4">"عشرة أوانٍ من عهديْ شانغ وتشو" - محفوظة في متحف كونفوشيوس</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -192,7 +193,8 @@ body {
   /* identical to box height, or 100% */
   text-align: center;
   letter-spacing: 4px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #dfa887;
 }
 .text2 {
@@ -211,7 +213,8 @@ body {
   /* or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #010101;
 }
 .text3 {
@@ -228,7 +231,8 @@ body {
   font-size: 21px;
   line-height: 30px;
   /* identical to box height, or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 .text4 {
@@ -238,16 +242,17 @@ body {
   position: absolute;
   width: 330px;
   height: 80px;
-  left: calc(50% - 300px / 2 - 205px);
+  left: calc(50% - 350px / 2 - 205px);
   top: 1158px;
 
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 30px;
   /* or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 </style>

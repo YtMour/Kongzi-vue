@@ -41,9 +41,9 @@ onMounted(() => {
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">حياة كون</div>
-          <div class="text3">وأفكاره</div>
-          <div class="text4">فوشيوس</div>
+          <div class="text2">حياة</div>
+          <div class="text3">كونفوشيوس</div>
+          <div class="text4">وأفكاره</div>
         </div>
 
         <img src="@/assets/Chapter1/world.png" alt="" class="logo4" />
@@ -194,7 +194,7 @@ body {
   width: 200px;
   height: 100px;
   left: calc(50% - 158px / 2 - 6px);
-  top: 313px;
+  top: 333px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -203,7 +203,7 @@ body {
   line-height: 30px;
   text-align: center;
   letter-spacing: 4px;
-
+  text-align: center;
   color: #00538f;
 }
 .xian1 {
@@ -238,6 +238,7 @@ body {
   letter-spacing: 4px;
 
   color: #00538f;
+  text-align: center;
 }
 .text3 {
   /* 孔子生平 与 孔子思想 */
@@ -257,6 +258,7 @@ body {
   letter-spacing: 4px;
 
   color: #00538f;
+  text-align: center;
 }
 .text4 {
   /* 孔子生平 与 孔子思想 */
@@ -276,6 +278,7 @@ body {
   letter-spacing: 4px;
 
   color: #00538f;
+  text-align: center;
 }
 .text5 {
   width: 450px;

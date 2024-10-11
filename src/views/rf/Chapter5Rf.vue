@@ -1,53 +1,59 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/rf/chapter4';
-let nextR = '/rf/chapter6';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/rf/chapter4'
+let nextR = '/rf/chapter6'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
-
-  ];
+    { className: 'text3', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">Мудрость Конфуция оказала глубокое влияние на все стороны общественной  жизни: от жизненной философии до государственного управления. Конфуций использовал гуманность («жэнь») как основу, этикет и музыку («ли» и «юэ») как норму,  а умеренность как метод, он направлял людей к построению гармоничного и великого (совершенного) мира. Конфуцианство - учение, созданное Конфуцием, является квинтэссенцией китайской истории и культуры и служит главной осью традиционной китайской культуры.
+        <div class="text1">
+          Мудрость Конфуция оказала глубокое влияние на все стороны общественной жизни: от жизненной
+          философии до государственного управления. Конфуций использовал гуманность («жэнь») как
+          основу, этикет и музыку («ли» и «юэ») как норму, а умеренность как метод, он направлял
+          людей к построению гармоничного и великого (совершенного) мира. Конфуцианство - учение,
+          созданное Конфуцием, является квинтэссенцией китайской истории и культуры и служит главной
+          осью традиционной китайской культуры.
         </div>
         <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
-        <div class="text2">Дачэньдин - главный зал храма Конфуция в Цюйфу, носит название в честь концепции «собирать великое». Он был основан в эпоху Тан (618-907 г. до н.э.) и перестроен в период Юнчжэна династии Цин (1722-1735 г. до н.э.).
+        <div class="text2">
+          Дачэн зал - главный зал храма Конфуция в Цюйфу, носит название в честь концепции «собирать
+          великое». Он был основан в эпоху Тан (618-907 г. до н.э.) и перестроен в период Юнчжэна
+          династии Цин (1722-1735 г. до н.э.).
         </div>
-       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
-        <div class="text3">Столбы с драконами зала Великого достижения
-
-        </div>
-
-          
+        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <div class="text3">Столбы с драконами Дачэн зал</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -123,94 +129,89 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 5-1 */
+  /* 5-1 */
 
-position: absolute;
-width: 620px;
-height: 428.69px;
-left: calc(50% - 620px/2);
-top: 312px;
-
+  position: absolute;
+  width: 620px;
+  height: 428.69px;
+  left: calc(50% - 620px / 2);
+  top: 312px;
 }
 .logo2 {
-/* 5-2 */
+  /* 5-2 */
 
-position: absolute;
-width: 332px;
-height: 455px;
-left: 326px;
-top: 840px;
+  position: absolute;
+  width: 332px;
+  height: 455px;
+  left: 326px;
+  top: 840px;
 }
-.text1{
-/* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
+.text1 {
+  /* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
 
-position: absolute;
-width: 670px;
-height: 270px;
-left: calc(50% - 670px/2);
-top: 20px;
+  position: absolute;
+  width: 670px;
+  height: 270px;
+  left: calc(50% - 670px / 2);
+  top: 20px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 36px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
+  color: #010101;
 }
-.text2{
-/* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
+.text2 {
+  /* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
 
-position: absolute;
-width: 650px;
-height: 80px;
-left: calc(50% - 650px/2);
-top: 741px;
+  position: absolute;
+  width: 650px;
+  height: 80px;
+  left: calc(50% - 650px / 2);
+  top: 741px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 17px;
-/* or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  /* or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-.text3{
-/* 大成殿龙柱 */
+.text3 {
+  /* 大成殿龙柱 */
 
-position: absolute;
-width: 300px;
-height: 40px;
-left: calc(50% - 300px/2 - 155px);
-top: 1208px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 20px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: calc(50% - 300px / 2 - 155px);
+  top: 1208px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-
 </style>

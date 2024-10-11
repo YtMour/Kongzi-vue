@@ -37,7 +37,7 @@ onMounted(() => {
         <img src="@/assets/Chapter1/kz.png" alt="" class="logo2" />
         <img src="@/assets/Chapter1/circleBG.png" alt="" class="logo3" />
         <div class="textbox1">
-          <div class="text">El primer capítulo</div>
+          <div class="text">Capíutlo 1</div>
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
@@ -194,7 +194,7 @@ body {
   width: 200px;
   height: 100px;
   left: calc(50% - 158px / 2 - 6px);
-  top: 313px;
+  top: 333px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;

@@ -4,10 +4,10 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/fr/detail3';
-let nextR = '/fr/chapter2_3';
+let nextLeft = '/fr/detail3'
+let nextR = '/fr/chapter2_3'
 // 点击事件，跳转到前言页面
-// 
+//
 
 onMounted(() => {
   const texts = [
@@ -40,16 +40,16 @@ onMounted(() => {
 
         <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
 
-        <div class="text1">Un ami international procède à la cérémonie d'ouverture de pinceau pour un enfant
+        <div class="text1">
+          Un ami international procède à la cérémonie d'ouverture de pinceau pour un enfant
         </div>
-        <div class="text2">Scène du lancement du livre « Les Entretiens » en maltais
-        </div>
+        <div class="text2">Scène du lancement du livre <i>Les Entretiens</i> en maltais</div>
         <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>

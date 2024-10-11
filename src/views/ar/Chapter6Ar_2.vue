@@ -42,10 +42,7 @@ onMounted(() => {
           اجتماعية.
         </div>
         <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
-        <div class="text3">
-          周 夔龙纹编钟<br />
-          收藏于中国国家博物馆
-        </div>
+        <div class="text3">周 夔龙纹编钟 收藏于中国国家博物馆</div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -190,7 +187,8 @@ body {
   /* identical to box height, or 100% */
   text-align: center;
   letter-spacing: 4px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #a43c21;
 }
 .text2 {
@@ -209,7 +207,8 @@ body {
   /* or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #010101;
 }
 .text3 {
@@ -218,16 +217,17 @@ body {
   position: absolute;
   width: 240px;
   height: 80px;
-  left: calc(50% - 240px / 2 + 160px);
+  left: calc(50% - 240px / 2 + 180px);
   top: 934px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
   /* or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #ffffff;
 }
 </style>

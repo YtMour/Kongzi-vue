@@ -227,7 +227,7 @@ body {
   width: 250px;
   height: 100px;
   left: calc(50% - 158px / 2 - 30px);
-  top: 313px;
+  top: 333px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -236,7 +236,7 @@ body {
   line-height: 50px;
   text-align: center;
   letter-spacing: 4px;
-
+  text-align: center;
   color: #00538f;
 }
 .xian1 {
@@ -266,6 +266,7 @@ body {
   /* or 125% */
   text-align: center;
   letter-spacing: 4px;
+  text-align: center;
 
   color: #00538f;
 }
@@ -283,6 +284,7 @@ body {
   line-height: 30px;
   text-align: center;
   letter-spacing: 4px;
+  text-align: center;
 
   color: #00538f;
 }
@@ -297,6 +299,7 @@ body {
   font-weight: 300;
   font-size: 46px;
   line-height: 30px;
+  text-align: center;
 
   text-align: center;
   letter-spacing: 4px;

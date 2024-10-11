@@ -37,7 +37,7 @@ onMounted(() => {
         <img src="@/assets/Chapter3/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter3/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
-          <div class="text">Le chapitre iii</div>
+          <div class="text">Chapitre III</div>
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
@@ -227,7 +227,7 @@ body {
   width: 250px;
   height: 100px;
   left: calc(50% - 158px / 2 - 30px);
-  top: 313px;
+  top: 333px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
@@ -261,7 +261,7 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 47px;
   line-height: 30px;
   /* or 125% */
   text-align: center;
@@ -279,7 +279,7 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 4px;
@@ -295,7 +295,7 @@ body {
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 30px;
 
   text-align: center;

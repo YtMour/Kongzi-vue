@@ -4,10 +4,10 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/rf/detail3';
-let nextR = '/rf/chapter2_3';
+let nextLeft = '/rf/detail3'
+let nextR = '/rf/chapter2_3'
 // 点击事件，跳转到前言页面
-// 
+//
 
 onMounted(() => {
   const texts = [
@@ -40,16 +40,16 @@ onMounted(() => {
 
         <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
 
-        <div class="text1">Друзья из других стран на церемонии «Первого письма» для детей
-        </div>
-        <div class="text2">Мероприятие по выпуску нового издения «Лунь Юй» на мальтийском языке
+        <div class="text1">Друзья из других стран на церемонии «Первого письма» для детей</div>
+        <div class="text2">
+          Мероприятие по выпуску нового издения «Лунь Юй» на мальтийском языке
         </div>
         <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -169,10 +169,10 @@ body {
   /* 国际友人在为小朋友行开笔礼 */
 
   position: absolute;
-  width: 450px;
+  width: 600px;
   height: 40px;
-  left: calc(50% - 450px / 2);
-  top: 653px;
+  left: calc(50% - 550px / 2);
+  top: 633px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -190,13 +190,13 @@ body {
   width: 600px;
   height: 40px;
   left: calc(50% - 600px / 2);
-  top: 783px;
+  top: 763px;
 
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  line-height: 30px;
+  line-height: 25px;
   /* identical to box height, or 167% */
 
   color: #4b180a;

@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/ar/chapter3_3';
-let nextR = '/ar/chapter5_3';
+let nextLeft = '/ar/chapter3_3'
+let nextR = '/ar/chapter5_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,33 +34,35 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">عروض موسيقى كونفوشيوسية في مسقط رأس كونفوشيوس تجذب العديد من السياح الأجانب.
+        <div class="text1">
+          عروض موسيقى كونفوشيوسية في مسقط رأس كونفوشيوس تجذب العديد من السياح الأجانب.
         </div>
 
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
-            <div class="text2">عرض رقصات وموسيقى تكريم كونفوشيوس في المهرجان الدولي للثقافة الكونفوشيوسية بتشيوفو
+            <div class="text2">
+              عرض رقصات وموسيقى تكريم كونفوشيوس في المهرجان الدولي للثقافة الكونفوشيوسية بتشيوفو
             </div>
           </div>
 
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
-            <div class="text3"> تُعزف أصوات الموسيقى القديمة مرة أخرى عبر آلاف السنين على جبل نيشان، جينينغ
+            <div class="text3">
+              تُعزف أصوات الموسيقى القديمة مرة أخرى عبر آلاف السنين على جبل نيشان، جينينغ
             </div>
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-            <div class="text4">مشهد من مراسم تكريم السماء والأرض في جبل تايشان، تايآن
-            </div>
+            <div class="text4">مشهد من مراسم تكريم السماء والأرض في جبل تايشان، تايآن</div>
           </div>
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -252,7 +254,7 @@ body {
   position: absolute;
   width: 660px;
   height: 54px;
-  left: calc(50% - 620px / 2 + 3px);
+  left: calc(50% - 666px / 2 + 3px);
   top: 8px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
@@ -262,7 +264,8 @@ body {
   /* identical to box height, or 180% */
   text-align: justify;
   letter-spacing: -0.6px;
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #010101;
 }
 .text2 {
@@ -276,6 +279,8 @@ body {
   line-height: 20px; /* 行高 */
   color: #4b180a; /* 字体颜色 */
   top: 375px;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 
 .text3 {
@@ -284,7 +289,7 @@ body {
   position: absolute;
   width: 600px;
   height: 40px;
-  left: calc(50% - 465px / 2 - 72.5px);
+  left: calc(50% - 485px / 2 - 72.5px);
   top: 748.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
@@ -292,7 +297,8 @@ body {
   font-size: 20px;
   line-height: 20px;
   /* identical to box height, or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 .text4 {
@@ -301,7 +307,7 @@ body {
   position: absolute;
   width: 600px;
   height: 40px;
-  left: calc(50% - 465px / 2 - 72.5px);
+  left: calc(50% - 495px / 2 - 72.5px);
   top: 1175.24px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
@@ -309,7 +315,8 @@ body {
   font-size: 20px;
   line-height: 20px;
   /* identical to box height, or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 </style>

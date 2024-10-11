@@ -42,7 +42,7 @@ onMounted(() => {
         <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
-          <div class="text">Capítulo 2</div>
+          <div class="text">Capíutlo 2</div>
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
@@ -214,7 +214,7 @@ body {
   width: 240px;
   height: 100px;
   left: calc(50% - 158px / 2 - 20px);
-  top: 313px;
+  top: 333px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;

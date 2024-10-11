@@ -1,56 +1,50 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue'
 
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/fr/chapter1_3';
-let nextR = '/fr/chapter3_3';
+const router = useRouter() // 创建路由实例
+let nextLeft = '/fr/chapter1_3'
+let nextR = '/fr/chapter3_3'
 // 点击事件，跳转到前言页面
-
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation3' },
-
-  ];
+    { className: 'text3', animationClass: 'animation3' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter3/page2/图画1.png" alt="" class="logo1" />
-        <div class="text1">Statues de Confucius à l'étranger
-        </div>
-       <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
-        <div class="text2">Conférence mondiale sur le confucianisme
-        </div>
-        <div class="text3">« Les Entretiens »<br>italien
-        </div>
-       <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
-
-
-
+        <div class="text1">Statues de Confucius à l'étranger</div>
+        <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
+        <div class="text2">Conférence mondiale sur le confucianisme</div>
+        <div class="text3"><i>Les Entretiens</i> en italien</div>
+        <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -83,10 +77,6 @@ onMounted(() => {
   animation: fadeInOut 7s ease-in-out 1; /* 淡入时间为3秒 */
   animation-fill-mode: forwards;
 }
-
-
-
-
 
 html,
 body {
@@ -127,7 +117,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -135,107 +125,98 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
-.logo1 {/* 组 21 1 */
-/* 组 21 1 */
+.logo1 {
+  /* 组 21 1 */
+  /* 组 21 1 */
 
-position: absolute;
-width: 620px;
-height: 685.54px;
-left: calc(50% - 620px/2 - 12px);
-top: 10px;
-
-
+  position: absolute;
+  width: 620px;
+  height: 685.54px;
+  left: calc(50% - 620px / 2 - 12px);
+  top: 10px;
 }
-.logo2 {/* 组 24 1 */
-/* 组 24 1 */
+.logo2 {
+  /* 组 24 1 */
+  /* 组 24 1 */
 
-position: absolute;
-width: 620px;
-height: 372.12px;
-left: calc(50% - 620px/2);
-top: 806px;
-
+  position: absolute;
+  width: 620px;
+  height: 372.12px;
+  left: calc(50% - 620px / 2);
+  top: 806px;
 }
-.logo3{/* 图层 29 79 */
+.logo3 {
+  /* 图层 29 79 */
 
-position: absolute;
-width: 208px;
-height: 306px;
-left: 477px;
-top: 1000px;
-
-
+  position: absolute;
+  width: 208px;
+  height: 306px;
+  left: 477px;
+  top: 1000px;
 }
-.text1{/* 孔子造像在海外 */
+.text1 {
+  /* 孔子造像在海外 */
 
-position: absolute;
-width: 350px;
-height: 40px;
-left: calc(50% - 175px/2 - 213.5px);
-top: 731px;
+  position: absolute;
+  width: 350px;
+  height: 40px;
+  left: calc(50% - 175px / 2 - 213.5px);
+  top: 731px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
-
-
+  color: #4b180a;
 }
-.text2{/* 世界儒学大会 */
+.text2 {
+  /* 世界儒学大会 */
 
-position: absolute;
-width: 300px;
-height: 40px;
-left: calc(50% - 144px/2 - 229px);
-top: 1178px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: calc(50% - 144px / 2 - 229px);
+  top: 1178px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
-
-
-
+  color: #4b180a;
 }
-.text3{/* 意大利版《论语》 */
+.text3 {
+  /* 意大利版《论语》 */
 
-position: absolute;
-width: 230px;
-height: 60px;
-left: calc(50% - 200px/2 - 6px);
-top: 1241px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
-text-align: left;
+  position: absolute;
+  width: 230px;
+  height: 60px;
+  left: calc(50% - 200px / 2 - 6px);
+  top: 1241px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  text-align: left;
 
-color: #4B180A;
-
-
-
+  color: #4b180a;
 }
-
 </style>

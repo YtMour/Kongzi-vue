@@ -4,10 +4,10 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/ar/detail3';
-let nextR = '/ar/chapter2_3';
+let nextLeft = '/ar/detail3'
+let nextR = '/ar/chapter2_3'
 // 点击事件，跳转到前言页面
-// 
+//
 
 onMounted(() => {
   const texts = [
@@ -40,16 +40,14 @@ onMounted(() => {
 
         <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
 
-        <div class="text1">يقوم صديق أجنبي بإجراء مراسم "الكتابة الأولى" التقليدية لطفلة
-        </div>
-        <div class="text2">حفل إطلاق كتاب "محاورات كونفوشيوس" الجديد باللغة المالطية
-        </div>
+        <div class="text1">يقوم صديق أجنبي بإجراء مراسم "الكتابة الأولى" التقليدية لطفلة</div>
+        <div class="text2">حفل إطلاق كتاب "محاورات كونفوشيوس" الجديد باللغة المالطية</div>
         <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -179,7 +177,8 @@ body {
   font-size: 21px;
   line-height: 30px;
   /* identical to box height, or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 
@@ -198,7 +197,8 @@ body {
   font-size: 21px;
   line-height: 30px;
   /* identical to box height, or 167% */
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
   color: #4b180a;
 }
 </style>

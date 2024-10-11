@@ -144,8 +144,10 @@ body {
   /* or 193% */
   text-align: justify;
   letter-spacing: -0.6px;
-
+  text-align: center;
   color: #000000;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 .text2 {
   position: absolute;
@@ -162,6 +164,9 @@ body {
   text-align: justify;
   letter-spacing: -0.6px;
   color: #000000;
+  text-align: center;
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
 
 .logo1,

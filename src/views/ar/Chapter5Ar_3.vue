@@ -1,10 +1,10 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/ar/chapter4_3';
-let nextR = '/ar/chapter6_3';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/ar/chapter4_3'
+let nextR = '/ar/chapter6_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -12,46 +12,46 @@ onMounted(() => {
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
     { className: 'text3', animationClass: 'animation3' },
-    { className: 'text4', animationClass: 'animation4' },
-
-  ];
+    { className: 'text4', animationClass: 'animation4' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">من خلال تنظيم سلسلة من الفعاليات مثل المنتديات الدولية للدراسات الكونفوشيوسية ومهرجانات الثقافة الكونفوشيوسية، تعمقت معرفة شعوب العالم بالثقافة الكونفوشيوسية وزاد تقديرهم لها. وعبر عملية حماية هذا التراث ونقله وتطويره، تم تعزيز الحوار المتكافئ والتبادل والتعلم المتبادل بين الثقافات المختلفة.
+        <div class="text1">
+          من خلال تنظيم سلسلة من الفعاليات مثل المنتديات الدولية للدراسات الكونفوشيوسية ومهرجانات
+          الثقافة الكونفوشيوسية، تعمقت معرفة شعوب العالم بالثقافة الكونفوشيوسية وزاد تقديرهم لها.
+          وعبر عملية حماية هذا التراث ونقله وتطويره، تم تعزيز الحوار المتكافئ والتبادل والتعلم
+          المتبادل بين الثقافات المختلفة.
         </div>
         <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
-        <div class="text2">شباب يشاركون في طقوس بلوغ سن الرشد أمام معبد كونفوشيوس
-        </div>
-       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+        <div class="text2">شباب يشاركون في طقوس بلوغ سن الرشد أمام معبد كونفوشيوس</div>
+        <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
 
-        <div class="text3">مصورون أجانب يستمتعون بأجواء السنة الجديدة في تشوتسون، شاندونغ
-        </div>
-        <div class="text4">جدار القصر الشاهق في معبد كونفوشيوس، تشيوفو
-        </div>
-
-
+        <div class="text3">مصورون أجانب يستمتعون بأجواء السنة الجديدة في تشوتسون، شاندونغ</div>
+        <div class="text4">جدار القصر الشاهق في معبد كونفوشيوس، تشيوفو</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -128,7 +128,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -136,129 +136,128 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 232323 1 */
+  /* 232323 1 */
 
-position: absolute;
-width: 580px;
-height: 347px;
-left: calc(50% - 580px/2);
-top: 250px;
-
+  position: absolute;
+  width: 580px;
+  height: 347px;
+  left: calc(50% - 580px / 2);
+  top: 250px;
 }
-.logo2{/* 图层 16 1 */
+.logo2 {
+  /* 图层 16 1 */
 
-position: absolute;
-width: 580px;
-height: 320px;
-left: calc(50% - 580px/2);
-top: 665px;
+  position: absolute;
+  width: 580px;
+  height: 320px;
+  left: calc(50% - 580px / 2);
+  top: 665px;
 }
-.logo3{/* 图层 11 350 */
+.logo3 {
+  /* 图层 11 350 */
 
-position: absolute;
-width: 580px;
-height: 385.21px;
-left: calc(50% - 580px/2);
-top: 1002px;
-
-
+  position: absolute;
+  width: 580px;
+  height: 385.21px;
+  left: calc(50% - 580px / 2);
+  top: 1002px;
 }
-.text1{
-/* 通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。 */
+.text1 {
+  /* 通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。 */
 
-position: absolute;
-width: 660px;
-height: 216px;
-left: calc(50% - 660px/2);
-top: 13px;
-font-family: 'SourceHanSansCN', sans-serif;
+  position: absolute;
+  width: 660px;
+  height: 216px;
+  left: calc(50% - 660px / 2);
+  top: 13px;
+  font-family: 'SourceHanSansCN', sans-serif;
 
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
+  color: #010101;
 
-
-
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
-.text2{
-/* 在孔庙前参加成人礼仪式的年轻人们 */
+.text2 {
+  /* 在孔庙前参加成人礼仪式的年轻人们 */
 
-position: absolute;
-width: 600px;
-height: 40px;
-left: 85px;
-top: 598px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  left: 65px;
+  top: 598px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
+  color: #4b180a;
 
-
-
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
-.text3{
-/* 留在山东周村感受年俗的海外摄影家 */
+.text3 {
+  /* 留在山东周村感受年俗的海外摄影家 */
 
-position: absolute;
-width: 590px;
-height: 40px;
-left: 85px;
-top: 986px;
+  position: absolute;
+  width: 590px;
+  height: 40px;
+  left: 65px;
+  top: 986px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
+  color: #4b180a;
 
-
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
-.text4{
+.text4 {
   /* 曲阜孔庙 万仞宫墙 */
 
-position: absolute;
-width: 200px;
-height: 80px;
-left: 460px;
-top: 1075px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 20px;
-/* or 167% */
-text-align: right;
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  left: 460px;
+  top: 1075px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  /* or 167% */
+  text-align: right;
 
-color: #4B180A;
+  color: #4b180a;
 
-
-
+  direction: rtl; /* 设置文本方向为右到左 */
+  unicode-bidi: bidi-override; /* 确保按预期显示 */
 }
-
 </style>

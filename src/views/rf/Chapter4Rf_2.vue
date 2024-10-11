@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/rf/chapter3_2';
-let nextR = '/rf/chapter5_2';
+let nextLeft = '/rf/chapter3_2'
+let nextR = '/rf/chapter5_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,20 +34,21 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
-        <div class="text1">Logement</div>
+        <div class="text1">Жилище</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
         <div class="text2">
-          Жилище: Конфуций придавал большое значение чистоте и тишине жилого пространства, считая, что приятная обстановка в доме способствует самосовершенствованию. Он говорил: «Не нужно лежать в постели, как мертвый. Не нужно сидеть дома, как при гостях», подчеркивая, что соблюдая определенные этикет и нормы, в то же время важно сохранять и некоторую легкость.
+          Конфуций придавал большое значение чистоте и тишине жилого пространства, считая, что
+          приятная обстановка в доме способствует самосовершенствованию. Он говорил: «Не нужно
+          лежать в постели, как мертвый. Не нужно сидеть дома, как при гостях», подчеркивая, что
+          соблюдая определенные этикет и нормы, в то же время важно сохранять и некоторую легкость.
         </div>
 
-        <div class="text3">Украшенный потолок зала Великого достижения
-
-        </div>
+        <div class="text3">Украшенный потолок Дачэн зал</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -204,14 +205,14 @@ body {
   /* 大成殿的藻井 */
 
   position: absolute;
-  width: 450px;
+  width: 500px;
   height: 40px;
   left: calc(50% - 144px / 2 - 239px);
   top: 1220px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
   /* identical to box height, or 167% */
 

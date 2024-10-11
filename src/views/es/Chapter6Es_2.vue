@@ -42,10 +42,7 @@ onMounted(() => {
           que debía poseer un valor educativo y social.
         </div>
         <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
-        <div class="text3">
-          周 夔龙纹编钟<br />
-          收藏于中国国家博物馆
-        </div>
+        <div class="text3">Zhu kui lung gong colección en el museo nacional de China</div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -219,13 +216,13 @@ body {
   position: absolute;
   width: 240px;
   height: 80px;
-  left: calc(50% - 240px / 2 + 160px);
+  left: calc(50% - 240px / 2 + 180px);
   top: 934px;
 
   font-family: 'FangzhengKaiti', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 40px;
   /* or 167% */
 
