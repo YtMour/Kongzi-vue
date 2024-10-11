@@ -99,7 +99,7 @@ body {
 
   position: absolute;
   width: 100%; /* 让容器充满父容器的宽度 */
-  bottom: 40px;
+  top: 1200px;
 }
 
 .btnleft {

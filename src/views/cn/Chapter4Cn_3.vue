@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/chapter3_3';
-let nextR = '/cn/chapter5_3';
+let nextLeft = '/cn/chapter3_3'
+let nextR = '/cn/chapter5_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -54,9 +54,9 @@ onMounted(() => {
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -130,7 +130,7 @@ body {
   width: 620px;
   height: 1113.59px;
   left: 65px;
-  top: 75px;
+  top: 100px;
 }
 .content2 {
   /* Frame 520 */
@@ -249,7 +249,7 @@ body {
   width: 620px;
   height: 54px;
   left: calc(50% - 620px / 2 + 3px);
-  top: 13px;
+  top: 20px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;

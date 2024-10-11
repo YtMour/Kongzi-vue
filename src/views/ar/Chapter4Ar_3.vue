@@ -136,7 +136,7 @@ body {
   width: 620px;
   height: 1113.59px;
   left: 65px;
-  top: 75px;
+  top: 100px;
 }
 .content2 {
   /* Frame 520 */

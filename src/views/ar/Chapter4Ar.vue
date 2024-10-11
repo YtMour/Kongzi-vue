@@ -44,10 +44,7 @@ onMounted(() => {
           لوحة جدارية من مقبرة هان في دونغبينغ، شاندونغ: كونفوشيوس يلتقي لاو تسي
         </div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">
-          "كونفوشيوس يتعلم العزف على قو تشين من شي شيانغ" - من كتاب "دراسة رسومات لطقوس المعبد
-          المقدس" - محفوظ في متحف القصر الوطني في تايبيه
-        </div>
+        <div class="text3">تم تجميعها بواسطة قو يوان من عهد أسرة تشينغ</div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -204,7 +201,7 @@ body {
   position: absolute;
   width: 650px;
   height: 40px;
-  left: calc(50% - 567px / 2 - 25.5px);
+  left: calc(50% - 767px / 2 - 25.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;

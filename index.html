@@ -51,19 +51,18 @@
     <script type="module" src="/src/main.js"></script>
     <script>
       const updateFontSize = () => {
-        // let width = Math.min(document.body.clientWidth, 750)
-        // let fontsize = (width / 750) * 100
-        // document.documentElement.style.fontSize = fontsize + 'px'
-
         let width = Math.min(document.body.clientWidth, 750) // 限制最大宽度为750
-        let height = Math.min(window.innerHeight, 1418) // 限制最大高度为1318
+        let height = Math.min(window.innerHeight, 1318) // 限制最大高度为1318
 
         // 分别计算基于宽度和高度的字体大小
         let fontsizeWidth = (width / 750) * 100
-        let fontsizeHeight = (height / 1418) * 100
+        let fontsizeHeight = (height / 1318) * 100
 
         // 选择较小的字体大小，以适配宽高
         let fontsize = Math.min(fontsizeWidth, fontsizeHeight)
+
+        // 设置最小字体大小，避免过小
+        fontsize = Math.max(fontsize, 12)
 
         // 设置字体大小
         document.documentElement.style.fontSize = fontsize + 'px'
@@ -74,9 +73,6 @@
         updateFontSize()
         window.addEventListener('resize', updateFontSize)
       })
-
-      // 监听窗口 resize 事件
-      //   window.onresize = updateFontSize
     </script>
   </body>
 </html>

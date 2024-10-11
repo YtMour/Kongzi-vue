@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/en/chapter3_3';
-let nextR = '/en/chapter5_3';
+let nextLeft = '/en/chapter3_3'
+let nextR = '/en/chapter5_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,34 +34,41 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">Performance of Confucian music in Confucius' hometown attracts many international tourists.
+        <div class="text1">
+          Performance of Confucian music in Confucius' hometown attracts many international
+          tourists.
         </div>
 
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
-            <div class="text2">Qufu International Confucius Culture Festival, featuring performance of ceremonial music and dance in honor of Confucius
-</div>
+            <div class="text2">
+              Qufu International Confucius Culture Festival, featuring performance of ceremonial
+              music and dance in honor of Confucius
+            </div>
           </div>
 
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
-            <div class="text3">Mount Ni in Jining, where the ancient sounds of bronze and jade chimes are once again played across millennia
-
+            <div class="text3">
+              Mount Ni in Jining, where the ancient sounds of bronze and jade chimes are once again
+              played across millennia
             </div>
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-            <div class="text4">Mount Tai in Tai'an, at the site of the grand ceremony of offering sacrifices to heaven
+            <div class="text4">
+              Mount Tai in Tai'an, at the site of the grand ceremony of offering sacrifices to
+              heaven
             </div>
           </div>
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -135,7 +142,7 @@ body {
   width: 620px;
   height: 1113.59px;
   left: 65px;
-  top: 75px;
+  top: 100px;
 }
 .content2 {
   /* Frame 520 */
@@ -254,7 +261,7 @@ body {
   width: 660px;
   height: 54px;
   left: calc(50% - 620px / 2 + 3px);
-  top: 8px;
+  top: 12px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -268,12 +275,12 @@ body {
 }
 .text2 {
   position: absolute;
-  width: 600px; /* 文字的宽度 */
+  width: 620px; /* 文字的宽度 */
   height: auto; /* 适应内容高度，去掉固定高度 */
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400; /* 字体权重 */
-  font-size: 20px; /* 字体大小 */
+  font-size: 19px; /* 字体大小 */
   line-height: 20px; /* 行高 */
   color: #4b180a; /* 字体颜色 */
   top: 375px;

@@ -1,52 +1,50 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue'
 
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/en/chapter1';
-let nextR = '/en/chapter3';
+const router = useRouter() // 创建路由实例
+let nextLeft = '/en/chapter1'
+let nextR = '/en/chapter3'
 // 点击事件，跳转到前言页面
-
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-
-  ];
+    { className: 'text2', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
-        <div class="text1">The Fuzidong (Confucius Cave) at the foot of Mount Ni, reputedly the birthplace of Confucius
+        <div class="text1">
+          The Fuzidong (Confucius Cave) at the foot of Mount Ni, reputedly the birthplace of
+          Confucius
         </div>
-       <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
-        <div class="text2">72-meter-high Confucius statue at Mount Ni
-
-        </div>
-
-
+        <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
+        <div class="text2">72-meter-high Confucius statue at Mount Ni</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -122,76 +120,74 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 2-1 */
+  /* 2-1 */
 
-position: absolute;
-width: 584px;
-height: 473px;
-left: calc(50% - 584px/2);
-top: 22px;
-
-
+  position: absolute;
+  width: 584px;
+  height: 473px;
+  left: calc(50% - 584px / 2);
+  top: 22px;
 }
 .logo2 {
-position: absolute;
-width: 620px;
-height: 709.82px;
-left: calc(50% - 620px/2);
-top: 535px;
+  position: absolute;
+  width: 620px;
+  height: 709.82px;
+  left: calc(50% - 620px / 2);
+  top: 535px;
 }
-.text1{
-/* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
+.text1 {
+  /* 位于尼山脚下的夫子洞，相传是孔子的出生地 */
 
-position: absolute;
-width: 550px;
-height: 40px;
-left: 92px;
-top: 500px;
+  position: absolute;
+  width: 550px;
+  height: 40px;
+  left: 92px;
+  top: 500px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 20px;
-/* identical to box height, or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-.text2{
-/* 72米高的尼山孔子像 */
+.text2 {
+  /* 72米高的尼山孔子像 */
 
-position: absolute;
-width: 650px;
-height: 40px;
-left: 30px;
-top: 1257px;
+  position: absolute;
+  width: 650px;
+  height: 40px;
+  left: -150px;
+  top: 1257px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 20px;
-/* identical to box height, or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-padding: 0px;
-gap: 30px;
+  color: #4b180a;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 30px;
 }
-
 </style>

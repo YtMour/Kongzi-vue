@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/es/chapter3_3';
-let nextR = '/es/chapter5_3';
+let nextLeft = '/es/chapter3_3'
+let nextR = '/es/chapter5_3'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -34,34 +34,40 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">La actuación de música ritual de Confucio en su ciudad natal ha atraído a numerosos turistas internacionales.
+        <div class="text1">
+          La actuación de música ritual de Confucio en su ciudad natal ha atraído a numerosos
+          turistas internacionales.
         </div>
 
         <div class="content1">
           <div class="content2">
             <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
-            <div class="text2">Festival Internacional de la Cultura de Confucio en Qufu, con la danza ritual en su honor.
+            <div class="text2">
+              Festival Internacional de la Cultura de Confucio en Qufu, con la danza ritual en su
+              honor.
             </div>
           </div>
 
           <div class="content3">
             <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
-            <div class="text3">En el monte Ni, Jining, se puede escuchar nuevamente la música que ha trascendido milenios
-
+            <div class="text3">
+              En el monte Ni, Jining, se puede escuchar nuevamente la música que ha trascendido
+              milenios
             </div>
           </div>
 
           <div class="content4">
             <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
-            <div class="text4">En el monte Tai, Tai'an, en el sitio de la Gran Ceremonia de Consagración
+            <div class="text4">
+              En el monte Tai, Tai'an, en el sitio de la Gran Ceremonia de Consagración
             </div>
           </div>
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -135,7 +141,7 @@ body {
   width: 620px;
   height: 1113.59px;
   left: 65px;
-  top: 75px;
+  top: 100px;
 }
 .content2 {
   /* Frame 520 */
@@ -254,7 +260,7 @@ body {
   width: 660px;
   height: 54px;
   left: calc(50% - 620px / 2 + 3px);
-  top: 8px;
+  top: 12px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;

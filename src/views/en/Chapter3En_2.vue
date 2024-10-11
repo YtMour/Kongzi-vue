@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/en/chapter2_2';
-let nextR = '/en/chapter4_2';
+let nextLeft = '/en/chapter2_2'
+let nextR = '/en/chapter4_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -37,19 +37,23 @@ onMounted(() => {
         <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
         <div class="text1">Food</div>
         <div class="text2">
-          Confucius was moderate in his diet, emphasizing the freshness of ingredients and the refinement of cooking. He advocated that "one does not object to the finest food," while also stressing the importance of etiquette in dining and cherishing food.
-</div>
+          Confucius was moderate in his diet, emphasizing the freshness of ingredients and the
+          refinement of cooking. He advocated that "one does not object to the finest food," while
+          also stressing the importance of etiquette in dining and cherishing food.
+        </div>
         <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
-        <div class="text3">Xizun (ritual bronze vessel), Warring States Period, collection of the Qi Heritage Museum
+        <div class="text3">
+          Xizun (ritual bronze vessel), Warring States Period, collection of the Qi Heritage Museum
         </div>
         <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-        <div class="text4">Ten Offering Vessels of Shang and Zhou Dynasty, collection of the Confucius Museum
+        <div class="text4">
+          Ten Offering Vessels of Shang and Zhou Dynasty, collection of the Confucius Museum
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -245,7 +249,7 @@ body {
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 30px;
   /* or 167% */
 

@@ -1,53 +1,60 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/en/chapter4';
-let nextR = '/en/chapter6';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/en/chapter4'
+let nextR = '/en/chapter6'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
-
-  ];
+    { className: 'text3', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <div class="text1">From life philosophy to governance, Confucius' wisdom has a profound and far-reaching influence. His thoughts are deep and extensive. Centered on benevolence, regulated by rites and music, and utilizing the Doctrine of the Mean as a method, he guided people to build a harmonious and ideal world. The Confucian thought system established by Confucius is the crystallization of Chinese history and culture and serves as the main axis of traditional Chinese culture.
+        <div class="text1">
+          From life philosophy to governance, Confucius' wisdom has a profound and far-reaching
+          influence. His thoughts are deep and extensive. Centered on benevolence, regulated by
+          rites and music, and utilizing the Doctrine of the Mean as a method, he guided people to
+          build a harmonious and ideal world. The Confucian thought system established by Confucius
+          is the crystallization of Chinese history and culture and serves as the main axis of
+          traditional Chinese culture.
         </div>
         <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
-        <div class="text2">Hall of Great Achievement, the main hall of the Confucius Temple in Qufu, embodies the meaning of Confucius being as the "Great Accomplisher." It was originally built during the Tang Dynasty (618-907) and reconstructed during the Yongzheng period of the Qing Dynasty (1722-1735).
+        <div class="text2">
+          Hall of Great Achievement, the main hall of the Confucius Temple in Qufu, embodies the
+          meaning of Confucius being as the "Great Accomplisher." It was originally built during the
+          Tang Dynasty (618-907) and reconstructed during the Yongzheng period of the Qing Dynasty
+          (1722-1735).
         </div>
-       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
-        <div class="text3">Dragon Pillar of the Hall of Great Achievement
-
-        </div>
-
-          
+        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <div class="text3">Dragon Pillar of the Hall of Great Achievement</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -123,94 +130,89 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 5-1 */
+  /* 5-1 */
 
-position: absolute;
-width: 620px;
-height: 428.69px;
-left: calc(50% - 620px/2);
-top: 312px;
-
+  position: absolute;
+  width: 620px;
+  height: 428.69px;
+  left: calc(50% - 620px / 2);
+  top: 312px;
 }
 .logo2 {
-/* 5-2 */
+  /* 5-2 */
 
-position: absolute;
-width: 332px;
-height: 455px;
-left: 326px;
-top: 840px;
+  position: absolute;
+  width: 332px;
+  height: 455px;
+  left: 346px;
+  top: 840px;
 }
-.text1{
-/* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
+.text1 {
+  /* 从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。 */
 
-position: absolute;
-width: 670px;
-height: 270px;
-left: calc(50% - 670px/2);
-top: 20px;
+  position: absolute;
+  width: 670px;
+  height: 270px;
+  left: calc(50% - 670px / 2);
+  top: 20px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 34px;
-/* or 180% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  /* or 180% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #010101;
-
-
+  color: #010101;
 }
-.text2{
-/* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
+.text2 {
+  /* 大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于 唐代（618 - 907），清代雍正时（1722 - 1735）重建 */
 
-position: absolute;
-width: 650px;
-height: 80px;
-left: calc(50% - 650px/2);
-top: 741px;
+  position: absolute;
+  width: 650px;
+  height: 80px;
+  left: calc(50% - 650px / 2);
+  top: 741px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 20px;
-/* or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-.text3{
-/* 大成殿龙柱 */
+.text3 {
+  /* 大成殿龙柱 */
 
-position: absolute;
-width: 240px;
-height: 40px;
-left: calc(50% - 260px/2 - 155px);
-top: 1258px;
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 20px;
-/* identical to box height, or 167% */
+  position: absolute;
+  width: 240px;
+  height: 40px;
+  left: calc(50% - 260px / 2 - 155px);
+  top: 1258px;
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-
 </style>

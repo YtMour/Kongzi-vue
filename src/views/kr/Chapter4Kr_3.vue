@@ -132,7 +132,7 @@ body {
   width: 620px;
   height: 1113.59px;
   left: 65px;
-  top: 75px;
+  top: 100px;
 }
 .content2 {
   /* Frame 520 */
@@ -251,7 +251,7 @@ body {
   width: 620px;
   height: 54px;
   left: calc(50% - 620px / 2 + 3px);
-  top: 13px;
+  top: 15px;
   font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
