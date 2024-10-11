@@ -235,7 +235,7 @@ body {
   left: calc(50% - 520px / 2 + 182px);
   top: 1265px;
 
-  font-family: 'LXGW WenKai';
+  font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

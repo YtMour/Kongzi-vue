@@ -34,9 +34,9 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
-        <div class="text1">Logement</div>
+        <div class="text1">Vivienda</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
-        <div class="text2">Vivienda: Confucio valoraba la limpieza y la tranquilidad del entorno doméstico, considerando que un ambiente adecuado contribuye al autocultivo y al desarrollo personal. Sostenía que "al dormir, no debes estar rígido como un cadáver; al vivir en casa, no debes ser excesivamente rígido". Esto refleja su visión de que, al dormir no se debe mantener una tensión excesiva, y aunque en el hogar no es necesario ser demasiado estricto, pero siempre se debe mantener un equilibrio entre comodidad y respeto a ciertas normas de etiqueta y orden.
+        <div class="text2">Confucio valoraba la limpieza y la tranquilidad del entorno doméstico, considerando que un ambiente adecuado contribuye al autocultivo y al desarrollo personal. Sostenía que "al dormir, no debes estar rígido como un cadáver; al vivir en casa, no debes ser excesivamente rígido". Esto refleja su visión de que, al dormir no se debe mantener una tensión excesiva, y aunque en el hogar no es necesario ser demasiado estricto, pero siempre se debe mantener un equilibrio entre comodidad y respeto a ciertas normas de etiqueta y orden.
         </div>
 
         <div class="text3">Techo de madera del Salón Dacheng

@@ -240,9 +240,9 @@ body {
   /* 孔子生平 与 孔子思想 */
 
   position: absolute;
-  width: 350px;
+  width: 450px;
   height: 300px;
-  left: calc(50% - 332px / 2 + 1px);
+  left: calc(50% - 450px / 2 + 1px);
   top: 430px;
 
   font-family: 'FangzhengKaiti', sans-serif;

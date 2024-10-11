@@ -45,7 +45,7 @@ onMounted(() => {
           провинция Шаньдун
         </div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">под редакцией Гу Юаня, династия Цин</div>
+        <div class="text3">Картина «Исследование церемоний в храме: Конфуций учится играть на цинь у учителя Сянь» под редакцией Гу Юаня, династия Цин</div>
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"
@@ -199,13 +199,13 @@ body {
   position: absolute;
   width: 650px;
   height: 40px;
-  left: calc(50% - 567px / 2 - 25.5px);
+  left: calc(50% - 580px / 2 - 25.5px);
   top: 1258px;
   font-family: 'Xiahuwenkai', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
   /* identical to box height, or 167% */
   color: #4b180a;
 }

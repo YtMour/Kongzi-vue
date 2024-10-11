@@ -44,7 +44,7 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">『孔子燕居像』です</div>
+        <div class="text1">『孔子燕居像』</div>
         <div class="text2">明・佚名絵</div>
         <div class="text3">
           孔子（紀元前551年～紀元前479年）、古代中国の偉大な思想家、教育家、哲学者。後世では「至聖先師」、「聖人」と称えられました。

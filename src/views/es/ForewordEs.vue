@@ -43,7 +43,7 @@ onMounted(() => {
         <img src="@/assets/前言/永远.png" alt="" class="logo1" />
         <img src="@/assets/前言/es.png" alt="" class="logo2" />
         <p class="text">
-          &nbsp;&nbsp;&nbsp;&nbsp;A lo largo de los milenios, en el vasto escenario de la sabiduría,
+          A lo largo de los milenios, en el vasto escenario de la sabiduría,
           Confucio se erige con la "benevolencia" como núcleo de su enseñanza. Mediante los
           preceptos del "rito" y la "música", su propuesta de "armonía sin uniformidad", el
           principio de "educación sin distinción de clases", Confucio ha dejado un pensamiento
@@ -52,7 +52,7 @@ onMounted(() => {
           constituyéndose en un patrimonio espiritual compartido por toda la humanidad.
         </p>
         <p class="text2">
-          &nbsp;&nbsp;&nbsp;&nbsp;Esta exposición, organizada en tres capítulos narrativos visuales,
+          Esta exposición, organizada en tres capítulos narrativos visuales,
           invita al espectador a embarcarse en un viaje temporal y espiritual para explorar el
           encanto atemporal del pensamiento confuciano. A través de este recorrido, se busca tender
           puentes de comunicación espiritual, compartir la luz de la sabiduría y abrir nuevas sendas

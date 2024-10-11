@@ -136,11 +136,17 @@ body {
   padding: 0px;
   gap: 80px;
 
-  position: absolute;
-  width: 100%; /* 让容器充满父容器的宽度 */
+  position: fixed;
+  width: 256px;
+  height: 88px;
   bottom: 40px; /* 固定在底部 */
 }
-
+@supports (-webkit-touch-callout: none) {
+  .btnbox {
+    /* Safari 专属的调整 */
+    bottom: 40px; /* 调整定位 */
+  }
+}
 .btnleft {
   /* Group 17 */
 

@@ -177,7 +177,7 @@ body {
 .text2 {
   /* 山东东平汉墓壁画 孔子见老子 */
   position: absolute;
-  width: 500px;
+  width: 550px;
   height: 40px;
   left: 82px;
   top: 536px;

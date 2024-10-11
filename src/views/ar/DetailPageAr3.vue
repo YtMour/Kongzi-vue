@@ -94,31 +94,7 @@ body {
   overflow-x: hidden; /* 防止水平滚动条 */
 }
 
-.btnbox {
-  /* Frame 499 */
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 80px;
-
-  position: absolute;
-  width: 256px;
-  height: 88px;
-  /* left: calc(50% - 256px/2); */
-  bottom: 40px;
-}
-.btnleft {
-  width: 88px;
-  height: 88px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
 
 .wrapper {
   display: flex;

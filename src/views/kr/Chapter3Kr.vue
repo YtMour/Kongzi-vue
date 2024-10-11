@@ -32,10 +32,10 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
-        <div class="text1">당대의 석각으로 전해진 '공자 행교상'은 현재 취푸 공묘 성적전 내에 보존되어 있다.
+        <div class="text1">당대의 석각으로 전해진 &lt;공자 행교상&gt;은 현재 취푸 공묘 성적전 내에 보존되어 있다.
         </div>
        <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
-        <div class="text2">송나라 '증자(曾子)가 공자에게 효도를 묻다'
+        <div class="text2">송나라 &lt;증자(曾子)가 공자에게 효도를 묻다&gt;
         </div>
 
 
@@ -156,9 +156,9 @@ top: 795px;
 /* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
 
 position: absolute;
-width: 250px;
+width: 300px;
 height: 120px;
-left: 76px;
+left: 36px;
 top: 59px;
 
 font-family: 'Xiahuwenkai', sans-serif;

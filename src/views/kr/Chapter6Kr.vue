@@ -38,7 +38,7 @@ onMounted(() => {
         <div class="text2">행단(杏壇): 공자 학술 강연처
         </div>
        <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
-        <div class="text3">송나라 '동가잡기' 공자의 행단 강학도</div>
+        <div class="text3">송나라 &lt;동가잡기&gt; 공자의 행단 강학도</div>
 
 
       </div>
@@ -190,7 +190,7 @@ position: absolute;
 width: 588px;
 height: 40px;
 left: calc(50% - 588px/2 - 31px);
-top: 346px;
+top: 326px;
 font-family: 'Xiahuwenkai', sans-serif;
 font-style: normal;
 font-weight: 400;

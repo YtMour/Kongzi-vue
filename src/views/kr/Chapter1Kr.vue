@@ -44,7 +44,7 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">'공자 연거상(燕居像)'
+        <div class="text1">&lt;공자 연거상(燕居像)&gt;
         </div>
         <div class="text2">명·작자 미상</div>
         <div class="text3">
@@ -190,7 +190,7 @@ body {
 .text1 {
   /* 《孔子燕居像》 */
 
-  width: 280px;
+  width: 300px;
   height: 40px;
 
   font-family: 'Xiahuwenkai', sans-serif;
@@ -210,7 +210,7 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 39px;
+  left: 20px;
   top: 325px;
 }
 .text2 {
