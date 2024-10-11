@@ -22,22 +22,26 @@ defineProps({
 </template>
 
 <style>
-.btnbox {
-  /* Frame 499 */
+@supports (-webkit-touch-callout: none) {
+  .btnbox {
+    /* Safari 专属的调整 */
+    bottom: 40px; /* 调整定位 */
+  }
+}
 
-  /* Auto layout */
+.btnbox {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 80px;
 
-  position: absolute;
+  position: fixed;
   width: 256px;
   height: 88px;
-  /* left: calc(50% - 256px/2); */
-  top: 1200px;
+  bottom: 40px; /* 固定在底部 */
 }
+
 .btnleft {
   width: 88px;
   height: 88px;
