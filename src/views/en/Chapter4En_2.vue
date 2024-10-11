@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/en/chapter3_2';
-let nextR = '/en/chapter5_2';
+let nextLeft = '/en/chapter3_2'
+let nextR = '/en/chapter5_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -37,17 +37,19 @@ onMounted(() => {
         <div class="text1">Logement</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
         <div class="text2">
-          Shelter: Confucius emphasized a clean and quiet living environment, believing that a good living environment helps in cultivating oneself. He proposed "sleep without being rigid like a corpse, and live without being overly restrained," meaning that one should not be stiff when sleeping and should not be excessively formal at home, but should maintain a certain level of etiquette and order.
-</div>
-
-        <div class="text3">The coffered ceiling of the Hall of Great Achievement
-
+          Confucius emphasized a clean and quiet living environment, believing that a good living
+          environment helps in cultivating oneself. He proposed "sleep without being rigid like a
+          corpse, and live without being overly restrained," meaning that one should not be stiff
+          when sleeping and should not be excessively formal at home, but should maintain a certain
+          level of etiquette and order.
         </div>
+
+        <div class="text3">The coffered ceiling of the Hall of Great Achievement</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>

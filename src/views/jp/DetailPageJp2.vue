@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/jp/chapter7';
-let nextR = '/jp/chapter1_2'; // 创建路由实例  // 创建路由实例
+let nextLeft = '/jp/chapter7'
+let nextR = '/jp/chapter1_2' // 创建路由实例  // 创建路由实例
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter1_2') // 跳转到前言页面
@@ -46,17 +46,9 @@ onMounted(() => {
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">孔子文化
-          </div>
+          <div class="text2">孔子文化</div>
           <div class="text3">と</div>
           <div class="text4">日常生活</div>
-        </div>
-
-        <div class="textbox3">
-          <div class="text5">
-            人類が21世紀を生きていくためには、25世紀前に戻って孔子の知恵を引き出す必要があります。
-          </div>
-          <div class="text6">ノーベル物理学賞受賞者のハンネス・アルヴィン(スウェーデン)です</div>
         </div>
 
         <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
@@ -64,9 +56,9 @@ onMounted(() => {
         <img src="@/assets/Chapter2/舞蹈.png" alt="" class="logo7" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -218,21 +210,21 @@ body {
 }
 
 .text {
-position: absolute;
-width: 220px;
-height: 100px;
-left: calc(50% - 220px/2 + 1px);
-top: 303px;
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  left: calc(50% - 220px / 2 + 1px);
+  top: 303px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 40px;
-line-height: 100px;
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .xian1 {
   border: none; /* 不使用实际边框 */

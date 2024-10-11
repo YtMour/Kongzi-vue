@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/ar/chapter7_2';
-let nextR = '/ar/chapter1_3';
+let nextLeft = '/ar/chapter7_2'
+let nextR = '/ar/chapter1_3'
 onMounted(() => {
   const texts = [
     { className: 'textbox1', animationClass: 'animation1' },
@@ -40,27 +40,20 @@ onMounted(() => {
           <div class="text">الفصل الثالث</div>
           <div class="xian1"></div>
         </div>
-        <div class="textbox2">  
-
-          <div class="text2">التأثير العالمي
-          </div>
-          <div class="text3"> للثقافة </div>
+        <div class="textbox2">
+          <div class="text2">التأثير العالمي</div>
+          <div class="text3">للثقافة</div>
           <div class="text4">الكونفوشيوسية</div>
-        </div>
-
-        <div class="textbox3">
-          <div class="text5">والواقع أن فكرة كونفوشيوس، التي تتسم بقدر عظيم من الأهمية، تشكل رمزاً للثقافة الصينية، فضلاً عن الثقافة الشرقية، تنتمي إلى الصين فحسب، بل إلى العالم أجمع</div>
-          <div class="text6">-أكاديمي، موريف (ألمانيا)</div>
         </div>
 
         <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
         <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
       </div>
-      
+
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -101,33 +94,30 @@ body {
   overflow-x: hidden; /* 防止水平滚动条 */
 }
 
-.btnbox{
-    /* Frame 499 */
+.btnbox {
+  /* Frame 499 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 80px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 80px;
 
-position: absolute;
-width: 256px;
-height: 88px;
-/* left: calc(50% - 256px/2); */
-bottom: 40px;
-
-
+  position: absolute;
+  width: 256px;
+  height: 88px;
+  /* left: calc(50% - 256px/2); */
+  bottom: 40px;
 }
-.btnleft{
-    width: 88px;
-    height: 88px;
+.btnleft {
+  width: 88px;
+  height: 88px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .wrapper {
@@ -234,20 +224,20 @@ bottom: 40px;
 
 .text {
   position: absolute;
-width: 250px;
-height: 100px;
-left: calc(50% - 158px/2 - 30px);
-top: 313px;
+  width: 250px;
+  height: 100px;
+  left: calc(50% - 158px / 2 - 30px);
+  top: 313px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 28px;
-line-height: 50px;
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .xian1 {
   /* Vector 1 */
@@ -263,55 +253,55 @@ color: #00538F;
 
 .text2 {
   position: absolute;
-width: 500px;
-height: 300px;
-left: calc(50% - 500px/2 + 1px);
-top: 430px;
+  width: 500px;
+  height: 300px;
+  left: calc(50% - 500px / 2 + 1px);
+  top: 430px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 46px;
-line-height: 30px;
-/* or 125% */
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 30px;
+  /* or 125% */
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .text3 {
   position: absolute;
-width: 400px;
-height: 300px;
-left: calc(50% - 400px/2 + 1px);
-top: 540px;
+  width: 400px;
+  height: 300px;
+  left: calc(50% - 400px / 2 + 1px);
+  top: 540px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 46px;
-line-height: 30px;
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .text4 {
   position: absolute;
-width: 500px;
-height: 300px;
-left: calc(50% - 500px/2 + 1px);
-top: 650px;
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 46px;
-line-height: 30px;
+  width: 500px;
+  height: 300px;
+  left: calc(50% - 500px / 2 + 1px);
+  top: 650px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 30px;
 
-text-align: center;
-letter-spacing: 4px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .text5 {
   /* 孔子思想具有极其博大的内涵，是s中国文化，也是东方文化的象征，孔子不仅属于中国，而且属于全世界 */

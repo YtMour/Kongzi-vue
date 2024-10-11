@@ -1,14 +1,14 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
 // import ButtonBox from '@/views/cn/btn.vue';
 //导入btn 组件
 
 // import btn from "./btn.vue"
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/kr/home';
-let nextR = '/kr/detail';
+const router = useRouter() // 创建路由实例
+let nextLeft = '/kr/home'
+let nextR = '/kr/detail'
 
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
@@ -18,46 +18,53 @@ let nextR = '/kr/detail';
 onMounted(() => {
   const texts = [
     { className: 'text', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-  
-  ];
+    { className: 'text2', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/前言/永远.png" alt="" class="logo1" />
-        <img src="@/assets/前言/前言.png" alt="" class="logo2" />
-        <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;천년을 뛰어넘는 지혜의 그림에서 공자는 '인(仁)'을 핵심으로 하고 '예악(禮樂)'을 규범으로 하여 '화이부동(和爾不同)'을 고취하고 '유교무류(有敎無類)'를 첫 제출했다. 그 사상은 심원하고 광대하여 화하문명의 중추를 형성했을 뿐만 아니라 산과 바다를 넘어 모든 인류가 공유하는 정신적 자산이 되었다.
+        <img src="@/assets/前言/kr.png" alt="" class="logo2" />
+        <p class="text">
+          &nbsp;&nbsp;&nbsp;&nbsp;천년을 뛰어넘는 지혜의 그림에서 공자는 '인(仁)'을 핵심으로 하고
+          '예악(禮樂)'을 규범으로 하여 '화이부동(和爾不同)'을 고취하고 '유교무류(有敎無類)'를 첫
+          제출했다. 그 사상은 심원하고 광대하여 화하문명의 중추를 형성했을 뿐만 아니라 산과 바다를
+          넘어 모든 인류가 공유하는 정신적 자산이 되었다.
         </p>
-        <p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;이번 전시는 그림으로 서사하여 세 개의 장을 통해 고금을 넘나들며 공자 사상의 영원한 매력을 함께 느끼고 영적 소통의 가교 역활을 하며 함께 지혜의 빛의 혜택을 받고 미래에 향한 길을 밝히게 하고자 한다.
+        <p class="text2">
+          &nbsp;&nbsp;&nbsp;&nbsp;이번 전시는 그림으로 서사하여 세 개의 장을 통해 고금을 넘나들며
+          공자 사상의 영원한 매력을 함께 느끼고 영적 소통의 가교 역활을 하며 함께 지혜의 빛의 혜택을
+          받고 미래에 향한 길을 밝히게 하고자 한다.
         </p>
         <img src="@/assets/前言/天下.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
-         <ButtonBox
+        <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
           :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        ></ButtonBox>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 html,
 body {
   margin: 0;
@@ -122,24 +129,23 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
 }
 
-.text{
-position: absolute;
-width: 480px;
-height: 696px;
-left: calc(50% - 480px/2 - 17px);
-top: 254px;
+.text {
+  position: absolute;
+  width: 480px;
+  height: 696px;
+  left: calc(50% - 480px / 2 - 17px);
+  top: 254px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 50px;
-/* or 193% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 50px;
+  /* or 193% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #000000;
-
+  color: #000000;
 }
 .text2 {
   position: absolute;
@@ -158,46 +164,41 @@ color: #000000;
   color: #000000;
 }
 
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
   max-width: 90%; /* 设置最大宽度为90% */
-
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 资源 7@3x */
+  /* 资源 7@3x */
 
-position: absolute;
-width: 166px;
-height: 191px;
-left: 544px;
-top: 22px;
-
-
-
+  position: absolute;
+  width: 166px;
+  height: 191px;
+  left: 544px;
+  top: 22px;
 }
 .logo2 {
-/* 资源 9@3x */
+  /* Group 62 */
 
-position: absolute;
-width: 84px;
-height: 118px;
-left: 622px;
-top: 268px;
-
-
+  position: absolute;
+  width: 137px;
+  height: 89px;
+  top: 133px;
 }
 .logo3 {
-/* 资源 8@3x */
+  /* 资源 8@3x */
 
-position: absolute;
-width: 101px;
-height: 155px;
-left: calc(50% - 101px/2 + 0.5px);
+  position: absolute;
+  width: 101px;
+  height: 155px;
+  left: calc(50% - 101px / 2 + 0.5px);
 
-top: 1129px;
-
+  top: 1129px;
 }
-
 </style>

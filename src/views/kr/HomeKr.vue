@@ -1,7 +1,7 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
+import { useRouter } from 'vue-router' // 导入 useRouter
 
-const router = useRouter();  // 创建路由实例
+const router = useRouter() // 创建路由实例
 
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
@@ -9,24 +9,27 @@ const router = useRouter();  // 创建路由实例
 //   window.scrollTo(0, 0);
 // };
 const handleRightClick = () => {
-  router.push('/kr/foreword');  // 跳转到前言页面
-  window.scrollTo(0, 0);
-};
+  router.push('/kr/foreword') // 跳转到前言页面
+  window.scrollTo(0, 0)
+}
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/首页/confucius.png" alt="" class="logo1" />
+        <img src="@/assets/首页/kr.png" alt="" class="logo1" />
         <img src="@/assets/首页/永远的孔子.png" alt="" class="logo2" />
         <img src="@/assets/首页/天下礼乐.png" alt="" class="logo3" />
-        <img src="@/assets/首页/international.png" alt="" class="logo4" />
+        <img src="@/assets/首页/kr2.png" alt="" class="logo4" />
+        <!-- <div class="logo4">공자국제문화교류 활동</div> -->
         <img src="@/assets/首页/文旅.png" alt="" class="logo5" />
         <div class="btnbox">
           <!-- <img src="@/assets/Buttonleft.png" class="btnleft"> -->
-          <img @click="handleRightClick" src="@/assets/ButtonRight.png" class="btnleft">
+          <img @click="handleRightClick" src="@/assets/ButtonRight.png" class="btnleft" />
         </div>
       </div>
     </div>
@@ -79,18 +82,24 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
 }
 
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
   max-width: 90%; /* 设置最大宽度为90% */
-
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  width: 230px;
-  height: 143px;
-  left: 486px;
-  top: 16px;
+  /* Group 54 */
+
+  position: absolute;
+  width: 335.5px;
+  height: 98px;
+  left: 365px;
+  top: 27px;
 }
 .logo2 {
   width: 183px;
@@ -103,25 +112,18 @@ body {
   height: 236px;
   left: 48px;
   top: 826px;
-
-
 }
 .logo4 {
-/* 资源 4@3x */
-
-position: absolute;
-width: 503px;
-height: 75px;
-left: 50px;
-top: 1091px;
-
-
-
+  position: absolute;
+  width: 245px;
+  height: 31px;
+  left: 50px;
+  top: 1088px;
 }
 .logo5 {
   width: 655px;
   height: 68px;
-  left: calc(50% - 655px/2 + 0.5px);
+  left: calc(50% - 655px / 2 + 0.5px);
   top: 1214px;
 }
 .btnbox {
@@ -136,19 +138,15 @@ top: 1091px;
   bottom: 40px;
 }
 
-.btnleft{
+.btnleft {
   /* Group 17 */
 
-width: 88px;
-height: 88px;
+  width: 88px;
+  height: 88px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
-
-
 </style>

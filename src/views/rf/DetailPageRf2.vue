@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/rf/chapter7';
-let nextR = '/rf/chapter1_2'; // 创建路由实例  // 创建路由实例
+let nextLeft = '/rf/chapter7'
+let nextR = '/rf/chapter1_2' // 创建路由实例  // 创建路由实例
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter1_2') // 跳转到前言页面
@@ -46,18 +46,9 @@ onMounted(() => {
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-
-          <div class="text2">Конфуцианская
-          </div>
+          <div class="text2">Конфуцианская</div>
           <div class="text3">культура и</div>
           <div class="text4">повседневная жизнь</div>
-        </div>
-
-        <div class="textbox3">
-          <div class="text5">
-            Если люди хотят выжить в 21 веке, они должны вернуться на 25 веков назад, чтобы узнать мудрость Конфуция.
-          </div>
-          <div class="text6">-- Лауреат Нобелевской премии по физике Ханнес Альвен (Швеция)</div>
         </div>
 
         <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
@@ -65,9 +56,9 @@ onMounted(() => {
         <img src="@/assets/Chapter2/舞蹈.png" alt="" class="logo7" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -220,20 +211,20 @@ body {
 
 .text {
   position: absolute;
-width: 240px;
-height: 100px;
-left: calc(50% - 158px/2 - 20px);
-top: 313px;
+  width: 240px;
+  height: 100px;
+  left: calc(50% - 158px / 2 - 20px);
+  top: 313px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 28px;
-line-height: 50px;
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .xian1 {
   border: none; /* 不使用实际边框 */
@@ -247,57 +238,57 @@ color: #00538F;
 
 .text2 {
   position: absolute;
-width: 400px;
-height: 300px;
-left: calc(50% - 400px/2 + 1px);
-top: 430px;
+  width: 400px;
+  height: 300px;
+  left: calc(50% - 400px / 2 + 1px);
+  top: 430px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 42px;
-line-height: 30px;
-/* or 125% */
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 30px;
+  /* or 125% */
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .text3 {
   position: absolute;
-width: 400px;
-height: 300px;
-left: calc(50% - 400px/2 + 1px);
-top: 540px;
+  width: 400px;
+  height: 300px;
+  left: calc(50% - 400px / 2 + 1px);
+  top: 540px;
 
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 42px;
-line-height: 30px;
-text-align: center;
-letter-spacing: 4px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .text4 {
   /* 孔子生平 与 孔子思想 */
 
   position: absolute;
-width: 500px;
-height: 300px;
-left: calc(50% - 500px/2 + 1px);
-top: 650px;
-font-family: 'FangzhengKaiti', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 42px;
-line-height: 40px;
+  width: 500px;
+  height: 300px;
+  left: calc(50% - 500px / 2 + 1px);
+  top: 650px;
+  font-family: 'FangzhengKaiti', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 40px;
 
-text-align: center;
-letter-spacing: 4px;
+  text-align: center;
+  letter-spacing: 4px;
 
-color: #00538F;
+  color: #00538f;
 }
 .text5 {
   /* 人类要在21世纪生存下去，就必须回到25个世纪以前，去涉取孔子的智慧。 */

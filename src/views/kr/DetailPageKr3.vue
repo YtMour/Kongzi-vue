@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/kr/chapter7_2';
-let nextR = '/kr/chapter1_3';
+let nextLeft = '/kr/chapter7_2'
+let nextR = '/kr/chapter1_3'
 
 onMounted(() => {
   const texts = [
@@ -42,27 +42,19 @@ onMounted(() => {
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">공자 문화의
-          </div>
+          <div class="text2">공자 문화의</div>
           <div class="text3">세계적</div>
           <div class="text4">영향력</div>
-        </div>
-
-        <div class="textbox3">
-          <div class="text5">
-            공자의 사상은 매우 방대한 내용을 갖고있으며 중국문화와 동방문화의 상징이기도하다. 공자는 중국뿐만아니라 전 세계에 속해있다
-          </div>
-          <div class="text6">학자, 마울라이프 (독일)</div>
         </div>
 
         <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
         <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
       </div>
-      
+
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -103,33 +95,30 @@ body {
   overflow-x: hidden; /* 防止水平滚动条 */
 }
 
-.btnbox{
-    /* Frame 499 */
+.btnbox {
+  /* Frame 499 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 80px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 80px;
 
-position: absolute;
-width: 256px;
-height: 88px;
-/* left: calc(50% - 256px/2); */
-bottom: 40px;
-
-
+  position: absolute;
+  width: 256px;
+  height: 88px;
+  /* left: calc(50% - 256px/2); */
+  bottom: 40px;
 }
-.btnleft{
-    width: 88px;
-    height: 88px;
+.btnleft {
+  width: 88px;
+  height: 88px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .wrapper {

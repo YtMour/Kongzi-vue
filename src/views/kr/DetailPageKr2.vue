@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/kr/chapter7';
-let nextR = '/kr/chapter1_2'; // 创建路由实例  // 创建路由实例
+let nextLeft = '/kr/chapter7'
+let nextR = '/kr/chapter1_2' // 创建路由实例  // 创建路由实例
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter1_2') // 跳转到前言页面
@@ -46,17 +46,9 @@ onMounted(() => {
           <div class="xian1"></div>
         </div>
         <div class="textbox2">
-          <div class="text2">유교문화와
-          </div>
+          <div class="text2">유교문화와</div>
           <div class="text3">일상</div>
           <div class="text4">생활</div>
-        </div>
-
-        <div class="textbox3">
-          <div class="text5">
-            인류가 21세기를 살아가려면 반드시 25세기 이전으로 돌아가 공자의 지혜를 배워야 한다.
-          </div>
-          <div class="text6">-노벨물리학상 수상자 한네스 알빈 (스웨덴)</div>
         </div>
 
         <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
@@ -64,9 +56,9 @@ onMounted(() => {
         <img src="@/assets/Chapter2/舞蹈.png" alt="" class="logo7" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
