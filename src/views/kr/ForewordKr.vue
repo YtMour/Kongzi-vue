@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/kr2.png" alt="" class="logo1" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
         <img src="@/assets/前言/kr.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;천년을 뛰어넘는 지혜의 그림에서 공자는 '인(仁)'을 핵심으로 하고

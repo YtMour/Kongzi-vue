@@ -33,7 +33,7 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter3/鸽子.png" alt="" class="logo1" />
-        <img src="@/assets/前言/rf2.png" alt="" class="logo2" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo2" />
         <img src="@/assets/Chapter3/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter3/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
@@ -152,7 +152,7 @@ body {
 .logo2 {
   position: absolute;
   width: 225px;
-  height: 170px;
+  height: 151px;
   left: 484px;
   top: 22px;
 }

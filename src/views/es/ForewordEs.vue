@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/es2.png" alt="" class="logo1" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
         <img src="@/assets/前言/es.png" alt="" class="logo2" />
         <p class="text">
           A lo largo de los milenios, en el vasto escenario de la sabiduría, Confucio se erige con
@@ -185,8 +185,8 @@ body {
 
   position: absolute;
   width: 225px;
-  height: 189px;
-  left: 484px;
+  height: 151px;
+  left: 500px;
   top: 5px;
 }
 .logo2 {

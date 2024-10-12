@@ -34,7 +34,7 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/sun.png" alt="" class="logo1" />
-        <img src="@/assets/前言/ar2.png" alt="" class="logo2" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo2" />
         <img src="@/assets/Chapter1/circleBG.png" alt="" class="logo3" />
         <div class="textbox1">
           <div class="text">الفصل الأول</div>

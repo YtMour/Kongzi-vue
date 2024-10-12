@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/ar2.png" alt="" class="logo1" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
         <img src="@/assets/前言/ar.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;في لوحة الحكمة التي تمتد عبر آلاف السنين، يبرز كونفوشيوس بأفكاره

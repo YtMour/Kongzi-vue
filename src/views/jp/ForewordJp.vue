@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/jp2.png" alt="" class="logo1" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
         <img src="@/assets/前言/jp.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;数千年を経た知恵の絵巻の中で、孔子は「仁」を中心とし、「礼儀・音楽」を規範として、「和して同ぜず」を唱え、「教えありて類なし」を掲げました。その思想は深く広範囲にわたり、華夏文明の背骨を形作っただけでなく、海や山を越え、全人類が共有する精神的財産となりました。
