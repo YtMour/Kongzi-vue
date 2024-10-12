@@ -46,7 +46,9 @@ onMounted(() => {
           Shandong
         </div>
         <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
-        <div class="text3">Cérémonie du temple sacré : Confucius apprenant le Qin auprès de Shixiang, Gu Yuan, dynastie Qing
+        <div class="text3">
+          Cérémonie du temple sacré : Confucius apprenant le Qin auprès de Shixiang, Gu Yuan,
+          dynastie Qing
         </div>
       </div>
       <ButtonBox
@@ -187,7 +189,7 @@ body {
   left: 82px;
   top: 536px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -203,7 +205,7 @@ body {
   height: 40px;
   left: calc(50% - 500px / 2 - 25.5px);
   top: 1258px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;

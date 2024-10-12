@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/fr/chapter3_2';
-let nextR = '/fr/chapter5_2';
+let nextLeft = '/fr/chapter3_2'
+let nextR = '/fr/chapter5_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -37,16 +37,18 @@ onMounted(() => {
         <div class="text1">Logement</div>
         <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
         <div class="text2">
-          Confucius accordait de l'importance à la propreté et à la tranquillité du cadre de vie, estimant qu'un bon cadre de vie contribuait à cultiver le caractère de chacun. Il a avancé l'idée « ne pas dormir sur le dos comme un cadavre et ne pas se soucier de votre apparence à la maison », mais il faut toujours maintenir un certain degré d'étiquette et d'ordre.
+          Confucius accordait de l'importance à la propreté et à la tranquillité du cadre de vie,
+          estimant qu'un bon cadre de vie contribuait à cultiver le caractère de chacun. Il a avancé
+          l'idée « ne pas dormir sur le dos comme un cadavre et ne pas se soucier de votre apparence
+          à la maison », mais il faut toujours maintenir un certain degré d'étiquette et d'ordre.
         </div>
 
-        <div class="text3">Le caisson de la salle Dacheng
-        </div>
+        <div class="text3">Le caisson de la salle Dacheng</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -207,7 +209,7 @@ body {
   height: 40px;
   left: calc(50% - 144px / 2 - 239px);
   top: 1220px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

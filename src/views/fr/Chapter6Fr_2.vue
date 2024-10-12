@@ -220,7 +220,7 @@ body {
   left: calc(50% - 240px / 2 + 180px);
   top: 934px;
 
-  font-family: 'FangzhengKaiti', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

@@ -211,7 +211,7 @@ body {
   height: 40px;
   left: 85px;
   top: 598px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -229,7 +229,7 @@ body {
   left: 85px;
   top: 986px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -246,7 +246,7 @@ body {
   height: 80px;
   left: 460px;
   top: 1075px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

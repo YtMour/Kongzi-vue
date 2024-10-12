@@ -1,55 +1,59 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-import ButtonBox from '@/views/cn/btn.vue';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+import ButtonBox from '@/views/cn/btn.vue'
 //导入btn 组件
 
 // import btn from "./btn.vue"
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/cn/home';
-let nextR = '/cn/detail';
+const router = useRouter() // 创建路由实例
+let nextLeft = '/cn/home'
+let nextR = '/cn/detail'
 onMounted(() => {
   const texts = [
     { className: 'text', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-  
-  ];
+    { className: 'text2', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/前言/永远.png" alt="" class="logo1" />
         <img src="@/assets/前言/前言.png" alt="" class="logo2" />
-        <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;在跨越千年的智慧画卷中，孔子，以“仁”为核心，以“礼乐”为规范，倡“和而不同”，启“有教无类”，其思想深邃而广远，不仅塑造了华夏文明的脊梁，亦跨越山海，成为全人类共有的精神财富。</p>
-        <p class="text2">&nbsp;&nbsp;&nbsp;&nbsp;本次展览将以图叙事，通过三个篇章带领大家穿越古今，共同感受孔子思想的永恒魅力，搭建心灵沟通的桥梁，共鉴智慧之光，启迪未来之路。</p>
+        <p class="text">
+          &nbsp;&nbsp;&nbsp;&nbsp;在跨越千年的智慧画卷中，孔子，以“仁”为核心，以“礼乐”为规范，倡“和而不同”，启“有教无类”，其思想深邃而广远，不仅塑造了华夏文明的脊梁，亦跨越山海，成为全人类共有的精神财富。
+        </p>
+        <p class="text2">
+          &nbsp;&nbsp;&nbsp;&nbsp;本次展览将以图叙事，通过三个篇章带领大家穿越古今，共同感受孔子思想的永恒魅力，搭建心灵沟通的桥梁，共鉴智慧之光，启迪未来之路。
+        </p>
         <img src="@/assets/前言/天下.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
-         <ButtonBox
+        <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
           :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        ></ButtonBox>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 html,
 body {
   margin: 0;
@@ -114,24 +118,23 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
 }
 
-.text{
-position: absolute;
-width: 480px;
-height: 696px;
-left: calc(50% - 480px/2 - 17px);
-top: 254px;
+.text {
+  position: absolute;
+  width: 480px;
+  height: 696px;
+  left: calc(50% - 480px / 2 - 17px);
+  top: 254px;
 
-font-family: 'SourceHanSansCN', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 58px;
-/* or 193% */
-text-align: justify;
-letter-spacing: -0.6px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 58px;
+  /* or 193% */
+  text-align: justify;
+  letter-spacing: -0.6px;
 
-color: #000000;
-
+  color: #000000;
 }
 .text2 {
   position: absolute;
@@ -150,46 +153,42 @@ color: #000000;
   color: #000000;
 }
 
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
   max-width: 90%; /* 设置最大宽度为90% */
-
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 资源 7@3x */
+  /* 资源 7@3x */
 
-position: absolute;
-width: 166px;
-height: 191px;
-left: 544px;
-top: 22px;
-
-
-
+  position: absolute;
+  width: 166px;
+  height: 191px;
+  left: 544px;
+  top: 22px;
 }
 .logo2 {
-/* 资源 9@3x */
+  /* 资源 9@3x */
 
-position: absolute;
-width: 84px;
-height: 118px;
-left: 622px;
-top: 268px;
-
-
+  position: absolute;
+  width: 84px;
+  height: 118px;
+  left: 622px;
+  top: 268px;
 }
 .logo3 {
-/* 资源 8@3x */
+  /* 资源 8@3x */
 
-position: absolute;
-width: 101px;
-height: 155px;
-left: calc(50% - 101px/2 + 0.5px);
+  position: absolute;
+  width: 101px;
+  height: 155px;
+  left: calc(50% - 101px / 2 + 0.5px);
 
-top: 1129px;
-
+  top: 1129px;
 }
-
 </style>

@@ -203,7 +203,7 @@ body {
   height: 40px;
   left: calc(50% - 550px / 2 + 155.5px);
   top: 356px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -240,7 +240,7 @@ body {
   left: calc(50% - 920px / 2 + 182px);
   top: 1265px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

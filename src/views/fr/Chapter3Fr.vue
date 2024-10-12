@@ -158,12 +158,12 @@ body {
   width: 350px;
   height: 120px;
   left: 30px;
-  top: 59px;
+  top: 25px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 21px;
   line-height: 30px;
   /* or 167% */
 
@@ -178,7 +178,7 @@ body {
   left: 82px;
   top: 1257px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

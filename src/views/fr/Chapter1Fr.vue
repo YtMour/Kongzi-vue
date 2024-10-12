@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/fr/detail';
-let nextR = '/fr/chapter2';
+let nextLeft = '/fr/detail'
+let nextR = '/fr/chapter2'
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter2') // 跳转到前言页面
@@ -44,22 +44,25 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">Portrait de Confucius à loisir
-        </div>
-        <div class="text2">dynastie Ming,<br> peintre inconnu
+        <div class="text1">Portrait de Confucius à loisir</div>
+        <div class="text2">
+          dynastie Ming,<br />
+          peintre inconnu
         </div>
         <div class="text3">
-          Confucius (551 - 479 av. J.-C.), grand penseur, éducateur et philosophe de la Chine ancienne, a été honoré par les générations suivantes comme « le maître souverain » et « le grand sage ».
+          Confucius (551 - 479 av. J.-C.), grand penseur, éducateur et philosophe de la Chine
+          ancienne, a été honoré par les générations suivantes comme « le maître souverain » et « le
+          grand sage ».
         </div>
         <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
-        <div class="text4">Le musée de Confucius à Qufu, la ville natale de Confucius, dans la province du Shandong
-
+        <div class="text4">
+          Le musée de Confucius à Qufu, la ville natale de Confucius, dans la province du Shandong
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -191,13 +194,13 @@ body {
 .text1 {
   /* 《孔子燕居像》 */
 
-  width: 260px;
+  width: 350px;
   height: 40px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 21px;
   line-height: 40px;
   /* identical to box height, or 143% */
   color: #4b180a;
@@ -211,14 +214,14 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 40px;
+  left: -40px;
   top: 325px;
 }
 .text2 {
   /* 明·佚名 绘 */
   width: 230;
   height: 40px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -265,7 +268,7 @@ body {
   height: 40px;
   right: 15px;
   top: 1250px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

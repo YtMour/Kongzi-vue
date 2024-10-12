@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/rf/detail';
-let nextR = '/rf/chapter2';
+let nextLeft = '/rf/detail'
+let nextR = '/rf/chapter2'
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter2') // 跳转到前言页面
@@ -44,23 +44,19 @@ onMounted(() => {
         <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
         <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
 
-        <div class="text1">«Портрет Конфуция в покое»
-
-        </div>
-        <div class="text2"> династия Мин, автор неизвестен</div>
+        <div class="text1">«Портрет Конфуция в покое»</div>
+        <div class="text2">династия Мин, автор неизвестен</div>
         <div class="text3">
-          Конфуций (551 г. до н.э. – 479 г. до н.э.) — великий мыслитель, педагог и философ древнего Китая. Потомки почитают его как «Великого учителя» и «Святого».
-
+          Конфуций (551 г. до н.э. – 479 г. до н.э.) — великий мыслитель, педагог и философ древнего
+          Китая. Потомки почитают его как «Великого учителя» и «Святого».
         </div>
         <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
-        <div class="text4">Музей Конфуция в Цюйфу, провинция Шаньдун - родина Конфуция
-
-        </div>
+        <div class="text4">Музей Конфуция в Цюйфу, провинция Шаньдун - родина Конфуция</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -195,7 +191,7 @@ body {
   width: 500px;
   height: 40px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -212,14 +208,14 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 40px;
+  left: -190px;
   top: 325px;
 }
 .text2 {
   /* 明·佚名 绘 */
   width: 230;
   height: 40px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -238,7 +234,7 @@ body {
   align-items: flex-end;
   padding: 0px;
   position: absolute;
-  left: 125px;
+  left: 30px;
   top: 375px;
 }
 .text3 {

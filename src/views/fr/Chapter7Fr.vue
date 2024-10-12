@@ -1,47 +1,45 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();
-let nextLeft = '/fr/chapter6';
-let nextR = '/fr/detail2'; // 创建路由实例  // 创建路由实例
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter()
+let nextLeft = '/fr/chapter6'
+let nextR = '/fr/detail2' // 创建路由实例  // 创建路由实例
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
     { className: 'text2', animationClass: 'animation2' },
-    { className: 'text3', animationClass: 'animation2' },
-
-  ];
+    { className: 'text3', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 // 点击事件，跳转到前言页面
-
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/page7/图画1.png" alt="" class="logo1" />
-       <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
-       <div class="text1">La terre sacrée du mont Ni, la voie du grand apprentissage
-      </div>
-
+        <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
+        <div class="text1">La terre sacrée du mont Ni, la voie du grand apprentissage</div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -117,54 +115,53 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 7-1 */
+  /* 7-1 */
 
-position: absolute;
-width: 620px;
-height: 667.24px;
-left: calc(50% - 620px/2);
-top: 2px;
+  position: absolute;
+  width: 620px;
+  height: 667.24px;
+  left: calc(50% - 620px / 2);
+  top: 2px;
 }
-.logo2 {/* 7-2 */
+.logo2 {
+  /* 7-2 */
 
-position: absolute;
-width: 620px;
-height: 555.55px;
-left: calc(50% - 620px/2);
-top: 723px;
-
+  position: absolute;
+  width: 620px;
+  height: 555.55px;
+  left: calc(50% - 620px / 2);
+  top: 723px;
 }
 
-.text1{
-/* 尼山圣境 大学之道 */
+.text1 {
+  /* 尼山圣境 大学之道 */
 
-position: absolute;
-width: 350px;
-height: 40px;
-left: calc(50% - 500px/2 + 204.5px);
-top: 767px;
+  position: absolute;
+  width: 350px;
+  height: 40px;
+  left: calc(50% - 500px / 2 + 204.5px);
+  top: 767px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
-
-
+  color: #4b180a;
 }
 </style>

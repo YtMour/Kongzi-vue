@@ -273,7 +273,7 @@ body {
   position: absolute;
   width: 600px; /* 文字的宽度 */
   height: auto; /* 适应内容高度，去掉固定高度 */
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400; /* 字体权重 */
   font-size: 20px; /* 字体大小 */
@@ -290,7 +290,7 @@ body {
   height: 40px;
   left: calc(50% - 465px / 2 - 72.5px);
   top: 755.24px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -307,7 +307,7 @@ body {
   height: 40px;
   left: calc(50% - 465px / 2 - 72.5px);
   top: 1175.24px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

@@ -16,7 +16,7 @@ const handleRightClick = () => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/首页/confucius.png" alt="" class="logo1" />
+        <img src="@/assets/首页/cn.png" alt="" class="logo1" />
         <img src="@/assets/首页/永远的孔子.png" alt="" class="logo2" />
         <img src="@/assets/首页/天下礼乐.png" alt="" class="logo3" />
         <img src="@/assets/首页/international.png" alt="" class="logo4" />
@@ -87,10 +87,10 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  width: 230px;
-  height: 143px;
-  left: 486px;
-  top: 16px;
+  width: 450px;
+  height: 164px;
+  left: 250px;
+  top: 6px;
 }
 .logo2 {
   width: 183px;

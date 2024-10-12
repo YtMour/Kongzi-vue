@@ -45,7 +45,11 @@
 
   box-sizing: border-box; /* 设置盒模型为 border-box */
 }
-
+html,
+body {
+  -webkit-text-size-adjust: none !important; /* 强制禁止字体缩放 */
+  text-size-adjust: none !important; /* 适用于非 WebKit 浏览器 */
+}
 /* 取消文本元素的默认样式 */
 h1,
 h2,

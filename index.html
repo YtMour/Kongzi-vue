@@ -5,7 +5,7 @@
     <link rel="icon" href="/favicon.ico" />
     <meta
       name="viewport"
-      content="viewport-fit=cover,width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"
+      content="viewport-fit=cover,width=device-width,initial-scale=1.0,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"
     />
 
     <title>永远的孔子</title>
@@ -44,6 +44,10 @@
 
     <style>
       /* 可以在这里添加全局样式 */
+      body {
+        -webkit-text-size-adjust: none !important; /* 强制禁止字体缩放 */
+        text-size-adjust: none !important; /* 适用于非 WebKit 浏览器 */
+      }
     </style>
   </head>
   <body>

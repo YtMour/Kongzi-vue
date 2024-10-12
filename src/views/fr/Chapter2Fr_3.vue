@@ -175,7 +175,7 @@ body {
   left: calc(50% - 175px / 2 - 213.5px);
   top: 731px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -192,7 +192,7 @@ body {
   height: 40px;
   left: calc(50% - 144px / 2 - 229px);
   top: 1178px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -207,9 +207,9 @@ body {
   position: absolute;
   width: 230px;
   height: 60px;
-  left: calc(50% - 200px / 2 - 6px);
-  top: 1241px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  left: calc(50% - 280px / 2 - 6px);
+  top: 1255px;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

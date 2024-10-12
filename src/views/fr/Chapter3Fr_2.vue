@@ -3,8 +3,8 @@ import { useRouter } from 'vue-router' // 导入 useRouter
 import '@/assets/font.css'
 import { onMounted } from 'vue' // 导入 onMounted
 const router = useRouter() // 创建路由实例
-let nextLeft = '/fr/chapter2_2';
-let nextR = '/fr/chapter4_2';
+let nextLeft = '/fr/chapter2_2'
+let nextR = '/fr/chapter4_2'
 // 点击事件，跳转到前言页面
 
 onMounted(() => {
@@ -37,19 +37,25 @@ onMounted(() => {
         <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
         <div class="text1">Alimentation</div>
         <div class="text2">
-          Confucius mangeait avec modération, faisant attention à la fraîcheur des ingrédients et à la délicatesse de la cuisson. Il préconisait que « plus les grains sont finement broyés, plus le poisson est finement haché, mieux c'est », et insistait sur l'étiquette et la valeur de la nourriture.
+          Confucius mangeait avec modération, faisant attention à la fraîcheur des ingrédients et à
+          la délicatesse de la cuisson. Il préconisait que « plus les grains sont finement broyés,
+          plus le poisson est finement haché, mieux c'est », et insistait sur l'étiquette et la
+          valeur de la nourriture.
         </div>
         <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
-        <div class="text3">Coupe à vin en forme de bœuf, période des Royaumes combattants, collectionnée au musée de la culture Qi
+        <div class="text3">
+          Coupe à vin en forme de bœuf, période des Royaumes combattants, collectionnée au musée de
+          la culture Qi
         </div>
         <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
-        <div class="text4">Dix objets en bronze des dynasties Shang et Zhou, collectionnés au musée de Confucius
+        <div class="text4">
+          Dix objets en bronze des dynasties Shang et Zhou, collectionnés au musée de Confucius
         </div>
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -223,7 +229,7 @@ body {
   height: 40px;
   left: calc(50% - 400px / 2 - 146.5px);
   top: 880px;
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -242,7 +248,7 @@ body {
   left: calc(50% - 300px / 2 - 205px);
   top: 1158px;
 
-  font-family: 'Xiahuwenkai', sans-serif;
+  font-family: 'SourceHanSansCN', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;

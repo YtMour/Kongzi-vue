@@ -1,47 +1,43 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter(); 
-let nextLeft = '/fr/chapter6_2';
-let nextR = '/fr/detail3'; // 创建路由实例
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter()
+let nextLeft = '/fr/chapter6_2'
+let nextR = '/fr/detail3' // 创建路由实例
 onMounted(() => {
-  const texts = [
-    { className: 'text1', animationClass: 'animation1' },
-    
-
-  ];
+  const texts = [{ className: 'text1', animationClass: 'animation1' }]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 // 点击事件，跳转到前言页面
-
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/page7/图画1.png" alt="" class="logo1" />
-        <div class="text1">Portrait de Confucius, pierre picturale « Jouer le qing », dynastie Han
+        <div class="text1">
+          Portrait de Confucius, pierre picturale « Jouer le qing », dynastie Han
         </div>
-       <img src="@/assets/Chapter2/page7/图画2.png" alt="" class="logo2" />
-
-
+        <img src="@/assets/Chapter2/page7/图画2.png" alt="" class="logo2" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -109,7 +105,7 @@ body {
   max-width: 100vw; /* 最大宽度设置为100% */
   width: 100vw; /* 使用相对宽度 */
   max-height: 100%; /* 限制内容最大高度 */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center; /* 水平居中内容 */
@@ -117,54 +113,51 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 组 7888 1 */
+  /* 组 7888 1 */
 
-position: absolute;
-width: 620px;
-height: 719.15px;
-left: calc(50% - 620px/2);
-top: 2px;
-
+  position: absolute;
+  width: 620px;
+  height: 719.15px;
+  left: calc(50% - 620px / 2);
+  top: 2px;
 }
-.logo2{/* 组 7884 1 */
-/* 组 7884 1 */
+.logo2 {
+  /* 组 7884 1 */
+  /* 组 7884 1 */
 
-position: absolute;
-width: 620px;
-height: 447.36px;
-left: calc(50% - 620px/2);
-top: 828px;
-
+  position: absolute;
+  width: 620px;
+  height: 447.36px;
+  left: calc(50% - 620px / 2);
+  top: 828px;
 }
-.text1{
+.text1 {
+  position: absolute;
+  width: 450px;
+  height: 40px;
+  left: calc(50% - 550px / 2 + 201.5px);
+  top: 760px;
 
-position: absolute;
-width: 450px;
-height: 40px;
-left: calc(50% - 550px/2 + 201.5px);
-top: 760px;
+  font-family: 'SourceHanSansCN', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
-
-color: #4B180A;
-
-
-
-
+  color: #4b180a;
 }
 </style>
