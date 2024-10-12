@@ -4,8 +4,8 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/cn/chapter7';
-let nextR = '/cn/chapter1_2'; // 创建路由实例  // 创建路由实例
+let nextLeft = '/cn/chapter7'
+let nextR = '/cn/chapter1_2' // 创建路由实例  // 创建路由实例
 // 点击事件，跳转到前言页面
 // const goToNextPage = () => {
 //   router.push('/cn/chapter1_2') // 跳转到前言页面
@@ -38,7 +38,7 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/编钟.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/永远.png" alt="" class="logo2" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo2" />
         <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
@@ -63,9 +63,9 @@ onMounted(() => {
         <img src="@/assets/Chapter2/舞蹈.png" alt="" class="logo7" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -164,9 +164,10 @@ body {
   /* 资源 7@3x */
 
   position: absolute;
-  width: 239px;
-  height: 275px;
-  left: 471px;
+  width: 225px;
+  height: 151px;
+  left: 484px;
+
   top: 22px;
 }
 .logo3 {

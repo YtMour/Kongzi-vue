@@ -34,7 +34,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/永远.png" alt="" class="logo1" />
+        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
         <img src="@/assets/前言/前言.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;在跨越千年的智慧画卷中，孔子，以“仁”为核心，以“礼乐”为规范，倡“和而不同”，启“有教无类”，其思想深邃而广远，不仅塑造了华夏文明的脊梁，亦跨越山海，成为全人类共有的精神财富。
@@ -167,10 +167,10 @@ body {
   /* 资源 7@3x */
 
   position: absolute;
-  width: 166px;
-  height: 191px;
-  left: 544px;
-  top: 22px;
+  width: 225px;
+  height: 151px;
+  left: 500px;
+  top: 5px;
 }
 .logo2 {
   /* 资源 9@3x */

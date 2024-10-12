@@ -40,23 +40,23 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/永远.png" alt="" class="logo1" />
+        <img src="@/assets/前言/es2.png" alt="" class="logo1" />
         <img src="@/assets/前言/es.png" alt="" class="logo2" />
         <p class="text">
-          A lo largo de los milenios, en el vasto escenario de la sabiduría,
-          Confucio se erige con la "benevolencia" como núcleo de su enseñanza. Mediante los
-          preceptos del "rito" y la "música", su propuesta de "armonía sin uniformidad", el
-          principio de "educación sin distinción de clases", Confucio ha dejado un pensamiento
-          profundo y extenso que ha marcado una huella indeleble en la civilización china. Este
-          legado no solo es la piedra angular de dicha cultura, sino que ha trascendido fronteras,
-          constituyéndose en un patrimonio espiritual compartido por toda la humanidad.
+          A lo largo de los milenios, en el vasto escenario de la sabiduría, Confucio se erige con
+          la "benevolencia" como núcleo de su enseñanza. Mediante los preceptos del "rito" y la
+          "música", su propuesta de "armonía sin uniformidad", el principio de "educación sin
+          distinción de clases", Confucio ha dejado un pensamiento profundo y extenso que ha marcado
+          una huella indeleble en la civilización china. Este legado no solo es la piedra angular de
+          dicha cultura, sino que ha trascendido fronteras, constituyéndose en un patrimonio
+          espiritual compartido por toda la humanidad.
         </p>
         <p class="text2">
-          Esta exposición, organizada en tres capítulos narrativos visuales,
-          invita al espectador a embarcarse en un viaje temporal y espiritual para explorar el
-          encanto atemporal del pensamiento confuciano. A través de este recorrido, se busca tender
-          puentes de comunicación espiritual, compartir la luz de la sabiduría y abrir nuevas sendas
-          hacia el futuro.
+          Esta exposición, organizada en tres capítulos narrativos visuales, invita al espectador a
+          embarcarse en un viaje temporal y espiritual para explorar el encanto atemporal del
+          pensamiento confuciano. A través de este recorrido, se busca tender puentes de
+          comunicación espiritual, compartir la luz de la sabiduría y abrir nuevas sendas hacia el
+          futuro.
         </p>
         <img src="@/assets/前言/天下.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
@@ -181,12 +181,13 @@ body {
 /* 定义每个logo的绝对位置 */
 .logo1 {
   /* 资源 7@3x */
+  /* Group 66 */
 
   position: absolute;
-  width: 166px;
-  height: 191px;
-  left: 544px;
-  top: 22px;
+  width: 225px;
+  height: 189px;
+  left: 484px;
+  top: 5px;
 }
 .logo2 {
   /* Group 59 */

@@ -38,7 +38,7 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter2/编钟.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/永远.png" alt="" class="logo2" />
+        <img src="@/assets/前言/jp2.png" alt="" class="logo2" />
         <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
@@ -157,9 +157,9 @@ body {
   /* 资源 7@3x */
 
   position: absolute;
-  width: 239px;
-  height: 275px;
-  left: 471px;
+  width: 225px;
+  height: 151px;
+  left: 484px;
   top: 22px;
 }
 .logo3 {

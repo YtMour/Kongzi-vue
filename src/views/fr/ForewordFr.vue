@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/永远.png" alt="" class="logo1" />
+        <img src="@/assets/前言/fr2.png" alt="" class="logo1" />
         <img src="@/assets/前言/fr.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;Dans la fresque de sagesse qui s'étend sur des milliers d'années,
@@ -178,13 +178,11 @@ body {
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-  /* 资源 7@3x */
-
   position: absolute;
-  width: 166px;
-  height: 191px;
-  left: 544px;
-  top: 22px;
+  width: 205px;
+  height: 151px;
+  left: 520px;
+  top: 5px;
 }
 .logo2 {
   /* Group 58 */

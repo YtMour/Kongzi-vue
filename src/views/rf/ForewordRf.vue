@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/永远.png" alt="" class="logo1" />
+        <img src="@/assets/前言/rf2.png" alt="" class="logo1" />
         <img src="@/assets/前言/rf.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;Конфуций, взяв за основу принципы «жэнь» (гуманность), «ли» и «юэ»
@@ -178,11 +178,13 @@ body {
 .logo1 {
   /* 资源 7@3x */
 
+  /* Group 66 */
+
   position: absolute;
-  width: 166px;
-  height: 191px;
-  left: 544px;
-  top: 22px;
+  width: 225px;
+  height: 151px;
+  left: 500px;
+  top: 5px;
 }
 .logo2 {
   /* Group 60 */

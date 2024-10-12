@@ -148,9 +148,9 @@ body {
   /* Group 45 */
 
   position: absolute;
-  width: 364.8px;
-  height: 162.13px;
-  left: calc(50% - 364.8px / 2 - 0.24px);
+  width: 351.9px;
+  height: 145.91px;
+  left: calc(50% - 351.9px / 2 - 0.05px);
   top: 19.44px;
 }
 .logo2 {

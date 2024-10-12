@@ -34,7 +34,7 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/sun.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter1/kz.png" alt="" class="logo2" />
+        <img src="@/assets/前言/ar2.png" alt="" class="logo2" />
         <img src="@/assets/Chapter1/circleBG.png" alt="" class="logo3" />
         <div class="textbox1">
           <div class="text">الفصل الأول</div>
@@ -148,10 +148,13 @@ body {
 .logo2 {
   /* 资源 7@3x */
 
+  /* Group 66 */
+
   position: absolute;
-  width: 166px;
-  height: 191px;
-  left: 544px;
+  width: 225px;
+  height: 170px;
+  left: 484px;
+
   top: 22px;
 }
 .logo3 {

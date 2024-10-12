@@ -152,11 +152,10 @@ body {
 /* 定义每个logo的绝对位置 */
 .logo1 {
   /* Group 45 */
-
   position: absolute;
-  width: 291.53px;
-  height: 129.56px;
-  right: 180.45px;
+  width: 351.9px;
+  height: 145.91px;
+  left: calc(50% - 351.9px / 2 - 0.05px);
   top: 19.44px;
 }
 .logo2 {

@@ -33,7 +33,7 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter3/鸽子.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter3/永远.png" alt="" class="logo2" />
+        <img src="@/assets/前言/es2.png" alt="" class="logo2" />
         <img src="@/assets/Chapter3/大圆.png" alt="" class="logo3" />
         <img src="@/assets/Chapter3/小圆.png" alt="" class="logo4" />
         <div class="textbox1">
@@ -94,7 +94,6 @@ body {
   overflow-x: hidden; /* 防止水平滚动条 */
 }
 
-
 .wrapper {
   display: flex;
   justify-content: center;
@@ -154,9 +153,9 @@ body {
   /* 资源 7@3x */
 
   position: absolute;
-  width: 239px;
-  height: 275px;
-  left: 471px;
+  width: 225px;
+  height: 189px;
+  left: 484px;
   top: 22px;
 }
 .logo3 {

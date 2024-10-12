@@ -4,10 +4,10 @@ import '@/assets/font.css'
 import { onMounted } from 'vue'
 
 const router = useRouter() // 创建路由实例
-let nextLeft = '/es/detail3';
-let nextR = '/es/chapter2_3';
+let nextLeft = '/es/detail3'
+let nextR = '/es/chapter2_3'
 // 点击事件，跳转到前言页面
-// 
+//
 
 onMounted(() => {
   const texts = [
@@ -40,17 +40,16 @@ onMounted(() => {
 
         <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
 
-        <div class="text1">Amigos internacionales realizando la ceremonia de inicio de la escritura para los niños
+        <div class="text1">
+          Amigos internacionales realizando la ceremonia de inicio de la escritura para los niños
         </div>
-        <div class="text2">Presentación del nuevo libro de "Las analectas" en maltés
-
-        </div>
+        <div class="text2">Presentación del nuevo libro de "Las analectas" en maltés</div>
         <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -143,8 +142,9 @@ body {
   /* Group 45 */
 
   position: absolute;
-  width: 364.8px;
-  height: 162.13px;
+  width: 351.9px;
+  height: 145.91px;
+  left: calc(50% - 351.9px / 2 - 0.05px);
 
   top: 39.44px;
 }
