@@ -34,7 +34,7 @@ onMounted(() => {
 
         <div class="text1">En esta era marcada por desafíos y cambios constantes, la sabiduría de Confucio sigue resonando a lo largo de la historia y se presenta como un faro hacia el futuro. Su pensamiento ofrece perspectivas y soluciones únicas para abordar los problemas globales, invitándonos a reflexionar sobre las relaciones entre el ser humano y la naturaleza, entre el individuo y la sociedad, así como entre las personas mismas, fomentando la armonía y una coexistencia inclusiva. Esto inyecta una energía inagotable para la paz y el desarrollo mundial.
         </div>
-       <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">Visitantes extranjeros frente al Salón Dacheng
 
         </div>

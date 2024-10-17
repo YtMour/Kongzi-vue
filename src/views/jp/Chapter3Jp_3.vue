@@ -35,7 +35,7 @@ onMounted(() => {
         <div class="text1">
           挑戦と変革に満ちた今の時代に、孔子の知恵は単なる歴史の共鳴ではなく、未来への灯台となり、地球規模の問題を解決するための独自の視点とソリューションを提供します。それは私たちに人と自然、人と社会、人と人の間の関係を再認識させ、和をもって尊きとし、多様性を尊重する付き合い方を提唱して、世界の平和と発展のために尽きることのない原動力を注ぎ込みます。
         </div>
-        <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">大成殿の門を眺める外国人観光客</div>
       </div>
       <ButtonBox

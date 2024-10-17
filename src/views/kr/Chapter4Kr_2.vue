@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/imga1.png" alt="" class="logo1" />
         <div class="text1">주거</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/imga2.png" alt="" class="logo2" />
         <div class="text2">
           공자는 주거환경의 정갈함과 조용함을 중시했고, 좋은 주거환경이 몸과 마음을 다스리는 데
           도움이 된다고 여겼다. 그는 "침불시, 거불용(寢不屍，居不容)"을 주장하는데, 즉 취침 시

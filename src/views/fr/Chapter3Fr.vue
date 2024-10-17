@@ -32,13 +32,13 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">
           Statue de Confucius en train d'enseigner, qui est censée avoir été sculptée dans la pierre
           sous la dynastie Tang et qui est aujourd'hui conservée dans la salle Shengji du temple de
           Confucius à Qufu.
         </div>
-        <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page3/imga2.png" alt="" class="logo2" />
         <div class="text2">Zeng Zi interroge Confucius sur la piété filiale, dynastie Song</div>
       </div>
       <ButtonBox

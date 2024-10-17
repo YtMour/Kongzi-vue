@@ -36,7 +36,7 @@ onMounted(() => {
       <div class="content">
 
         <div class="text1"> Confucio daba gran importancia a la vestimenta adecuada, pues consideraba que "el caballero ajusta sus ropas y su mirada es respetuosa", lo cual no solo denotaba respeto hacia los demás, sino que también era una forma de autocultivo personal. Vestía de acuerdo con las normas rituales, utilizando diferentes tocados según la ocasión, demostrando así la elegancia y solemnidad de los ritos confucianos.</div>
-       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter2/page2/imga1.png" alt="" class="logo1" />
         <div class="text2">Ropa tradicional china de la dinastía Ming (1368 d.C. - 1644 d.C.), preservada por los descendientes de Confucio
         </div>
           <div class="text3">"Confucio como Ministro de Justicia", dinastía Ming (1368 d.C. - 1644 d.C.), autor desconocido

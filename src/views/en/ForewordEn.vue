@@ -10,9 +10,9 @@ const router = useRouter() // 创建路由实例
 let nextLeft = '/en/home'
 let nextR = '/en/detail'
 
-// 点击事件，跳转到前言页面
+// 点击事件，跳转到qianyan页面
 // const goToNextPage = () => {
-//   router.push('/cn/detail');  // 跳转到前言页面
+//   router.push('/cn/detail');  // 跳转到qianyan页面
 //   window.scrollTo(0, 0);
 // };
 onMounted(() => {
@@ -40,8 +40,8 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/en2.png" alt="" class="logo1" />
-        <img src="@/assets/前言/en.png" alt="" class="logo2" />
+        <img src="@/assets/qianyan/en2.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/en.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;In the scroll of wisdom that spans thousands of years, Confucius, centering on
           "benevolence" and regulating with "rites and music," advocated "harmony without
@@ -55,7 +55,7 @@ onMounted(() => {
           charm of Confucius' thoughts. It aims to build a bridge of spiritual communication,
           jointly witness the light of wisdom, and inspire the path to the future.
         </p>
-        <img src="@/assets/前言/天下.png" alt="" class="logo3" />
+        <img src="@/assets/qianyan/tianxia.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
         <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -112,7 +112,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('@/assets/前言/书.png'); /* 背景图片路径 */
+  background-image: url('@/assets/qianyan/shu.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */

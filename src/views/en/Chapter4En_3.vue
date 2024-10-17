@@ -41,7 +41,7 @@ onMounted(() => {
 
         <div class="content1">
           <div class="content2">
-            <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
+            <img src="@/assets/Chapter3/page4/imga1.png" alt="" class="logo1" />
             <div class="text2">
               Qufu International Confucius Culture Festival, featuring performance of ceremonial
               music and dance in honor of Confucius
@@ -49,7 +49,7 @@ onMounted(() => {
           </div>
 
           <div class="content3">
-            <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
+            <img src="@/assets/Chapter3/page4/imga2.png" alt="" class="logo2" />
             <div class="text3">
               Mount Ni in Jining, where the ancient sounds of bronze and jade chimes are once again
               played across millennia
@@ -57,7 +57,7 @@ onMounted(() => {
           </div>
 
           <div class="content4">
-            <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
+            <img src="@/assets/Chapter3/page4/imga3.png" alt="" class="logo3" />
             <div class="text4">
               Mount Tai in Tai'an, at the site of the grand ceremony of offering sacrifices to
               heaven

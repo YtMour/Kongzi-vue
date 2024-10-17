@@ -28,11 +28,11 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page7/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page7/imga1.png" alt="" class="logo1" />
         <div class="text1">
           صورة كونفوشيوس في "مشهد العزف على بان" - منقوشة على الحجر من عهد أسرة هان الملكية
         </div>
-        <img src="@/assets/Chapter2/page7/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page7/imga2.png" alt="" class="logo2" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

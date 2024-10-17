@@ -38,17 +38,17 @@ onMounted(() => {
 
         <div class="content1">
           <div class="content2">
-            <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
+            <img src="@/assets/Chapter3/page4/imga1.png" alt="" class="logo1" />
             <div class="text2">曲阜国際孔子文化節、孔子楽舞のパフォーマンス</div>
           </div>
 
           <div class="content3">
-            <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
+            <img src="@/assets/Chapter3/page4/imga2.png" alt="" class="logo2" />
             <div class="text3">済寧 尼山、数千年を経て美しい音色が再び鳴り響きます</div>
           </div>
 
           <div class="content4">
-            <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
+            <img src="@/assets/Chapter3/page4/imga3.png" alt="" class="logo3" />
             <div class="text4">泰安 中国泰山、封禅大典の現場</div>
           </div>
         </div>

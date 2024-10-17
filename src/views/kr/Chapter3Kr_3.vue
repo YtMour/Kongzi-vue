@@ -38,7 +38,7 @@ onMounted(() => {
           사이의 관계를 반성하게 하는 동시에 화합하고 포용하며 서로 받아들이는 함께하는 방식을
           권유하며, 세계 평화와 발전에 무궁무진한 힘을 불어넣고 있다.
         </div>
-        <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">대성전 앞 해외 관광객들</div>
       </div>
       <ButtonBox

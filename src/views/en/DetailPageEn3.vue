@@ -32,10 +32,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/鸽子.png" alt="" class="logo1" />
-        <img src="@/assets/前言/en2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter3/大圆.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter3/小圆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter3/gezi.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/en2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/bigyuan.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/smallyuan.png" alt="" class="logo4" />
         <div class="textbox1">
           <div class="text">Act 3</div>
           <div class="xian1"></div>
@@ -46,8 +46,8 @@ onMounted(() => {
           <div class="text4">Confucian Culture</div>
         </div>
 
-        <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
-        <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
+        <img src="@/assets/Chapter3/liyue.png" alt="" class="logo5" />
+        <img src="@/assets/Chapter3/dushu.png" alt="" class="logo6" />
       </div>
 
       <ButtonBox

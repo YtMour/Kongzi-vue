@@ -34,15 +34,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">Еда</div>
         <div class="text2">
            Конфуций придерживался умеренности в пище, подчеркивая важность свежести ингредиентов и тонкость приготовления. Он говорил: «Мясо не бывает слишком хорошо приготовлено», при этом акцентировал внимание на этикете во время еды и бережном отношении к пище.
         </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page3/imga2.png" alt="" class="logo2" />
         <div class="text3">Эпоха воюющих царств, жертвенная чаша, хранится в Музее культуры Ци
         </div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page3/imga3.png" alt="" class="logo3" />
         <div class="text4">Десять жертвенных сосудов периода Шан и Чжоу, хранятся в Музее Конфуция
         </div>
       </div>

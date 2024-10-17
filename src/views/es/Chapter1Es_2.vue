@@ -35,10 +35,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page1/永远.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page1/图画1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page1/yongyuan.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page1/imga1.png" alt="" class="logo3" />
 
-        <img src="@/assets/Chapter2/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page1/zhuzhi.png" alt="" class="logo2" />
         <div class="text1">
           Confucio no solo fue un destacado pensador, sino que también aplicaba su filosofía a los
           aspectos más cotidianos de la vida, integrando sus enseñanzas en áreas como la "ropa,
@@ -46,7 +46,7 @@ onMounted(() => {
           los altos estándares morales del confucianismo.
         </div>
         <div class="text2">Ropa</div>
-        <img src="@/assets/Chapter2/page1/图画2.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter2/page1/imga2.png" alt="" class="logo4" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

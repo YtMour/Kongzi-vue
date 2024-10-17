@@ -42,7 +42,7 @@ onMounted(() => {
           私たちは手を携えて歩み、孔子の思想にインスピレーションを受け、より調和のとれた寛容で持続可能な世界を共に構築しましょう。数千年にわたるこの知恵を、新しい時代の波の中で光り輝かせ、人類をさらにすばらしい未来へと導きます。
         </div>
         <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/imga1.png" alt="" class="logo2" />
         </div>
         <div class="text2">孔廟内のコノテガシワの古木</div>
       </div>

@@ -44,7 +44,7 @@ onMounted(() => {
           гармонии в волнах новой эпохи и ведет человечество к более совершенному будущему.
         </div>
         <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/imga1.png" alt="" class="logo2" />
         </div>
         <div class="text2">Древние кипарисы в храме Конфуция</div>
       </div>

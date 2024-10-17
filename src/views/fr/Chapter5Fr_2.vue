@@ -34,7 +34,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">Déplacements</div>
         <div class="text2">
           Confucius voyageant en chariot, <i>Zuting Guangji</i>, dynastie Song
@@ -46,8 +46,8 @@ onMounted(() => {
           pratique ses idéaux politiques. Sur la route, il a toujours conservé le comportement de
           l'homme vertueux, en respectant les autres avec humilité et courtoisie.
         </div>
-        <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">La Montagne Tai du Shandong, avec des actes sacrés partout</div>
       </div>
       <ButtonBox

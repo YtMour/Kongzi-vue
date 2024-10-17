@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">孔子三十岁时，首创私学，将教育推向大众。孔子对学生采取“因人施教”的教育方针，学生遍布诸侯，据传有弟子三千，贤者七十二。作为珍贵的教育遗产，孔子的思想不仅为中国古代教育奠定了理论基础，还跨越时山海远播海外，影响至今。</div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">杏坛：孔子讲学处</div>
-       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">宋《东家杂记》
 孔子杏坛讲学图
 </div>

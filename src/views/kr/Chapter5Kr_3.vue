@@ -39,10 +39,10 @@ onMounted(() => {
           도모하고 보호와 계승, 발전 과정에서 다양한 문화 간의 평등한 대화와 교류, 배움을 촉진해
           왔다.
         </div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">공자묘 앞에서 성인식에 참석하는 젊은이들</div>
-        <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">동성 저우춘에 머물며 새해 민속을 체험하는 해외 사진작가들</div>
         <div class="text4">취푸 공자묘의 높은 궁장</div>

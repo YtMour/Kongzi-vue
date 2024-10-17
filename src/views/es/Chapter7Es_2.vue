@@ -31,11 +31,11 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page7/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page7/imga1.png" alt="" class="logo1" />
         <div class="text1">"Concierto de Campanas", relieve en piedra de la dinastía Han (206 a.C. - 220 d.C.) con la imagen de Confucio
 
         </div>
-       <img src="@/assets/Chapter2/page7/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter2/page7/imga2.png" alt="" class="logo2" />
 
 
       </div>

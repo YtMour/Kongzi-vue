@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/imga1.png" alt="" class="logo1" />
         <div class="text1">Logement</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/imga2.png" alt="" class="logo2" />
         <div class="text2">
           Confucius accordait de l'importance à la propreté et à la tranquillité du cadre de vie,
           estimant qu'un bon cadre de vie contribuait à cultiver le caractère de chacun. Il a avancé

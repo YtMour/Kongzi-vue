@@ -37,7 +37,7 @@ onMounted(() => {
         <div class="text1">
           孔子は身だしなみにこだわりました。「君子は衣服を正し、容姿を尊ぶ」と考え、これは他人を尊重するとともに、自己修養の体現でもあります。礼儀を重んじて、場面によって異なる礼冠を着用し、儒家の礼儀の美を体現しました。
         </div>
-        <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page2/imga1.png" alt="" class="logo1" />
         <div class="text2">孔子の子孫が蒐集した中国明代の伝統衣装</div>
         <div class="text3">《鲁の司寇となった孔子の像》明·作者不詳</div>
       </div>

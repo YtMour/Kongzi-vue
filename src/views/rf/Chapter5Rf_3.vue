@@ -35,11 +35,11 @@ onMounted(() => {
       <div class="content">
         <div class="text1">Проведение международных форумов конфуцианства, культурных фестивалей Конфуция и других мероприятий способствует углублению понимания и признания конфуцианской культуры среди народов мира. При этом в процессе сохранения, передачи и развития содействует равному диалогу и обмену между различными культурами.
         </div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">Молодые люди, участвующие в церемонии совершеннолетия перед храмом Конфуция
         </div>
-       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">Зарубежные фотографы остановились в районе Чжоуцунь провинции Шаньдун, чтобы познакомиться с обычаями Нового года.
         </div>

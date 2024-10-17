@@ -34,12 +34,12 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/page2/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page2/imga1.png" alt="" class="logo1" />
         <div class="text1">Confucius statues overseas</div>
-        <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/page2/imga2.png" alt="" class="logo2" />
         <div class="text2">World Congress of Confucianism</div>
         <div class="text3">Italian edition of the "Analects"</div>
-        <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/page2/imga3.png" alt="" class="logo3" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

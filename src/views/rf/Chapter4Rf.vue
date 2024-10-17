@@ -39,12 +39,12 @@ onMounted(() => {
           на государственную службу и путешествовал по различным царствам, а в старости вернулся в
           Лу, основал школу и составил шесть канонов.
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">
           «Конфуций встречает Лао-цзы», фреска на стене могилы времен династи Хань в Дунпине,
           провинция Шаньдун
         </div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">Картина «Исследование церемоний в храме: Конфуций учится играть на цинь у учителя Сянь» под редакцией Гу Юаня, династия Цин</div>
       </div>
       <ButtonBox

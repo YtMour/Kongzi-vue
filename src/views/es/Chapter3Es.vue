@@ -1,50 +1,51 @@
 <script setup>
-import { useRouter } from 'vue-router';  // 导入 useRouter
-import '@/assets/font.css';
-import { onMounted } from 'vue';  // 导入 onMounted
-const router = useRouter();  // 创建路由实例
-let nextLeft = '/es/chapter2';
-let nextR = '/es/chapter4';
+import { useRouter } from 'vue-router' // 导入 useRouter
+import '@/assets/font.css'
+import { onMounted } from 'vue' // 导入 onMounted
+const router = useRouter() // 创建路由实例
+let nextLeft = '/es/chapter2'
+let nextR = '/es/chapter4'
 // 点击事件，跳转到前言页面
-// 
+//
 onMounted(() => {
   const texts = [
     { className: 'text1', animationClass: 'animation1' },
-    { className: 'text2', animationClass: 'animation2' },
-
-  ];
+    { className: 'text2', animationClass: 'animation2' }
+  ]
 
   texts.forEach(({ className, animationClass }) => {
-    const element = document.querySelector(`.${className}`);
+    const element = document.querySelector(`.${className}`)
     if (element) {
-      element.classList.add(animationClass);
+      element.classList.add(animationClass)
       element.addEventListener('animationend', () => {
-        element.style.animationPlayState = 'paused'; // 暂停动画，保持状态
-      });
+        element.style.animationPlayState = 'paused' // 暂停动画，保持状态
+      })
     }
-  });
-});
+  })
+})
 </script>
 
 <template>
   <div id="app" data-v-app>
-    <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
-      <div class="background"></div>  <!-- 背景图容器 -->
+    <div class="wrapper" @click="goToNextPage">
+      <!-- 点击整个页面 -->
+      <div class="background"></div>
+      <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
-        <div class="text1">"Confucio Enseñando", un grabado en piedra atribuido a la dinastía Tang, el cual se encuentra actualmente en el Salón de los Santos del Templo de Confucio en Qufu
+        <img src="@/assets/Chapter1/page3/imga1.png" alt="" class="logo1" />
+        <div class="text1">
+          "Confucio Enseñando", un grabado en piedra atribuido a la dinastía Tang, el cual se
+          encuentra actualmente en el Salón de los Santos del Templo de Confucio en Qufu
         </div>
-       <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
-        <div class="text2">"Zengzi Pregunta a Confucio sobre la Piedad Filial", dinastía Song (960 d.C. - 1279 d.C.)
-
+        <img src="@/assets/Chapter1/page3/imga2.png" alt="" class="logo2" />
+        <div class="text2">
+          "Zengzi Pregunta a Confucio sobre la Piedad Filial", dinastía Song (960 d.C. - 1279 d.C.)
         </div>
-
-
       </div>
       <ButtonBox
-          :onLeftClick="() => router.push(nextLeft)"
-          :onRightClick="() => router.push(nextR)"
-         ></ButtonBox>
+        :onLeftClick="() => router.push(nextLeft)"
+        :onRightClick="() => router.push(nextR)"
+      ></ButtonBox>
     </div>
   </div>
 </template>
@@ -121,79 +122,70 @@ body {
   box-sizing: border-box; /* 确保内边距不影响总宽度 */
   margin: 0 auto;
 }
-.logo1, .logo2, .logo3, .logo4, .logo5 {
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5 {
   position: absolute;
- max-width: 100vw;
- margin-left: auto;
- margin-right: auto;
-
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 定义每个logo的绝对位置 */
 .logo1 {
-/* 3-1 */
+  /* 3-1 */
 
-position: absolute;
-width: 544px;
-height: 739px;
-left: 100px;
-top: 2px;
-
-
-
-
+  position: absolute;
+  width: 544px;
+  height: 739px;
+  left: 100px;
+  top: 2px;
 }
 .logo2 {
-/* 3-2 */
+  /* 3-2 */
 
-position: absolute;
-width: 620px;
-height: 450.27px;
-left: calc(50% - 620px/2);
-top: 795px;
-
+  position: absolute;
+  width: 620px;
+  height: 450.27px;
+  left: calc(50% - 620px / 2);
+  top: 795px;
 }
-.text1{
-/* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
+.text1 {
+  /* 《孔子行教像》相传 为唐代石刻，现保存 在曲阜孔庙圣迹殿内 */
 
-position: absolute;
-width: 350px;
-height: 120px;
-left: 30px;
-top: 33px;
+  position: absolute;
+  width: 350px;
+  height: 120px;
+  left: 30px;
+  top: 33px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-/* or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  /* or 167% */
 
-color: #4B180A;
-
-
+  color: #4b180a;
 }
-.text2{
-/* 宋代 《曾子问孝于孔子》 */
+.text2 {
+  /* 宋代 《曾子问孝于孔子》 */
 
-position: absolute;
-width: 600px;
-height: 40px;
-left: 82px;
-top: 1257px;
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  left: 82px;
+  top: 1257px;
 
-font-family: 'Xiahuwenkai', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 30px;
-/* identical to box height, or 167% */
+  font-family: 'Xiahuwenkai', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
 
-color: #4B180A;
-
-
-
-
+  color: #4b180a;
 }
-
 </style>

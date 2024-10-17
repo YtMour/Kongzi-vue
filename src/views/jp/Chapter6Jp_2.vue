@@ -32,14 +32,14 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page6/图画1.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page6/imga1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page6/imga2.png" alt="" class="logo2" />
         <div class="text1">楽</div>
 
         <div class="text2">
           孔子は音楽が大好きで、音楽は気性を陶冶し、心を浄化することができると考えていました。「雅楽」を提唱し、音楽が教育的意義と社会的価値を具えていると考えました。
         </div>
-        <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page6/imga3.png" alt="" class="logo3" />
         <div class="text3">
           周 夔龍紋編鐘<br> 中国国家博物館所蔵
 

@@ -41,7 +41,7 @@ onMounted(() => {
 
         <div class="content1">
           <div class="content2">
-            <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
+            <img src="@/assets/Chapter3/page4/imga1.png" alt="" class="logo1" />
             <div class="text2">
               La musique et la danse en l'honneur de Confucius lors du Festival international de la
               culture de Confucius de Qufu.
@@ -49,12 +49,12 @@ onMounted(() => {
           </div>
 
           <div class="content3">
-            <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
+            <img src="@/assets/Chapter3/page4/imga2.png" alt="" class="logo2" />
             <div class="text3">Au mont Ni, à Jining, la musique millénaire est rejouée.</div>
           </div>
 
           <div class="content4">
-            <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
+            <img src="@/assets/Chapter3/page4/imga3.png" alt="" class="logo3" />
             <div class="text4">
               Le site de la cérémonie de sacrifices Feng et Shan au mont chinois Tai à Tai'an
             </div>

@@ -34,10 +34,10 @@ onMounted(() => {
       <div class="content">
         <div class="text1">공자는 서른 살 때 사상 첫 사학을 창설하여 대중들에게 교육을 펼쳤다. 공자는 학생들에게 '개개인에 맞게 교육한다'는 방침을 취했고 제자들은 각 제후국에 널리 분포하였다. 전하는 바에 의하여 제자는 3천 명, 현자는 72명이 있다고 한다. 진귀한 교육유산으로 공자 사상은 중국 고대교육의 이론적 토대를 마련했을 뿐만 아니라 산과 바다를 건너 해외로 퍼져나가 오늘날까지 영향을 미치고 있다.
         </div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">행단(杏壇): 공자 학술 강연처
         </div>
-       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">송나라 &lt;동가잡기&gt; 공자의 행단 강학도</div>
 
 

@@ -33,11 +33,11 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page2/imga1.png" alt="" class="logo1" />
         <div class="text1">
           La grotte Fuzi, au pied du mont Ni, qui est censée être le lieu de naissance de Confucius.
         </div>
-        <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page2/imga2.png" alt="" class="logo2" />
         <div class="text2">La statue de Confucius, haute de 72 mètres, sur le mont Ni.</div>
       </div>
       <ButtonBox

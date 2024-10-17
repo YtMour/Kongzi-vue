@@ -39,7 +39,7 @@ onMounted(() => {
           обществом, а также между людьми, пропагандируя ценность гармонии и инклюзивного
           сосуществования, что вносит неоценимый вклад в развитие цивилизаций и укрепление мира.
         </div>
-        <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">Иностранные посетители перед входом в Дачэн зал</div>
       </div>
       <ButtonBox

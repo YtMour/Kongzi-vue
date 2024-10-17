@@ -34,11 +34,11 @@ onMounted(() => {
       <div class="content">
         <div class="text1">A los treinta años, Confucio fundó la primera escuela privada del país, democratizando el acceso a la educación. Implementó el principio de "enseñanza según la capacidad del alumno", teniendo discípulos por todo el país. Se registran más de tres mil estudiantes bajo su tutela, de los cuales setenta y dos fueron considerados sabios. El valioso legado de Confucio no solo estableció las bases de la educación en la antigua China, sino que también se ha proyectado a nivel internacional, continuando su influencia hasta nuestros días.
         </div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">Xingtan, el lugar donde Confucio impartía sus enseñanzas
 
         </div>
-       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">"Confucio Enseñando en Xingtan", de los "Registros Diversos de la Casa Oriental", dinastía Song (960 d.C. - 1279 d.C.)
         </div>
 

@@ -6,9 +6,9 @@ import { onMounted } from 'vue'
 const router = useRouter() // 创建路由实例
 let nextLeft = '/rf/chapter7'
 let nextR = '/rf/chapter1_2' // 创建路由实例  // 创建路由实例
-// 点击事件，跳转到前言页面
+// 点击事件，跳转到qianyan页面
 // const goToNextPage = () => {
-//   router.push('/cn/chapter1_2') // 跳转到前言页面
+//   router.push('/cn/chapter1_2') // 跳转到qianyan页面
 //   window.scrollTo(0, 0)
 // }
 onMounted(() => {
@@ -37,10 +37,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/编钟.png" alt="" class="logo1" />
-        <img src="@/assets/前言/cn2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter2/大圆.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter2/小圆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter2/bianzhong.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/cn2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/bigyuan.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/smallyuan.png" alt="" class="logo4" />
         <div class="textbox1">
           <div class="text">Глава 2</div>
           <div class="xian1"></div>
@@ -51,9 +51,9 @@ onMounted(() => {
           <div class="text4">повседневная жизнь</div>
         </div>
 
-        <img src="@/assets/Chapter2/礼乐.png" alt="" class="logo5" />
-        <img src="@/assets/Chapter2/圆装饰.png" alt="" class="logo6" />
-        <img src="@/assets/Chapter2/舞蹈.png" alt="" class="logo7" />
+        <img src="@/assets/Chapter2/liyue.png" alt="" class="logo5" />
+        <img src="@/assets/Chapter2/yuanzhuang.png" alt="" class="logo6" />
+        <img src="@/assets/Chapter2/wudao.png" alt="" class="logo7" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

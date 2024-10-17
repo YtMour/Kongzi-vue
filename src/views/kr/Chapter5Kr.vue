@@ -35,12 +35,12 @@ onMounted(() => {
       <div class="content">
         <div class="text1">인생철학에서 치국정치에 이르기까지 공자의 지혜는 깊은 영향을 미쳤고, 사상은 넓고 심오하다. 그는 인을 핵심으로, 예악을 규범으로, 중용사상을 방법으로 삼아 사람들에게 아름다운 대동세계를 건설하도록 이끌어 보았다. 공자가 창시한 유가사상체계는 중국 역사와 문화의 정화이며, 중국 전통문화의 당간지주이다.
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">
           대성전(大成殿)은, 취푸 공묘의 대전으로 공자의 '집대성(集大成)'이란 뜻을 담고 있다.
           당나라(618-907) 때 처음창건, 청나라 옹정시기(1722-1735)에 중건됨
         </div>
-        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">대성전 용주</div>
       </div>
       <ButtonBox

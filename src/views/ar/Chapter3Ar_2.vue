@@ -34,16 +34,16 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">الطعام</div>
         <div class="text2">
           المأكل: كان كونفوشيوس معتدلاً في طعامه، مهتماً بجودة المكونات وإتقان الطهي. وكان يقول: "
           عدم الملل من الطعام الجيد، وعدم الملل من اللحم المفروم الدقيق"، كما شدد على آداب المائدة
           وتقدير الطعام.
         </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page3/imga2.png" alt="" class="logo2" />
         <div class="text3">إناء التضحية من عصر الممالك المتحاربة - محفوظ في متحف ثقافة تشي</div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page3/imga3.png" alt="" class="logo3" />
         <div class="text4">"عشرة أوانٍ من عهديْ شانغ وتشو" - محفوظة في متحف كونفوشيوس</div>
       </div>
       <ButtonBox

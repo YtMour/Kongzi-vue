@@ -10,9 +10,9 @@ const router = useRouter() // 创建路由实例
 let nextLeft = '/es/home'
 let nextR = '/es/detail'
 
-// 点击事件，跳转到前言页面
+// 点击事件，跳转到qianyan页面
 // const goToNextPage = () => {
-//   router.push('/cn/detail');  // 跳转到前言页面
+//   router.push('/cn/detail');  // 跳转到qianyan页面
 //   window.scrollTo(0, 0);
 // };
 onMounted(() => {
@@ -40,8 +40,8 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
-        <img src="@/assets/前言/es.png" alt="" class="logo2" />
+        <img src="@/assets/qianyan/cn2.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/es.png" alt="" class="logo2" />
         <p class="text">
           A lo largo de los milenios, en el vasto escenario de la sabiduría, Confucio se erige con
           la "benevolencia" como núcleo de su enseñanza. Mediante los preceptos del "rito" y la
@@ -58,7 +58,7 @@ onMounted(() => {
           comunicación espiritual, compartir la luz de la sabiduría y abrir nuevas sendas hacia el
           futuro.
         </p>
-        <img src="@/assets/前言/天下.png" alt="" class="logo3" />
+        <img src="@/assets/qianyan/tianxia.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
         <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -115,7 +115,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('@/assets/前言/书.png'); /* 背景图片路径 */
+  background-image: url('@/assets/qianyan/shu.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */

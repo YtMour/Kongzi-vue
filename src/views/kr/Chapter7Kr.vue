@@ -32,10 +32,10 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page7/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page7/imga1.png" alt="" class="logo1" />
         <div class="text1">니산 성지, 대학의 도
         </div>
-       <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page7/imga2.png" alt="" class="logo2" />
 
 
       </div>

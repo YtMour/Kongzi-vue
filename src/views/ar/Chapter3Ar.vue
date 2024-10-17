@@ -32,12 +32,12 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">
           صورة "كونفوشيوس وهو يُعلِّم" – يُعتقد أنها نقش حجري من عهد أسرة تانغ الملكية، محفوظة
           حالياً في قاعة الآثار المقدسة بمعبد كونفوشيوس في تشيوفو
         </div>
-        <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page3/imga2.png" alt="" class="logo2" />
         <div class="text2">"تسنغ تسي يسأل كونفوشيوس عن البر" - من عهد أسرة سونغ الملكية</div>
       </div>
       <ButtonBox

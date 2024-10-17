@@ -42,7 +42,7 @@ onMounted(() => {
           différentes couronnes cérémonielles pour différentes occasions, montrant ainsi la beauté
           de l'étiquette confucéenne.
         </div>
-        <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page2/imga1.png" alt="" class="logo1" />
         <div class="text2">
           Costumes traditionnels chinois de la dynastie Ming collectionnés par les descendants de
           Confucius

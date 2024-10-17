@@ -35,15 +35,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page1/永远.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page1/图画1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page1/yongyuan.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page1/imga1.png" alt="" class="logo3" />
 
-        <img src="@/assets/Chapter2/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page1/zhuzhi.png" alt="" class="logo2" />
         <div class="text1">
           孔子は深遠な思想家であるだけでなく、彼の生活哲学は日常生活のさまざまな面を体現しています。「衣食住行楽」の中で、孔子はいずれも礼儀に従い行動し、儒家の高尚な風格を示しました。
         </div>
         <div class="text2">衣</div>
-        <img src="@/assets/Chapter2/page1/图画2.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter2/page1/imga2.png" alt="" class="logo4" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

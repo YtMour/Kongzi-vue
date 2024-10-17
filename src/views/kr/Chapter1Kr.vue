@@ -39,10 +39,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page1/zhuzhi.png" alt="" class="logo2" />
 
-        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page1/imga1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter1/page1/yongyuan.png" alt="" class="logo1" />
 
         <div class="text1">&lt;공자 연거상(燕居像)&gt;</div>
         <div class="text2">명·작자 미상</div>
@@ -50,7 +50,7 @@ onMounted(() => {
           공자(BC 551~ BC 479)는 중국의 위대한 사상가, 교육가, 철학자로 후세에 지성선사(至聖先師)나
           성인(聖人)으로 존칭하다.
         </div>
-        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter1/page1/imga2.png" alt="" class="logo4" />
         <div class="text4">공자의 고향인 산둥성 취푸시에 위치해 있는 공자 박물관</div>
       </div>
       <ButtonBox

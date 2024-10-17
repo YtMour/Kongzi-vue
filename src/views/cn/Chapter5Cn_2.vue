@@ -35,13 +35,13 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">行</div>
         <div class="text2">宋《祖庭广记》孔子乘辂图</div>
 
         <div class="text3">孔子一生周游列国，传播自己的思想。他的出行不仅是为了求学问道，更是为了实践自己的政治理想。在行路中，他始终保持着君子的风度，尊重他人，谦逊有礼。</div>
-          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+          <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">圣迹遍布的山东泰山</div>
 
 

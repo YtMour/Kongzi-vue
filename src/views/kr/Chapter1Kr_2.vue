@@ -35,17 +35,17 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page1/永远.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page1/图画1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page1/yongyuan.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page1/imga1.png" alt="" class="logo3" />
 
-        <img src="@/assets/Chapter2/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page1/zhuzhi.png" alt="" class="logo2" />
         <div class="text1">
           공자는 심오한 사상가일 뿐더러 그의 생활 철학도 일상생활에 이모저모로 구현되어 있다. 옷이나
           음식, 주거, 행동, 음악(衣食住行樂)등 면에서 공자는 모두 예의에 따라 행하여 유가의 고상한
           풍격을 보여주었다.
         </div>
         <div class="text2">의복</div>
-        <img src="@/assets/Chapter2/page1/图画2.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter2/page1/imga2.png" alt="" class="logo4" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

@@ -34,15 +34,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">行</div>
         <div class="text2">宋『祖庭広記』馬車に乗る孔子</div>
 
         <div class="text3">
           孔子は一生列国を周遊し、自分の思想を広めました。旅は知識の追求のためだけではなく、自分の政治の理想の実践のためでもありました。旅の間、彼は常に君子の態度を保ち、他人を尊重し、謙虚で礼儀正しく振る舞いました。
         </div>
-        <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">聖人の遺跡が至る所にある山東省泰山</div>
       </div>
       <ButtonBox

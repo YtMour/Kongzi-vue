@@ -34,7 +34,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">Alimentation</div>
         <div class="text2">
           Confucius mangeait avec modération, faisant attention à la fraîcheur des ingrédients et à
@@ -42,12 +42,12 @@ onMounted(() => {
           plus le poisson est finement haché, mieux c'est », et insistait sur l'étiquette et la
           valeur de la nourriture.
         </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page3/imga2.png" alt="" class="logo2" />
         <div class="text3">
           Coupe à vin en forme de bœuf, période des Royaumes combattants, collectionnée au musée de
           la culture Qi
         </div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page3/imga3.png" alt="" class="logo3" />
         <div class="text4">
           Dix objets en bronze des dynasties Shang et Zhou, collectionnés au musée de Confucius
         </div>

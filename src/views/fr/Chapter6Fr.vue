@@ -41,9 +41,9 @@ onMounted(() => {
           base théorique pour l'éducation dans la Chine ancienne, mais se sont également répandues
           au-delà des montagnes et des océans, influençant le monde jusqu'à aujourd'hui.
         </div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">Xingtan : Lieu de conférence de Confucius</div>
-        <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">
           Confucius donnant un cours à Xingtan, <i>Hisoitres divers de Dongjia</i>, dynastie Song
         </div>

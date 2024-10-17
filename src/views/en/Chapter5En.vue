@@ -41,14 +41,14 @@ onMounted(() => {
           is the crystallization of Chinese history and culture and serves as the main axis of
           traditional Chinese culture.
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">
           Hall of Great Achievement, the main hall of the Confucius Temple in Qufu, embodies the
           meaning of Confucius being as the "Great Accomplisher." It was originally built during the
           Tang Dynasty (618-907) and reconstructed during the Yongzheng period of the Qing Dynasty
           (1722-1735).
         </div>
-        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">Dragon Pillar of the Hall of Great Achievement</div>
       </div>
       <ButtonBox

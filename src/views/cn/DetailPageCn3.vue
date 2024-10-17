@@ -33,10 +33,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/鸽子.png" alt="" class="logo1" />
-        <img src="@/assets/前言/cn2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter3/大圆.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter3/小圆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter3/gezi.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/cn2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/bigyuan.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/smallyuan.png" alt="" class="logo4" />
         <div class="textbox1">
           <div class="text">第三章</div>
           <div class="xian1"></div>
@@ -46,8 +46,8 @@ onMounted(() => {
           <div class="text3">的</div>
           <div class="text4">世界影响</div>
         </div>
-        <img src="@/assets/Chapter3/礼乐.png" alt="" class="logo5" />
-        <img src="@/assets/Chapter3/读书.png" alt="" class="logo6" />
+        <img src="@/assets/Chapter3/liyue.png" alt="" class="logo5" />
+        <img src="@/assets/Chapter3/dushu.png" alt="" class="logo6" />
         <div class="textbox3">
           <div class="text5">
             孔子思想具有极其博大的内涵，是中国文化，也是东方文化的象征，孔子不仅属于中国，而且属于全世界

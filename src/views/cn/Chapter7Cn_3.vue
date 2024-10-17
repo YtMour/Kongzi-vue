@@ -42,7 +42,7 @@ onMounted(() => {
           让我们携手并进，在孔子思想的启迪下，共同构建一个更加和谐、包容、可持续的世界。让这份跨越千年的智慧，在新时代的浪潮中绽放和合之光，引领人类迈向更加美好的未来。
         </div>
         <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/imga1.png" alt="" class="logo2" />
         </div>
         <div class="text2">孔庙里的古柏树</div>
       </div>

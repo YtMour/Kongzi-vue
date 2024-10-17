@@ -34,15 +34,15 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/page2/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page2/imga1.png" alt="" class="logo1" />
         <div class="text1">海外における孔子の姿
         </div>
-       <img src="@/assets/Chapter3/page2/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page2/imga2.png" alt="" class="logo2" />
         <div class="text2">世界儒学大会
         </div>
         <div class="text3">イタリア語版の『論語』
         </div>
-       <img src="@/assets/Chapter3/page2/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter3/page2/imga3.png" alt="" class="logo3" />
 
 
 

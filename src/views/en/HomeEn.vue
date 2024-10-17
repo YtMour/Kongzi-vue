@@ -21,11 +21,11 @@ const handleRightClick = () => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/首页/en.png" alt="" class="logo1" />
-        <img src="@/assets/首页/永远的孔子.png" alt="" class="logo2" />
-        <img src="@/assets/首页/天下礼乐.png" alt="" class="logo3" />
-        <img src="@/assets/首页/international.png" alt="" class="logo4" />
-        <img src="@/assets/首页/文旅.png" alt="" class="logo5" />
+        <img src="@/assets/shouye/en.png" alt="" class="logo1" />
+        <img src="@/assets/shouye/yykz.png" alt="" class="logo2" />
+        <img src="@/assets/shouye/liyue.png" alt="" class="logo3" />
+        <img src="@/assets/shouye/international.png" alt="" class="logo4" />
+        <img src="@/assets/shouye/wenlv.png" alt="" class="logo5" />
         <div class="btnbox">
           <!-- <img src="@/assets/Buttonleft.png" class="btnleft"> -->
           <img @click="handleRightClick" src="@/assets/ButtonRight.png" class="btnleft" />
@@ -62,7 +62,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('@/assets/首页/kongzi.png'); /* 背景图片路径 */
+  background-image: url('@/assets/shouye/kongzi.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */

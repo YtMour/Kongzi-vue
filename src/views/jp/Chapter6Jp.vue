@@ -35,9 +35,9 @@ onMounted(() => {
         <div class="text1">
           孔子は30歳の時に初めて私学の学問所を設立し、大衆の教育を促しました。孔子は学生に対して「人に応じて教える」という教育方針をとり、学生は諸侯に広がり、3千名の弟子、72名の賢者がいたと伝えられています。貴重な教育遺産である孔子の思想は、古代中国の教育理論の基礎を打ち立てただけでなく、さらに山や海を越えて海外へ伝わり、今でも影響を与えています。
         </div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">杏壇：孔子の学問所</div>
-        <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">宋《東家雑記》孔子杏壇講学図</div>
       </div>
       <ButtonBox

@@ -35,7 +35,7 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">Transporte</div>
         <div class="text2">"Confucio Montado en un Carro", de los "Registros Extensos de la Ancestral Residencia", dinastía Song (960 d.C. - 1279 d.C.)
 
@@ -43,8 +43,8 @@ onMounted(() => {
 
         <div class="text3"> A lo largo de su vida, Confucio recorrió varios estados para difundir su pensamiento, persiguiendo tanto el conocimiento como la implementación de sus ideales políticos. Durante sus trayectos, siempre mantuvo la dignidad propia de un caballero, respetando a los demás y demostrando humildad y cortesía.
         </div>
-          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+          <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">Monte Tai, en Shandong, hogar de innumerables sitios históricos relacionados con Confucio
 
         </div>

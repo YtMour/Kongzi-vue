@@ -36,11 +36,11 @@ onMounted(() => {
         <div class="text1">
           人生哲学から国の政治まで、孔子の知恵は広範囲に影響を及ぼし、孔子の思想は幅広く奥深いものです。仁を中心とし、礼儀と音楽を規範として、中庸の方法により人々を素晴らしい大同世界を建設するように導きます。孔子が打ち立てた儒家思想体系は中国の歴史と文化の結晶であり、中国伝統文化の主軸です。
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">
           大成殿、曲阜孔廟の正殿で、孔子の「集大成」の意味から名付けられました。唐代（618～907）に建設され、清代雍正帝の時期（1722～1735）に再建されました
         </div>
-        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">大成殿の龍柱</div>
       </div>
       <ButtonBox

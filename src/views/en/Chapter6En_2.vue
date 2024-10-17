@@ -32,8 +32,8 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page6/图画1.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page6/imga1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page6/imga2.png" alt="" class="logo2" />
         <div class="text1">Music</div>
 
         <div class="text2">
@@ -41,7 +41,7 @@ onMounted(() => {
           the soul. He advocated for "elegant music," believing that music should possess
           educational significance and social value.
         </div>
-        <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page6/imga3.png" alt="" class="logo3" />
         <div class="text3">
           Kui Dragon Pattern Chime Bell, Zhou Dynasty, collection of the National Museum of China
         </div>

@@ -33,10 +33,10 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page2/imga1.png" alt="" class="logo1" />
         <div class="text1">尼山のふもとにある夫子洞、孔子の生誕地と伝えられている
         </div>
-       <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page2/imga2.png" alt="" class="logo2" />
         <div class="text2">高さ72メートルの尼山孔子像
         </div>
 

@@ -36,9 +36,9 @@ onMounted(() => {
         <div class="text1">
           孔子少年は勉学の志を立て、六芸に精通し、青年時代は周辺を旅して斉国で過ごし、老子に礼儀を学びました。壮年には役人となり政治を論じ、世界中を旅して、晩年は魯へ帰り学を興し、六経を編纂しました。
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">山東省の東平漢墓の壁画<br>孔子と老子の出会い</div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">《聖廟祀典図考 孔子が琴を師襄から学ぶ》 清·顧沅 編
         </div>
       </div>

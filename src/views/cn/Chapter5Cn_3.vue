@@ -34,10 +34,10 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">通过举办国际儒学论坛、孔子文化节等一系列活动，增进了各国人民对孔子文化的了解和认同，在保护、传承与发展中，推动了不同文化之间的平等对话和交流互鉴。</div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">在孔庙前参加成人礼仪式的年轻人们</div>
-       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">留在山东周村感受年俗的海外摄影家</div>
         <div class="text4">曲阜孔庙

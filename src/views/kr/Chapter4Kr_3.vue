@@ -40,17 +40,17 @@ onMounted(() => {
 
         <div class="content1">
           <div class="content2">
-            <img src="@/assets/Chapter3/page4/图画1.png" alt="" class="logo1" />
+            <img src="@/assets/Chapter3/page4/imga1.png" alt="" class="logo1" />
             <div class="text2">취푸국제공자문화제에서 공자를 기념하는 음악과 무용 공연</div>
           </div>
 
           <div class="content3">
-            <img src="@/assets/Chapter3/page4/图画2.png" alt="" class="logo2" />
+            <img src="@/assets/Chapter3/page4/imga2.png" alt="" class="logo2" />
             <div class="text3">지닝 니산, 천년을 뛰어넘은 금옥의 소리가 다시 울려 퍼짐</div>
           </div>
 
           <div class="content4">
-            <img src="@/assets/Chapter3/page4/图画3.png" alt="" class="logo3" />
+            <img src="@/assets/Chapter3/page4/imga3.png" alt="" class="logo3" />
             <div class="text4">태안 중화 태산, 봉선(封禪)제사의 현장</div>
           </div>
         </div>

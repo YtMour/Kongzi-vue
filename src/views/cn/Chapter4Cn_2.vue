@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/imga1.png" alt="" class="logo1" />
         <div class="text1">住</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/imga2.png" alt="" class="logo2" />
         <div class="text2">
           孔子注重居住环境的整洁与安静，认为良好的居住环境有助于修身养性。他提出“寝不尸，居不容”，即就寝时不应像尸体般僵硬，居家时也不必过于拘谨，但要保持一定的礼仪和秩序。
         </div>

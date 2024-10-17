@@ -31,10 +31,10 @@ onMounted(() => {
     <div class="wrapper" @click="goToNextPage">  <!-- 点击整个页面 -->
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page3/文章.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">《孔子行教像》は唐代の石刻と伝えられ、現在は曲阜孔廟の聖迹殿内で保存されています
         </div>
-       <img src="@/assets/Chapter1/page3/图画.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page3/imga2.png" alt="" class="logo2" />
         <div class="text2">宋代《曾子が孔子へ孝を問う》
         </div>
 

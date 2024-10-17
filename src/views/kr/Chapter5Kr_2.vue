@@ -35,15 +35,15 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">행동</div>
         <div class="text2">송나라 '조정광기(祖庭廣記)' 공자 승차도(乘辂圖)
         </div>
 
         <div class="text3"> 공자의 일생에는 열국들을 돌아다니면서 자신의 사상을 전파하였다. 그의 여행은 학문을 닦기 위할 뿐 아니라 자신의 정치적 이상을 실천하기 위한 것이었다. 여행 길에서 그는 항상 군자의 풍모를 유지하고 다른 사람을 존중하며 겸손하고 예의 바르게 행동하였다.
         </div>
-          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+          <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">성적(聖迹)이 도처에 널려 있는 산동 태산
         </div>
 

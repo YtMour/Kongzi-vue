@@ -41,13 +41,13 @@ onMounted(() => {
           созданное Конфуцием, является квинтэссенцией китайской истории и культуры и служит главной
           осью традиционной китайской культуры.
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">
           Дачэн зал - главный зал храма Конфуция в Цюйфу, носит название в честь концепции «собирать
           великое». Он был основан в эпоху Тан (618-907 г. до н.э.) и перестроен в период Юнчжэна
           династии Цин (1722-1735 г. до н.э.).
         </div>
-        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">Столбы с драконами Дачэн зал</div>
       </div>
       <ButtonBox

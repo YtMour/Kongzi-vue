@@ -6,9 +6,9 @@ import { onMounted } from 'vue'
 const router = useRouter() // 创建路由实例
 let nextLeft = '/cn/foreword'
 let nextR = '/cn/chapter1'
-// 点击事件，跳转到前言页面
+// 点击事件，跳转到qianyan页面
 const goToNextPage = () => {
-  router.push('') // 跳转到前言页面
+  router.push('') // 跳转到qianyan页面
   window.scrollTo(0, 0)
 }
 
@@ -39,8 +39,8 @@ onMounted(() => {
       <!-- 背景图容器 -->
       <div class="content">
         <img src="@/assets/Chapter1/sun.png" alt="" class="logo1" />
-        <img src="@/assets/前言/cn2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter1/circleBG.png" alt="" class="logo3" />
+        <img src="@/assets/qianyan/cn2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/circle.png" alt="" class="logo3" />
         <div class="textbox1">
           <div class="text">第一章</div>
           <div class="xian1"></div>
@@ -56,9 +56,9 @@ onMounted(() => {
           <div class="text6">——朱熹《朱子语类》</div>
         </div>
 
-        <img src="@/assets/Chapter1/world.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter1/tianxia.png" alt="" class="logo4" />
         <img src="@/assets/Chapter1/salute.png" alt="" class="logo5" />
-        <img src="@/assets/Chapter1/bamboo.png" alt="" class="logo6" />
+        <img src="@/assets/Chapter1/zhuzhi.png" alt="" class="logo6" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

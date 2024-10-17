@@ -35,7 +35,7 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">Путешествия</div>
         <div class="text2"> «Записки обители предков», Конфуция в колеснице, династия Сун
 
@@ -43,8 +43,8 @@ onMounted(() => {
 
         <div class="text3"> Конфуций на протяжении своей жизни много путешествовал по царствам,  распространяя свои идеи, овладевая новыми знаниями, а также реализуя свои политические идеалы. В пути он всегда сохранял манеры достойного человека, уважал других, проявлял скромность и вежливость.
         </div>
-          <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+          <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">Святые места на горе Тайшань,  Шаньдун
 
         </div>

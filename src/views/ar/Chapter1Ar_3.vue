@@ -36,13 +36,13 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter3/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page1/yongyuan.png" alt="" class="logo1" />
 
-        <img src="@/assets/Chapter3/page1/图画1.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/page1/imga1.png" alt="" class="logo2" />
 
         <div class="text1">يقوم صديق أجنبي بإجراء مراسم "الكتابة الأولى" التقليدية لطفلة</div>
         <div class="text2">حفل إطلاق كتاب "محاورات كونفوشيوس" الجديد باللغة المالطية</div>
-        <img src="@/assets/Chapter3/page1/图画2.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/page1/imga2.png" alt="" class="logo3" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

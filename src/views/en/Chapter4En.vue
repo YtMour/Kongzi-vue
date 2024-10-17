@@ -39,11 +39,11 @@ onMounted(() => {
           in government and traveled among various states. In his later years, he returned to Lu to
           promote education and compile the Six Classics.
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">
           Han Dynasty mural from a tomb in Dongping, Shandong: Confucius meeting Lao Zi
         </div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">Painting of rituals in the Sacred Temple: Confucius learning qin (a seven-stringed plucked instrument) from Shi Xiang, compiled by Gu Yuan during the Qing Dynasty
         </div>
       </div>

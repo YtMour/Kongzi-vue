@@ -37,10 +37,10 @@ onMounted(() => {
         <div class="text1">
           儒学フォーラム、孔子文化節等の一連の活動の開催を通じて、各国の人々の孔子文化への理解と賛同を深め、保護・伝承・発展を強化し、さまざまな文化の間の平等な対話と交流・相互参考を促しました。
         </div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">孔廟の前で成人式に参加する若者たち</div>
-        <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">山東省周村に滞在し新年の風習を体験する外国人フォトグラファー</div>
         <div class="text4">曲阜の孔廟 万仞宮壁</div>

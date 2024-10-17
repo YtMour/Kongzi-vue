@@ -39,10 +39,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page1/zhuzhi.png" alt="" class="logo2" />
 
-        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page1/imga1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter1/page1/yongyuan.png" alt="" class="logo1" />
 
         <div class="text1">"Retrato de Confucio en Reposo"</div>
         <div class="text2">
@@ -54,7 +54,7 @@ onMounted(() => {
           antigua China. A lo largo de las generaciones, ha sido venerado como el "Sabio Maestro
           Supremo" y "El Santo".
         </div>
-        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter1/page1/imga2.png" alt="" class="logo4" />
         <div class="text4">
           El Museo de Confucio, situado en Qufu, su ciudad natal en la provincia de Shandong
         </div>

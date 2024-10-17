@@ -38,9 +38,9 @@ onMounted(() => {
           제(齐)국에 와서 노자에게 예를 여쭈어 봤다. 장년으로 되어 관직에 올라 정치를 도모하고
           천하를 돌아다녔다가 만년에 노국으로 귀국하고 교육을 펼쳐고 육경을 편찬하였다.
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">산둥성 둥핑(東平)의 한 왕조 무덤 벽화: 노자를 만난 공자</div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">&lt;성묘사전투고&gt;&lt;공자는 스승 샹(襄)에게 거문고 배움&gt; &lt;청나라 고원(顧沅) 편집&gt;
         </div>
       </div>

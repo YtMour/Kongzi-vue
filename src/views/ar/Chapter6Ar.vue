@@ -39,9 +39,9 @@ onMounted(() => {
           كونفوشيوس الأساس النظري للتعليم الصيني القديم فحسب، بل تخطت الجبال والبحار لتنتشر خارج
           الصين، مما أثر على يومنا هذا.
         </div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">شينغتان: مكان تدريس كونفوشيوس</div>
-        <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">
           صورة "كونفوشيوس يُعلّم في شينغتان" - من كتاب "سجلات متنوعة للعائلة الشرقية" من عهد أسرة
           سونغ الملكية

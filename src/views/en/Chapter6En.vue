@@ -34,11 +34,11 @@ onMounted(() => {
       <div class="content">
         <div class="text1">At the age of thirty, Confucius pioneered private education, making education accessible to the public. He adopted the educational principle of "teaching according to the student's ability," and his students were spread across various states. It is said that he had three thousand disciples, seventy-two of whom were virtuous. As a valuable educational legacy, Confucius' thoughts not only laid the theoretical foundation for ancient Chinese education but also transcended borders, spreading overseas and influencing the world to this day.
         </div>
-        <img src="@/assets/Chapter1/page6/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page6/imga1.png" alt="" class="logo1" />
         <div class="text2">Xingtan: The Place Where Confucius Taught
 
         </div>
-       <img src="@/assets/Chapter1/page6/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page6/imga2.png" alt="" class="logo2" />
         <div class="text3">"Records of the Confucius Family": Painting of Confucius Teaching at Xingtan, Song Dynasty
         </div>
 

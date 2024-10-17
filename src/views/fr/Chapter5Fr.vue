@@ -41,13 +41,13 @@ onMounted(() => {
           Confucius est la cristallisation de l'histoire et de la culture chinoises, et constitue
           l'axe principal de la culture traditionnelle chinoise.
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">
           La salle Dacheng, salle principale du temple de Confucius à Qufu, porte le sens de «
           rassembler le tout » de Confucius. Elle a été construite sous la dynastie Tang (618-907)
           et reconstruite pendant la période Yongzheng de la dynastie Qing (1722-1735).
         </div>
-        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">Pilier du dragon de la salle Dacheng</div>
       </div>
       <ButtonBox

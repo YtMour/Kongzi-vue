@@ -36,7 +36,7 @@ onMounted(() => {
       <div class="content">
 
         <div class="text1">孔子讲究衣冠整齐。认为“君子正其衣冠，尊其瞻视”，这不仅是对他人的尊重，也是自我修养的体现。他依礼而冠，不同场合佩戴不同的礼冠，展现了儒家的礼仪之美。</div>
-       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter2/page2/imga1.png" alt="" class="logo1" />
         <div class="text2">孔子后代收藏的中国明代
           传统服饰</div>
           <div class="text3">《孔子為魯司寇像》

@@ -36,7 +36,7 @@ onMounted(() => {
       <div class="content">
 
         <div class="text1">Confucius emphasized neat and proper attire. He believed that "a gentleman corrects his attire and respects his appearance," which is not only a sign of respect for others but also a reflection of self-cultivation. He wore ceremonial caps according to rites, donning different caps for different occasions, showcasing the beauty of Confucian etiquette.</div>
-       <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter2/page2/imga1.png" alt="" class="logo1" />
         <div class="text2">Traditional Chinese clothing from the Ming Dynasty, collected by Confucius' descendants
         </div>
           <div class="text3">"Confucius as the Minister of Justice in Lu" Ming Dynasty, painter unknown

@@ -10,9 +10,9 @@ const router = useRouter() // 创建路由实例
 let nextLeft = '/kr/home'
 let nextR = '/kr/detail'
 
-// 点击事件，跳转到前言页面
+// 点击事件，跳转到qianyan页面
 // const goToNextPage = () => {
-//   router.push('/cn/detail');  // 跳转到前言页面
+//   router.push('/cn/detail');  // 跳转到qianyan页面
 //   window.scrollTo(0, 0);
 // };
 onMounted(() => {
@@ -40,8 +40,8 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
-        <img src="@/assets/前言/kr.png" alt="" class="logo2" />
+        <img src="@/assets/qianyan/cn2.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/kr.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;천년을 뛰어넘는 지혜의 그림에서 공자는 '인(仁)'을 핵심으로 하고
           '예악(禮樂)'을 규범으로 하여 '화이부동(和爾不同)'을 고취하고 '유교무류(有敎無類)'를 첫
@@ -53,7 +53,7 @@ onMounted(() => {
           공자 사상의 영원한 매력을 함께 느끼고 영적 소통의 가교 역활을 하며 함께 지혜의 빛의 혜택을
           받고 미래에 향한 길을 밝히게 하고자 한다.
         </p>
-        <img src="@/assets/前言/天下.png" alt="" class="logo3" />
+        <img src="@/assets/qianyan/tianxia.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
         <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -110,7 +110,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('@/assets/前言/书.png'); /* 背景图片路径 */
+  background-image: url('@/assets/qianyan/shu.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */

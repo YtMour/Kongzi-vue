@@ -39,10 +39,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page1/zhuzhi.png" alt="" class="logo2" />
 
-        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page1/imga1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter1/page1/yongyuan.png" alt="" class="logo1" />
 
         <div class="text1">"Confucius in Leisure"</div>
         <div class="text2">Ming Dynasty , <br />painter unknown</div>
@@ -50,7 +50,7 @@ onMounted(() => {
           Confucius (551 BC - 479 BC), a great thinker, educator, and philosopher of ancient China,
           honored by later generations as the "Supreme Sage and Foremost Teacher" and "Sage."
         </div>
-        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter1/page1/imga1.png" alt="" class="logo4" />
         <div class="text4">
           Confucius Museum located in Qufu, Shandong, the hometown of Confucius
         </div>

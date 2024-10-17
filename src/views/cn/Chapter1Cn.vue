@@ -39,17 +39,17 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page1/zhuzhi.png" alt="" class="logo2" />
 
-        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page1/imga1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter1/page1/yongyuan.png" alt="" class="logo1" />
 
         <div class="text1">《孔子燕居像》</div>
         <div class="text2">明·佚名 绘</div>
         <div class="text3">
           孔子（BC551-BC479），中国古代伟大的思想家、教育家、哲学家，被后世尊称为“至圣先师”、“圣人”。
         </div>
-        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter1/page1/imga2.png" alt="" class="logo4" />
         <div class="text4">位于“孔子故里”山东曲阜的孔子博物馆</div>
       </div>
       <ButtonBox

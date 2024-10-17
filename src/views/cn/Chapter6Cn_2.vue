@@ -32,14 +32,14 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page6/图画1.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page6/imga1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page6/imga2.png" alt="" class="logo2" />
         <div class="text1">乐</div>
 
         <div class="text2">
           孔子酷爱音乐，认为音乐能够陶冶性情，净化心灵。他提倡“雅乐”，认为音乐应该具有教育意义和社会价值。
         </div>
-        <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page6/imga3.png" alt="" class="logo3" />
         <div class="text3">
           周 夔龙纹编钟<br />
           收藏于中国国家博物馆

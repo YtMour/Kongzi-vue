@@ -34,7 +34,7 @@ onMounted(() => {
 
         <div class="text1">In today's era of challenges and transformations, the wisdom of Confucius is not just an echo of history but a beacon for the future, offering unique perspectives and solutions to global issues. It urges us to reflect on the relationships between humans and nature, society, and each other, advocating for harmony, inclusiveness, and mutual respect. This philosophy injects inexhaustible momentum into world peace and development.
         </div>
-       <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">Overseas visitors in front of the Hall of Great Achievement
         </div>
 

@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page2/夫子洞.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page2/imga1.png" alt="" class="logo1" />
         <div class="text1">كهف فوتسي عند سفح جبل نيشان، يُعتقد أنه مكان ولادة كونفوشيوس</div>
-        <img src="@/assets/Chapter1/page2/夫子像.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page2/imga2.png" alt="" class="logo2" />
         <div class="text2">تمثال كونفوشيوس بارتفاع ٧٢ متراً على جبل نيشان</div>
       </div>
       <ButtonBox

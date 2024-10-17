@@ -35,11 +35,11 @@ onMounted(() => {
       <div class="content">
         <div class="text1">By organizing events such as the International Confucian Forum and the Confucius Culture Festival, people from various countries have gained a deeper understanding and appreciation of Confucian culture. These activities promote equal dialogue and mutual learning among different cultures, while also contributing to the preservation, inheritance, and development of Confucian traditions.
         </div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">Young people participating in an adult ceremony in front of the Confucius Temple
         </div>
-       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">An Overseas photographer experiencing traditional New Year customs in Zhoucun, Shandong
         </div>

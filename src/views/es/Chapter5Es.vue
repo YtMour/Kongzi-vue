@@ -34,10 +34,10 @@ onMounted(() => {
       <div class="content">
         <div class="text1">La filosofía de Confucio abarcaba todos los aspectos de la vida, desde la conducta personal hasta la gobernanza. Con la benevolencia como pilar, el rito y la música como normas, y la moderación como método de guía, su pensamiento aspiraba a la construcción de un mundo en armonía ideal. Este sistema filosófico, esencia de la historia y la cultura china, constituye el eje central de la cultura tradicional china.
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">Salón Dacheng en el Templo de Confucio en Qufu, que simboliza la "gran perfección" de Confucio, fue originalmente construido durante la dinastía Tang (618 d.C. - 907 d.C.) y reconstruido bajo el mandato del emperador Yongzheng durante la dinastía Qing (1722 d.C. - 1735 d.C.).
         </div>
-       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">Columna de Dragón en el Salón Dacheng
 
         </div>

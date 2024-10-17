@@ -44,7 +44,7 @@ onMounted(() => {
           더 나은 미래로 이끌게 하자.
         </div>
         <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/imga1.png" alt="" class="logo2" />
         </div>
         <div class="text2">공자묘의 측백나무</div>
       </div>

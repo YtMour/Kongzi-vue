@@ -40,12 +40,12 @@ onMounted(() => {
           que, en su vejez, regresó a su tierra natal donde fundó escuelas y recopiló textos
           clásicos.
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">
           Mural "Confucio encontrándose con Laozi", hallado en una tumba de la dinastía Han (206
           a.C. - 220 d.C.) en Dongping, Shandong
         </div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">"Estudio sobre los Ritos del Templo Sagrado: Confucio Aprendiendo a Tocar el Qin con Shixiang" Dinastía Qing, compilado por Gu Yuan</div>
       </div>
       <ButtonBox

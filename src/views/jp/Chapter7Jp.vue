@@ -32,9 +32,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page7/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page7/imga1.png" alt="" class="logo1" />
         <div class="text1">尼山聖境 大学の道</div>
-        <img src="@/assets/Chapter1/page7/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page7/imga2.png" alt="" class="logo2" />
       </div>
       <ButtonBox
         :onLeftClick="() => router.push(nextLeft)"

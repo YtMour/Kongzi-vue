@@ -40,10 +40,10 @@ onMounted(() => {
           وعبر عملية حماية هذا التراث ونقله وتطويره، تم تعزيز الحوار المتكافئ والتبادل والتعلم
           المتبادل بين الثقافات المختلفة.
         </div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">شباب يشاركون في طقوس بلوغ سن الرشد أمام معبد كونفوشيوس</div>
-        <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">مصورون أجانب يستمتعون بأجواء السنة الجديدة في تشوتسون، شاندونغ</div>
         <div class="text4">جدار القصر الشاهق في معبد كونفوشيوس، تشيوفو</div>

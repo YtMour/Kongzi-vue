@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/imga1.png" alt="" class="logo1" />
         <div class="text1">Shelter</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/imga2.png" alt="" class="logo2" />
         <div class="text2">
           Confucius emphasized a clean and quiet living environment, believing that a good living
           environment helps in cultivating oneself. He proposed "sleep without being rigid like a

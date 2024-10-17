@@ -33,10 +33,10 @@ onMounted(() => {
       <div class="background"></div>  <!-- 背景图容器 -->
       <div class="content">
         <div class="text1">从人生哲学到治国理政，孔子的智慧影响深远，孔子的思想博大精深。他以仁为核心，以礼乐为规范，以中庸为方法，引导人们建设一个美好的大同世界。孔子创立的儒家思想体系是中国历史与文化的结晶，是中国传统文化的主轴。</div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">大成殿，曲阜孔庙正殿，取孔子“集大成”之意。始建于
           唐代（618 - 907），清代雍正时（1722 - 1735）重建</div>
-       <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">大成殿龙柱</div>
 
           

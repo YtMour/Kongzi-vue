@@ -34,7 +34,7 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page5/imga1.png" alt="" class="logo1" />
         <div class="text1">السفر</div>
         <div class="text2">
           صورة "كونفوشيوس يركب عربة" من كتاب "سجلات واسعة للمعبد الأصلي" من عهد أسرة سونغ الملكية
@@ -45,8 +45,8 @@ onMounted(() => {
           والمعرفة فحسب، بل أيضاً لتحقيق رؤيته السياسية. خلال سفره، التزم دائماً بأخلاق النبلاء،
           متحليًا باحترام الآخرين والتواضع والأدب الجم.
         </div>
-        <img src="@/assets/Chapter2/page5/图画2.png" alt="" class="logo2" />
-        <img src="@/assets/Chapter2/page5/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page5/imga2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page5/imga3.png" alt="" class="logo3" />
         <div class="text4">جبل تايشان في شاندونغ، مليء بالآثار المقدسة</div>
       </div>
       <ButtonBox

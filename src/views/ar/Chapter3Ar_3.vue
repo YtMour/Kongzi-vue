@@ -38,7 +38,7 @@ onMounted(() => {
           العلاقات المتشابكة: بين الإنسان والطبيعة، وبينه وبين المجتمع، وفيما بين البشر أنفسهم،
           داعية إلى تعايش يسوده الوئام والشمول، مما يضخ قوة لا تنضب للسلام والتنمية العالمية.
         </div>
-        <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">زوار أجانب أمام بوابة قاعة داتشنغ</div>
       </div>
       <ButtonBox

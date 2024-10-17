@@ -44,7 +44,7 @@ onMounted(() => {
           نحو مستقبل أكثر إشراقًا وجمالًا.
         </div>
         <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/imga1.png" alt="" class="logo2" />
         </div>
         <div class="text2">أشجار السرو القديمة في معبد كونفوشيوس</div>
       </div>

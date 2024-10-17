@@ -34,14 +34,14 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">食</div>
         <div class="text2">
           孔子饮食有节，讲究食材的新鲜与烹饪的精细。他提倡“食不厌精，脍不厌细”，同时强调饮食中的礼仪，以及对于食物的珍惜。
         </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page3/imga2.png" alt="" class="logo2" />
         <div class="text3">战国 牺尊 收藏于齐文化博物院</div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page3/imga3.png" alt="" class="logo3" />
         <div class="text4">商周十供<br />收藏于孔子博物馆</div>
       </div>
       <ButtonBox

@@ -35,11 +35,11 @@ onMounted(() => {
       <div class="content">
         <div class="text1">A través de foros internacionales sobre confucianismo, festivales culturales y diversas actividades, se ha promovido la comprensión y el reconocimiento de la cultura confuciana entre personas de distintos países. Estos esfuerzos fomentan el diálogo y el intercambio equitativo entre diferentes culturas, contribuyendo a la protección, transmisión y desarrollo continuo de este valioso legado.
         </div>
-        <img src="@/assets/Chapter3/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">Jóvenes participando en la ceremonia de mayoría de edad frente al Templo de Confucio
         </div>
-       <img src="@/assets/Chapter3/page5/图画2.png" alt="" class="logo2" />
-       <img src="@/assets/Chapter3/page5/图画3.png" alt="" class="logo3" />
+       <img src="@/assets/Chapter3/page5/imga2.png" alt="" class="logo2" />
+       <img src="@/assets/Chapter3/page5/imga3.png" alt="" class="logo3" />
 
         <div class="text3">Fotógrafos extranjeros en el pueblo de Zhou, Shandong, experimentando las costumbres del Año Nuevo
         </div>

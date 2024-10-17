@@ -39,7 +39,7 @@ onMounted(() => {
           타인에 대한 존중일 뿐만 아니라 자기 수양의 반영이기도 한다고 주장하였다. 공자는 예의에
           맞는 관을 쓰고, 상황에 따라 예관을 달리하여 유가 예절의 미를 보여주었다.
         </div>
-        <img src="@/assets/Chapter2/page2/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page2/imga1.png" alt="" class="logo1" />
         <div class="text2">공자의 후손들이 수집한 중국 명나라의 전통 복식</div>
         <div class="text3">&lt;노국(魯國) 사구(司寇)직 시기 공자상&gt; 명·작가 미상</div>
       </div>

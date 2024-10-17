@@ -39,11 +39,11 @@ onMounted(() => {
           شتى الأقاليم. أما في أواخر حياته، فقد عاد إلى ولاية لو حيث عكف على التعليم وتنقيح الكتب
           الكلاسيكية الستة.
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">
           لوحة جدارية من مقبرة هان في دونغبينغ، شاندونغ: كونفوشيوس يلتقي لاو تسي
         </div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">"كونفوشيوس يتعلم العزف على قو تشين من شي شيانغ" - من كتاب "دراسة رسومات لطقوس المعبد المقدس" -تم تجميعها بواسطة  قو يوان من عهد أسرة تشينغ
         </div>
       </div>

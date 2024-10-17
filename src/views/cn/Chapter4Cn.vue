@@ -36,9 +36,9 @@ onMounted(() => {
         <div class="text1">
           孔子少年立志向学，精通六艺，青年游周适齐，问礼于老子，壮年出仕谋政，周游列国，晚年归鲁兴学，纂订六经。
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">山东东平汉墓壁画 孔子见老子</div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">《圣庙祀典图考·孔子学琴于师襄》清·顾沅 编</div>
       </div>
       <ButtonBox

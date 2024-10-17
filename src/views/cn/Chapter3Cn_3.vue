@@ -33,7 +33,7 @@ onMounted(() => {
       <div class="content">
 
         <div class="text1">在当今这个充满挑战与变革的时代，孔子的智慧不仅是历史的回响，更是未来的灯塔，为解决全球性问题提供了独特的视角与方案；它促使我们反思人与自然、人与社会、人与人之间的关系，倡导以和为贵、兼容并蓄的相处之道，为世界和平与发展注入不竭的动力。</div>
-       <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+       <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">大成殿门前的海外参观者</div>
 
 

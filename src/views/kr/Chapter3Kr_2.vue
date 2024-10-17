@@ -34,16 +34,16 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">식</div>
         <div class="text2">
            공자는 음식에 대해 절제가 있고 식재의 신선함과 요리의 정세함을 중요시하며 '식불염정(食不厭精), 회불염세(膾不厭細)'를 고취하는 동시에 섭식의 예절과 음식의 소중함을 강조하였다.
 
         </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page3/imga2.png" alt="" class="logo2" />
         <div class="text3">전국시대 희존(犧尊), 제문화박물관에 소장됨
         </div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page3/imga3.png" alt="" class="logo3" />
         <div class="text4">상주시기 10대 공물, 공자 박물관에 소장됨
         </div>
       </div>

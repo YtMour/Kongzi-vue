@@ -34,15 +34,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/前言/cn2.png" alt="" class="logo1" />
-        <img src="@/assets/前言/前言.png" alt="" class="logo2" />
+        <img src="@/assets/qianyan/cn2.png" alt="" class="logo1" />
+        <img src="@/assets/qianyan/qianyan.png" alt="" class="logo2" />
         <p class="text">
           &nbsp;&nbsp;&nbsp;&nbsp;在跨越千年的智慧画卷中，孔子，以“仁”为核心，以“礼乐”为规范，倡“和而不同”，启“有教无类”，其思想深邃而广远，不仅塑造了华夏文明的脊梁，亦跨越山海，成为全人类共有的精神财富。
         </p>
         <p class="text2">
           &nbsp;&nbsp;&nbsp;&nbsp;本次展览将以图叙事，通过三个篇章带领大家穿越古今，共同感受孔子思想的永恒魅力，搭建心灵沟通的桥梁，共鉴智慧之光，启迪未来之路。
         </p>
-        <img src="@/assets/前言/天下.png" alt="" class="logo3" />
+        <img src="@/assets/qianyan/tianxia.png" alt="" class="logo3" />
         <!-- <btn></btn> -->
         <ButtonBox
           :onLeftClick="() => router.push(nextLeft)"
@@ -99,7 +99,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('@/assets/前言/书.png'); /* 背景图片路径 */
+  background-image: url('@/assets/qianyan/shu.png'); /* 背景图片路径 */
   background-size: cover; /* 背景图片铺满视口，保持纵横比 */
   background-repeat: no-repeat; /* 防止重复背景图 */
   background-position: center; /* 背景图居中显示 */

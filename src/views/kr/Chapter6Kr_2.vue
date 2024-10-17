@@ -32,15 +32,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page6/图画1.png" alt="" class="logo1" />
-        <img src="@/assets/Chapter2/page6/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page6/imga1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page6/imga2.png" alt="" class="logo2" />
         <div class="text1">음악</div>
 
         <div class="text2">
           공자는 음악을 매우 즐겼는데 음악이 정서를 함양하고 영혼을 정화할 수 있다고 생각하였다.
           그는 '우아한 음악'을 권장하고 음악은 교육적 의미와 사회적 가치를 지녀야 한다고 주장하였다.
         </div>
-        <img src="@/assets/Chapter2/page6/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page6/imga3.png" alt="" class="logo3" />
         <div class="text3">
           주나라 기룡(夔龍) 무늬 편종, 중국국립박물관에 소장됨
 

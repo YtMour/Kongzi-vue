@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/imga1.png" alt="" class="logo1" />
         <div class="text1">المنازل</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/imga2.png" alt="" class="logo2" />
         <div class="text2">
           السكن: ركز كونفوشيوس على نظافة وهدوء بيئة السكن، إيماناً منه بأن البيئة السكنية المناسبة
           تسهم في تهذيب النفس. قال: "لا ترقد كالميت، ولا تجلس بتكلف في البيت"، أي ألا يكون المرء

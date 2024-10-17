@@ -34,15 +34,15 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page3/imga1.png" alt="" class="logo1" />
         <div class="text1">Comida</div>
         <div class="text2">
            En cuanto a la alimentación, Confucio practicaba la moderación, poniendo énfasis en la frescura de los ingredientes y la precisión en su preparación. Para él, "los alimentos no debían ser vulgares ni mal preparados", destacando así la importancia tanto de la etiqueta en la mesa como la apreciación por la comida bien elaborada.
 </div>
-        <img src="@/assets/Chapter2/page3/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page3/imga2.png" alt="" class="logo2" />
         <div class="text3">Vasija ritual de la era de los Reinos Combatientes, conservada en el Museo del Patrimonio Qi
         </div>
-        <img src="@/assets/Chapter2/page3/图画3.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter2/page3/imga3.png" alt="" class="logo3" />
         <div class="text4">Diez ofrendas de las dinastías Shang y Zhou, conservadas en el Museo de Confucio
         </div>
       </div>

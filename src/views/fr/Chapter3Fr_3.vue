@@ -40,7 +40,7 @@ onMounted(() => {
           philosophie fondée sur la primauté de la paix et l'inclusivité ouverte à toutes les
           différences, insufflant un élan inépuisable à la paix et au développement dans le monde.
         </div>
-        <img src="@/assets/Chapter3/page3/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter3/page3/imga1.png" alt="" class="logo1" />
         <div class="text2">Des visiteurs étrangers devant la salle Dacheng</div>
       </div>
       <ButtonBox

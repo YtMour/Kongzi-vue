@@ -44,7 +44,7 @@ onMounted(() => {
           luz de la armonía en esta nueva era, guiando a la humanidad hacia un futuro mejor.
         </div>
         <div class="logo1">
-          <img src="@/assets/Chapter3/page7/图画1.png" alt="" class="logo2" />
+          <img src="@/assets/Chapter3/page7/imga1.png" alt="" class="logo2" />
         </div>
         <div class="text2">Los antiguos cipreses en el Templo de Confucio</div>
       </div>

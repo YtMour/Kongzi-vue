@@ -39,10 +39,10 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter1/page1/竹子.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page1/zhuzhi.png" alt="" class="logo2" />
 
-        <img src="@/assets/Chapter1/page1/孔子.png" alt="" class="logo3" />
-        <img src="@/assets/Chapter1/page1/永远.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page1/imga1.png" alt="" class="logo3" />
+        <img src="@/assets/Chapter1/page1/yongyuan.png" alt="" class="logo1" />
 
         <div class="text1">Portrait de Confucius à loisir</div>
         <div class="text2">
@@ -54,7 +54,7 @@ onMounted(() => {
           ancienne, a été honoré par les générations suivantes comme « le maître souverain » et « le
           grand sage ».
         </div>
-        <img src="@/assets/Chapter1/page1/博物馆.png" alt="" class="logo4" />
+        <img src="@/assets/Chapter1/page1/imga2.png" alt="" class="logo4" />
         <div class="text4">
           Le musée de Confucius à Qufu, la ville natale de Confucius, dans la province du Shandong
         </div>

@@ -33,9 +33,9 @@ onMounted(() => {
       <div class="background"></div>
       <!-- 背景图容器 -->
       <div class="content">
-        <img src="@/assets/Chapter2/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter2/page4/imga1.png" alt="" class="logo1" />
         <div class="text1">住</div>
-        <img src="@/assets/Chapter2/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter2/page4/imga2.png" alt="" class="logo2" />
         <div class="text2">
           孔子は居住環境の清潔さと静かさを重視し、良好な居住環境が自己修養に役立つと考えました。「寝(い)ぬるに尸(し)せず、居るに容(かたち)づくらず」、すなわち就寝時に死体のように硬直してはならないが、一定の礼儀と秩序を保つ必要があると説きました。
         </div>

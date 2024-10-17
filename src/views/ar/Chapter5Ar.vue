@@ -39,13 +39,13 @@ onMounted(() => {
           ويوجه الناس نحو بناء عالم متناغم مثالي. إن النظام الكونفوشيوسي الذي أسسه هو خلاصة التاريخ
           والثقافة الصينية، ومحور الثقافة الصينية التقليدية.
         </div>
-        <img src="@/assets/Chapter1/page5/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page5/imga1.png" alt="" class="logo1" />
         <div class="text2">
           قاعة داتشنغ، القاعة الرئيسية لمعبد كونفوشيوس في تشييفو، مستوحاة من مفهوم كونفوشيوس "الجمع
           بين كل الإنجازات". بُنيت أصلاً في عهد أسرة تانغ الملكية (٦١٨-٩٠٧)، وأُعيد بناؤها في عهد
           إمبراطور يونغتشنغ من أسرة تشينغ الملكية (١٧٢٢-١٧٣٥)
         </div>
-        <img src="@/assets/Chapter1/page5/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page5/imga2.png" alt="" class="logo2" />
         <div class="text3">أعمدة التنين في قاعة داتشنغ</div>
       </div>
       <ButtonBox

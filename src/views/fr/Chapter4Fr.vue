@@ -40,12 +40,12 @@ onMounted(() => {
           voyagé dans divers pays ; dans sa vieillesse, il est retourné à Lu pour fonder une école
           et compiler les Six Classiques.
         </div>
-        <img src="@/assets/Chapter1/page4/图画1.png" alt="" class="logo1" />
+        <img src="@/assets/Chapter1/page4/imga1.png" alt="" class="logo1" />
         <div class="text2">
           Confucius rencontre Laozi, peinture murale d'une tombe Han à Dongping, province du
           Shandong
         </div>
-        <img src="@/assets/Chapter1/page4/图画2.png" alt="" class="logo2" />
+        <img src="@/assets/Chapter1/page4/imga2.png" alt="" class="logo2" />
         <div class="text3">
           Cérémonie du temple sacré : Confucius apprenant le Qin auprès de Shixiang, Gu Yuan,
           dynastie Qing
