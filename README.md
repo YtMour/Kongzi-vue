@@ -6,13 +6,13 @@
 
 由于自己编写了大量垃圾代码，因此此库只作为本人及朋友 共同开发项目的成果展示
 
-网页适配8国语言 由 vue router支持
-个人上线网站地址(非官方)：
-中文 https://kongzi.ytmourstore.shop
-英文 https://kongzi.ytmourstore.shop/#/en/home
-法语 https://kongzi.ytmourstore.shop/#/fr/home
-阿拉伯语 https://kongzi.ytmourstore.shop/#/ar/home
-西班牙语 https://kongzi.ytmourstore.shop/#/es/home
-日语 https://kongzi.ytmourstore.shop/#/jp/home
-韩语 https://kongzi.ytmourstore.shop/#/kr/home
-俄语 https://kongzi.ytmourstore.shop/#/rf/home
+网页适配8国语言 由 vue router支持<br>
+个人上线网站地址(非官方)：<br>
+中文 https://kongzi.ytmourstore.shop<br>
+英文 https://kongzi.ytmourstore.shop/#/en/home<br>
+法语 https://kongzi.ytmourstore.shop/#/fr/home<br>
+阿拉伯语 https://kongzi.ytmourstore.shop/#/ar/home<br>
+西班牙语 https://kongzi.ytmourstore.shop/#/es/home<br>
+日语 https://kongzi.ytmourstore.shop/#/jp/home<br>
+韩语 https://kongzi.ytmourstore.shop/#/kr/home<br>
+俄语 https://kongzi.ytmourstore.shop/#/rf/home<br>
