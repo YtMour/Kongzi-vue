@@ -5,6 +5,7 @@
 已上线官方 文化网站
 
 由于自己编写了大量垃圾代码，因此此库只作为本人及朋友 共同开发项目的成果展示
+![image](https://github.com/user-attachments/assets/40d09c45-ca87-41ec-b1e7-9d1d822af715)
 
 网页适配8国语言 由 vue router支持<br>
 个人上线网站地址(非官方)：<br>
