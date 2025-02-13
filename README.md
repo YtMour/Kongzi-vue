@@ -1,5 +1,7 @@
-只供展示<br>
-![image](https://github.com/user-attachments/assets/40d09c45-ca87-41ec-b1e7-9d1d822af715)
-<br>
-网页适配8国语言 由 vue router支持<br>
+永远的孔子 H5端网页
 
+进度
+
+适配手机rem布局
+
+依赖完成
